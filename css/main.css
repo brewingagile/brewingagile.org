@@ -1,0 +1,902 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border: 1px solid #666;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	background: #111 url() repeat fixed center top;
+	background-size: auto auto;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: Georgia, serif;
+	margin: 0 0 20px;
+	padding: 20px 0;
+}
+
+h3 {
+	width; auto;
+	border-bottom: 1px solid #fbb040;
+	font-weight: normal;
+	margin-right: 17%;
+	margin-left: 17%;
+	padding: 1em 0 0.5em;
+	text-align: center;
+	text-shadow: 0 1px 1px #ffffff;
+	text-transform: uppercase;
+}
+
+h4 {
+	background-color: #000000;
+	color: #ffffff;
+	padding: 2px 0;
+	text-align: center;
+}
+
+h4 span {
+	color: #fbb040;
+}
+
+h5 {
+	font-style: italic;
+	padding: 0;
+}
+
+
+p {
+	margin: 0 0 10px;
+}
+
+p a {
+	color: #000000;
+}
+
+a {
+	color: #000000;
+}
+ 
+ol,
+ol li {
+	list-style-position: inside;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.bigHeader {
+	font-size: 4em;
+	letter-spacing: -2px;
+	text-shadow: none;
+}
+
+.signupButton {
+	clear: both;
+}
+
+.signupButton a {
+	background-color: #fbb040;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dd8013), to(#fbb040));
+	background: -webkit-linear-gradient(top, #fbb040, #dd8013);
+	background: -moz-linear-gradient(top, #fbb040, #dd8013);
+	background: -ms-linear-gradient(top, #fbb040, #dd8013);
+	background: -o-linear-gradient(top, #fbb040, #dd8013);
+	box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 3px 3px rgba(0,0,0,0.7);
+}
+
+.signupButton a:hover {
+	text-decoration: underline;
+}
+
+.contactUs {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#222222), to(#111111));
+	background: -webkit-linear-gradient(top, #111111, #222222);
+	background: -moz-linear-gradient(top, #111111, #222222);
+	background: -ms-linear-gradient(top, #111111, #222222);
+	background: -o-linear-gradient(top, #111111, #222222);
+	border-top: 1px solid #000000;
+	border-right: 1px silid #111111;
+	border-left: 1px silid #111111;
+	border-radius: 2px 2px 0 0;
+	color: white;
+	display: block;
+	font-family: Arial, sans-sreif;
+	height: 32px;
+	margin: 20px auto 0;
+	padding: 10px 5px;
+	text-align: center;
+}
+
+.contactUs a {
+	background: transparent url(../img/social_media2.png) no-repeat scroll left top;
+	background-size: 128px 64px;
+	display: block;
+	float: left;
+	height: 32px;
+	margin: 0 5px;
+	text-indent: -9999px;
+	width: 32px;
+}
+
+.contactUs a.facebook { background-position: -32px 0;}
+.contactUs a.facebook:hover { background-position: -32px -32px;}
+.contactUs a.linkedin { background-position: -96px 0;}
+.contactUs a.linkedin:hover { background-position: -96px -32px;}
+.contactUs a.twitter { background-position: 0 0;}
+.contactUs a.twitter:hover { background-position: 0 -32px;}
+
+#head {
+	display: block;
+	position: relative;
+	text-align: center;
+}
+
+#head h1 {
+	background: transparent url(../img/brewing_agile_2x.png) no-repeat scroll center bottom;
+	background-size: contain;
+	display: block;
+	height: 204px;
+	margin: 0 auto;
+	padding: 0;
+	text-indent: -9999px;
+	width: 90%;
+	max-width: 371px;
+
+}
+
+section h2 {
+	clear: both;
+	display: block;
+	font-size: 1.8em;
+	font-weight: normal;
+	margin: 0;
+	padding: 30px 0 40px;
+	text-align: center;
+	text-shadow: 0 1px 0 #ffffff;
+}
+
+section {
+	background-color: #ffffff;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eeeeee), to(#ffffff));
+	background: -webkit-linear-gradient(top, #ffffff, #eeeeee);
+	background: -moz-linear-gradient(top, #ffffff, #eeeeee);
+	background: -ms-linear-gradient(top, #ffffff, #eeeeee);
+	background: -o-linear-gradient(top, #ffffff, #eeeeee);
+	border-bottom: 1px solid #aaa;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+	clear: both;
+	margin: 0 5% 2%;
+	padding: 0 2% 2% 2%;
+}
+
+#bread {
+	background-color: #000000;
+	background: url(../img/highlight.png) no-repeat scroll center bottom, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#111111), to(#000000));
+	background: url(../img/highlight.png) no-repeat scroll center bottom, -webkit-linear-gradient(top, #000000, #111111);
+	background: url(../img/highlight.png) no-repeat scroll center bottom, -moz-linear-gradient(top, #000000, #111111);
+	background: url(../img/highlight.png) no-repeat scroll center bottom, -ms-linear-gradient(top, #000000, #111111);
+	background: url(../img/highlight.png) no-repeat scroll center bottom, -o-linear-gradient(top, #000000, #111111);
+	background-size: 100% 100%, 100% 100%;
+	border-bottom-color: #000000;
+	color: #fbb040;
+	font-family: Georgia, serif;
+	padding-top: 3%;
+	padding-bottom: 0;
+}
+
+#bread p {
+	display: block;
+	font-size: 0.9em;
+	width: 48%;
+}
+
+#bread #intro {
+	font-size: 1.1em;
+}
+
+#bread #quickInfo {
+	float: right;
+	text-align: center;
+}
+
+#bread #quickInfo a {
+	color: #fbb040;
+}
+
+#bread #quickInfo .date {
+	font-size: 3em;
+}
+
+#bread #quickInfo .price {
+	font-size: 5em;
+	line-height: 1.1em;
+}
+
+#bread .contactUs {
+	background-color: #444444;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333333), to(#222222));
+	background: -webkit-linear-gradient(top, #222222, #333333);
+	background: -moz-linear-gradient(top, #222222, #333333);
+	background: -ms-linear-gradient(top, #222222, #333333);
+	background: -o-linear-gradient(top, #222222, #333333);
+	border-top-color: #222222;
+	clear: both;
+	width: 126px;
+}
+
+#signUp {
+	background-color: #eeeeee;
+	background: url(../img/checkers.png) repeat scroll center center, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333333), to(#ffffff));
+	background: url(../img/checkers.png) repeat scroll center center, -webkit-linear-gradient(top, #ffffff, #333333);
+	background: url(../img/checkers.png) repeat scroll center center, -moz-linear-gradient(top, #ffffff, #333333);
+	background: url(../img/checkers.png) repeat scroll center center, -ms-linear-gradient(top, #ffffff, #333333);
+	background: url(../img/checkers.png) repeat scroll center center, -o-linear-gradient(top, #ffffff, #333333);
+	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+#signUp ol li {
+	display: block;
+	float: left;
+	padding-left: 2%;
+	width: 32%;
+}
+
+#signUp ol li.first {
+	padding-left: 0;
+}
+
+#signUp ol h5 a {
+	color: #000000;
+	text-decoration: none;
+}
+
+#signUp ol h5 a:hover {
+	text-decoration: underline;
+}
+
+#signUp ol h5 span {
+	background-color: #000000;
+	border-radius: 20px;
+	color: #fbb040;
+	font-size: 20px;
+	padding: 0 4px 5px 6px;
+}
+
+#signUp ol p {
+	font-size: 0.8em;
+}
+
+#signUp .signupButton {
+	padding: 30px 0 10px;
+}
+
+#signUp .signupButton a {
+	font-size: 2em;
+	width: 300px;
+}
+
+section article {
+	display: block;
+}
+
+#speakers {
+	clear: left;
+}
+
+#speakers div {
+	clear: left;
+	float: left;
+	width: 48%;
+}
+
+#speakers div.right {
+	clear: none;
+	padding-left: 4%;
+}
+
+#speakers div p {
+	text-align: justify;
+}
+
+#speakers #moreSpeakers {
+	margin: 2% 0;
+	width: 100%;
+}
+
+#speakers #moreSpeakers h4 {
+	background-color: transparent;
+	color: #666;
+	margin-bottom: 5px;
+}
+
+#speakers #moreSpeakers p {
+	font-size: 0.8em;
+	text-align: center;
+}
+
+#speakers img {
+	width: 100%;
+}
+
+#layout {
+	clear: both;
+	float: right;
+	padding-left: 3%;
+	width: 58%
+}
+
+#layout div {
+	float: left;
+	width: 100%;
+}
+
+#layout div.first {
+	padding-left: 0;
+}
+
+#layout div header {
+	float: left;
+	width: 38%;
+}
+
+#layout div header img {
+	width: 100%;
+}
+
+#layout div p {
+	display: block;
+	float: right;
+	width: 58%;
+}
+
+#layout #scrumBeers h4 {
+}
+
+#layout #unconference h4 {
+}
+
+#layout .date {
+	font-family: 'Palatino Linotype','Book Antiqua',Palatino,serif;
+	font-size: 1.1em;
+	font-style: italic;
+}
+
+#schedule {
+	float: left;
+	width: 39%;
+}
+
+#schedule div {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+#schedule h4 {
+	background-color: transparent;
+	border: 3px double #cccccc;
+	clear: none;
+	color: #000;
+	float: left;
+	padding-bottom: 10px;
+	text-shadow: 0 1px 0 #ffffff;
+	width: 22%;
+}
+
+#schedule h4 span {
+	color: #000;
+	font-size: 3em;
+	line-height: 0.75em;
+}
+
+#schedule h4 span span {
+	font-size: 0.5em;
+}
+
+#schedule dl {
+	display: block;
+	float: right;
+	margin: 0;
+	padding-left: 5%;
+	width: 70%;
+}
+
+#schedule dl dt,
+#schedule dl dd {
+	padding: 0.25em 0;
+}
+
+#schedule dl dt {
+	border-top: 1px solid #ccc;
+	clear: left;
+	display: block;
+	float: left;
+	font-family: 'Palatino Linotype','Book Antiqua',Palatino,serif;
+	font-style: italic;
+	padding-right: 3%;
+	padding-left: 3%;
+	width: 25%;
+}
+
+#schedule dl dd {
+	border-top: 1px solid #ccc;
+	display: block;
+	float: left;
+	margin-left: 0;
+	padding-left: 3%;
+	width: 65%;
+}
+
+#schedule dl dd.wrapUp {
+}
+
+#schedule dl dt.first,
+#schedule dl dd.first {
+	border-top: 0 none transparent;
+}
+
+article .fridayAfternoon {
+	height: 27em;
+}
+
+article .fridayEvening {
+	border-top: 1px dashed #ccc;
+	height: 18em;
+	padding-top: 1em;
+}
+
+article .saturdayAfternoon {
+	border-top: 1px dashed #ccc;
+	height: auto;
+	padding-top: 1em;
+}
+
+#otherInfo {
+	clear: both;
+	float: none;
+	width: 100%;
+}
+
+#sponsors {
+	text-align: center;
+}
+
+#sponsors div {
+	margin: 0 auto;
+}
+
+#sponsors div a {
+	float: left;
+	margin: 1%;
+}
+
+#sponsors img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#sponsors p {
+	clear: both;
+	font-size: 0.8em;
+	padding-top: 2em;
+}
+
+footer {
+	background-color: #000000;
+	background: url(../img/highlight_up.png) no-repeat scroll center top, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#111111), to(#000000));
+	background: url(../img/highlight_up.png) no-repeat scroll center top, -webkit-linear-gradient(top, #000000, #111111);
+	background: url(../img/highlight_up.png) no-repeat scroll center top, -moz-linear-gradient(top, #000000, #111111);
+	background: url(../img/highlight_up.png) no-repeat scroll center top, -ms-linear-gradient(top, #000000, #111111);
+	background: url(../img/highlight_up.png) no-repeat scroll center top, -o-linear-gradient(top, #000000, #111111);
+	background-size: 100% 100%, 100% 100%;
+	border-bottom-color: #000000;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+	clear: both;
+	color: #fbb040;
+	font-family: Georgia, serif;
+	margin: 0 5%;
+	padding: 2% 2% 1% 2%;
+	text-align: center;
+}
+
+footer a {
+	color: #fbb040;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+.clear {
+	clear: both;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 1100px){
+	#head h2,
+	footer {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 10px 2% 20px;
+	}
+	section {
+		max-width: 1000px;
+		margin: 0 auto 2%;
+	}
+	section article .fridayEvening { height: 10em; }
+}
+
+@media only screen and (min-width: 875px){
+	article .fridayAfternoon { height: 22em; }
+	article .fridayEvening { height: 13em; }
+}
+
+@media only screen and (max-width: 650px) {
+	#head h2 {
+		padding: 10px 2% 20px;
+	}
+	article .fridayAfternoon,
+	article .fridayEvening,
+	article .saturdayAfternoon { height: auto; border-top: 0 none transparent; }
+	article .saturdayAfternoon {
+		border-top: none;
+		padding-top: 0;
+	}
+	#speakers div,
+	#layout div {
+		float: none;
+		padding-left: 0;
+		overflow: hidden;
+    	width: 100%;
+	}
+	#speakers img,
+	#layout img {
+		display: block;
+		height: auto;
+		margin: 0 auto;
+		text-align: center;
+		max-width: 100%;
+	}
+	#speakers div.right {
+		padding-top: 2%;
+    	padding-left: 0;
+	}
+	#layout,
+	#schedule {
+		clear: both;
+		float: none;
+		padding-left: 0;
+		width: 100%;
+	}
+	#schedule #day2 {
+		padding-top: 5%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	h3 {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#bread p {
+		float: none;
+		width: 100%;
+	}
+	#bread #quickInfo {
+		padding-bottom: 20px;
+	}
+	#bread #quickInfo .date {
+		font-size: 2em;
+	}
+	#bread #quickInfo .price {
+		font-size: 3em;
+	}
+	#signUp .signupButton a {
+    	width: 100%;
+	}
+	#signUp ol li {
+		float: none;
+		padding-left: 0;
+		width: 100%;
+	}
+	#signUp ol h5 {
+		margin-bottom: 1em;
+	}
+	#signUp ol p {
+		padding-left: 3em;
+	}
+	#layout div header {
+		clear: both;
+		float: none;
+		width: 100%;
+	}
+	#layout div header h4 { margin-bottom: 5px; }
+	#layout div p {
+		clear: both;
+		float: none;
+		width: 100%;		
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+}
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
