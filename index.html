@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="ngResource"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,7 +11,9 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js"></script>
+        <script src="angularjs/registration.js"></script>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src=" vendor/modernizr-2.6.1.min.js"></script>
@@ -42,7 +44,15 @@
 			<h2 class="bigHeader">Coming Soon…</h2>
 			<p class="contactUs"><a class="facebook" href="https://www.facebook.com/BrewingAgile" title="Facebook">Facebook</a> <a class="linkedin" href="http://www.linkedin.com/groups?gid=4653911" title="LinkedIn">LinkedIn</a> <a class="twitter" href="https://twitter.com/BrewingAgile" title="Twitter">Twitter</a></p>
 		</section>
-
+		<section ng-controller="RegistrationController">
+			<form name="myForm" ng-submit="submit()">
+				Participant Name <input type="text" ng-model="r.participantName"  size="40" required> <br/>
+				Participant Email <input type="email" ng-model="r.participantEmail"  size="40" required> <br/>
+				Company <input type="text" ng-model="r.billingCompany"  size="40" required> <br/>
+				Billing Address <input type="text" ng-model="r.billingAddress"  size="40" required> <br/>
+				<input type="submit" value="Register!" ng-disabled="!myForm.$valid">
+			</form>
+		</section>
 		<footer>
 			<p>Brewing Agile is proudly presented by <a href="http://www.scrumbeers.com/">Scrum Beers of Gothenburg</a></p>
 		</footer>
