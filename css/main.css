@@ -160,28 +160,41 @@ ol li {
 }
 
 .signupButton {
-	clear: both;
-}
-
-.signupButton a {
 	background-color: #fbb040;
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dd8013), to(#fbb040));
 	background: -webkit-linear-gradient(top, #fbb040, #dd8013);
 	background: -moz-linear-gradient(top, #fbb040, #dd8013);
 	background: -ms-linear-gradient(top, #fbb040, #dd8013);
 	background: -o-linear-gradient(top, #fbb040, #dd8013);
+    border: transparent none 0;
 	box-shadow: 0 3px 5px rgba(0,0,0,0.4);
-	color: #fff;
+    clear: both;
+    color: #fff;
+    cursor: pointer;
 	display: block;
+    font-size: 2em;
 	margin: 0 auto;
-	padding: 10px 0;
+    padding: 20px 0 20px;
 	text-align: center;
 	text-decoration: none;
 	text-shadow: 0 3px 3px rgba(0,0,0,0.7);
+    width: 300px;
 }
 
-.signupButton a:hover {
+.signupButton:hover {
 	text-decoration: underline;
+}
+
+.signupButton[disabled] {
+    background: transparent;
+    border: 3px dashed #414042;
+    box-shadow: none;
+    color: #414042;
+    text-shadow: none;
+}
+
+.signupButton[disabled]:hover {
+    text-decoration: none;
 }
 
 .contactUs {
@@ -191,8 +204,8 @@ ol li {
 	background: -ms-linear-gradient(top, #111111, #222222);
 	background: -o-linear-gradient(top, #111111, #222222);
 	border-top: 1px solid #000000;
-	border-right: 1px silid #111111;
-	border-left: 1px silid #111111;
+	border-right: 1px solid #111111;
+	border-left: 1px solid #111111;
 	border-radius: 2px 2px 0 0;
 	color: white;
 	display: block;
@@ -363,12 +376,6 @@ section {
 }
 
 #signUp .signupButton {
-	padding: 30px 0 10px;
-}
-
-#signUp .signupButton a {
-	font-size: 2em;
-	width: 300px;
 }
 
 section article {

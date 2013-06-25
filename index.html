@@ -44,13 +44,33 @@
 			<h2 class="bigHeader">Coming Soon…</h2>
 			<p class="contactUs"><a class="facebook" href="https://www.facebook.com/BrewingAgile" title="Facebook">Facebook</a> <a class="linkedin" href="http://www.linkedin.com/groups?gid=4653911" title="LinkedIn">LinkedIn</a> <a class="twitter" href="https://twitter.com/BrewingAgile" title="Twitter">Twitter</a></p>
 		</section>
-		<section ng-controller="RegistrationController">
+
+        <section id="signUp">
+            <header><h3>~ How to sign up ~</h3></header>
+            <ol>
+                <li class="first">
+                    <h5><a href="https://secure.meetup.com/register/"><span>1.</span> Sign up at Meetup</a></h5>
+                    <p>If you have not already, register at Meetup by creating a new profile or logging in with Facebook.</p>
+                </li>
+                <li>
+                    <h5><a href="http://www.meetup.com/Scrum-beers-Goteborg/"><span>2.</span> Join the conference</a></h5>
+                    <p>Next you need to join the Scrum Beers Meetup group, and then RSVP to the Brewing Agile 2012 meeting.</p>
+                </li>
+                <li>
+                    <h5><span>3.</span> Pay through PayPal</h5>
+                    <p>You will be taken to PayPal to pay for your ticket. Then you will receive an invoice by email. After that, you are done! Welcome!</p>
+                </li>
+            </ol>
+            <p class="signupButton"><a href="http://www.meetup.com/Scrum-beers-Goteborg/">Get your ticket</a></p>
+        </section>
+
+		<section id="signUp" ng-controller="RegistrationController">
 			<form name="myForm" ng-submit="submit()">
 				Participant Name <input type="text" ng-model="r.participantName"  size="40" required> <br/>
 				Participant Email <input type="email" ng-model="r.participantEmail"  size="40" required> <br/>
 				Company <input type="text" ng-model="r.billingCompany"  size="40" required> <br/>
 				Billing Address <input type="text" ng-model="r.billingAddress"  size="40" required> <br/>
-				<input type="submit" value="Register!" ng-disabled="!myForm.$valid">
+				<input class="signupButton" type="submit" value="Register!" ng-disabled="!myForm.$valid">
 			</form>
 		</section>
 		<footer>
