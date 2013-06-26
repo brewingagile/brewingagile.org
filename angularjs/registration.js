@@ -1,5 +1,5 @@
-function RegistrationController($scope, $resource) {
-	var RegistrationResource = $resource("http://localhost\\:9080/ba-backoffice/api/registration/1/", {});
+function RegistrationController($scope, $resource, $window) {
+	var RegistrationResource = $resource("http://backoffice.brewingagile.org/api/registration/1/", {});
 
 	$scope.r = {
 		participantName: "test",
@@ -10,9 +10,9 @@ function RegistrationController($scope, $resource) {
 
 	$scope.submit = function() {
 		RegistrationResource.save($scope.r, function(result) {
-
+			$window.alert("We love popups. And ponies.")
 		});
 	};
 }
 
-RegistrationController.$inject = ['$scope', '$resource'];
+RegistrationController.$inject = ['$scope', '$resource', '$window'];
