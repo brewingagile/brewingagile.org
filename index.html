@@ -16,7 +16,7 @@
         <script src="angularjs/registration.js"></script>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src=" vendor/modernizr-2.6.1.min.js"></script>
+        <script src="vendor/modernizr-2.6.1.min.js"></script>
 
 		<script type="text/javascript">
 		  var _gaq = _gaq || [];
@@ -39,40 +39,156 @@
 
 		<header id="head">
 			<h1>Brewing Agile</h1>
+            <p class="slogan">&ldquo;To build the right thing&rdquo;</p>
 		</header>
 		<section id="bread">
-			<h2 class="bigHeader">Coming Soon…</h2>
+            <p id="quickInfo"><span class="date">8 - 9 Nov:</span> <span class="price">&euro;115</span><br />at <a target="blank" href="http://www.elite.se/eng/node/706" title="Check out their site">Elite Park Avenue Hotel</a>, <a target="blank" href="https://maps.google.com/?q=Kungsportsavenyn%2036,%20Gothenburg,%20Sweden" title="Look at the map">Gothenburg</a></p>
+            <p id="intro">Welcome to the first conference hosted by Brewing Agile! We are counting on all of you to make it a success!</p>
+            <p>The theme of this year's conference will be &ldquo;Change in your organization: Tools, tips, and tricks&rdquo;. We have already booked a fantastic keynote address, and are currently taking submissions for speakers for our other open spots.</p>
 			<p class="contactUs"><a class="facebook" href="https://www.facebook.com/BrewingAgile" title="Facebook">Facebook</a> <a class="linkedin" href="http://www.linkedin.com/groups?gid=4653911" title="LinkedIn">LinkedIn</a> <a class="twitter" href="https://twitter.com/BrewingAgile" title="Twitter">Twitter</a></p>
 		</section>
 
-        <section id="signUp">
-            <header><h3>~ How to sign up ~</h3></header>
-            <ol>
-                <li class="first">
-                    <h5><a href="https://secure.meetup.com/register/"><span>1.</span> Sign up at Meetup</a></h5>
-                    <p>If you have not already, register at Meetup by creating a new profile or logging in with Facebook.</p>
-                </li>
-                <li>
-                    <h5><a href="http://www.meetup.com/Scrum-beers-Goteborg/"><span>2.</span> Join the conference</a></h5>
-                    <p>Next you need to join the Scrum Beers Meetup group, and then RSVP to the Brewing Agile 2012 meeting.</p>
-                </li>
-                <li>
-                    <h5><span>3.</span> Pay through PayPal</h5>
-                    <p>You will be taken to PayPal to pay for your ticket. Then you will receive an invoice by email. After that, you are done! Welcome!</p>
-                </li>
-            </ol>
-            <p class="signupButton"><a href="http://www.meetup.com/Scrum-beers-Goteborg/">Get your ticket</a></p>
-        </section>
-
 		<section id="signUp" ng-controller="RegistrationController">
+            <header><h2>~ Sign up ~</h2></header>
 			<form name="myForm" ng-submit="submit()">
-				Participant Name <input type="text" ng-model="r.participantName"  size="40" required> <br/>
-				Participant Email <input type="email" ng-model="r.participantEmail"  size="40" required> <br/>
-				Company <input type="text" ng-model="r.billingCompany"  size="40" required> <br/>
-				Billing Address <input type="text" ng-model="r.billingAddress"  size="40" required> <br/>
-				<input class="signupButton" type="submit" value="Register!" ng-disabled="!myForm.$valid">
+				<div class="label">Participant Name</div><div class="input"><input type="text" ng-model="r.participantName" placeholder="Participant Name" size="40" required></div>
+                <div class="label">Participant Email</div><div class="input"><input type="email" ng-model="r.participantEmail" placeholder="Participant Email" size="40" required></div>
+                <div class="label">Company</div><div class="input"><input type="text" ng-model="r.billingCompany" placeholder="Company" size="40" required></div>
+                <div class="label">Billing Address</div><div class="input"><input type="text" ng-model="r.billingAddress" placeholder="Billing Address" size="40" required></div>
+                <div class="submit"><input class="signupButton" type="submit" value="Register!" ng-disabled="!myForm.$valid"></div>
 			</form>
 		</section>
+
+        <section id="timeplan">
+            <article id="layout">
+                <header><h3>~ Layout ~</h3></header>
+
+                <div id="conference" class="first fridayAfternoon">
+                    <header>
+                        <img src="img/speaker_hall.jpg" alt="Conference" />
+                        <h4>Conference</h4>
+                    </header>
+                    <p class="date"><strong>Friday</strong> Afternoon</p>
+                    <p>This day will consist of traditional talks by people in the agile community. Including our keynote address and 3 other talks.</p>
+                </div>
+                <div id="scrumBeers" class="fridayEvening">
+                    <header>
+                        <img src="img/pub.jpg" alt="Super Scrum Beers" />
+                        <h4>&ldquo;Super&rdquo; Scrum Beers</h4>
+                    </header>
+                    <p class="date"><strong>Friday</strong> Evening</p>
+                    <p>This has been happening on a smaller scale for many years, a topic is chosen and someone assigned to keep the discussion at least somewhat on track. It's a very casual and fun way to learn, share experiences, and network!</p>
+                </div>
+                <div id="unconference" class="saturdayAfternoon">
+                    <header>
+                        <img src="img/group_room.jpg" alt="Workshops" />
+                        <h4>Workshops</h4>
+                    </header>
+                    <p class="date"><strong>Saturday</strong> Afternoon</p>
+                    <p>The day for true enthusiasts! On this day we break in to self organizing teams for a series of workshops chosen by you! Anyone can propose a workshop, and the participants will chose which ones we run.<br /><a target="blank" href="https://docs.google.com/document/d/13wV0pAXZKKvbopcV6A5xxt5TgQH7TzsfxKDb1DDKcAY/edit">Proposed schedule</a></p>
+                </div>
+            </article>
+
+            <article id="schedule">
+                <header><h3>~ Schedule ~</h3></header>
+                <div id="day1">
+                    <h4>Dec<br /><span>7<span>th</span></span></h4>
+                    <dl class="fridayAfternoon">
+                        <dt class="first">12:45</dt>
+                        <dd class="first">Registration</dd>
+                        <dt>13:00</dt>
+                        <dd>Jurgen Appelo</dd>
+                        <dt>13:55</dt>
+                        <dd>Break</dd>
+                        <dt>14:00</dt>
+                        <dd>Thomas Karlsson</dd>
+                        <dt>14:55</dt>
+                        <dd>Fika</dd>
+                        <dt>15:15</dt>
+                        <dd>Anders M&aring;rtensson</dd>
+                        <dt>15:50</dt>
+                        <dd>Break</dd>
+                        <dt>15:55</dt>
+                        <dd>Torbj&ouml;rn Gyllebring</dd>
+                        <dt>16:30</dt>
+                        <dd>Break</dd>
+                        <dt>16:35</dt>
+                        <dd>Jeffery Campbell</dd>
+                        <dt>17:10</dt>
+                        <dd class="wrapUp">Wrap up</dd>
+                    </dl>
+                    <dl class="fridayEvening">
+                        <dt class="first">18:00</dt>
+                        <dd class="first">Super Scrum Beers</dd>
+                        <dt>24:00</dt>
+                        <dd>Go home?</dd>
+                    </dl>
+                </div>
+                <div id="day2" class="saturdayAfternoon">
+                    <h4>Dec<br /><span>8<span>th</span></span></h4>
+                    <dl>
+                        <dt class="first">11:00</dt>
+                        <dd class="first">Workshops,<br /><a target="blank" href="https://docs.google.com/document/d/13wV0pAXZKKvbopcV6A5xxt5TgQH7TzsfxKDb1DDKcAY/edit">Proposed schedule</a></dd>
+                        <dt>16:00</dt>
+                        <dd>Go home!</dd>
+                    </dl>
+                </div>
+            </article>
+            <div style="clear:both"></div>
+        </section>
+
+        <section id="speaking">
+            <article id="speakers">
+                <header><h2>~ Speakers ~</h2></header>
+                <div>
+                    <img src="img/jurgen_appelo.jpg" alt="Jurgen Appelo" />
+                    <h4><span>Keynote</span> Jurgen Appelo</h4>
+                    <p>Since 2008 Jurgen writes a popular blog at <a href="http://www.noop.nl" title="Visit Jurgen's site">www.noop.nl</a>, that covers topics including Agile management, software engineering, business improvement, personal development, and complexity theory. He is the author of the book Management 3.0: Leading Agile Developers, Developing Agile Leaders, which describes the role of the manager in Agile organizations. And he wrote the little book How to Change the World, which describes his new supermodel for change management.</p>
+                </div>
+                <div class="right">
+                    <img src="img/thomas_karlsson.jpg" alt="Thomas Karlsson" />
+                    <h4>Thomas Karlsson</h4>
+                    <p>Thomas is an Agile Coach at Softhouse with 18 years experience of development and leadership in the IT-business. He has helped many small and large organizations improve their ways of working and is a strong believer in common sense and proven practices. Since 2006 his main focus has been on agile and lean ways of working and improvements mainly based on that. He has worked in roles like Development Manager, Product Manager, Agile Coach, Business Analyst, Project Manager, Scrum Master, Test Manager, Developer and Sales Person in a number of IT-companies and has a good holistic view of software development and organizational change.</p>
+                </div>
+                <div>
+                    <img src="img/torbjorn_gyllebring.jpg" alt="Torbj&ouml;rn Gyllebring" />
+                    <h4>Torbj&ouml;rn Gyllebring</h4>
+                    <p>Torbj&ouml;rn is a developer that grew frustrated with solving the wrong problems and the resulting waste of human potential. He decided to do something about it starting a journey of exploration, discovery and distinctivly non techie things. Having introduced XP & Scrum with varied success he started digging deeper into the human side of things, this led him to Lean, Systems Thinking and a constantly growing list of ideas that he's busy collecting & synthesising in an attempt to understand & improve the way work works. He's currently working as Development Manager at Cint AB where he help evolve processes, coaches teams and occasionally gets to write some code.</p>
+                </div>
+                <div class="right">
+                    <img src="img/jeffery_campbell.jpg" alt="Anders M&aring;rtensson" />
+                    <h4>Jeffery Campbell</h4>
+                    <p>Jeff is an agile coach currently working with a large scale agile implementation at Ericsson as well as several smaller implementations. His interest in agile and lean extends outside the working place as well. He uses agile methods to manage aspects of his home life, and is one of the founding members of Scrum Beers G&ouml;teborg.</p>
+                </div>
+                <div>
+                    <img src="img/anders_martensson.jpg" alt="Anders M&aring;rtensson" />
+                    <h4>Anders M&aring;rtensson</h4>
+                    <p>Anders has been working as Scrum master and team leader for agile software development projects for more than five years. His areas of expertise include technical knowledge necessary for agile projects to succeed and driving organizational change when aligning business to agile way of working. One of the founding members of Scrum Beers, he pursues agile at work and studies the effect of agile methodologies on working environments researching for his thesis at the Gothenburg University at the Department of Psychology.</p>
+                </div>
+                <div id="moreSpeakers">
+                    <h4>More speakers to be announced.</h4>
+                    <p>If you are interested in becoming a speaker, mail: <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a></p>
+                </div>
+            </article>
+            <article id="otherInfo">
+                <header><h3>~ Other Information ~</h3></header>
+                <p>Because we are a small, non-profit, organization we must enforce a strict no cancellation policy. No return on tickets to the event. Program subject to change at any time.</p>
+                <p>We plan to have a lot more offered at the event then are shown here at the moment, we will post it when the details are final!</p>
+                <p>There is a <a target="blank" href="brewing_agile_2012.pdf">nifty flyer</a>, if you would like to spread the word by paper.</p>
+            </article>
+        </section>
+
+        <section id="sponsors">
+            <header><h2>&hearts; Sponsors &hearts;</h2></header>
+            <div style="width:100%;">
+                <a target="blank" href="http://www.nethouse.se" style="width:23%;margin-top:2%;"><img src="img/logo_nethouse.png" alt="Nethouse" /></a>
+                <a target="blank" href="http://www.hencjo.se" style="width:23%;margin-top:5%;"><img src="img/logo_hencjo.png" alt="Hencjo" /></a>
+                <a target="blank" href="http://www.informator.se/utbildningar/metoder-modeller/agila-metoder?utm_source=brewingagile&utm_medium=site&utm_campaign=onsitelogo" style="width:23%;"><img src="img/logo_informator.png" alt="Informator" /></a>
+                <a target="blank" href="http://www.pragmatix.se/" style="width:23%;margin-top:6%;"><img src="img/logo_pragmatix.png" alt="Pragmatix" /></a>
+            </div>
+            <p>If you are interested in being a sponsor, mail: <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a></p>
+        </section>
+
 		<footer>
 			<p>Brewing Agile is proudly presented by <a href="http://www.scrumbeers.com/">Scrum Beers of Gothenburg</a></p>
 		</footer>

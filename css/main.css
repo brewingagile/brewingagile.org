@@ -93,9 +93,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html, body
+{
+    height: 100%;
+}
+
 body {
 	background: #111 url() repeat fixed center top;
 	background-size: auto auto;
+    color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -104,16 +111,20 @@ h1, h2, h3, h4, h5 {
 	padding: 20px 0;
 }
 
-h3 {
-	width; auto;
-	border-bottom: 1px solid #fbb040;
+h2, h3 {
+	width: auto;
+	border-bottom: 5px solid #fbb040;
+    font-size: 3em;
 	font-weight: normal;
 	margin-right: 17%;
 	margin-left: 17%;
 	padding: 1em 0 0.5em;
 	text-align: center;
-	text-shadow: 0 1px 1px #ffffff;
 	text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.3em;
 }
 
 h4 {
@@ -166,14 +177,14 @@ ol li {
 	background: -moz-linear-gradient(top, #fbb040, #dd8013);
 	background: -ms-linear-gradient(top, #fbb040, #dd8013);
 	background: -o-linear-gradient(top, #fbb040, #dd8013);
-    border: transparent none 0;
+    border: 0 none transparent;
 	box-shadow: 0 3px 5px rgba(0,0,0,0.4);
     clear: both;
     color: #fff;
     cursor: pointer;
 	display: block;
     font-size: 2em;
-	margin: 0 auto;
+	margin: 0 auto 6px;
     padding: 20px 0 20px;
 	text-align: center;
 	text-decoration: none;
@@ -190,6 +201,7 @@ ol li {
     border: 3px dashed #414042;
     box-shadow: none;
     color: #414042;
+    margin-bottom: 0;
     text-shadow: none;
 }
 
@@ -204,12 +216,12 @@ ol li {
 	background: -ms-linear-gradient(top, #111111, #222222);
 	background: -o-linear-gradient(top, #111111, #222222);
 	border-top: 1px solid #000000;
-	border-right: 1px solid #111111;
-	border-left: 1px solid #111111;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
 	border-radius: 2px 2px 0 0;
 	color: white;
 	display: block;
-	font-family: Arial, sans-sreif;
+	font-family: Helvetica, Arial, sans-sreif;
 	height: 32px;
 	margin: 20px auto 0;
 	padding: 10px 5px;
@@ -235,33 +247,37 @@ ol li {
 .contactUs a.twitter:hover { background-position: 0 -32px;}
 
 #head {
+    background: transparent url(../img/bg_dawn_1024x768.png) no-repeat fixed center bottom;
+    background-size: cover;
 	display: block;
+    min-height: 90%;
 	position: relative;
 	text-align: center;
+    width: 100%;
 }
 
 #head h1 {
 	background: transparent url(../img/brewing_agile_2x.png) no-repeat scroll center bottom;
-	background-size: contain;
+	background-size: 371px 100%;
+    bottom: 0;
 	display: block;
 	height: 204px;
+    left: 0;
 	margin: 0 auto;
 	padding: 0;
+    position: absolute;
 	text-indent: -9999px;
-	width: 90%;
-	max-width: 371px;
-
+	width: 100%;
+	/*max-width: 371px;*/
 }
 
-section h2 {
-	clear: both;
-	display: block;
-	font-size: 1.8em;
-	font-weight: normal;
-	margin: 0;
-	padding: 30px 0 40px;
-	text-align: center;
-	text-shadow: 0 1px 0 #ffffff;
+#head .slogan {
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 6em;
+    letter-spacing: -4px;
+    padding-top: 1em;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.7);
 }
 
 section {
@@ -271,40 +287,38 @@ section {
 	background: -moz-linear-gradient(top, #ffffff, #eeeeee);
 	background: -ms-linear-gradient(top, #ffffff, #eeeeee);
 	background: -o-linear-gradient(top, #ffffff, #eeeeee);
-	border-bottom: 1px solid #aaa;
 	box-shadow: 0 3px 5px rgba(0,0,0,0.4);
 	clear: both;
-	margin: 0 5% 2%;
-	padding: 0 2% 2% 2%;
+	margin: 0;
+	padding: 7% 2% 7% 2%;
 }
 
 #bread {
 	background-color: #000000;
-	background: url(../img/highlight.png) no-repeat scroll center bottom, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#111111), to(#000000));
-	background: url(../img/highlight.png) no-repeat scroll center bottom, -webkit-linear-gradient(top, #000000, #111111);
-	background: url(../img/highlight.png) no-repeat scroll center bottom, -moz-linear-gradient(top, #000000, #111111);
-	background: url(../img/highlight.png) no-repeat scroll center bottom, -ms-linear-gradient(top, #000000, #111111);
-	background: url(../img/highlight.png) no-repeat scroll center bottom, -o-linear-gradient(top, #000000, #111111);
-	background-size: 100% 100%, 100% 100%;
+	background: url(../img/bg_dirt_1024x768.png) no-repeat scroll center bottom, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#111111), to(#000000));
+	background: -webkit-linear-gradient(top, #000000, transparent), url(../img/bg_dirt_1024x768.png) no-repeat fixed center center;
+	background: -moz-linear-gradient(top, #000000, transparent), url(../img/bg_dirt_1024x768.png) no-repeat fixed center center;
+	background: url(../img/bg_dirt_1024x768.png) no-repeat scroll center bottom, -ms-linear-gradient(top, #000000, #111111);
+	background: url(../img/bg_dirt_1024x768.png) no-repeat scroll center bottom, -o-linear-gradient(top, #000000, #111111);
+    background-size: 100% 100%, cover;
 	border-bottom-color: #000000;
 	color: #fbb040;
-	font-family: Georgia, serif;
-	padding-top: 3%;
-	padding-bottom: 0;
 }
 
 #bread p {
 	display: block;
-	font-size: 0.9em;
-	width: 48%;
+	font-size: 1.2em;
+    margin: 0 auto 1em;
+	width: 66%;
 }
 
 #bread #intro {
-	font-size: 1.1em;
+	font-size: 2em;
 }
 
 #bread #quickInfo {
-	float: right;
+    font-family: Georgia, serif;
+    margin-bottom: 3em;
 	text-align: center;
 }
 
@@ -313,11 +327,13 @@ section {
 }
 
 #bread #quickInfo .date {
-	font-size: 3em;
+	font-size: 4em;
+    letter-spacing: -3px;
 }
 
 #bread #quickInfo .price {
-	font-size: 5em;
+	font-size: 6em;
+    letter-spacing: -4px;
 	line-height: 1.1em;
 }
 
@@ -330,17 +346,14 @@ section {
 	background: -o-linear-gradient(top, #222222, #333333);
 	border-top-color: #222222;
 	clear: both;
+    margin-bottom: 0;
 	width: 126px;
 }
 
 #signUp {
 	background-color: #eeeeee;
-	background: url(../img/checkers.png) repeat scroll center center, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333333), to(#ffffff));
-	background: url(../img/checkers.png) repeat scroll center center, -webkit-linear-gradient(top, #ffffff, #333333);
-	background: url(../img/checkers.png) repeat scroll center center, -moz-linear-gradient(top, #ffffff, #333333);
-	background: url(../img/checkers.png) repeat scroll center center, -ms-linear-gradient(top, #ffffff, #333333);
-	background: url(../img/checkers.png) repeat scroll center center, -o-linear-gradient(top, #ffffff, #333333);
-	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+	background: url(../img/bg_stone_1024x768.png) repeat-x fixed center center;
+    background-size: cover;
 }
 
 #signUp ol li {
@@ -375,11 +388,50 @@ section {
 	font-size: 0.8em;
 }
 
-#signUp .signupButton {
+#signUp form {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#signUp form .label,
+#signUp form .input {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+#signUp form .label {
+    clear: left;
+    float: left;
+    padding-top: 0.25em;
+    text-align: right;
+    width: 33%;
+}
+
+#signUp form .input {
+    float: right;
+    padding-right: 33%;
+    text-align: left;
+    width: 33%;
+}
+
+#signUp form .input input {
+    padding: 1%;
+    width: 98%;
+}
+
+#signUp .submit {
+    clear: both;
+    padding-top: 20px;
 }
 
 section article {
 	display: block;
+}
+
+#speaking {
+    background: transparent url(../img/bg_magma_1024x768.png) repeat-x fixed center center;
+    background-size: cover;
 }
 
 #speakers {
@@ -419,6 +471,11 @@ section article {
 
 #speakers img {
 	width: 100%;
+}
+
+#timeplan {
+    background: transparent url(../img/bg_lava_1024x768.png) repeat-x fixed center center;
+    background-size: cover;
 }
 
 #layout {
@@ -561,6 +618,8 @@ article .saturdayAfternoon {
 }
 
 #sponsors {
+    background: transparent url(../img/bg_pink_1024x768.png) repeat-x fixed center center;
+    background-size: cover;
 	text-align: center;
 }
 
@@ -726,8 +785,6 @@ footer a {
 		padding: 10px 2% 20px;
 	}
 	section {
-		max-width: 1000px;
-		margin: 0 auto 2%;
 	}
 	section article .fridayEvening { height: 10em; }
 }
