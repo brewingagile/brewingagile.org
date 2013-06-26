@@ -29,19 +29,6 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
-
-            var hasScrolled = false;
-
-            $(document).ready(function(){
-                $('#head').animate({
-                    'min-height': '0'
-                }, 45000);
-            });
-
-            $(window).scroll(function(event){
-                $('#head').stop();
-            });
-
 		</script>
 
     </head>
