@@ -118,13 +118,14 @@ h2, h3 {
 	font-weight: normal;
 	margin-right: 17%;
 	margin-left: 17%;
-	padding: 1em 0 0.5em;
+	padding: 0 0 0.5em;
 	text-align: center;
 	text-transform: uppercase;
 }
 
 h3 {
     font-size: 1.3em;
+    padding: 1em 0 0.5em;
 }
 
 h4 {
@@ -210,15 +211,8 @@ ol li {
 }
 
 .contactUs {
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#222222), to(#111111));
-	background: -webkit-linear-gradient(top, #111111, #222222);
-	background: -moz-linear-gradient(top, #111111, #222222);
-	background: -ms-linear-gradient(top, #111111, #222222);
-	background: -o-linear-gradient(top, #111111, #222222);
-	border-top: 1px solid #000000;
-	border-right: 1px solid transparent;
-	border-left: 1px solid transparent;
-	border-radius: 2px 2px 0 0;
+    background: transparent;
+    clear: both;
 	color: white;
 	display: block;
 	font-family: Helvetica, Arial, sans-sreif;
@@ -226,25 +220,26 @@ ol li {
 	margin: 20px auto 0;
 	padding: 10px 5px;
 	text-align: center;
+    width: 256px;
 }
 
 .contactUs a {
-	background: transparent url(../img/social_media2.png) no-repeat scroll left top;
-	background-size: 128px 64px;
+	background: transparent url(../img/icon_social_pixel.png) no-repeat scroll left top;
+	background-size: auto;
 	display: block;
 	float: left;
-	height: 32px;
-	margin: 0 5px;
+	height: 64px;
+	margin: 0;
 	text-indent: -9999px;
-	width: 32px;
+	width: 64px;
 }
 
-.contactUs a.facebook { background-position: -32px 0;}
-.contactUs a.facebook:hover { background-position: -32px -32px;}
-.contactUs a.linkedin { background-position: -96px 0;}
-.contactUs a.linkedin:hover { background-position: -96px -32px;}
+.contactUs a.facebook { background-position: -64px 0;}
+.contactUs a.facebook:hover { background-position: -64px -64px;}
+.contactUs a.linkedin { background-position: -192px 0; margin: 0 16px; }
+.contactUs a.linkedin:hover { background-position: -192px -64px;}
 .contactUs a.twitter { background-position: 0 0;}
-.contactUs a.twitter:hover { background-position: 0 -32px;}
+.contactUs a.twitter:hover { background-position: 0 -64px;}
 
 #head {
     background: transparent url(../img/bg_dawn_1024x768.png) no-repeat fixed center bottom;
@@ -269,16 +264,15 @@ ol li {
 	text-indent: -9999px;
 	width: 100%;
     z-index: 1;
-	/*max-width: 371px;*/
 }
 
 #head .slogan {
     color: #fff;
     font-family: Georgia, serif;
-    font-size: 6em;
-    letter-spacing: -4px;
+    font-size: 4.5em;
+    letter-spacing: -2px;
     padding-top: 1em;
-    text-shadow: 0 5px 10px rgba(0,0,0,0.7);
+    text-shadow: 0 2px 0 #999, 0 5px 10px rgba(0,0,0,0.7);
     left: 0;
     position: fixed;
     text-align: center;
@@ -288,16 +282,10 @@ ol li {
 }
 
 section {
-	background-color: #ffffff;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eeeeee), to(#ffffff));
-	background: -webkit-linear-gradient(top, #ffffff, #eeeeee);
-	background: -moz-linear-gradient(top, #ffffff, #eeeeee);
-	background: -ms-linear-gradient(top, #ffffff, #eeeeee);
-	background: -o-linear-gradient(top, #ffffff, #eeeeee);
-	box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+	background-color: #414042;
 	clear: both;
 	margin: 0;
-	padding: 7% 2% 7% 2%;
+	padding: 5% 2% 7% 2%;
     position: relative;
     z-index: 1;
 }
@@ -348,20 +336,11 @@ section p {
 #bread #quickInfo .price {
 	font-size: 6em;
     letter-spacing: -4px;
-	line-height: 1.1em;
+	line-height: 0.5em;
 }
 
 #bread .contactUs {
-	background-color: #444444;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333333), to(#222222));
-	background: -webkit-linear-gradient(top, #222222, #333333);
-	background: -moz-linear-gradient(top, #222222, #333333);
-	background: -ms-linear-gradient(top, #222222, #333333);
-	background: -o-linear-gradient(top, #222222, #333333);
-	border-top-color: #222222;
-	clear: both;
-    margin-bottom: 0;
-	width: 126px;
+    width: 256px;
 }
 
 #signUp {
@@ -660,14 +639,6 @@ article .saturdayAfternoon {
 
 footer {
 	background-color: #000000;
-	background: url(../img/highlight_up.png) no-repeat scroll center top, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#111111), to(#000000));
-	background: url(../img/highlight_up.png) no-repeat scroll center top, -webkit-linear-gradient(top, #000000, #111111);
-	background: url(../img/highlight_up.png) no-repeat scroll center top, -moz-linear-gradient(top, #000000, #111111);
-	background: url(../img/highlight_up.png) no-repeat scroll center top, -ms-linear-gradient(top, #000000, #111111);
-	background: url(../img/highlight_up.png) no-repeat scroll center top, -o-linear-gradient(top, #000000, #111111);
-	background-size: 100% 100%, 100% 100%;
-	border-bottom-color: #000000;
-	box-shadow: 0 3px 5px rgba(0,0,0,0.4);
 	clear: both;
 	color: #fbb040;
 	font-family: Georgia, serif;
@@ -791,27 +762,37 @@ footer a {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 1100px){
-	#head h2,
-	footer {
-		max-width: 1000px;
-		margin: 0 auto;
-		padding: 10px 2% 20px;
-	}
-	section {
-	}
-	section article .fridayEvening { height: 10em; }
-}
-
 @media only screen and (min-width: 875px){
+    #head .slogan {
+        font-size: 5em;
+        letter-spacing: -2px;
+    }
 	article .fridayAfternoon { height: 22em; }
 	article .fridayEvening { height: 13em; }
 }
 
+@media only screen and (min-width: 1100px){
+    #head .slogan {
+        font-size: 6em;
+        letter-spacing: -3px;
+    }
+    footer {
+        margin: 0 auto;
+        padding: 10px 2% 20px;
+    }
+    section article .fridayEvening { height: 10em; }
+}
+
 @media only screen and (max-width: 650px) {
-	#head h2 {
-		padding: 10px 2% 20px;
-	}
+
+    #head .slogan {
+        font-size: 4em;
+        letter-spacing: -2px;
+    }
+    #bread p,
+    section p {
+        width: 80%;
+    }
 	article .fridayAfternoon,
 	article .fridayEvening,
 	article .saturdayAfternoon { height: auto; border-top: 0 none transparent; }
@@ -850,14 +831,22 @@ footer a {
 	}
 }
 
-@media only screen and (max-width: 450px) {
-	h3 {
+@media only screen and (max-width: 500px) {
+    #head .slogan {
+        font-size: 3em;
+        letter-spacing: -1px;
+    }
+	h2, h3 {
 		margin-left: 0;
 		margin-right: 0;
 	}
-	#bread p {
+    h2 {
+        font-size: 2em;
+    }
+	#bread p,
+    section p {
 		float: none;
-		width: 100%;
+		width: 90%;
 	}
 	#bread #quickInfo {
 		padding-bottom: 20px;
@@ -868,8 +857,12 @@ footer a {
 	#bread #quickInfo .price {
 		font-size: 3em;
 	}
+    #bread #intro {
+        font-size: 1.6em;
+        line-height: 1.2em;
+    }
 	#signUp .signupButton a {
-    	width: 100%;
+    	width: 90%;
 	}
 	#signUp ol li {
 		float: none;
@@ -891,8 +884,14 @@ footer a {
 	#layout div p {
 		clear: both;
 		float: none;
-		width: 100%;		
 	}
+}
+
+@media screen and (max-width: 500px) and (orientation:landscape) {
+    #head .slogan {
+        font-size: 2em;
+        letter-spacing: -1px;
+    }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
