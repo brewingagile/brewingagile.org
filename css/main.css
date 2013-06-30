@@ -112,27 +112,34 @@ h1, h2, h3, h4, h5 {
 }
 
 h2, h3 {
-	width: auto;
+    background-size: 514px auto;
 	border-bottom: 5px solid #fbb040;
+    color: #414042;
     font-size: 3em;
 	font-weight: normal;
-	margin-right: 17%;
-	margin-left: 17%;
+    letter-spacing: -2px;
+    margin-right: 2%;
+    margin-left: 2%;
 	padding: 0 0 0.5em;
 	text-align: center;
+    text-shadow: 0 1px 0 #000;
 	text-transform: uppercase;
+    width: auto;
 }
 
 h3 {
+    color: #ffffff;
     font-size: 1.3em;
+    letter-spacing: -1px;
     padding: 1em 0 0.5em;
 }
 
 h4 {
-	background-color: #000000;
+	background-color: rgba(0,0,0,0.4);
 	color: #ffffff;
 	padding: 2px 0;
 	text-align: center;
+    text-shadow: 0 1px 0 #aaa, 0 0 10px #000;
 }
 
 h4 span {
@@ -150,11 +157,11 @@ p {
 }
 
 p a {
-	color: #000000;
+	color: #ffffff;
 }
 
 a {
-	color: #000000;
+	color: #ffffff;
 }
  
 ol,
@@ -163,6 +170,14 @@ ol li {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+}
+
+section p,
+#bread p,
+#bread #info,
+#signUp form,
+#speaking article {
+    width: 90%;
 }
 
 .bigHeader {
@@ -292,7 +307,6 @@ section {
 
 section p {
     margin: 0 auto 1em;
-    width: 60%;
 }
 
 #bread {
@@ -308,20 +322,35 @@ section p {
 }
 
 #bread p {
-	display: block;
-	font-size: 1.2em;
-    margin: 0 auto 1em;
-	width: 60%;
+     display: block;
+     font-size: 1.2em;
+     margin: 0 auto 1em;
+     text-align: justify;
+}
+
+#bread #info {
+    background-color: #3e2c1b;
+    margin-right: auto;
+    margin-bottom: 3em;
+    margin-left: auto;
+    padding: 0;
+}
+
+#bread #info p {
+    padding: 2%;
+    width: 96%;
 }
 
 #bread #intro {
 	font-size: 2em;
+    text-align: center;
 }
 
 #bread #quickInfo {
     font-family: Georgia, serif;
     margin-bottom: 3em;
 	text-align: center;
+
 }
 
 #bread #quickInfo a {
@@ -331,12 +360,14 @@ section p {
 #bread #quickInfo .date {
 	font-size: 4em;
     letter-spacing: -3px;
+    text-shadow: 0 2px 0 #bd8504;
 }
 
 #bread #quickInfo .price {
 	font-size: 6em;
     letter-spacing: -4px;
 	line-height: 0.5em;
+    text-shadow: 0 2px 0 #bd8504;
 }
 
 #bread .contactUs {
@@ -384,7 +415,6 @@ section p {
 #signUp form {
     display: block;
     margin: 0 auto;
-    width: 100%;
 }
 
 #signUp form .label,
@@ -396,21 +426,29 @@ section p {
 #signUp form .label {
     clear: left;
     float: left;
-    padding-top: 0.25em;
+    min-width: 9em;
+    padding-top: 1%;
     text-align: right;
     width: 33%;
 }
 
+#signUp form .label label {
+    background-color: #c0b0a7;
+    color: #414042;
+    padding: 5%;
+    text-align: right;
+}
+
 #signUp form .input {
-    float: right;
+    float: left;
     padding-right: 33%;
     text-align: left;
     width: 33%;
 }
 
 #signUp form .input input {
-    padding: 1%;
-    width: 98%;
+    padding: 3%;
+    width: 94%;
 }
 
 #signUp .submit {
@@ -427,43 +465,114 @@ section article {
     background-size: cover;
 }
 
-#speakers {
-	clear: left;
+#speaking article {
+    background-color: #f7b215;
+    clear: both;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
 }
 
-#speakers div {
-	clear: left;
-	float: left;
-	width: 48%;
+#speaking article.speaker > header {
+    background-color: #000000;
+    display: block;
+    left: 0;
+    padding: 2%;
+    position: absolute;
+    top: 0;
+    width: 24%;
 }
 
-#speakers div.right {
-	clear: none;
-	padding-left: 4%;
+#speaking article > header div {
+    background: transparent url() no-repeat scroll center center;
+    background-size: contain;
+    height: 230px;
+    margin: 0 auto;
+    width: 100%;
 }
 
-#speakers div p {
-	text-align: justify;
+#speaking .gojko > header div {
+    background-image: url(../img/gojko_adzic.jpg);
 }
 
-#speakers #moreSpeakers {
-	margin: 2% 0;
-	width: 100%;
+#speaking article > header h3 {
+    border: 0;
+    color: #ffffff;
+    display: block;
+    margin: 0em auto 0;
+    padding: 0;
+    text-shadow: none;
+    width: 100%;
 }
 
-#speakers #moreSpeakers h4 {
-	background-color: transparent;
-	color: #666;
-	margin-bottom: 5px;
+#speaking article > header h3 span {
+    color: #ffffff;
+    font-size: 0.8em;
+    font-style: italic;
 }
 
-#speakers #moreSpeakers p {
-	font-size: 0.8em;
-	text-align: center;
+#speaking article section {
+    background-color: transparent;
 }
 
-#speakers img {
-	width: 100%;
+#speaking .talk,
+#speaking .about {
+    clear: none;
+    text-align: justify;
+    width: 30%
+}
+
+#speaking .talk {
+    float: right;
+    margin-right: 2%;
+}
+
+#speaking .about {
+    float: right;
+}
+
+#speaking .talk header h4 {
+    background-color: transparent;
+    color: #000000;
+    font-size: 3em;
+    font-weight: normal;
+    letter-spacing: -2px;
+    text-align: justify;
+    text-shadow: none;
+}
+
+#speaking h4 {
+}
+
+#speaking p {
+    font-size: 1.2em;
+    width: 100%;
+}
+
+#speaking p.presented {
+    font-style: italic;;
+}
+
+#speaking #moreSpeakers {
+    background-color: transparent;
+    clear: both;
+    float: none;
+    margin-top: 3em;
+}
+
+#speaking #moreSpeakers header {
+    width: 100%;
+}
+
+#speaking #moreSpeakers h4 {
+    font-size: 3em;
+    font-weight: normal;
+    letter-spacing: -1px;
+    width: 100%;
+}
+
+#speaking #moreSpeakers p {
+    text-align: center;
 }
 
 #timeplan {
@@ -473,6 +582,7 @@ section article {
 
 #layout {
 	clear: both;
+    color: #fbb040;
 	float: right;
 	padding-left: 3%;
 	width: 58%
@@ -488,18 +598,15 @@ section article {
 }
 
 #layout div header {
+    background: transparent url(../img/workshop.jpg) no-repeat scroll center center;
+    background-size: cover;
 	float: left;
 	width: 38%;
 }
 
-#layout div header img {
-	width: 100%;
-}
-
-#layout div p {
-	display: block;
-	float: right;
-	width: 58%;
+#layout div header h4 {
+    margin-bottom: 0;
+    margin-top: 105px;
 }
 
 #layout #scrumBeers h4 {
@@ -508,13 +615,26 @@ section article {
 #layout #unconference h4 {
 }
 
+#layout div p {
+    background-color: #232427;
+    display: block;
+    float: right;
+    padding-bottom: 1em;
+    padding-left: 4%;
+
+    width: 58%;
+}
+
 #layout .date {
 	font-family: 'Palatino Linotype','Book Antiqua',Palatino,serif;
 	font-size: 1.1em;
 	font-style: italic;
+    margin-bottom: 0;
+    padding-top: 1em;
 }
 
 #schedule {
+    color: #fbb040;
 	float: left;
 	width: 39%;
 }
@@ -527,23 +647,23 @@ section article {
 
 #schedule h4 {
 	background-color: transparent;
-	border: 3px double #cccccc;
 	clear: none;
-	color: #000;
+    color: #fbb040;
 	float: left;
+    font-family: Helvetica, Arial, sans-serif;
 	padding-bottom: 10px;
-	text-shadow: 0 1px 0 #ffffff;
+    text-shadow: 0 2px 0 #BD8504;
 	width: 22%;
 }
 
 #schedule h4 span {
-	color: #000;
-	font-size: 3em;
-	line-height: 0.75em;
+    color: #fbb040;
+	font-size: 5em;
+	line-height: 1em;
 }
 
 #schedule h4 span span {
-	font-size: 0.5em;
+	font-size: 0.3em;
 }
 
 #schedule dl {
@@ -557,10 +677,14 @@ section article {
 #schedule dl dt,
 #schedule dl dd {
 	padding: 0.25em 0;
+    background-color: #362e30;
+}
+
+#schedule dl .even {
+    background-color: #232427;
 }
 
 #schedule dl dt {
-	border-top: 1px solid #ccc;
 	clear: left;
 	display: block;
 	float: left;
@@ -572,7 +696,6 @@ section article {
 }
 
 #schedule dl dd {
-	border-top: 1px solid #ccc;
 	display: block;
 	float: left;
 	margin-left: 0;
@@ -588,30 +711,39 @@ section article {
 	border-top: 0 none transparent;
 }
 
+article .fridayMorning {
+    height: 10em;
+}
+
 article .fridayAfternoon {
+    border-top: 3px dashed #414042;
 	height: 27em;
+    padding-top: 1em;
 }
 
 article .fridayEvening {
-	border-top: 1px dashed #ccc;
+    border-top: 3px dashed #414042;
 	height: 18em;
 	padding-top: 1em;
 }
 
 article .saturdayAfternoon {
-	border-top: 1px dashed #ccc;
+    border-top: 3px dashed #414042;
 	height: auto;
 	padding-top: 1em;
 }
 
 #otherInfo {
-	clear: both;
-	float: none;
-	width: 100%;
+    background: transparent url(../img/bg_core_1024x768.png) repeat-x fixed center center;
+    background-size: cover;
+}
+
+#otherInfo h3 {
+    color: #414042;
 }
 
 #sponsors {
-    background: transparent url(../img/bg_pink_1024x768.png) repeat-x fixed center center;
+    background: #ffffff url() repeat-x fixed center center;
     background-size: cover;
 	text-align: center;
 }
@@ -635,6 +767,10 @@ article .saturdayAfternoon {
 	clear: both;
 	font-size: 0.8em;
 	padding-top: 2em;
+}
+
+#sponsors p a {
+    color: #000000;
 }
 
 footer {
@@ -763,15 +899,37 @@ footer a {
    ========================================================================== */
 
 @media only screen and (min-width: 875px){
+    h2, h3 {
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    section p,
+    #bread p,
+    #bread #info,
+    #signUp form,
+    #speaking article {
+        width: 80%;
+    }
     #head .slogan {
         font-size: 5em;
         letter-spacing: -2px;
     }
-	article .fridayAfternoon { height: 22em; }
+	article .fridayAfternoon { height: 26em; }
 	article .fridayEvening { height: 13em; }
 }
 
 @media only screen and (min-width: 1100px){
+    h2, h3 {
+        margin-right: 17%;
+        margin-left: 17%;
+    }
+    section p,
+    #bread p,
+    #bread #info,
+    #signUp form,
+    #speaking article {
+        width: 60%;
+    }
     #head .slogan {
         font-size: 6em;
         letter-spacing: -3px;
@@ -780,7 +938,7 @@ footer a {
         margin: 0 auto;
         padding: 10px 2% 20px;
     }
-    section article .fridayEvening { height: 10em; }
+    section article .fridayEvening { height: 12em; }
 }
 
 @media only screen and (max-width: 650px) {
