@@ -60,6 +60,8 @@
                 <div class="label"><label>Participant Email</label></div><div class="input"><input type="email" ng-model="r.participantEmail" size="40" required></div>
                 <div class="label"><label>Company</label></div><div class="input"><input type="text" ng-model="r.billingCompany" size="40" required></div>
                 <div class="label"><label>Billing Address</label></div><div class="input"><input type="text" ng-model="r.billingAddress" size="40" required></div>
+                <label class="checkbox"><input type="checkbox" ng-model="r.workshop"> I would like a spot in the Workshop for 900;- extra. </label><br/>
+                <label class="checkbox"><input type="checkbox" ng-model="r.dietaryRequirements"> I have dietary requirements, please contact me.</label>
                 <div class="submit"><input class="signupButton" type="submit" value="Register!" ng-disabled="!myForm.$valid"></div>
 			</form>
 		</section>
