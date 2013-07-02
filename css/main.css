@@ -260,7 +260,7 @@ section p,
     background: transparent url(../img/bg_dawn_1024x768.png) no-repeat fixed center bottom;
     background-size: cover;
 	display: block;
-    min-height: 90%;
+    min-height: 95%;
 	position: relative;
 	text-align: center;
     width: 100%;
@@ -319,6 +319,7 @@ section p {
     background-size: 100% 100%, cover;
 	border-bottom-color: #000000;
 	color: #fbb040;
+    padding-top: 1%;
 }
 
 #bread p {
@@ -329,16 +330,31 @@ section p {
 }
 
 #bread #info {
-    background-color: #3e2c1b;
+    background: #3e2c1b url(../img/bg_shine_640x480.png) no-repeat fixed center center;
+    background-size: cover;
     margin-right: auto;
     margin-bottom: 3em;
     margin-left: auto;
     padding: 0;
+    -moz-transform: skew(0,4deg);
+    -webkit-transform: skew(0,4deg);
+    -o-transform: skew(0,4deg);
+    -ms-transform: skew(0,4deg);
+    transform: skew(0,4deg);
 }
 
 #bread #info p {
-    padding: 2%;
+    padding: 0 2% 2%;
+    -moz-transform: skew(0,-4deg);
+    -webkit-transform: skew(0,-4deg);
+    -o-transform: skew(0,-4deg);
+    -ms-transform: skew(0,-4deg);
+    transform: skew(0,-4deg);
     width: 96%;
+}
+
+#bread #info p:first-child {
+    padding-top: 2%;
 }
 
 #bread #intro {
@@ -428,15 +444,30 @@ section p {
     float: left;
     min-width: 9em;
     padding-top: 1%;
+    position: relative;
     text-align: right;
     width: 33%;
 }
 
 #signUp form .label label {
-    background-color: #c0b0a7;
+    background: #c0b0a7 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
+    background-size: cover;
     color: #414042;
-    padding: 5%;
+    display: block;
+    font-style: italic;
+    padding: 3% 5% 5%;
+    position: absolute;
+    right: 0;
     text-align: right;
+    -moz-transform: skew(0,4deg);
+    -webkit-transform: skew(0,4deg);
+    -o-transform: skew(0,4deg);
+    -ms-transform: skew(0,4deg);
+    transform: skew(0,4deg);
+    top: -5px;
+    width: 8em;
+    height: 1em;
+
 }
 
 #signUp form .input {
@@ -449,6 +480,43 @@ section p {
 #signUp form .input input {
     padding: 3%;
     width: 94%;
+}
+
+#signUp form .radio {
+    background: transparent;
+    border: 3px dashed #414042;
+    color: #414042;
+    float: left;
+    margin: 10px 3% 0;
+    padding: 2%;
+    text-align: center;
+    width: 29%;
+}
+
+#signUp form .radio.checked {
+    border-color: #FBB040;
+    border-style: solid;
+}
+
+#signUp form .radio.first {
+    margin-left: 13%
+}
+
+#signUp form .radio.last {
+    margin-right: 13%
+}
+
+#signUp form .radio label {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+#signUp form .radio label span {
+    font-size: 0.8em;
+}
+
+#signUp form .radio input {
+    margin-right: 30px;
 }
 
 #signUp .submit {
@@ -466,11 +534,20 @@ section article {
 }
 
 #speaking article {
-    background-color: #f7b215;
     clear: both;
     margin-right: auto;
     margin-left: auto;
     position: relative;
+}
+
+#speaking .speaker {
+    background: #f7b215 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
+    background-size: cover;
+    -moz-transform: skew(0,4deg);
+    -webkit-transform: skew(0,4deg);
+    -o-transform: skew(0,4deg);
+    -ms-transform: skew(0,4deg);
+    transform: skew(0,4deg);
 }
 
 #speaking article.speaker > header {
@@ -489,6 +566,11 @@ section article {
     height: 230px;
     margin: 0 auto;
     width: 100%;
+    -moz-transform: skew(0,-4deg);
+    -webkit-transform: skew(0,-4deg);
+    -o-transform: skew(0,-4deg);
+    -ms-transform: skew(0,-4deg);
+    transform: skew(0,-4deg);
 }
 
 #speaking .gojko > header div {
@@ -502,6 +584,11 @@ section article {
     margin: 0em auto 0;
     padding: 0;
     text-shadow: none;
+    -moz-transform: skew(0,-4deg);
+    -webkit-transform: skew(0,-4deg);
+    -o-transform: skew(0,-4deg);
+    -ms-transform: skew(0,-4deg);
+    transform: skew(0,-4deg);
     width: 100%;
 }
 
@@ -518,6 +605,7 @@ section article {
 #speaking .talk,
 #speaking .about {
     clear: none;
+    /*display: none;*/
     text-align: justify;
     width: 30%
 }
@@ -542,10 +630,20 @@ section article {
 }
 
 #speaking h4 {
+    -moz-transform: skew(0,-4deg);
+    -webkit-transform: skew(0,-4deg);
+    -o-transform: skew(0,-4deg);
+    -ms-transform: skew(0,-4deg);
+    transform: skew(0,-4deg);
 }
 
 #speaking p {
     font-size: 1.2em;
+    -moz-transform: skew(0,-4deg);
+    -webkit-transform: skew(0,-4deg);
+    -o-transform: skew(0,-4deg);
+    -ms-transform: skew(0,-4deg);
+    transform: skew(0,-4deg);
     width: 100%;
 }
 
@@ -584,8 +682,11 @@ section article {
 	clear: both;
     color: #fbb040;
 	float: right;
-	padding-left: 3%;
-	width: 58%
+	width: 60%
+}
+
+#layout > header {
+    margin-bottom: 4%;
 }
 
 #layout div {
@@ -616,12 +717,17 @@ section article {
 }
 
 #layout div p {
-    background-color: #232427;
+    background: #232427 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
+    background-size: cover;
     display: block;
     float: right;
     padding-bottom: 1em;
     padding-left: 4%;
-
+    -moz-transform: skew(0,4deg);
+    -webkit-transform: skew(0,4deg);
+    -o-transform: skew(0,4deg);
+    -ms-transform: skew(0,4deg);
+    transform: skew(0,4deg);
     width: 58%;
 }
 
@@ -629,14 +735,15 @@ section article {
 	font-family: 'Palatino Linotype','Book Antiqua',Palatino,serif;
 	font-size: 1.1em;
 	font-style: italic;
+    margin-top: 20px;
     margin-bottom: 0;
     padding-top: 1em;
 }
 
 #schedule {
     color: #fbb040;
-	float: left;
-	width: 39%;
+	float: right;
+	width: 40%;
 }
 
 #schedule div {
@@ -671,13 +778,18 @@ section article {
 	float: right;
 	margin: 0;
 	padding-left: 5%;
+    -moz-transform: skew(0,4deg);
+    -webkit-transform: skew(0,4deg);
+    -o-transform: skew(0,4deg);
+    -ms-transform: skew(0,4deg);
+    transform: skew(0,4deg);
 	width: 70%;
 }
 
 #schedule dl dt,
 #schedule dl dd {
-	padding: 0.25em 0;
     background-color: #362e30;
+    padding: 0.25em 0;
 }
 
 #schedule dl .even {
@@ -700,6 +812,7 @@ section article {
 	float: left;
 	margin-left: 0;
 	padding-left: 3%;
+    padding-right: 1%;
 	width: 65%;
 }
 
@@ -716,19 +829,16 @@ article .fridayMorning {
 }
 
 article .fridayAfternoon {
-    border-top: 3px dashed #414042;
 	height: 27em;
     padding-top: 1em;
 }
 
 article .fridayEvening {
-    border-top: 3px dashed #414042;
 	height: 18em;
 	padding-top: 1em;
 }
 
 article .saturdayAfternoon {
-    border-top: 3px dashed #414042;
 	height: auto;
 	padding-top: 1em;
 }
@@ -914,6 +1024,13 @@ footer a {
         font-size: 5em;
         letter-spacing: -2px;
     }
+    #bread #info {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        padding: 2%;
+        width: 76%;
+    }
 	article .fridayAfternoon { height: 26em; }
 	article .fridayEvening { height: 13em; }
 }
@@ -933,6 +1050,13 @@ footer a {
     #head .slogan {
         font-size: 6em;
         letter-spacing: -3px;
+    }
+    #bread #info {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+        padding: 2%;
+        width: 56%;
     }
     footer {
         margin: 0 auto;

@@ -60,6 +60,11 @@
                 <div class="label"><label>Participant Email</label></div><div class="input"><input type="email" ng-model="r.participantEmail" size="40" required></div>
                 <div class="label"><label>Company</label></div><div class="input"><input type="text" ng-model="r.billingCompany" size="40" required></div>
                 <div class="label"><label>Billing Address</label></div><div class="input"><input type="text" ng-model="r.billingAddress" size="40" required></div>
+
+                <div class="radio first checked"><label><input name="ticket" checked="checked" type="radio" ng-model="r.billingAddress" size="40" required>&euro;115 - Conference<br /><span>You go to the conference in Friday afternoon and the unconference on Saturday.</span></label></div>
+                <div class="radio last"><label><input name="ticket" type="radio" ng-model="r.billingAddress" size="40" required>&euro;175 - Workshop + Conference<br /><span>As above, and the workshop in Friday morning with Gojko.</span></label></div>
+
+
                 <div class="submit"><input class="signupButton" type="submit" value="Register!" ng-disabled="!myForm.$valid"></div>
 			</form>
 		</section>
@@ -153,6 +158,9 @@
 
         <section id="speaking">
             <header><h2>~ Speakers ~</h2></header>
+
+            <div class="clearfix">
+
             <article class="speaker gojko clearfix">
                 <header><div></div><h3><span>Keynote</span><br />Gojko Adzic</h3></header>
                 <section class="talk">
@@ -168,6 +176,10 @@
                     <p>Over the last thirteen years, he has worked as a developer, architect, technical director and consultant on projects delivering financial and energy trading platforms, mobile positioning and e-commerce applications, online gaming and complex configuration management systems.</p>
                 </section>
             </article>
+
+
+            </div>
+
             <article id="moreSpeakers">
                 <header><h4>More speakers to be announced.</h4></header>
                 <p>If you are interested in becoming a speaker, mail: <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a></p>
