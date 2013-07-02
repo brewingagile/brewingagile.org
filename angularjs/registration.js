@@ -3,7 +3,7 @@ function RegistrationController($scope, $resource, $window) {
 	// var RegistrationResource = $resource("http://localhost\\:9080/ba-backoffice/api/registration/1/", {});
 
 	$scope.r = {
-		participantName: "test",
+		participantName: "",
 		participantEmail: "",
 		billingCompany: "",
 		billingAddress: "",
