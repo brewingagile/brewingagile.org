@@ -1,11 +1,14 @@
 function RegistrationController($scope, $resource, $window) {
 	var RegistrationResource = $resource("http://backoffice.brewingagile.org/api/registration/1/", {});
+	// var RegistrationResource = $resource("http://localhost\\:9080/ba-backoffice/api/registration/1/", {});
 
 	$scope.r = {
 		participantName: "test",
 		participantEmail: "",
 		billingCompany: "",
-		billingAddress: ""
+		billingAddress: "",
+		dietaryRequirements: false,
+		workshop: false
 	};
 
 	$scope.submit = function() {
