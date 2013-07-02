@@ -11,9 +11,10 @@ function RegistrationController($scope, $resource, $window) {
 		ticket: ""
 	};
 
-	$scope.highlightConference = function() {
-		if ($scope.ticket === 'conference') return "checked";
-		return ""
+	$scope.submit = function() {
+		RegistrationResource.save($scope.r, function(result) {
+			$window.alert("We love popups. And ponies.")
+		});
 	};
 }
 
