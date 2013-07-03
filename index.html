@@ -61,6 +61,8 @@
                 <div class="label"><label>Company</label></div><div class="input"><input type="text" ng-model="r.billingCompany" size="40" required></div>
                 <div class="label"><label>Billing Address</label></div><div class="input"><input type="text" ng-model="r.billingAddress" size="40" required></div>
 
+                <div class="label"><label>Allergies?</label></div><div class="input"><label><input type="checkbox" ng-model="r.dietaryRequirements"> Yes, Please contact me about it.</label></div>
+
                 <div class="radio first" ng-class="{'checked': (r.ticket == 'conference')}"><label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required>1000 SEK - Conference<br /><span>You go to the conference in Friday afternoon and the unconference on Saturday.</span></label></div>
                 <div class="radio last" ng-class="{'checked': (r.ticket == 'conference+workshop')}"><label><input name="ticket" type="radio" ng-model="r.ticket" value="conference+workshop" required>1800 SEK - Workshop + Conference<br /><span>As above, and the workshop in Friday morning with Gojko.</span></label></div>
 
