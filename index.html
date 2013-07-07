@@ -44,10 +44,12 @@
 		</header>
 		<section id="bread">
             <p id="quickInfo"><span class="date">8 - 9 Nov:</span> <span class="price">1000 SEK</span><br />at <a target="blank" href="http://www.skansenkronan.se/" title="Check out their site">Skansen Kronan</a>, <a target="blank" href="http://goo.gl/maps/G9maO" title="Look at the map">Gothenburg</a></p>
-            <p id="intro">Welcome to the second installment of Brewing Agile!</p>
+            <h4 id="intro">Welcome to the second installment of Brewing Agile!</h4>
             <section id="info">
-                <p>The theme for this years conference will be &ldquo;Building Great Things where we work to help you make sure that the products and services you deliver make a real difference in the lives of those who use them.</p>
+                <p>The theme for this year's conference will be &ldquo;Building Great Things&rdquo; where we work to help you make sure that the products and services you deliver make a real difference in the lives of those who use them.</p>
                 <p>We have booked Gojko Adzic as our keynote speaker, and are currently taking submissions from local speakers for our other open spots.</p>
+            </section>
+            <section id="additional">
                 <p>In addition to our usual conference we are offering an optional add on in the form of a intimate and interactive workshop about <a href="http://impactmapping.org/book">&ldquo;Impact Mapping&rdquo;</a> with our keynote speaker. Space in this workshop is limited to 15 participants and will be on a first come first serve basis, so, Sign Up Now to secure your spot for this amazing workshop!</p>
             </section>
 			<p class="contactUs"><a class="facebook" href="https://www.facebook.com/BrewingAgile" title="Facebook">Facebook</a> <a class="linkedin" href="http://www.linkedin.com/groups?gid=4653911" title="LinkedIn">LinkedIn</a> <a class="twitter" href="https://twitter.com/BrewingAgile" title="Twitter">Twitter</a></p>
@@ -56,14 +58,14 @@
 		<section id="signUp" ng-controller="RegistrationController">
             <header><h2>~ Sign up ~</h2></header>
 			<form name="myForm" ng-submit="submit()">
+                <p>For bulk buys, please contact us at <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a></p>
 				<div class="label"><label>Participant Name</label></div><div class="input"><input type="text" ng-model="r.participantName" size="40" required></div>
                 <div class="label"><label>Participant Email</label></div><div class="input"><input type="email" ng-model="r.participantEmail" size="40" required></div>
                 <div class="label"><label>Company</label></div><div class="input"><input type="text" ng-model="r.billingCompany" size="40" required></div>
                 <div class="label"><label>Billing Address</label></div><div class="input"><input type="text" ng-model="r.billingAddress" size="40" required></div>
 
-                <div class="radio first checked"><label><input name="ticket" checked="checked" type="radio" ng-model="r.workshop"" required>1000 SEK - Conference<br /><span>You go to the conference in Friday afternoon and the unconference on Saturday.</span></label></div>
-                <div class="radio last"><label><input name="ticket" type="radio" ng-model="r.dietaryRequirements"" required>1800 SEK - Workshop + Conference<br /><span>As above, and the workshop in Friday morning with Gojko.</span></label></div>
-
+                <div class="label"><label>Package</label></div><div class="radio first checked"><label><input name="ticket" checked="checked" type="radio" ng-model="r.workshop" required>1000 SEK - Conference<br /><span>You go to the conference in Friday afternoon and the unconference on Saturday.</span></label></div>
+                <div class="radio last"><label><input name="ticket" type="radio" ng-model="r.dietaryRequirements" required>1800 SEK - Workshop + Conference<br /><span>Standard conference plus Impact Mapping workshop with Gojko.</span></label></div>
 
                 <div class="submit"><input class="signupButton" type="submit" value="Register!" ng-disabled="!myForm.$valid"></div>
 			</form>
@@ -105,7 +107,7 @@
             <article id="schedule">
                 <header><h3>~ Schedule ~</h3></header>
                 <div id="day1">
-                    <h4>Now<br /><span>8<span>th</span></span></h4>
+                    <h4>Nov<br /><span>8<span>th</span></span></h4>
                     <dl class="fridayMorning">
                         <dt class="first">8:30</dt>
                         <dd class="first">Workshop Registration</dd>
@@ -144,7 +146,7 @@
                     </dl>
                 </div>
                 <div id="day2" class="saturdayAfternoon">
-                    <h4>Now<br /><span>9<span>th</span></span></h4>
+                    <h4>Nov<br /><span>9<span>th</span></span></h4>
                     <dl>
                         <dt class="first even">11:00</dt>
                         <dd class="first even">Workshops,<br /><a target="blank" href="https://docs.google.com/document/d/13wV0pAXZKKvbopcV6A5xxt5TgQH7TzsfxKDb1DDKcAY/edit">Proposed schedule</a></dd>
