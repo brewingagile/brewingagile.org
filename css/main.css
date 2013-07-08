@@ -964,6 +964,10 @@ html.lt-ie9 #head h1 {
     background-image: url(../img/brewing_agile.png);
 }
 
+html.lt-ie9 #head .slogan {
+    position: absolute;
+}
+
 html.lt-ie9 #speaking article > header div {
     background-size: auto 100%;
 }
