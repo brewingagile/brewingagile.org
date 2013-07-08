@@ -953,14 +953,14 @@ footer a {
    Fixes for LT IE9
    ========================================================================== */
 
-html.le-ie9 {
+html.lt-ie9 {
 }
 
-html.le-ie9 #head h1 {
+html.lt-ie9 #head h1 {
     background-image: url(../img/brewing_agile.png);
 }
 
-html.le-ie9 #speaking article > header div {
+html.lt-ie9 #speaking article > header div {
     background-size: auto 100%;
 }
 
