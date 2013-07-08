@@ -459,7 +459,7 @@ section p {
     padding-top: 1%;
     position: relative;
     text-align: right;
-    width: 33%;
+    width: 24%;
 }
 
 #signUp form .label label {
@@ -484,9 +484,9 @@ section p {
 
 #signUp form .input {
     float: left;
-    padding-right: 33%;
+    padding-right: 13%;
     text-align: left;
-    width: 33%;
+    width: 50%;
 }
 
 #signUp form .input input {
@@ -495,7 +495,9 @@ section p {
 }
 
 #signUp form .checkbox,
-#signUp form .radio {
+#signUp form .radio,
+#signUp form .success,
+#signUp form .error {
     background: transparent;
     border: 3px dashed #414042;
     color: #414042;
@@ -504,7 +506,7 @@ section p {
     padding: 2%;
     position: relative;
     text-align: center;
-    width: 29%;
+    width: 47%;
 }
 
 #signUp form .radio.checked {
@@ -531,7 +533,6 @@ section p {
     padding: 2%;
 }
 
-
 #signUp form .radio .timeInfo {
     background: #c0b0a7 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
     background-size: cover;
@@ -543,7 +544,6 @@ section p {
     padding: 1%;
     position: absolute;
     top: 0;
-
     -moz-transform: skew(0,4deg);
     -webkit-transform: skew(0,4deg);
     -o-transform: skew(0,4deg);
@@ -563,6 +563,31 @@ section p {
 
 #signUp form .radio input {
     margin-right: 30px;
+}
+
+#signUp form .success,
+#signUp form .error {
+    border-color: transparent;
+    margin: 1em 24%;
+}
+
+#signUp form .success {
+    background-color: #63d62b;
+}
+
+#signUp form .error {
+    background-color: #d6372b;
+}
+
+#signUp form .success p,
+#signUp form .error p {
+    font-size: 1.4em;
+    width: 98%;
+}
+
+#signUp form .success p span,
+#signUp form .error p span {
+    font-size: 0.8em;
 }
 
 #signUp .submit {
@@ -882,17 +907,17 @@ article .fridayMorning {
 
 article .fridayAfternoon {
 	height: 27em;
-    padding-top: 1em;
+    padding-top: 20px;
 }
 
 article .fridayEvening {
 	height: 18em;
-	padding-top: 1em;
+	padding-top: 20px;
 }
 
 article .saturdayAfternoon {
 	height: auto;
-	padding-top: 1em;
+	padding-top: 20px;
 }
 
 #otherInfo {
@@ -1152,6 +1177,9 @@ body.android #head .slogan {
 }
 
 @media only screen and (max-width: 650px) {
+    h2, h3 {
+        background-color: #ffff00;
+    }
     #head .slogan {
         font-size: 4em;
         letter-spacing: -2px;
@@ -1168,6 +1196,46 @@ body.android #head .slogan {
         width: 80%;
 
     }
+
+    #signUp form .label {
+
+        height: 40px;
+        margin-bottom: 0;
+    }
+
+    #signUp form .label label {
+        height: 20px;
+        padding: 10px;
+        top: 0;
+        -moz-transform: skew(0,0);
+        -webkit-transform: skew(0,0);
+        -o-transform: skew(0,0);
+        -ms-transform: skew(0,0);
+        transform: skew(0,0);
+    }
+
+    #signUp form .input {
+        clear: left;
+        width: 96%;
+    }
+
+    #signUp form .checkbox, #signUp form .radio, #signUp form .success, #signUp form .error {
+        width: 96%;
+    }
+
+    #signUp form .radio {
+        padding-top: 2em;
+    }
+
+    #signUp form .radio .timeInfo {
+        left: auto;
+        right: 0;
+    }
+
+    #signUp form .success, #signUp form .error {
+        margin: 1em 0;
+    }
+
 	article .fridayAfternoon,
 	article .fridayEvening,
 	article .saturdayAfternoon { height: auto; border-top: 0 none transparent; }
@@ -1218,6 +1286,9 @@ body.android #head .slogan {
 }
 
 @media only screen and (max-width: 500px) {
+    h2, h3 {
+        background-color: orange;
+    }
     #head .slogan {
         font-size: 3em;
         letter-spacing: -1px;
@@ -1229,6 +1300,11 @@ body.android #head .slogan {
     h2 {
         font-size: 2em;
     }
+
+    #bread #info, #bread #additional {
+        width: 96%;
+    }
+
 	#bread p,
     section p {
 		float: none;
@@ -1250,27 +1326,30 @@ body.android #head .slogan {
     .signupButton {
         width: 75%;
     }
-	#signUp ol li {
-		float: none;
-		padding-left: 0;
-		width: 100%;
-	}
-	#signUp ol h5 {
-		margin-bottom: 1em;
-	}
-	#signUp ol p {
-		padding-left: 3em;
-	}
 	#layout div header {
 		clear: both;
 		float: none;
 		width: 100%;
 	}
-	#layout div header h4 { margin-bottom: 5px; }
+	#layout div header h4 { margin: 0; }
 	#layout div p {
 		clear: both;
 		float: none;
 	}
+    #layout div { height: auto !important; }
+
+    #layout div p {
+        -moz-transform: skew(0,0);
+        -webkit-transform: skew(0,0);
+        -o-transform: skew(0,0);
+        -ms-transform: skew(0,0);
+        transform: skew(0,0);
+        width: 96%;
+    }
+
+    #layout div p.date {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 500px) and (orientation:landscape) {
@@ -1281,6 +1360,9 @@ body.android #head .slogan {
 }
 
 @media only screen and (max-width: 320px) {
+    h2, h3 {
+        background-color: red;
+    }
 }
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
