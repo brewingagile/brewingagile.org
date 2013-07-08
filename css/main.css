@@ -976,7 +976,8 @@ html.lt-ie9 #speaking article > header div {
    Fixes for other browsers
    ========================================================================== */
 
-body.ios #head .slogan {
+body.ios #head .slogan,
+body.android #head .slogan {
     position: absolute;
 }
 
