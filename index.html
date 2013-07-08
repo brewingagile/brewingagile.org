@@ -56,16 +56,31 @@
 		</section>
 
 		<section id="signUp" ng-controller="RegistrationController">
-            <header><h2>~ Sign up ~</h2></header>
+            <header>
+                <h2>~ Sign up ~</h2>
+
+            </header>
 			<form name="myForm" ng-submit="submit()">
-                <p>For bulk buys, please contact us at <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a></p>
+                <p class="bulk">For bulk buys, please contact us at <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a></p>
 				<div class="label"><label>Participant Name</label></div><div class="input"><input type="text" ng-model="r.participantName" size="40" required></div>
                 <div class="label"><label>Participant Email</label></div><div class="input"><input type="email" ng-model="r.participantEmail" size="40" required></div>
                 <div class="label"><label>Company</label></div><div class="input"><input type="text" ng-model="r.billingCompany" size="40" required></div>
                 <div class="label"><label>Billing Address</label></div><div class="input"><input type="text" ng-model="r.billingAddress" size="40" required></div>
 
-                <div class="label"><label>Package</label></div><div class="radio first checked"><label><input name="ticket" checked="checked" type="radio" ng-model="r.workshop" required>1000 SEK - Conference<br /><span>You go to the conference in Friday afternoon and the unconference on Saturday.</span></label></div>
-                <div class="radio last"><label><input name="ticket" type="radio" ng-model="r.dietaryRequirements" required>1800 SEK - Workshop + Conference<br /><span>Standard conference plus Impact Mapping workshop with Gojko.</span></label></div>
+                <div class="label"><label>Allergies? / Veg?</label></div><div class="checkbox"><label><input type="checkbox" ng-model="r.dietaryRequirements"> Yes, please contact me about it.</label></div>
+
+                <div class="label"><label>Package</label></div>
+
+                <div class="radio first" ng-class="{'checked': (r.ticket == 'conference+workshop')}">
+                    <p class="timeInfo">Starts at 8:30!</p>
+                    <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference+workshop" required>1800 SEK - Workshop + Conference<br /><span>As below, and the workshop in Friday morning with Gojko.</span></label>
+
+                    <div class="radio last" ng-class="{'checked': (r.ticket == 'conference')}">
+                        <p class="timeInfo">Starts at 13:00!</p>
+                        <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required>1000 SEK - Conference<br /><span>You go to the conference in Friday afternoon and the unconference on Saturday.</span></label>
+                    </div>
+                </div>
+
 
                 <div class="submit"><input class="signupButton" type="submit" value="Register!" ng-disabled="!myForm.$valid"></div>
 			</form>

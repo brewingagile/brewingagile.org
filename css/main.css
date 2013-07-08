@@ -327,7 +327,7 @@ section p {
      display: block;
      font-size: 1.2em;
      margin: 0 auto 1em;
-     text-align: left;
+     text-align: justify;
 }
 
 #bread #info,
@@ -338,19 +338,19 @@ section p {
     float: left;
     margin-right: auto;
     margin-bottom: 3em;
-    margin-left: 24%;
+    margin-left: 9%;
     padding: 2%;
     -moz-transform: skew(0,4deg);
     -webkit-transform: skew(0,4deg);
     -o-transform: skew(0,4deg);
     -ms-transform: skew(0,4deg);
     transform: skew(0,4deg);
-    width: 21%;
+    width: 36%;
 }
 
 #bread #additional {
     float: right;
-    margin-right: 24%;
+    margin-right: 9%;
     margin-left: auto;
 }
 
@@ -375,20 +375,21 @@ section p {
 }
 
 #bread #intro {
-
+    background: rgba(0,0,0,0.4) url(../img/bg_shine_640x480.png) no-repeat fixed center center;
+    background-size: cover;
     font-size: 2em;
     font-weight: normal;
     letter-spacing: -1px;
     margin-right: auto;
     margin-left: auto;
-    padding: 1em 0;
+    padding: 1em 2%;
     text-align: center;
     -moz-transform: skew(0,-4deg);
     -webkit-transform: skew(0,-4deg);
     -o-transform: skew(0,-4deg);
     -ms-transform: skew(0,-4deg);
     transform: skew(0,-4deg);
-    width: 52%;
+    width: 48%;
 }
 
 #bread #quickInfo {
@@ -425,36 +426,19 @@ section p {
     background-size: cover;
 }
 
-#signUp ol li {
-	display: block;
-	float: left;
-	padding-left: 2%;
-	width: 32%;
-}
+#signUp header { position: relative; }
 
-#signUp ol li.first {
-	padding-left: 0;
-}
-
-#signUp ol h5 a {
-	color: #000000;
-	text-decoration: none;
-}
-
-#signUp ol h5 a:hover {
-	text-decoration: underline;
-}
-
-#signUp ol h5 span {
-	background-color: #000000;
-	border-radius: 20px;
-	color: #fbb040;
-	font-size: 20px;
-	padding: 0 4px 5px 6px;
-}
-
-#signUp ol p {
-	font-size: 0.8em;
+#signUp .bulk {
+    background: rgba(0,0,0,0.4) url(../img/bg_shine_640x480.png) no-repeat fixed center center;
+    background-size: cover;
+    color: #fff;
+    padding: 0.5em;
+    text-align: center;
+    -moz-transform: skew(0,-4deg);
+    -webkit-transform: skew(0,-4deg);
+    -o-transform: skew(0,-4deg);
+    -ms-transform: skew(0,-4deg);
+    transform: skew(0,-4deg);
 }
 
 #signUp form {
@@ -496,7 +480,6 @@ section p {
     top: -5px;
     width: 8em;
     height: 1em;
-
 }
 
 #signUp form .input {
@@ -511,28 +494,62 @@ section p {
     width: 94%;
 }
 
+#signUp form .checkbox,
 #signUp form .radio {
     background: transparent;
     border: 3px dashed #414042;
     color: #414042;
     float: left;
-    margin: 10px 3% 0;
+    margin: 0;
     padding: 2%;
+    position: relative;
     text-align: center;
     width: 29%;
 }
 
 #signUp form .radio.checked {
+    background-color: #fff;
     border-color: #FBB040;
     border-style: solid;
 }
 
 #signUp form .radio.first {
-    margin-left: 13%
+
 }
 
 #signUp form .radio.last {
-    margin-right: 13%
+    margin-top: 1em;
+    width: 94%;
+}
+
+#signUp form .checkbox {
+    background: #c0b0a7 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
+    background-size: cover;
+    color: #414042;
+    border: none;
+    margin: 1px 0 2em;
+    padding: 2%;
+}
+
+
+#signUp form .radio .timeInfo {
+    background: #c0b0a7 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
+    background-size: cover;
+    color: #414042;
+    display: block;
+    font-size: 0.8em;
+    font-style: italic;
+    left: 100%;
+    padding: 1%;
+    position: absolute;
+    top: 0;
+
+    -moz-transform: skew(0,4deg);
+    -webkit-transform: skew(0,4deg);
+    -o-transform: skew(0,4deg);
+    -ms-transform: skew(0,4deg);
+    transform: skew(0,4deg);
+    width: 7em;
 }
 
 #signUp form .radio label {
@@ -692,6 +709,8 @@ section article {
 }
 
 #speaking #moreSpeakers h4 {
+    background: rgba(0,0,0,0.4) url(../img/bg_shine_640x480.png) no-repeat fixed center center;
+    background-size: cover;
     font-size: 3em;
     font-weight: normal;
     letter-spacing: -1px;
@@ -751,13 +770,13 @@ section article {
     display: block;
     float: right;
     padding-bottom: 1em;
-    padding-left: 4%;
+    padding: 0 2% 2% 4%;
     -moz-transform: skew(0,4deg);
     -webkit-transform: skew(0,4deg);
     -o-transform: skew(0,4deg);
     -ms-transform: skew(0,4deg);
     transform: skew(0,4deg);
-    width: 58%;
+    width: 56%;
 }
 
 #layout .date {
@@ -1048,6 +1067,15 @@ footer a {
     #speaking article {
         width: 80%;
     }
+    #bread #info,
+    #bread #additional {
+        width: 36%;
+        margin-left: 9%;
+    }
+    #bread #additional {
+        margin-right: 9%;
+        margin-left: 0;
+    }
     #head .slogan {
         font-size: 5em;
         letter-spacing: -2px;
@@ -1067,6 +1095,15 @@ footer a {
     #speaking article {
         width: 60%;
     }
+    #bread #info,
+    #bread #additional {
+        width: 26%;
+        margin-left: 19%;
+    }
+    #bread #additional {
+        margin-right: 19%;
+        margin-left: 0;
+    }
     #head .slogan {
         font-size: 6em;
         letter-spacing: -3px;
@@ -1079,7 +1116,6 @@ footer a {
 }
 
 @media only screen and (max-width: 650px) {
-
     #head .slogan {
         font-size: 4em;
         letter-spacing: -2px;
@@ -1087,6 +1123,14 @@ footer a {
     #bread p,
     section p {
         width: 80%;
+    }
+    #bread #intro {
+        width: 98%;
+    }
+    #bread #info, #bread #additional {
+        margin: 0 auto;
+        width: 80%;
+
     }
 	article .fridayAfternoon,
 	article .fridayEvening,
@@ -1114,6 +1158,17 @@ footer a {
 		padding-top: 2%;
     	padding-left: 0;
 	}
+    #speaking article.speaker > header {
+        width: 28%;
+    }
+    #speaking .talk, #speaking .about {
+        width: 60%;
+    }
+    #speaking .talk header h4 {
+        font-size: 2em;
+        letter-spacing: -1px;
+        line-height: 1.5em;
+    }
 	#layout,
 	#schedule {
 		clear: both;
@@ -1156,9 +1211,9 @@ footer a {
         font-size: 1.6em;
         line-height: 1.2em;
     }
-	#signUp .signupButton a {
-    	width: 90%;
-	}
+    .signupButton {
+        width: 75%;
+    }
 	#signUp ol li {
 		float: none;
 		padding-left: 0;
@@ -1189,7 +1244,7 @@ footer a {
     }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (max-width: 320px) {
 }
 
 @media only screen and (min-width: 35em) {
