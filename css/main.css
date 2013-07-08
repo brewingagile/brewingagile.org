@@ -753,6 +753,10 @@ section article {
 	width: 38%;
 }
 
+#layout #conference header { background-image: url(../img/conference.jpg); }
+#layout #scrumBeers header { background-image: url(../img/scrumbeers.jpg); }
+#layout #unconference header { background-image: url(../img/unconference.jpg); }
+
 #layout div header h4 {
     margin-bottom: 0;
     margin-top: 105px;
