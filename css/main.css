@@ -956,12 +956,24 @@ footer a {
 html.lt-ie9 {
 }
 
+html.lt-ie9 #head {
+    background-repeat: repeat-x;
+}
+
 html.lt-ie9 #head h1 {
     background-image: url(../img/brewing_agile.png);
 }
 
 html.lt-ie9 #speaking article > header div {
     background-size: auto 100%;
+}
+
+/* ==========================================================================
+   Fixes for other browsers
+   ========================================================================== */
+
+body.ios #head .slogan {
+    position: absolute;
 }
 
 /* ==========================================================================
@@ -1266,8 +1278,8 @@ html.lt-ie9 #speaking article > header div {
 @media only screen and (max-width: 320px) {
 }
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    /* CSS overrides for mobile here */
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
