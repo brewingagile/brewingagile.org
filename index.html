@@ -74,11 +74,11 @@
 
                 <div class="radio first" ng-class="{'checked': (r.ticket == 'conference+workshop')}">
                     <p class="timeInfo">Starts at 8:30!</p>
-                    <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference+workshop" required>1800 SEK - Workshop + Conference<br /><span>As below, and the workshop in Friday morning with Gojko.</span></label>
+                    <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference+workshop" required>1800 SEK - Workshop + Conference<br /><span>As below, and the workshop on Friday morning with Gojko.</span></label>
 
                     <div class="radio last" ng-class="{'checked': (r.ticket == 'conference')}">
                         <p class="timeInfo">Starts at 13:00!</p>
-                        <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required>1000 SEK - Conference<br /><span>You go to the conference in Friday afternoon and the unconference on Saturday.</span></label>
+                        <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required>1000 SEK - Conference<br /><span>You go to the conference on Friday afternoon and the unconference on Saturday.</span></label>
                     </div>
                 </div>
                 <div class="submit"><input class="signupButton" type="submit" value="Register!" ng-disabled="!myForm.$valid || lastRegisteredName == r.participantName"></div>
