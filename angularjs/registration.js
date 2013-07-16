@@ -20,8 +20,6 @@ function RegistrationController($scope, $resource, $window, $timeout) {
 		});
 	};
 
-	$scope.reset();
-
 	$scope.submit = function() {
 		$scope.showSuccess = false;
 		$scope.showError = false;
