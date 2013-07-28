@@ -9,6 +9,7 @@ function RegistrationController($scope, $resource, $window, $timeout) {
 		participantEmail: "",
 		billingCompany: "",
 		billingAddress: "",
+		billingMethod: "unknown", //email or snailmail
 		dietaryRequirements: false,
 		workshop: false
 	};
