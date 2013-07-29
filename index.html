@@ -66,19 +66,14 @@
 				<div class="label"><label>Participant Name</label></div><div class="input"><input id="inputParticipantName" type="text" ng-model="r.participantName" size="40" required></div>
                 <div class="label"><label>Participant Email</label></div><div class="input"><input type="email" ng-model="r.participantEmail" size="40" required></div>
                 <div class="label"><label>Company</label></div><div class="input"><input type="text" ng-model="r.billingCompany" size="40" required></div>
-                <div class="label"><label>Billing Address</label></div><div class="input"><textarea type="text" ng-model="r.billingAddress" required></textarea></div>
-                <div class="label"><label>Send Invoice As</label></div><div class="input">
+                <div class="label"><label>Billing Address</label></div>
+                <div class="textarea"><textarea type="text" ng-model="r.billingAddress" required></textarea></div>
+                <div class="label"><label>Send Invoice As</label></div>
+                <div class="input invoice">
                     <label><input name="billingMethod" type="radio" ng-model="r.billingMethod" value="email" required> Email</label>
                     <label><input name="billingMethod" type="radio" ng-model="r.billingMethod" value="snailmail" required> Snailmail</label>
-                    <br/>
-                    <pre ng-show="r.billingMethod == 'email'">
-Invoice will be sent to {{r.participantEmail}}
-                    </pre>
-                    <pre ng-show="r.billingMethod == 'snailmail'">
-Invoice will be sent to:
-{{r.billingCompany}}
-{{r.billingAddress}}
-                    </pre>
+                    <p ng-show="r.billingMethod == 'email'">Invoice will be sent to {{r.participantEmail}}</p>
+                    <p ng-show="r.billingMethod == 'snailmail'">Invoice will be sent to:{{r.billingCompany}}{{r.billingAddress}}</p>
                 </div>
                 <div class="label"><label>Allergies? / Veg?</label></div><div class="checkbox"><label><input type="checkbox" ng-model="r.dietaryRequirements"> Yes, please contact me about it.</label></div>
 

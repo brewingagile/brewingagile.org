@@ -482,20 +482,33 @@ section p {
     height: 1em;
 }
 
-#signUp form .input {
+#signUp form .input,
+#signUp form .textarea {
     float: left;
     padding-right: 13%;
     text-align: left;
     width: 50%;
 }
 
-#signUp form .input input {
+#signUp form .textarea {
+    margin-bottom: 2em;
+}
+
+#signUp form .input input,
+#signUp form .textarea textarea {
     padding: 3%;
     width: 94%;
 }
 
+#signUp form .invoice input {
+    margin: 15px 0 0 20px;
+    padding: 3%;
+    width: auto;
+}
+
 #signUp form .checkbox,
 #signUp form .radio,
+#signUp form .invoice,
 #signUp form .success,
 #signUp form .error {
     background: transparent;
@@ -524,13 +537,20 @@ section p {
     width: 94%;
 }
 
-#signUp form .checkbox {
+#signUp form .checkbox,
+#signUp form .invoice {
     background: #c0b0a7 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
     background-size: cover;
     color: #414042;
     border: none;
     margin: 1px 0 2em;
     padding: 2%;
+}
+
+#signUp form .invoice p {
+    font-size: 0.9em;
+    margin: 10px 0 0;
+    width: auto;
 }
 
 #signUp form .radio .timeInfo {
@@ -1178,7 +1198,7 @@ body.android #head .slogan {
 
 @media only screen and (max-width: 650px) {
     h2, h3 {
-        background-color: #ffff00;
+        /*background-color: #ffff00;*/
     }
     #head .slogan {
         font-size: 4em;
@@ -1287,7 +1307,7 @@ body.android #head .slogan {
 
 @media only screen and (max-width: 500px) {
     h2, h3 {
-        background-color: orange;
+        /*background-color: orange;*/
     }
     #head .slogan {
         font-size: 3em;
@@ -1361,7 +1381,7 @@ body.android #head .slogan {
 
 @media only screen and (max-width: 320px) {
     h2, h3 {
-        background-color: red;
+        /*background-color: red;*/
     }
 }
 
