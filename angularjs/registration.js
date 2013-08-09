@@ -1,5 +1,5 @@
 function RegistrationController($scope, $resource, $window, $timeout) {
-	var RegistrationResource = $resource("http://backoffice.brewingagile.org/api/registration/1/", {});
+	var RegistrationResource = $resource("https://backoffice.brewingagile.org/api/registration/1/", {});
 	// var RegistrationResource = $resource("http://localhost\\:9080/ba-backoffice/api/registration/1/", {});
 
 	$scope.lastRegisteredName = "";
