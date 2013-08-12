@@ -506,6 +506,11 @@ section p {
     width: auto;
 }
 
+#signUp form .textarea textarea {
+    border: 0 none transparent;
+    height: 4em;
+}
+
 #signUp form .checkbox,
 #signUp form .radio,
 #signUp form .invoice,
@@ -547,10 +552,17 @@ section p {
     padding: 2%;
 }
 
-#signUp form .invoice p {
+#signUp form .invoice pre {
+    font-family: Arial, sans-serif;
     font-size: 0.9em;
     margin: 10px 0 0;
+
     width: auto;
+}
+
+#signUp form .invoice pre span {
+    font-size: 0.9em;
+    text-align: left;
 }
 
 #signUp form .radio .timeInfo {
