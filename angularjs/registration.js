@@ -9,7 +9,7 @@ function RegistrationController($scope, $resource, $window, $timeout) {
 		participantEmail: "",
 		billingCompany: "",
 		billingAddress: "",
-		billingMethod: "", //email or snailmail
+		billingMethod: "", //EMAIL or SNAILMAIL
 		dietaryRequirements: false,
 		workshop: false
 	};

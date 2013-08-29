@@ -70,10 +70,10 @@
                 <div class="textarea"><textarea type="text" ng-model="r.billingAddress" required></textarea></div>
                 <div class="label"><label>Send Invoice As</label></div>
                 <div class="input invoice">
-                    <label><input name="billingMethod" type="radio" ng-model="r.billingMethod" value="email" required> Email</label>
-                    <label><input name="billingMethod" type="radio" ng-model="r.billingMethod" value="snailmail" required> Snailmail</label>
-                    <pre ng-show="r.billingMethod == 'email'"><span>Invoice will be sent to:</span><br />{{r.participantEmail}}</pre>
-                    <pre ng-show="r.billingMethod == 'snailmail'"><span>Invoice will be sent to:</span><br /><span ng-show="r.billingCompany != ''">{{r.billingCompany}}<br/></span>{{r.billingAddress}}</pre>
+                    <label><input name="billingMethod" type="radio" ng-model="r.billingMethod" value="EMAIL" required> Email</label>
+                    <label><input name="billingMethod" type="radio" ng-model="r.billingMethod" value="SNAILMAIL" required> Snailmail</label>
+                    <pre ng-show="r.billingMethod == 'EMAIL'"><span>Invoice will be sent to:</span><br />{{r.participantEmail}}</pre>
+                    <pre ng-show="r.billingMethod == 'SNAILMAIL'"><span>Invoice will be sent to:</span><br /><span ng-show="r.billingCompany != ''">{{r.billingCompany}}<br/></span>{{r.billingAddress}}</pre>
                 </div>
                 <div class="label"><label>Allergies? / Veg?</label></div><div class="checkbox"><label><input type="checkbox" ng-model="r.dietaryRequirements"> Yes, please contact me about it.</label></div>
 
