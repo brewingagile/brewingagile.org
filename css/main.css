@@ -676,6 +676,7 @@ section article {
     margin-right: auto;
     margin-left: auto;
     padding: 1em 2%;
+    position: relative;
     text-align: center;
     -moz-transform: skew(0,-4deg);
     -webkit-transform: skew(0,-4deg);
