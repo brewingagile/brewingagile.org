@@ -127,6 +127,10 @@ h2, h3 {
     width: auto;
 }
 
+h2 {
+    color: #ffffff;
+}
+
 h3 {
     color: #ffffff;
     font-size: 1.3em;
@@ -637,6 +641,30 @@ section article {
 }
 
 #whoItIsFor h2 {
+
+}
+
+#whoItIsFor section {
+    background: #b7b7b7 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
+    background-size: cover;
+    clear: none;
+    margin: 0 auto 0;
+    padding: 2%;
+    text-align: justify;
+    -moz-transform: skew(0,4deg);
+    -webkit-transform: skew(0,4deg);
+    -o-transform: skew(0,4deg);
+    -ms-transform: skew(0,4deg);
+    transform: skew(0,4deg);
+    width: 96%;
+}
+
+#whoItIsFor section p {
+    -moz-transform: skew(0,-4deg);
+    -webkit-transform: skew(0,-4deg);
+    -o-transform: skew(0,-4deg);
+    -ms-transform: skew(0,-4deg);
+    transform: skew(0,-4deg);
 }
 
 #whoItIsFor h4 {
@@ -655,16 +683,7 @@ section article {
     -ms-transform: skew(0,-4deg);
     transform: skew(0,-4deg);
     width: 96%;
-}
-
-#whoItIsFor section {
-    background: #b7b7b7 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
-    background-size: cover;
-    clear: none;
-    margin: 0 auto 0;
-    padding: 2%;
-    text-align: justify;
-    width: 96%;
+    z-index: 2;
 }
 
 #speaking {
@@ -1005,6 +1024,10 @@ article .saturdayAfternoon {
     background: #ffffff url() repeat-x fixed center center;
     background-size: cover;
 	text-align: center;
+}
+
+#sponsors h2 {
+    color: #414042;
 }
 
 #sponsors div {
