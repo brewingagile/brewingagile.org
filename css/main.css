@@ -654,7 +654,7 @@ section article {
     -o-transform: skew(0,-4deg);
     -ms-transform: skew(0,-4deg);
     transform: skew(0,-4deg);
-    width: 48%;
+    width: 96%;
 }
 
 #whoItIsFor section {
@@ -664,7 +664,7 @@ section article {
     margin: 0 auto 0;
     padding: 2%;
     text-align: justify;
-    width: 36%;
+    width: 96%;
 }
 
 #speaking {
@@ -1197,6 +1197,8 @@ body.android #head .slogan {
     section p,
     #bread p,
     #signUp form,
+    #whoItIsFor h4,
+    #whoItIsFor section,
     #speaking article {
         width: 80%;
     }
@@ -1225,6 +1227,8 @@ body.android #head .slogan {
     section p,
     #bread p,
     #signUp form,
+    #whoItIsFor h4,
+    #whoItIsFor section,
     #speaking article {
         width: 60%;
     }
