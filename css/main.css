@@ -631,9 +631,49 @@ section article {
 	display: block;
 }
 
+#whoItIsFor {
+    background: transparent url(../img/bg_darkstone_1024x768.png) repeat-x fixed center center;
+    background-size: cover;
+}
+
+#whoItIsFor h2 {
+}
+
+#whoItIsFor h4 {
+    background: rgba(0,0,0,0.4) url(../img/bg_shine_640x480.png) no-repeat fixed center center;
+    background-size: cover;
+    font-size: 2em;
+    font-weight: normal;
+    letter-spacing: -1px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1em 2%;
+    text-align: center;
+    -moz-transform: skew(0,-4deg);
+    -webkit-transform: skew(0,-4deg);
+    -o-transform: skew(0,-4deg);
+    -ms-transform: skew(0,-4deg);
+    transform: skew(0,-4deg);
+    width: 48%;
+}
+
+#whoItIsFor section {
+    background: #b7b7b7 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
+    background-size: cover;
+    clear: none;
+    margin: 0 auto 0;
+    padding: 2%;
+    text-align: justify;
+    width: 36%;
+}
+
 #speaking {
     background: transparent url(../img/bg_magma_1024x768.png) repeat-x fixed center center;
     background-size: cover;
+}
+
+#speaking h2 {
+    color: #ffffff;
 }
 
 #speaking article {
