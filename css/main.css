@@ -776,6 +776,10 @@ section article {
     background-image: url(../img/sara_leren.jpg);
 }
 
+#speaking .emily > header div {
+    background-image: url(../img/emily_bache.jpg);
+}
+
 #speaking article > header h3 {
     border: 0;
     color: #ffffff;
@@ -816,9 +820,6 @@ section article {
 #speaking .about {
     float: right;
 }
-
-#speaking .sara .talk { float: left; margin-right: 0; margin-left: 30%; }
-#speaking .sara .about { float: left; margin-right: 2%; }
 
 #speaking .talk header h4 {
     background-color: transparent;
@@ -1077,7 +1078,7 @@ article .saturdayAfternoon {
 
 #sponsors div a {
 	float: left;
-	margin: 1%;
+	margin: 2%;
 }
 
 #sponsors img {
