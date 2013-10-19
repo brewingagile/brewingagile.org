@@ -780,6 +780,10 @@ section article {
     background-image: url(../img/emily_bache.jpg);
 }
 
+#speaking .bea > header div {
+    background-image: url(../img/bea_during.jpg);
+}
+
 #speaking article > header h3 {
     border: 0;
     color: #ffffff;
@@ -824,11 +828,18 @@ section article {
 #speaking .talk header h4 {
     background-color: transparent;
     color: #000000;
-    font-size: 3em;
+    font-size: 1.4em;
     font-weight: normal;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     text-align: justify;
     text-shadow: none;
+}
+
+#speaking .talk header h4 span {
+    color: #000000;
+    font-size: 2em;
+    letter-spacing: -2px;
+    line-height: 1.4em;
 }
 
 #speaking h4,
