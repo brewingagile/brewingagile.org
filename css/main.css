@@ -396,6 +396,11 @@ section p {
     width: 48%;
 }
 
+#bread #intro span {
+    text-shadow: none;
+
+}
+
 #bread #quickInfo {
     font-family: Georgia, serif;
     margin-bottom: 3em;
@@ -443,6 +448,12 @@ section p {
     -o-transform: skew(0,-4deg);
     -ms-transform: skew(0,-4deg);
     transform: skew(0,-4deg);
+}
+
+#signUp .bulk span {
+    color: #fbb040;
+    font-family: Georgia, serif;
+    font-size: 2em;
 }
 
 #signUp form {
@@ -609,10 +620,12 @@ section p {
 
 #signUp form .success {
     background-color: #63d62b;
+    float: none;
 }
 
 #signUp form .error {
     background-color: #d6372b;
+    float: none;
 }
 
 #signUp form .success p,
