@@ -1102,7 +1102,7 @@ article .saturdayAfternoon {
 
 #sponsors div a {
 	float: left;
-	margin: 2%;
+	margin: 4%;
 }
 
 #sponsors img {
@@ -1448,6 +1448,10 @@ body.android #head .slogan {
 	#schedule #day2 {
 		padding-top: 5%;
 	}
+
+    #sponsors div {
+        width: 100% !important;
+    }
 }
 
 @media only screen and (max-width: 500px) {
