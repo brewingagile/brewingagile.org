@@ -86,11 +86,11 @@
 
                 <div class="radio first" ng-class="{'checked': (r.ticket == 'conference+workshop')}">
                     <p class="timeInfo">Starts at 8:30!</p>
-                    <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference+workshop" required disabled>1800 SEK - Workshop + Conference<br /><span style="font-size: 25px; font-weight: bold; font-style: italic; text-transform: uppercase; color: #990000;">SOLD OUT!!!</span></label>
+                    <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference+workshop" required disabled>1800 SEK - Workshop + Conference<br /><span style="font-size: 25px; font-weight: bold; font-style: italic; text-transform: uppercase; color: #990000;">SOLD OUT!</span></label>
 
                     <div class="radio last" ng-class="{'checked': (r.ticket == 'conference')}">
                         <p class="timeInfo">Starts at 13:00!</p>
-                        <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required>1000 SEK - Conference<br /><span>You go to the conference on Friday afternoon and the discussion groups on Saturday.</span></label>
+                        <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required disabled>1000 SEK - Conference<br /><span>You go to the conference on Friday afternoon and the discussion groups on Saturday.</span><br/><span style="font-size: 25px; font-weight: bold; font-style: italic; text-transform: uppercase; color: #990000;">REGISTRATION CLOSED!</span></label>
                     </div>
                 </div>
                 <div class="submit"><input class="signupButton" type="submit" value="Register!" ng-disabled="!myForm.$valid || lastRegisteredName == r.participantName"></div>
