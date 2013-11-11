@@ -99,31 +99,31 @@ html, body
 }
 
 body {
-	background: #111 url() repeat fixed center top;
-	background-size: auto auto;
+    background: #111 url() repeat fixed center top;
+    background-size: auto auto;
     color: #000000;
     font-family: Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: Georgia, serif;
-	margin: 0 0 20px;
-	padding: 20px 0;
+    font-family: Georgia, serif;
+    margin: 0 0 20px;
+    padding: 20px 0;
 }
 
 h2, h3 {
     background-size: 514px auto;
-	border-bottom: 5px solid #fbb040;
+    border-bottom: 5px solid #fbb040;
     color: #414042;
     font-size: 3em;
-	font-weight: normal;
+    font-weight: normal;
     letter-spacing: -2px;
     margin-right: 2%;
     margin-left: 2%;
-	padding: 0 0 0.5em;
-	text-align: center;
+    padding: 0 0 0.5em;
+    text-align: center;
     text-shadow: 0 1px 0 #000;
-	text-transform: uppercase;
+    text-transform: uppercase;
     width: auto;
 }
 
@@ -139,41 +139,41 @@ h3 {
 }
 
 h4 {
-	background-color: rgba(0,0,0,0.4);
-	color: #ffffff;
-	padding: 2px 0;
-	text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    color: #ffffff;
+    padding: 2px 0;
+    text-align: center;
     text-shadow: 0 1px 0 #aaa, 0 0 10px #000;
 }
 
 h4 span {
-	color: #fbb040;
+    color: #fbb040;
 }
 
 h5 {
-	font-style: italic;
-	padding: 0;
+    font-style: italic;
+    padding: 0;
 }
 
 
 p {
-	margin: 0 0 10px;
+    margin: 0 0 10px;
 }
 
 p a {
-	color: #ffffff;
+    color: #ffffff;
 }
 
 a {
-	color: #ffffff;
+    color: #ffffff;
 }
- 
+
 ol,
 ol li {
-	list-style-position: inside;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+    list-style-position: inside;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 section p,
@@ -186,35 +186,35 @@ section p,
 }
 
 .bigHeader {
-	font-size: 4em;
-	letter-spacing: -2px;
-	text-shadow: none;
+    font-size: 4em;
+    letter-spacing: -2px;
+    text-shadow: none;
 }
 
 .signupButton {
-	background-color: #fbb040;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dd8013), to(#fbb040));
-	background: -webkit-linear-gradient(top, #fbb040, #dd8013);
-	background: -moz-linear-gradient(top, #fbb040, #dd8013);
-	background: -ms-linear-gradient(top, #fbb040, #dd8013);
-	background: -o-linear-gradient(top, #fbb040, #dd8013);
+    background-color: #fbb040;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dd8013), to(#fbb040));
+    background: -webkit-linear-gradient(top, #fbb040, #dd8013);
+    background: -moz-linear-gradient(top, #fbb040, #dd8013);
+    background: -ms-linear-gradient(top, #fbb040, #dd8013);
+    background: -o-linear-gradient(top, #fbb040, #dd8013);
     border: 0 none transparent;
-	box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.4);
     clear: both;
     color: #fff;
     cursor: pointer;
-	display: block;
+    display: block;
     font-size: 2em;
-	margin: 0 auto 6px;
+    margin: 0 auto 6px;
     padding: 20px 0 20px;
-	text-align: center;
-	text-decoration: none;
-	text-shadow: 0 3px 3px rgba(0,0,0,0.7);
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 3px 3px rgba(0,0,0,0.7);
     width: 300px;
 }
 
 .signupButton:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .signupButton[disabled] {
@@ -233,25 +233,25 @@ section p,
 .contactUs {
     background: transparent;
     clear: both;
-	color: white;
-	display: block;
-	font-family: Helvetica, Arial, sans-sreif;
-	height: 32px;
-	margin: 20px auto 0;
-	padding: 10px 5px;
-	text-align: center;
+    color: white;
+    display: block;
+    font-family: Helvetica, Arial, sans-sreif;
+    height: 32px;
+    margin: 20px auto 0;
+    padding: 10px 5px;
+    text-align: center;
     width: 256px;
 }
 
 .contactUs a {
-	background: transparent url(../img/icon_social_pixel.png) no-repeat scroll left top;
-	background-size: auto;
-	display: block;
-	float: left;
-	height: 64px;
-	margin: 0;
-	text-indent: -9999px;
-	width: 64px;
+    background: transparent url(../img/icon_social_pixel.png) no-repeat scroll left top;
+    background-size: auto;
+    display: block;
+    float: left;
+    height: 64px;
+    margin: 0;
+    text-indent: -9999px;
+    width: 64px;
 }
 
 .contactUs a.facebook { background-position: -64px 0;}
@@ -264,25 +264,25 @@ section p,
 #head {
     background: transparent url(../img/bg_dawn_1024x768.png) no-repeat fixed center bottom;
     background-size: cover;
-	display: block;
+    display: block;
     min-height: 95%;
-	position: relative;
-	text-align: center;
+    position: relative;
+    text-align: center;
     width: 100%;
 }
 
 #head h1 {
-	background: transparent url(../img/brewing_agile_2x.png) no-repeat scroll center bottom;
-	background-size: 371px 100%;
+    background: transparent url(../img/brewing_agile_2x.png) no-repeat scroll center bottom;
+    background-size: 371px 100%;
     bottom: 0;
-	display: block;
-	height: 204px;
+    display: block;
+    height: 204px;
     left: 0;
-	margin: 0 auto;
-	padding: 0;
+    margin: 0 auto;
+    padding: 0;
     position: absolute;
-	text-indent: -9999px;
-	width: 100%;
+    text-indent: -9999px;
+    width: 100%;
     z-index: 1;
 }
 
@@ -302,10 +302,10 @@ section p,
 }
 
 section {
-	background-color: #414042;
-	clear: both;
-	margin: 0;
-	padding: 5% 2% 7% 2%;
+    background-color: #414042;
+    clear: both;
+    margin: 0;
+    padding: 5% 2% 7% 2%;
     position: relative;
     z-index: 1;
 }
@@ -315,23 +315,23 @@ section p {
 }
 
 #bread {
-	background-color: #000000;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#111111), to(#000000)), url(../img/bg_dirt_1024x768.png) no-repeat scroll center bottom;
-	background: -webkit-linear-gradient(top, #000000, transparent), url(../img/bg_dirt_1024x768.png) no-repeat fixed center center;
-	background: -moz-linear-gradient(top, #000000, transparent), url(../img/bg_dirt_1024x768.png) no-repeat fixed center center;
-	background: -ms-linear-gradient(top, #000000, #111111), url(../img/bg_dirt_1024x768.png) no-repeat scroll center bottom;
-	background: -o-linear-gradient(top, #000000, #111111), url(../img/bg_dirt_1024x768.png) no-repeat scroll center bottom;
+    background-color: #000000;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#111111), to(#000000)), url(../img/bg_dirt_1024x768.png) no-repeat scroll center bottom;
+    background: -webkit-linear-gradient(top, #000000, transparent), url(../img/bg_dirt_1024x768.png) no-repeat fixed center center;
+    background: -moz-linear-gradient(top, #000000, transparent), url(../img/bg_dirt_1024x768.png) no-repeat fixed center center;
+    background: -ms-linear-gradient(top, #000000, #111111), url(../img/bg_dirt_1024x768.png) no-repeat scroll center bottom;
+    background: -o-linear-gradient(top, #000000, #111111), url(../img/bg_dirt_1024x768.png) no-repeat scroll center bottom;
     background-size: 100% 100%, cover;
-	border-bottom-color: #000000;
-	color: #fbb040;
+    border-bottom-color: #000000;
+    color: #fbb040;
     padding-top: 1%;
 }
 
 #bread p {
-     display: block;
-     font-size: 1.2em;
-     margin: 0 auto 1em;
-     text-align: justify;
+    display: block;
+    font-size: 1.2em;
+    margin: 0 auto 1em;
+    text-align: justify;
 }
 
 #bread #info,
@@ -404,24 +404,24 @@ section p {
 #bread #quickInfo {
     font-family: Georgia, serif;
     margin-bottom: 3em;
-	text-align: center;
+    text-align: center;
 
 }
 
 #bread #quickInfo a {
-	color: #fbb040;
+    color: #fbb040;
 }
 
 #bread #quickInfo .date {
-	font-size: 4em;
+    font-size: 4em;
     letter-spacing: -3px;
     text-shadow: 0 2px 0 #bd8504;
 }
 
 #bread #quickInfo .price {
-	font-size: 4em;
+    font-size: 4em;
     letter-spacing: -4px;
-	line-height: 0.5em;
+    line-height: 0.5em;
     text-shadow: 0 2px 0 #bd8504;
 }
 
@@ -430,8 +430,8 @@ section p {
 }
 
 #signUp {
-	background-color: #eeeeee;
-	background: url(../img/bg_stone_1024x768.png) repeat-x fixed center center;
+    background-color: #eeeeee;
+    background: url(../img/bg_stone_1024x768.png) repeat-x fixed center center;
     background-size: cover;
 }
 
@@ -645,7 +645,7 @@ section p {
 }
 
 section article {
-	display: block;
+    display: block;
 }
 
 #whoItIsFor {
@@ -698,6 +698,35 @@ section article {
     transform: skew(0,-4deg);
     width: 96%;
     z-index: 2;
+}
+
+#videos {
+    background: transparent url(../img/bg_darkstone_1024x768.png) repeat-x fixed center center;
+    background-size: cover;
+}
+
+#videos article {
+    background: #b7b7b7 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
+    background-size: cover;
+    margin: 0 auto 5%;
+    max-width: 600px;
+    padding: 2%;
+    text-align: center;
+    width: 80%;
+}
+
+#videos article h3 {
+    border-bottom-color: #999;
+    color: #000;
+    font-size: 1.6em;
+    margin-bottom: 0;
+    text-shadow: none;
+}
+
+#videos article iframe {
+    height: 320px;
+    max-width: 560px;
+    width: 100%;
 }
 
 #speaking {
@@ -822,24 +851,6 @@ section article {
     background-color: transparent;
 }
 
-#speaking .video {
-    margin-left: 33%;
-    padding-bottom: 0;
-    width: 60%;
-    -moz-transform: skew(0,-4deg);
-    -webkit-transform: skew(0,-4deg);
-    -o-transform: skew(0,-4deg);
-    -ms-transform: skew(0,-4deg);
-    transform: skew(0,-4deg);
-}
-
-#speaking .video iframe {
-    height: 315px;
-    max-width: 560px;
-    min-width: 120px;
-    width: 100%;
-}
-
 #speaking .talk,
 #speaking .about {
     clear: none;
@@ -927,10 +938,10 @@ section article {
 }
 
 #layout {
-	clear: both;
+    clear: both;
     color: #fbb040;
-	float: right;
-	width: 60%
+    float: right;
+    width: 60%
 }
 
 #layout > header {
@@ -938,19 +949,19 @@ section article {
 }
 
 #layout div {
-	float: left;
-	width: 100%;
+    float: left;
+    width: 100%;
 }
 
 #layout div.first {
-	padding-left: 0;
+    padding-left: 0;
 }
 
 #layout div header {
     background: transparent url(../img/workshop.jpg) no-repeat scroll center center;
     background-size: cover;
-	float: left;
-	width: 38%;
+    float: left;
+    width: 38%;
 }
 
 #layout #conference header { background-image: url(../img/conference.jpg); }
@@ -984,9 +995,9 @@ section article {
 }
 
 #layout .date {
-	font-family: 'Palatino Linotype','Book Antiqua',Palatino,serif;
-	font-size: 1.1em;
-	font-style: italic;
+    font-family: 'Palatino Linotype','Book Antiqua',Palatino,serif;
+    font-size: 1.1em;
+    font-style: italic;
     margin-top: 20px;
     margin-bottom: 0;
     padding-top: 1em;
@@ -994,48 +1005,48 @@ section article {
 
 #schedule {
     color: #fbb040;
-	float: right;
-	width: 40%;
+    float: right;
+    width: 40%;
 }
 
 #schedule div {
-	display: block;
-	float: left;
-	width: 100%;
+    display: block;
+    float: left;
+    width: 100%;
 }
 
 #schedule h4 {
-	background-color: transparent;
-	clear: none;
+    background-color: transparent;
+    clear: none;
     color: #fbb040;
-	float: left;
+    float: left;
     font-family: Helvetica, Arial, sans-serif;
-	padding-bottom: 10px;
+    padding-bottom: 10px;
     text-shadow: 0 2px 0 #BD8504;
-	width: 22%;
+    width: 22%;
 }
 
 #schedule h4 span {
     color: #fbb040;
-	font-size: 5em;
-	line-height: 1em;
+    font-size: 5em;
+    line-height: 1em;
 }
 
 #schedule h4 span span {
-	font-size: 0.3em;
+    font-size: 0.3em;
 }
 
 #schedule dl {
-	display: block;
-	float: right;
-	margin: 0;
-	padding-left: 5%;
+    display: block;
+    float: right;
+    margin: 0;
+    padding-left: 5%;
     -moz-transform: skew(0,4deg);
     -webkit-transform: skew(0,4deg);
     -o-transform: skew(0,4deg);
     -ms-transform: skew(0,4deg);
     transform: skew(0,4deg);
-	width: 70%;
+    width: 70%;
 }
 
 #schedule dl dt,
@@ -1049,23 +1060,23 @@ section article {
 }
 
 #schedule dl dt {
-	clear: left;
-	display: block;
-	float: left;
-	font-family: 'Palatino Linotype','Book Antiqua',Palatino,serif;
-	font-style: italic;
-	padding-right: 3%;
-	padding-left: 3%;
-	width: 25%;
+    clear: left;
+    display: block;
+    float: left;
+    font-family: 'Palatino Linotype','Book Antiqua',Palatino,serif;
+    font-style: italic;
+    padding-right: 3%;
+    padding-left: 3%;
+    width: 25%;
 }
 
 #schedule dl dd {
-	display: block;
-	float: left;
-	margin-left: 0;
-	padding-left: 3%;
+    display: block;
+    float: left;
+    margin-left: 0;
+    padding-left: 3%;
     padding-right: 1%;
-	width: 65%;
+    width: 65%;
 }
 
 #schedule dl dd.wrapUp {
@@ -1073,7 +1084,7 @@ section article {
 
 #schedule dl dt.first,
 #schedule dl dd.first {
-	border-top: 0 none transparent;
+    border-top: 0 none transparent;
 }
 
 article .fridayMorning {
@@ -1081,18 +1092,18 @@ article .fridayMorning {
 }
 
 article .fridayAfternoon {
-	height: 27em;
+    height: 27em;
     padding-top: 20px;
 }
 
 article .fridayEvening {
-	height: 18em;
-	padding-top: 20px;
+    height: 18em;
+    padding-top: 20px;
 }
 
 article .saturdayAfternoon {
-	height: auto;
-	padding-top: 20px;
+    height: auto;
+    padding-top: 20px;
 }
 
 #otherInfo {
@@ -1107,7 +1118,7 @@ article .saturdayAfternoon {
 #sponsors {
     background: #ffffff url() repeat-x fixed center center;
     background-size: cover;
-	text-align: center;
+    text-align: center;
 }
 
 #sponsors h2 {
@@ -1115,24 +1126,24 @@ article .saturdayAfternoon {
 }
 
 #sponsors div {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 #sponsors div a {
-	float: left;
-	margin: 4%;
+    float: left;
+    margin: 4%;
 }
 
 #sponsors img {
-	display: block;
-	max-width: 100%;
-	max-height: 100%;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #sponsors p {
-	clear: both;
-	font-size: 0.8em;
-	padding-top: 2em;
+    clear: both;
+    font-size: 0.8em;
+    padding-top: 2em;
 }
 
 #sponsors p a {
@@ -1140,17 +1151,17 @@ article .saturdayAfternoon {
 }
 
 footer {
-	background-color: #000000;
-	clear: both;
-	color: #fbb040;
-	font-family: Georgia, serif;
-	margin: 0 5%;
-	padding: 2% 2% 1% 2%;
-	text-align: center;
+    background-color: #000000;
+    clear: both;
+    color: #fbb040;
+    font-family: Georgia, serif;
+    margin: 0 5%;
+    padding: 2% 2% 1% 2%;
+    text-align: center;
 }
 
 footer a {
-	color: #fbb040;
+    color: #fbb040;
 }
 
 /* ==========================================================================
@@ -1256,7 +1267,7 @@ body.android #head .slogan {
 }
 
 .clear {
-	clear: both;
+    clear: both;
 }
 
 /*
@@ -1322,8 +1333,8 @@ body.android #head .slogan {
         font-size: 5em;
         letter-spacing: -2px;
     }
-	article .fridayAfternoon { height: 26em; }
-	article .fridayEvening { height: 13em; }
+    article .fridayAfternoon { height: 26em; }
+    article .fridayEvening { height: 13em; }
 }
 
 @media only screen and (min-width: 1100px){
@@ -1419,32 +1430,32 @@ body.android #head .slogan {
         margin: 1em 0;
     }
 
-	article .fridayAfternoon,
-	article .fridayEvening,
-	article .saturdayAfternoon { height: auto; border-top: 0 none transparent; }
-	article .saturdayAfternoon {
-		border-top: none;
-		padding-top: 0;
-	}
-	#speakers div,
-	#layout div {
-		float: none;
-		padding-left: 0;
-		overflow: hidden;
-    	width: 100%;
-	}
-	#speakers img,
-	#layout img {
-		display: block;
-		height: auto;
-		margin: 0 auto;
-		text-align: center;
-		max-width: 100%;
-	}
-	#speakers div.right {
-		padding-top: 2%;
-    	padding-left: 0;
-	}
+    article .fridayAfternoon,
+    article .fridayEvening,
+    article .saturdayAfternoon { height: auto; border-top: 0 none transparent; }
+    article .saturdayAfternoon {
+        border-top: none;
+        padding-top: 0;
+    }
+    #speakers div,
+    #layout div {
+        float: none;
+        padding-left: 0;
+        overflow: hidden;
+        width: 100%;
+    }
+    #speakers img,
+    #layout img {
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 100%;
+    }
+    #speakers div.right {
+        padding-top: 2%;
+        padding-left: 0;
+    }
     #speaking article.speaker > header {
         width: 28%;
     }
@@ -1456,16 +1467,16 @@ body.android #head .slogan {
         letter-spacing: -1px;
         line-height: 1.5em;
     }
-	#layout,
-	#schedule {
-		clear: both;
-		float: none;
-		padding-left: 0;
-		width: 100%;
-	}
-	#schedule #day2 {
-		padding-top: 5%;
-	}
+    #layout,
+    #schedule {
+        clear: both;
+        float: none;
+        padding-left: 0;
+        width: 100%;
+    }
+    #schedule #day2 {
+        padding-top: 5%;
+    }
 
 
     #speaking .talk header h4 span {
@@ -1485,10 +1496,10 @@ body.android #head .slogan {
         font-size: 3em;
         letter-spacing: -1px;
     }
-	h2, h3 {
-		margin-left: 0;
-		margin-right: 0;
-	}
+    h2, h3 {
+        margin-left: 0;
+        margin-right: 0;
+    }
     h2 {
         font-size: 2em;
     }
@@ -1497,20 +1508,20 @@ body.android #head .slogan {
         width: 96%;
     }
 
-	#bread p,
+    #bread p,
     section p {
-		float: none;
-		width: 90%;
-	}
-	#bread #quickInfo {
-		padding-bottom: 20px;
-	}
-	#bread #quickInfo .date {
-		font-size: 2em;
-	}
-	#bread #quickInfo .price {
-		font-size: 3em;
-	}
+        float: none;
+        width: 90%;
+    }
+    #bread #quickInfo {
+        padding-bottom: 20px;
+    }
+    #bread #quickInfo .date {
+        font-size: 2em;
+    }
+    #bread #quickInfo .price {
+        font-size: 3em;
+    }
     #bread #intro {
         font-size: 1.6em;
         line-height: 1.2em;
@@ -1518,16 +1529,16 @@ body.android #head .slogan {
     .signupButton {
         width: 75%;
     }
-	#layout div header {
-		clear: both;
-		float: none;
-		width: 100%;
-	}
-	#layout div header h4 { margin: 0; }
-	#layout div p {
-		clear: both;
-		float: none;
-	}
+    #layout div header {
+        clear: both;
+        float: none;
+        width: 100%;
+    }
+    #layout div header h4 { margin: 0; }
+    #layout div p {
+        clear: both;
+        float: none;
+    }
     #layout div { height: auto !important; }
 
     #layout div p {
@@ -1542,7 +1553,6 @@ body.android #head .slogan {
     #layout div p.date {
         margin-top: 0;
     }
-
 }
 
 @media screen and (max-width: 500px) and (orientation:landscape) {
@@ -1563,7 +1573,7 @@ body.android #head .slogan {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 144dpi) {
+only screen and (min-resolution: 144dpi) {
     /* Style adjustments for high resolution devices */
 }
 
