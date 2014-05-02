@@ -1,6 +1,6 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
 /*
- * HTML5 Boilerplate
- *
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
@@ -18,14 +18,14 @@ textarea {
     color: #222;
 }
 
-body {
+html {
     font-size: 1em;
     line-height: 1.4;
 }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate.
+ * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
 
@@ -47,16 +47,20 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border: 1px solid #666;
+    border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
 }
 
 /*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
  */
 
-img {
+audio,
+canvas,
+img,
+video {
     vertical-align: middle;
 }
 
@@ -79,10 +83,10 @@ textarea {
 }
 
 /* ==========================================================================
-   Chrome Frame prompt
+   Browse Happy prompt
    ========================================================================== */
 
-.chromeframe {
+.browsehappy {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
@@ -93,848 +97,292 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html, body
-{
+body, html {
     height: 100%;
 }
 
 body {
-    background: #111 url() repeat fixed center top;
-    background-size: auto auto;
-    color: #000000;
-    font-family: Helvetica, Arial, sans-serif;
+    background: #888888 url(../img/brewing_agile_blue.png) fixed no-repeat center center;
+    background-size: 30% auto;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    color: #ddd;
+}
+
+a, a:hover, a:active, a:after, a:visited {
+    color: #ffffff;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: Georgia, serif;
-    margin: 0 0 20px;
-    padding: 20px 0;
+    font-weight: normal;
 }
 
-h2, h3 {
-    background-size: 514px auto;
-    border-bottom: 5px solid #fbb040;
-    color: #414042;
-    font-size: 3em;
-    font-weight: normal;
-    letter-spacing: -2px;
-    margin-right: 2%;
-    margin-left: 2%;
-    padding: 0 0 0.5em;
-    text-align: center;
-    text-shadow: 0 1px 0 #000;
-    text-transform: uppercase;
-    width: auto;
+h1 {
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 h2 {
-    color: #ffffff;
+    border-bottom: 5px solid #212722;
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 5em;
+    letter-spacing: -4px;
+    line-height: 1em;
+    padding-top: 7%;
 }
 
-h3 {
-    color: #ffffff;
-    font-size: 1.3em;
-    letter-spacing: -1px;
-    padding: 1em 0 0.5em;
+/*
+    '#4572A7',
+    '#AA4643',
+    '#89A54E',
+    '#80699B',
+    '#3D96AE',
+    '#DB843D',
+    '#92A8CD',
+    '#A47D7C',
+    '#B5CA92'
+
+*/
+
+body > nav {
+    background-color: #212722;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
-h4 {
-    background-color: rgba(0,0,0,0.4);
-    color: #ffffff;
-    padding: 2px 0;
-    text-align: center;
-    text-shadow: 0 1px 0 #aaa, 0 0 10px #000;
-}
-
-h4 span {
-    color: #fbb040;
-}
-
-h5 {
-    font-style: italic;
-    padding: 0;
-}
-
-
-p {
-    margin: 0 0 10px;
-}
-
-p a {
-    color: #ffffff;
-}
-
-a {
-    color: #ffffff;
-}
-
-ol,
-ol li {
-    list-style-position: inside;
-    list-style-type: none;
+body > nav ul {
+    display: table;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
-section p,
-#bread p,
-#bread #info,
-#bread #additional,
-#signUp form,
-#speaking article {
-    width: 90%;
-}
-
-.bigHeader {
-    font-size: 4em;
-    letter-spacing: -2px;
-    text-shadow: none;
-}
-
-.signupButton {
-    background-color: #fbb040;
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dd8013), to(#fbb040));
-    background: -webkit-linear-gradient(top, #fbb040, #dd8013);
-    background: -moz-linear-gradient(top, #fbb040, #dd8013);
-    background: -ms-linear-gradient(top, #fbb040, #dd8013);
-    background: -o-linear-gradient(top, #fbb040, #dd8013);
-    border: 0 none transparent;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.4);
-    clear: both;
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    font-size: 2em;
-    margin: 0 auto 6px;
-    padding: 20px 0 20px;
+body > nav ul li {
+    display: table-cell;
+    margin: 0;
+    padding: 0.6em 1em;
     text-align: center;
-    text-decoration: none;
-    text-shadow: 0 3px 3px rgba(0,0,0,0.7);
-    width: 300px;
+    text-transform: uppercase;
 }
 
-.signupButton:hover {
+body > nav ul li:nth-child(even) {
+    background-color: #444444;
+}
+
+body > nav ul li a {
+    text-decoration: none;
+}
+
+body > nav ul li a:hover {
     text-decoration: underline;
 }
 
-.signupButton[disabled] {
-    background: transparent;
-    border: 3px dashed #414042;
-    box-shadow: none;
-    color: #414042;
-    margin-bottom: 0;
-    text-shadow: none;
-}
-
-.signupButton[disabled]:hover {
-    text-decoration: none;
-}
-
-.contactUs {
-    background: transparent;
-    clear: both;
-    color: white;
-    display: block;
-    font-family: Helvetica, Arial, sans-sreif;
-    height: 32px;
-    margin: 20px auto 0;
-    padding: 10px 5px;
-    text-align: center;
-    width: 256px;
-}
-
-.contactUs a {
-    background: transparent url(../img/icon_social_pixel.png) no-repeat scroll left top;
-    background-size: auto;
-    display: block;
-    float: left;
-    height: 64px;
-    margin: 0;
-    text-indent: -9999px;
-    width: 64px;
-}
-
-.contactUs a.facebook { background-position: -64px 0;}
-.contactUs a.facebook:hover { background-position: -64px -64px;}
-.contactUs a.linkedin { background-position: -192px 0; margin: 0 16px; }
-.contactUs a.linkedin:hover { background-position: -192px -64px;}
-.contactUs a.twitter { background-position: 0 0;}
-.contactUs a.twitter:hover { background-position: 0 -64px;}
-
-#head {
-    background: transparent url(../img/bg_dawn_1024x768.png) no-repeat fixed center bottom;
-    background-size: cover;
-    display: block;
-    min-height: 95%;
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-
-#head h1 {
-    background: transparent url(../img/brewing_agile_2x.png) no-repeat scroll center bottom;
-    background-size: 371px 100%;
-    bottom: 0;
-    display: block;
-    height: 204px;
-    left: 0;
+#head,
+body > section,
+body > form {
+    background-color: rgba(255,255,255,0.7);
+    box-shadow: inset 0 0 5em rgba(0,0,0,0.2);
     margin: 0 auto;
-    padding: 0;
-    position: absolute;
-    text-indent: -9999px;
-    width: 100%;
-    z-index: 1;
-}
-
-#head .slogan {
-    color: #fff;
-    font-family: Georgia, serif;
-    font-size: 4.5em;
-    letter-spacing: -2px;
-    padding-top: 1em;
-    text-shadow: 0 2px 0 #999, 0 5px 10px rgba(0,0,0,0.7);
-    left: 0;
-    position: fixed;
-    text-align: center;
-    top: 0;
-    width: 100%;
-    z-index: 0;
-}
-
-section {
-    background-color: #414042;
-    clear: both;
-    margin: 0;
-    padding: 5% 2% 7% 2%;
+    max-width: 1200px;
+    padding: 0 10%;
     position: relative;
-    z-index: 1;
-}
-
-section p {
-    margin: 0 auto 1em;
-}
-
-#bread {
-    background-color: #000000;
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#111111), to(#000000)), url(../img/bg_dirt_1024x768.png) no-repeat scroll center bottom;
-    background: -webkit-linear-gradient(top, #000000, transparent), url(../img/bg_dirt_1024x768.png) no-repeat fixed center center;
-    background: -moz-linear-gradient(top, #000000, transparent), url(../img/bg_dirt_1024x768.png) no-repeat fixed center center;
-    background: -ms-linear-gradient(top, #000000, #111111), url(../img/bg_dirt_1024x768.png) no-repeat scroll center bottom;
-    background: -o-linear-gradient(top, #000000, #111111), url(../img/bg_dirt_1024x768.png) no-repeat scroll center bottom;
-    background-size: 100% 100%, cover;
-    border-bottom-color: #000000;
-    color: #fbb040;
-    padding-top: 1%;
-}
-
-#bread p {
-    display: block;
-    font-size: 1.2em;
-    margin: 0 auto 1em;
-    text-align: justify;
-}
-
-#bread #info,
-#bread #additional {
-    background: #3e2c1b url(../img/bg_shine_640x480.png) no-repeat fixed center center;
-    background-size: cover;
-    clear: none;
-    float: left;
-    margin-right: auto;
-    margin-bottom: 3em;
-    margin-left: 9%;
-    padding: 2%;
-    -moz-transform: skew(0,4deg);
-    -webkit-transform: skew(0,4deg);
-    -o-transform: skew(0,4deg);
-    -ms-transform: skew(0,4deg);
-    transform: skew(0,4deg);
-    width: 36%;
-}
-
-#bread #additional {
-    float: right;
-    margin-right: 9%;
-    margin-left: auto;
-}
-
-#bread #info p,
-#bread #additional p {
-
-    padding: 0 2% 2%;
-    -moz-transform: skew(0,-4deg);
-    -webkit-transform: skew(0,-4deg);
-    -o-transform: skew(0,-4deg);
-    -ms-transform: skew(0,-4deg);
-    transform: skew(0,-4deg);
-    width: 96%;
-}
-
-#bread #info p {
-}
-
-#bread #info p:first-child,
-#bread #additional p:first-child {
-    padding-top: 2%;
-}
-
-#bread #intro {
-    background: rgba(0,0,0,0.4) url(../img/bg_shine_640x480.png) no-repeat fixed center center;
-    background-size: cover;
-    font-size: 2em;
-    font-weight: normal;
-    letter-spacing: -1px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 1em 2%;
-    text-align: center;
-    -moz-transform: skew(0,-4deg);
-    -webkit-transform: skew(0,-4deg);
-    -o-transform: skew(0,-4deg);
-    -ms-transform: skew(0,-4deg);
-    transform: skew(0,-4deg);
-    width: 48%;
-}
-
-#bread #intro span {
-    text-shadow: none;
-
-}
-
-#bread #quickInfo {
-    font-family: Georgia, serif;
-    margin-bottom: 3em;
-    text-align: center;
-
-}
-
-#bread #quickInfo a {
-    color: #fbb040;
-}
-
-#bread #quickInfo .date {
-    font-size: 4em;
-    letter-spacing: -3px;
-    text-shadow: 0 2px 0 #bd8504;
-}
-
-#bread #quickInfo .price {
-    font-size: 4em;
-    letter-spacing: -4px;
-    line-height: 0.5em;
-    text-shadow: 0 2px 0 #bd8504;
-}
-
-#bread .contactUs {
-    width: 256px;
-}
-
-#signUp {
-    background-color: #eeeeee;
-    background: url(../img/bg_stone_1024x768.png) repeat-x fixed center center;
-    background-size: cover;
-}
-
-#signUp header { position: relative; }
-
-#signUp .bulk {
-    background: rgba(0,0,0,0.4) url(../img/bg_shine_640x480.png) no-repeat fixed center center;
-    background-size: cover;
-    color: #fff;
-    padding: 0.5em;
-    text-align: center;
-    -moz-transform: skew(0,-4deg);
-    -webkit-transform: skew(0,-4deg);
-    -o-transform: skew(0,-4deg);
-    -ms-transform: skew(0,-4deg);
-    transform: skew(0,-4deg);
-}
-
-#signUp .bulk span {
-    color: #fbb040;
-    font-family: Georgia, serif;
-    font-size: 2em;
-}
-
-#signUp form {
-    display: block;
-    margin: 0 auto;
-}
-
-#signUp form .label,
-#signUp form .input {
-    font-size: 1.2em;
-    margin-bottom: 1em;
-}
-
-#signUp form .label {
-    clear: left;
-    float: left;
-    min-width: 9em;
-    padding-top: 1%;
-    position: relative;
-    text-align: right;
-    width: 24%;
-}
-
-#signUp form .label label {
-    background: #c0b0a7 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
-    background-size: cover;
-    color: #414042;
-    display: block;
-    font-style: italic;
-    padding: 3% 5% 5%;
-    position: absolute;
-    right: 0;
-    text-align: right;
-    -moz-transform: skew(0,4deg);
-    -webkit-transform: skew(0,4deg);
-    -o-transform: skew(0,4deg);
-    -ms-transform: skew(0,4deg);
-    transform: skew(0,4deg);
-    top: -5px;
-    width: 8em;
-    height: 1em;
-}
-
-#signUp form .input,
-#signUp form .textarea {
-    float: left;
-    padding-right: 13%;
-    text-align: left;
-    width: 50%;
-}
-
-#signUp form .textarea {
-    margin-bottom: 2em;
-}
-
-#signUp form .input input,
-#signUp form .textarea textarea {
-    padding: 3%;
-    width: 94%;
-}
-
-#signUp form .invoice input {
-    margin: 15px 0 0 20px;
-    padding: 3%;
-    width: auto;
-}
-
-#signUp form .textarea textarea {
-    border: 0 none transparent;
-    height: 5em;
-}
-
-#signUp form .checkbox,
-#signUp form .radio,
-#signUp form .invoice,
-#signUp form .success,
-#signUp form .error {
-    background: transparent;
-    border: 3px dashed #414042;
-    color: #414042;
-    float: left;
-    margin: 0;
-    padding: 2%;
-    position: relative;
-    text-align: center;
-    width: 47%;
-}
-
-#signUp form .radio.checked {
-    background-color: #fff;
-    border-color: #FBB040;
-    border-style: solid;
-}
-
-#signUp form .radio.first {
-
-}
-
-#signUp form .radio.last {
-    margin-top: 1em;
-    width: 94%;
-}
-
-#signUp form .checkbox,
-#signUp form .invoice {
-    background: #c0b0a7 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
-    background-size: cover;
-    color: #414042;
-    border: none;
-    margin: 1px 0 2em;
-    padding: 2%;
-}
-
-#signUp form .invoice pre {
-    font-family: Arial, sans-serif;
-    font-size: 0.9em;
-    margin: 10px 0 0;
-
-    width: auto;
-}
-
-#signUp form .invoice pre span {
-    font-size: 0.9em;
-    text-align: left;
-}
-
-#signUp form .radio .timeInfo {
-    background: #c0b0a7 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
-    background-size: cover;
-    color: #414042;
-    display: block;
-    font-size: 0.8em;
-    font-style: italic;
-    left: 100%;
-    padding: 1%;
-    position: absolute;
-    top: 0;
-    -moz-transform: skew(0,4deg);
-    -webkit-transform: skew(0,4deg);
-    -o-transform: skew(0,4deg);
-    -ms-transform: skew(0,4deg);
-    transform: skew(0,4deg);
-    width: 7em;
-}
-
-#signUp form .radio label {
-    font-size: 1.4em;
-    text-align: center;
-}
-
-#signUp form .radio label span {
-    font-size: 0.8em;
-}
-
-#signUp form .radio input {
-    margin-right: 30px;
-}
-
-#signUp form .success,
-#signUp form .error {
-    border-color: transparent;
-    margin: 1em 24%;
-}
-
-#signUp form .success {
-    background-color: #63d62b;
-    float: none;
-}
-
-#signUp form .error {
-    background-color: #d6372b;
-    float: none;
-}
-
-#signUp form .success p,
-#signUp form .error p {
-    font-size: 1.4em;
-    width: 98%;
-}
-
-#signUp form .success p span,
-#signUp form .error p span {
-    font-size: 0.8em;
-}
-
-#signUp .submit {
-    clear: both;
-    padding-top: 20px;
-}
-
-section article {
-    display: block;
-}
-
-#whoItIsFor {
-    background: transparent url(../img/bg_darkstone_1024x768.png) repeat-x fixed center center;
-    background-size: cover;
-}
-
-#whoItIsFor h2 {
-
-}
-
-#whoItIsFor section {
-    background: #b7b7b7 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
-    background-size: cover;
-    clear: none;
-    margin: 0 auto 0;
-    padding: 2%;
-    text-align: justify;
-    -moz-transform: skew(0,4deg);
-    -webkit-transform: skew(0,4deg);
-    -o-transform: skew(0,4deg);
-    -ms-transform: skew(0,4deg);
-    transform: skew(0,4deg);
-    width: 96%;
-}
-
-#whoItIsFor section p {
-    -moz-transform: skew(0,-4deg);
-    -webkit-transform: skew(0,-4deg);
-    -o-transform: skew(0,-4deg);
-    -ms-transform: skew(0,-4deg);
-    transform: skew(0,-4deg);
-}
-
-#whoItIsFor h4 {
-    background: rgba(0,0,0,0.4) url(../img/bg_shine_640x480.png) no-repeat fixed center center;
-    background-size: cover;
-    font-size: 2em;
-    font-weight: normal;
-    letter-spacing: -1px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 1em 2%;
-    position: relative;
-    text-align: center;
-    -moz-transform: skew(0,-4deg);
-    -webkit-transform: skew(0,-4deg);
-    -o-transform: skew(0,-4deg);
-    -ms-transform: skew(0,-4deg);
-    transform: skew(0,-4deg);
-    width: 96%;
-    z-index: 2;
-}
-
-#videos {
-    background: transparent url(../img/bg_darkstone_1024x768.png) repeat-x fixed center center;
-    background-size: cover;
-}
-
-#videos article {
-    background: #b7b7b7 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
-    background-size: cover;
-    margin: 0 auto 5%;
-    max-width: 600px;
-    padding: 2%;
-    text-align: center;
     width: 80%;
 }
 
-#videos article h3 {
-    border-bottom-color: #999;
-    color: #000;
-    font-size: 1.6em;
-    margin-bottom: 0;
-    text-shadow: none;
+#head > *:first-child,
+body > section > *:first-child,
+body > section > *:first-child > *:first-child,
+body > form > *:first-child {
+    margin-top: 0;
 }
 
-#videos article iframe {
-    height: 320px;
-    max-width: 560px;
-    width: 100%;
-}
-
-#speaking {
-    background: transparent url(../img/bg_magma_1024x768.png) repeat-x fixed center center;
+#head {
+    background: rgba(220,220,220,0.8) url() no-repeat fixed center center;
     background-size: cover;
-}
-
-#speaking h2 {
-    color: #ffffff;
-}
-
-#speaking article {
-    clear: both;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-}
-
-#speaking .speaker {
-    background: #f7b215 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
-    background-size: cover;
-    height: 320px;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 2%;
-    -moz-transform: skew(0,4deg);
-    -webkit-transform: skew(0,4deg);
-    -o-transform: skew(0,4deg);
-    -ms-transform: skew(0,4deg);
-    transform: skew(0,4deg);
-    transition: max-height 1s;
-    -webkit-transition: max-height 1s; /* Safari */
-}
-
-#speaking .speaker.open {
-    height: auto;
-}
-
-#speaking .readMoreButton {
-    background-color: #000000;
-    bottom: -4%;
-    color: #ffffff;
-    font-family: Georgia, serif;
-    font-size: 1.8em;
-    padding: 1% 1% 3.5%;
-    position: absolute;
-    right: 0;
-    -moz-transform: skew(0,-4deg);
-    -webkit-transform: skew(0,-4deg);
-    -o-transform: skew(0,-4deg);
-    -ms-transform: skew(0,-4deg);
-    transform: skew(0,-4deg);
-    z-index: 10;
-}
-
-#speaking .readMoreButton:hover {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-#speaking article.speaker > header {
-    background-color: #000000;
-    display: block;
-    left: 0;
-    padding: 2%;
-    position: absolute;
-    top: 0;
-    width: 24%;
-}
-
-#speaking article > header div {
-    background: transparent url() no-repeat scroll center center;
-    background-size: contain;
-    height: 230px;
-    margin: 0 auto;
-    width: 100%;
-    -moz-transform: skew(0,-4deg);
-    -webkit-transform: skew(0,-4deg);
-    -o-transform: skew(0,-4deg);
-    -ms-transform: skew(0,-4deg);
-    transform: skew(0,-4deg);
-}
-
-#speaking .gojko > header div {
-    background-image: url(../img/gojko_adzic.jpg);
-}
-
-#speaking .sara > header div {
-    background-image: url(../img/sara_leren.jpg);
-}
-
-#speaking .emily > header div {
-    background-image: url(../img/emily_bache.jpg);
-}
-
-#speaking .bea > header div {
-    background-image: url(../img/bea_during.jpg);
-}
-
-#speaking article > header h3 {
-    border: 0;
-    color: #ffffff;
-    display: block;
-    margin: 0em auto 0;
-    padding: 0;
-    text-shadow: none;
-    -moz-transform: skew(0,-4deg);
-    -webkit-transform: skew(0,-4deg);
-    -o-transform: skew(0,-4deg);
-    -ms-transform: skew(0,-4deg);
-    transform: skew(0,-4deg);
-    width: 100%;
-}
-
-#speaking article > header h3 span {
-    color: #ffffff;
-    font-size: 0.8em;
-    font-style: italic;
-}
-
-#speaking article section {
-    background-color: transparent;
-}
-
-#speaking .talk,
-#speaking .about {
-    clear: none;
-    text-align: justify;
-    width: 30%
-}
-
-#speaking .talk {
-    float: right;
-    margin-right: 2%;
-}
-
-#speaking .about {
-    float: right;
-}
-
-#speaking .talk header h4 {
-    background-color: transparent;
-    color: #000000;
-    font-size: 1.4em;
-    font-weight: normal;
-    letter-spacing: -1px;
-    text-align: justify;
-    text-shadow: none;
-}
-
-#speaking .talk header h4 span {
-    color: #000000;
-    font-size: 2em;
-    letter-spacing: -2px;
-    line-height: 1.4em;
-}
-
-#speaking h4,
-#speaking h5 {
-    -moz-transform: skew(0,-4deg);
-    -webkit-transform: skew(0,-4deg);
-    -o-transform: skew(0,-4deg);
-    -ms-transform: skew(0,-4deg);
-    transform: skew(0,-4deg);
-}
-
-#speaking p {
-    font-size: 1.2em;
-    -moz-transform: skew(0,-4deg);
-    -webkit-transform: skew(0,-4deg);
-    -o-transform: skew(0,-4deg);
-    -ms-transform: skew(0,-4deg);
-    transform: skew(0,-4deg);
-    width: 100%;
-}
-
-#speaking p.presented {
-    font-style: italic;;
-}
-
-#speaking #moreSpeakers {
-    background-color: transparent;
-    clear: both;
-    float: none;
-    margin-top: 3em;
-    z-index: -1;
-}
-
-#speaking #moreSpeakers header {
-    width: 100%;
-}
-
-#speaking #moreSpeakers h4 {
-    background: rgba(0,0,0,0.4) url(../img/bg_shine_640x480.png) no-repeat fixed center center;
-    background-size: cover;
-    font-size: 3em;
-    font-weight: normal;
-    letter-spacing: -1px;
-    width: 100%;
-}
-
-#speaking #moreSpeakers p {
+    color: #212722;
+    min-height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
     text-align: center;
 }
 
-#timeplan {
-    background: transparent url(../img/bg_lava_1024x768.png) repeat-x fixed center center;
+#head h1 {
+    margin: 0 auto;
+    padding-bottom: 7%;
+    text-align: right;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+#head .slogan {
+    border-bottom: 5px solid #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10em;
+    letter-spacing: -10px;
+    margin: 0 0 0.2em;
+    padding: 20% 0 0;
+    text-align: left;
+}
+
+#quickInfo {
+    background: rgba(17,87,149,0.8) url() no-repeat fixed center center;
     background-size: cover;
+}
+
+#quickInfo .info,
+#quickInfo .locale {
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 5em;
+    letter-spacing: -4px;
+    margin: 0;
+}
+
+#quickInfo .info {
+    border-bottom: 5px solid #212722;
+    padding-top: 1em;
+}
+
+#quickInfo .locale {
+    padding-bottom: 1em;
+    text-align: right;
+}
+
+#bread {
+    background: rgba(170,70,67,0.8) url() no-repeat fixed center center;
+    background-size: cover;
+}
+
+#bread p {
+    float: right;
+    font-size: 2.4em;
+    letter-spacing: -1px;
+    margin-top: 0;
+    padding-top: 7%;
+    width: 44%;
+}
+
+#bread p:first-child {
+    float: left;
+}
+
+#bread nav {
+    clear: both;
+    padding-bottom: 7%;
+    text-align: center;
+    width: 100%;
+}
+
+#signUp {
+    background-color: rgba(137,165,78, 0.8);
+}
+
+#signUp.open {
+    min-height: 100%;
+}
+
+#signUp h2 {
+    border-bottom: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10em;
+    letter-spacing: -10px;
+    margin: 0;
+    padding: 0.4em 0;
+    text-align: center;
+}
+
+#signUp h2 a {
+    text-decoration: none;
+}
+
+#signUp h2 a:hover {
+    text-decoration: underline;
+}
+
+#signUp h2 a span {
+    color: #212722;
+}
+
+#signUpForm {
+    background-color: rgba(137,165,78, 0.8);
+    display: none;
+}
+
+#speaking {
+    background-color: rgba(128, 105, 155, 0.8);
+    min-height: 100%;
+}
+
+#speaking article {
+    float: left;
+    width: 25%;
+}
+
+#speaking article:nth-child(odd) {
+    background-color: rgba(255,255,255,0.5);
+    color: #212722;
+}
+
+#speaking #henrik_kniberg {
+    margin-left: 0;
+}
+
+#speaking article header img {
+    display: block;
+    width: 100%;
+}
+
+#speaking article header h3 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 2.4em;
+    margin: 0;
+    padding: 5% 10% 5%;
+    width: 80%;
+}
+
+#speaking article header h3 span {
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 0.5em;
+}
+
+#speaking article section {
+    padding: 5% 10%;
+    width: 80%;
+}
+
+#speaking article section.about {
+    padding-bottom: 14%;
+}
+
+#whoItIsFor {
+    background-color: rgba(61, 150, 174, 0.8);
+}
+
+#whoItIsFor p {
+    float: left;
+    font-size: 1.8em;
+    letter-spacing: -0.5px;
+    margin-top: 0;
+    margin-left: 6.33%;
+    padding-bottom: 3%;
+    width: 29%;
+}
+
+#whoItIsFor p:first-child {
+    margin-left: 0;
+}
+
+#whoItIsFor h4 {
+    border-top: 5px solid #212722;
+    clear: both;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 2.4em;
+    padding: 1em 0 7%;
+    text-align: right;
+}
+
+#timeplan {
+    background-color: rgba(219, 132, 61, 0.8);
 }
 
 #layout {
@@ -945,7 +393,6 @@ section article {
 }
 
 #layout > header {
-    margin-bottom: 4%;
 }
 
 #layout div {
@@ -986,11 +433,6 @@ section article {
     float: right;
     padding-bottom: 1em;
     padding: 0 2% 2% 4%;
-    -moz-transform: skew(0,4deg);
-    -webkit-transform: skew(0,4deg);
-    -o-transform: skew(0,4deg);
-    -ms-transform: skew(0,4deg);
-    transform: skew(0,4deg);
     width: 56%;
 }
 
@@ -998,8 +440,7 @@ section article {
     font-family: 'Palatino Linotype','Book Antiqua',Palatino,serif;
     font-size: 1.1em;
     font-style: italic;
-    margin-top: 20px;
-    margin-bottom: 0;
+    margin-top: 0;
     padding-top: 1em;
 }
 
@@ -1041,11 +482,6 @@ section article {
     float: right;
     margin: 0;
     padding-left: 5%;
-    -moz-transform: skew(0,4deg);
-    -webkit-transform: skew(0,4deg);
-    -o-transform: skew(0,4deg);
-    -ms-transform: skew(0,4deg);
-    transform: skew(0,4deg);
     width: 70%;
 }
 
@@ -1107,22 +543,26 @@ article .saturdayAfternoon {
 }
 
 #otherInfo {
-    background: transparent url(../img/bg_core_1024x768.png) repeat-x fixed center center;
-    background-size: cover;
+    background-color: rgba(130, 130, 130, 0.9);
 }
 
-#otherInfo h3 {
-    color: #414042;
+#otherInfo p {
+    font-size: 1.8em;
+    letter-spacing: -0.5px;
+    margin: 0;
+    padding-bottom: 7%;
 }
 
 #sponsors {
     background: #ffffff url() repeat-x fixed center center;
     background-size: cover;
+    color: #212722;
+    min-height: 100%;
     text-align: center;
 }
 
 #sponsors h2 {
-    color: #414042;
+    text-align: left;
 }
 
 #sponsors div {
@@ -1132,6 +572,7 @@ article .saturdayAfternoon {
 #sponsors div a {
     float: left;
     margin: 4%;
+    width: 25%;
 }
 
 #sponsors img {
@@ -1143,57 +584,22 @@ article .saturdayAfternoon {
 #sponsors p {
     clear: both;
     font-size: 0.8em;
-    padding-top: 2em;
+    margin: 0;
+    padding: 2em 0 7%;
 }
 
 #sponsors p a {
     color: #000000;
 }
 
-footer {
-    background-color: #000000;
-    clear: both;
-    color: #fbb040;
-    font-family: Georgia, serif;
-    margin: 0 5%;
-    padding: 2% 2% 1% 2%;
+body > footer {
+    background-color: #212722;
     text-align: center;
 }
 
-footer a {
-    color: #fbb040;
-}
-
-/* ==========================================================================
-   Fixes for LT IE9
-   ========================================================================== */
-
-html.lt-ie9 {
-}
-
-html.lt-ie9 #head {
-    background-repeat: repeat-x;
-}
-
-html.lt-ie9 #head h1 {
-    background-image: url(../img/brewing_agile.png);
-}
-
-html.lt-ie9 #head .slogan {
-    position: absolute;
-}
-
-html.lt-ie9 #speaking article > header div {
-    background-size: auto 100%;
-}
-
-/* ==========================================================================
-   Fixes for other browsers
-   ========================================================================== */
-
-body.ios #head .slogan,
-body.android #head .slogan {
-    position: absolute;
+body > footer p {
+    margin: 0;
+    padding: 1em 0;
 }
 
 /* ==========================================================================
@@ -1216,7 +622,7 @@ body.android #head .slogan {
     content: "";
     display: block;
     width: 0;
-    height: 100%;
+    height: 150%;
 }
 
 /*
@@ -1266,10 +672,6 @@ body.android #head .slogan {
     visibility: hidden;
 }
 
-.clear {
-    clear: both;
-}
-
 /*
  * Clearfix: contain floats
  *
@@ -1303,277 +705,18 @@ body.android #head .slogan {
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
+   These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 875px){
-    h2, h3 {
-        margin-right: 7%;
-        margin-left: 7%;
-    }
-    section p,
-    #bread p,
-    #signUp form,
-    #whoItIsFor h4,
-    #whoItIsFor section,
-    #speaking article {
-        width: 80%;
-    }
-    #bread #info,
-    #bread #additional {
-        width: 36%;
-        margin-left: 9%;
-    }
-    #bread #additional {
-        margin-right: 9%;
-        margin-left: 0;
-    }
-    #head .slogan {
-        font-size: 5em;
-        letter-spacing: -2px;
-    }
-    article .fridayAfternoon { height: 26em; }
-    article .fridayEvening { height: 13em; }
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
 }
 
-@media only screen and (min-width: 1100px){
-    h2, h3 {
-        margin-right: 17%;
-        margin-left: 17%;
-    }
-    section p,
-    #bread p,
-    #signUp form,
-    #whoItIsFor h4,
-    #whoItIsFor section,
-    #speaking article {
-        width: 60%;
-    }
-    #bread #info,
-    #bread #additional {
-        width: 26%;
-        margin-left: 19%;
-    }
-    #bread #additional {
-        margin-right: 19%;
-        margin-left: 0;
-    }
-    #head .slogan {
-        font-size: 6em;
-        letter-spacing: -3px;
-    }
-    footer {
-        margin: 0 auto;
-        padding: 10px 2% 20px;
-    }
-    section article .fridayEvening { height: 12em; }
-}
-
-@media only screen and (max-width: 650px) {
-    h2, h3 {
-        /*background-color: #ffff00;*/
-    }
-    #head .slogan {
-        font-size: 4em;
-        letter-spacing: -2px;
-    }
-    #bread p,
-    section p {
-        width: 80%;
-    }
-    #bread #intro {
-        width: 98%;
-    }
-    #bread #info, #bread #additional {
-        margin: 0 auto;
-        width: 80%;
-
-    }
-
-    #signUp form .label {
-
-        height: 40px;
-        margin-bottom: 0;
-    }
-
-    #signUp form .label label {
-        height: 20px;
-        padding: 10px;
-        top: 0;
-        -moz-transform: skew(0,0);
-        -webkit-transform: skew(0,0);
-        -o-transform: skew(0,0);
-        -ms-transform: skew(0,0);
-        transform: skew(0,0);
-    }
-
-    #signUp form .input {
-        clear: left;
-        width: 96%;
-    }
-
-    #signUp form .checkbox, #signUp form .radio, #signUp form .success, #signUp form .error {
-        width: 96%;
-    }
-
-    #signUp form .radio {
-        padding-top: 2em;
-    }
-
-    #signUp form .radio .timeInfo {
-        left: auto;
-        right: 0;
-    }
-
-    #signUp form .success, #signUp form .error {
-        margin: 1em 0;
-    }
-
-    article .fridayAfternoon,
-    article .fridayEvening,
-    article .saturdayAfternoon { height: auto; border-top: 0 none transparent; }
-    article .saturdayAfternoon {
-        border-top: none;
-        padding-top: 0;
-    }
-    #speakers div,
-    #layout div {
-        float: none;
-        padding-left: 0;
-        overflow: hidden;
-        width: 100%;
-    }
-    #speakers img,
-    #layout img {
-        display: block;
-        height: auto;
-        margin: 0 auto;
-        text-align: center;
-        max-width: 100%;
-    }
-    #speakers div.right {
-        padding-top: 2%;
-        padding-left: 0;
-    }
-    #speaking article.speaker > header {
-        width: 28%;
-    }
-    #speaking .talk, #speaking .about {
-        width: 60%;
-    }
-    #speaking .talk header h4 {
-        font-size: 2em;
-        letter-spacing: -1px;
-        line-height: 1.5em;
-    }
-    #layout,
-    #schedule {
-        clear: both;
-        float: none;
-        padding-left: 0;
-        width: 100%;
-    }
-    #schedule #day2 {
-        padding-top: 5%;
-    }
-
-
-    #speaking .talk header h4 span {
-        font-size: 1em;
-    }
-
-    #sponsors div {
-        width: 100% !important;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    h2, h3 {
-        /*background-color: orange;*/
-    }
-    #head .slogan {
-        font-size: 3em;
-        letter-spacing: -1px;
-    }
-    h2, h3 {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    h2 {
-        font-size: 2em;
-    }
-
-    #bread #info, #bread #additional {
-        width: 96%;
-    }
-
-    #bread p,
-    section p {
-        float: none;
-        width: 90%;
-    }
-    #bread #quickInfo {
-        padding-bottom: 20px;
-    }
-    #bread #quickInfo .date {
-        font-size: 2em;
-    }
-    #bread #quickInfo .price {
-        font-size: 3em;
-    }
-    #bread #intro {
-        font-size: 1.6em;
-        line-height: 1.2em;
-    }
-    .signupButton {
-        width: 75%;
-    }
-    #layout div header {
-        clear: both;
-        float: none;
-        width: 100%;
-    }
-    #layout div header h4 { margin: 0; }
-    #layout div p {
-        clear: both;
-        float: none;
-    }
-    #layout div { height: auto !important; }
-
-    #layout div p {
-        -moz-transform: skew(0,0);
-        -webkit-transform: skew(0,0);
-        -o-transform: skew(0,0);
-        -ms-transform: skew(0,0);
-        transform: skew(0,0);
-        width: 96%;
-    }
-
-    #layout div p.date {
-        margin-top: 0;
-    }
-}
-
-@media screen and (max-width: 500px) and (orientation:landscape) {
-    #head .slogan {
-        font-size: 2em;
-        letter-spacing: -1px;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    h2, h3 {
-        /*background-color: red;*/
-    }
-}
-
-@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
-    /* CSS overrides for mobile here */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min-resolution: 144dpi) {
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -1586,7 +729,7 @@ only screen and (min-resolution: 144dpi) {
     * {
         background: transparent !important;
         color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow:none !important;
+        box-shadow: none !important;
         text-shadow: none !important;
     }
 
