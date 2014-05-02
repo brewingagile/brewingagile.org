@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Brewing Agile 2013</title>
+    <title>Brewing Agile 2014</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
@@ -32,12 +32,25 @@
 
         $(document).ready(function(event){
 
+            $(window).on('scroll', function(event){
+                if($(document).scrollTop() > $('#head').height() && !$('body > nav').hasClass('sticky')){
+                    $('body > nav').addClass('sticky');
+                } else if($(document).scrollTop() <= $('#head').height() && $('body > nav').hasClass('sticky')) {
+                    $('body > nav').removeClass('sticky');
+                }
+            });
+
             $('#signUp h2 a').on('click', function(event){
                 event.preventDefault;
                 event.stopImmediatePropagation;
                 $('#signUp').slideUp();
                 $('#signUpForm').slideDown();
                 $('body > nav a[href="#signUp"]').attr('href', '#signUpForm');
+            });
+
+            $('#menuButton').on('click', function(event){
+                event.preventDefault();
+                $('body').toggleClass('openMenu');
             });
 
         });
@@ -51,6 +64,8 @@
         <p class="slogan">Undefined</p>
         <h1>We will decide a theme soon &mdash; Brewing Agile 2014</h1>
     </header>
+
+    <a id="menuButton" href="">Menu</a>
 
     <nav>
         <ul>
@@ -85,32 +100,49 @@
         <p class="bulk">For bulk buys, please contact us at <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a><br />
             <span>Last day to register is November 21st!</span>
         </p>
-        <div class="label"><label>Participant Name</label></div><div class="input"><input id="inputParticipantName" type="text" ng-model="r.participantName" size="40" required></div>
-        <div class="label"><label>Participant Email</label></div><div class="input"><input type="email" ng-model="r.participantEmail" size="40" required></div>
-        <div class="label"><label>Company</label></div><div class="input"><input type="text" ng-model="r.billingCompany" size="40" required></div>
-        <div class="label"><label>Billing Address</label></div>
-        <div class="textarea"><textarea type="text" ng-model="r.billingAddress" required></textarea></div>
-        <div class="label"><label>Send Invoice As</label></div>
-        <div class="input invoice">
-            <label><input name="billingMethod" type="radio" ng-model="r.billingMethod" value="EMAIL" required> Email</label>
-            <label><input name="billingMethod" type="radio" ng-model="r.billingMethod" value="SNAILMAIL" required> Snailmail</label>
-            <pre ng-show="r.billingMethod == 'EMAIL'"><span>Invoice will be sent to:</span><br />{{r.participantEmail}}</pre>
-            <pre ng-show="r.billingMethod == 'SNAILMAIL'"><span>Invoice will be sent to:</span><br /><span ng-show="r.billingCompany != ''">{{r.billingCompany}}<br/></span>{{r.billingAddress}}</pre>
+        <div class="clearfix">
+            <div class="label"><label>Participant Name</label></div>
+            <div class="input"><input id="inputParticipantName" type="text" ng-model="r.participantName" size="40" required></div>
         </div>
-        <div class="label"><label>Allergies? / Veg?</label></div><div class="checkbox"><label><input type="checkbox" ng-model="r.dietaryRequirements"> Yes, please contact me about it.</label></div>
-
-        <div class="label"><label>Package</label></div>
-
-        <div class="radio first" ng-class="{'checked': (r.ticket == 'conference+workshop')}">
-            <p class="timeInfo">Starts at 8:30!</p>
-            <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference+workshop" required disabled>1800 SEK - Workshop + Conference<br /><span style="font-size: 25px; font-weight: bold; font-style: italic; text-transform: uppercase; color: #990000;">SOLD OUT!!!</span></label>
-
-            <div class="radio last" ng-class="{'checked': (r.ticket == 'conference')}">
-                <p class="timeInfo">Starts at 13:00!</p>
-                <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required>1000 SEK - Conference<br /><span>You go to the conference on Friday afternoon and the discussion groups on Saturday.</span></label>
+        <div class="clearfix">
+            <div class="label"><label>Participant Email</label></div>
+            <div class="input"><input type="email" ng-model="r.participantEmail" size="40" required></div>
+        </div>
+        <div class="clearfix">
+            <div class="label"><label>Company</label></div>
+            <div class="input"><input type="text" ng-model="r.billingCompany" size="40" required></div>
+        </div>
+        <div class="clearfix">
+            <div class="label"><label>Billing Address</label></div>
+            <div class="textarea"><textarea type="text" ng-model="r.billingAddress" required></textarea></div>
+        </div>
+        <div class="clearfix">
+            <div class="label"><label>Send Invoice As</label></div>
+            <div class="input invoice">
+                <label><input name="billingMethod" type="radio" ng-model="r.billingMethod" value="EMAIL" required> Email</label>
+                <label><input name="billingMethod" type="radio" ng-model="r.billingMethod" value="SNAILMAIL" required> Snailmail</label>
+                <pre ng-show="r.billingMethod == 'EMAIL'"><span>Invoice will be sent to:</span><br />{{r.participantEmail}}</pre>
+                <pre ng-show="r.billingMethod == 'SNAILMAIL'"><span>Invoice will be sent to:</span><br /><span ng-show="r.billingCompany != ''">{{r.billingCompany}}<br/></span>{{r.billingAddress}}</pre>
             </div>
         </div>
-        <div class="submit"><input class="signupButton" type="submit" value="Register!" ng-disabled="!myForm.$valid || lastRegisteredName == r.participantName"></div>
+        <div class="clearfix">
+            <div class="label"><label>Allergies? / Veg?</label></div><div class="checkbox"><label><input type="checkbox" ng-model="r.dietaryRequirements"> Yes, please contact me about it.</label></div>
+        </div>
+        <div class="clearfix">
+            <div class="label"><label>Package</label></div>
+
+            <div class="radio first" ng-class="{'checked': (r.ticket == 'conference+workshop')}">
+                <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference+workshop" required disabled>1800 SEK : Workshop + Conference<br /><span>As below, but you also go to Henrik Kniberg's workshop on Friday morning. Starts at 8:30.</span></label>
+
+                <div class="radio last" ng-class="{'checked': (r.ticket == 'conference')}">
+                    <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required>1000 SEK : Conference<br /><span>You go to the conference on Friday afternoon and the discussion groups on Saturday. Starts at 13:00.</span></label>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="submit"><input class="signupButton" type="submit" value="Register!" ng-disabled="!myForm.$valid || lastRegisteredName == r.participantName"></div>
+        </div>
+
         <div class="success" ng-show="showSuccess"><p>Thank you!<br /><span>We will send an invoice to you asap.</span><br/><a href="" ng-click="reset()">Make another reservation?</a></p></div>
         <div class="error" ng-show="showError"><p>Sorry!<br /><span>Something went wrong, can you please try again?<br />If it still does not work, write in caps to <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a></span></p></div>
     </form>
@@ -119,54 +151,6 @@
         <header><h2>Speakers</h2></header>
         <article id="henrik_kniberg" class="speaker kniberg clearfix">
             <header><img src="img/henrik_kniberg.jpg" alt="Henrik Kniberg" /><h3><span>Keynote</span><br />Henrik Kniberg</h3></header>
-            <section class="talk">
-                <header><h4><span>Make Impacts,<br />Not Software</span></h4></header>
-                <p>Software is everywhere today, and countless software products and projects die a slow death without ever making any impact. Today's planning and roadmap techniques expect the world to stand still while we deliver, and set products and projects up for failure from the very start. Even when they have good strategic plans, many organisations fail to communicate them and align everyone involved in delivery. The result is a tremendous amount of time and money wasted due to wrong assumptions, lack of focus, poor communication of objectives, lack of understanding and misalignment with overall goals.</p>
-                <p>There has to be a better way to deliver! Gojko presents a possible solution, impact mapping, an innovative strategic planning method that can help you make an impact with software.</p>
-                <p class="presented">- Keynote at XP 2013, presented at the NDC 2013, BDD Exchange NYC 2012, Atlanta Scrum User Group October 2012</p>
-            </section>
-            <section class="about">
-                <p>Gojko Adzic is a strategic software delivery consultant who works with ambitious teams to improve the quality of their software products and processes. He specialises in agile and lean quality improvement, in particular agile testing, specification by example and behaviour driven development.</p>
-                <p>Gojko's book Specification by Example was awarded the #2 spot on the top 100 agile books for 2012 and won the Jolt Award for the best book of 2012. In 2011, he was voted by peers as the most influential agile testing professional, and his blog won the UK agile award for the best online publication in 2010.</p>
-                <p>Gojko is the author of Impact Mapping, Specification by Example, Bridging the Communication Gap, Test Driven .NET Development with FitNesse and The Secret Ninja Cucumber Scrolls.</p>
-                <p>Over the last thirteen years, he has worked as a developer, architect, technical director and consultant on projects delivering financial and energy trading platforms, mobile positioning and e-commerce applications, online gaming and complex configuration management systems.</p>
-            </section>
-        </article>
-
-        <article id="henrik_kniberg2" class="speaker kniberg clearfix">
-            <header><img src="img/henrik_kniberg.jpg" alt="Henrik Kniberg" /><h3><span></span><br />Henrik Kniberg</h3></header>
-            <section class="talk">
-                <header><h4><span>Make Impacts,<br />Not Software</span></h4></header>
-                <p>Software is everywhere today, and countless software products and projects die a slow death without ever making any impact. Today's planning and roadmap techniques expect the world to stand still while we deliver, and set products and projects up for failure from the very start. Even when they have good strategic plans, many organisations fail to communicate them and align everyone involved in delivery. The result is a tremendous amount of time and money wasted due to wrong assumptions, lack of focus, poor communication of objectives, lack of understanding and misalignment with overall goals.</p>
-                <p>There has to be a better way to deliver! Gojko presents a possible solution, impact mapping, an innovative strategic planning method that can help you make an impact with software.</p>
-                <p class="presented">- Keynote at XP 2013, presented at the NDC 2013, BDD Exchange NYC 2012, Atlanta Scrum User Group October 2012</p>
-            </section>
-            <section class="about">
-                <p>Gojko Adzic is a strategic software delivery consultant who works with ambitious teams to improve the quality of their software products and processes. He specialises in agile and lean quality improvement, in particular agile testing, specification by example and behaviour driven development.</p>
-                <p>Gojko's book Specification by Example was awarded the #2 spot on the top 100 agile books for 2012 and won the Jolt Award for the best book of 2012. In 2011, he was voted by peers as the most influential agile testing professional, and his blog won the UK agile award for the best online publication in 2010.</p>
-                <p>Gojko is the author of Impact Mapping, Specification by Example, Bridging the Communication Gap, Test Driven .NET Development with FitNesse and The Secret Ninja Cucumber Scrolls.</p>
-                <p>Over the last thirteen years, he has worked as a developer, architect, technical director and consultant on projects delivering financial and energy trading platforms, mobile positioning and e-commerce applications, online gaming and complex configuration management systems.</p>
-            </section>
-        </article>
-
-        <article id="henrik_kniberg3" class="speaker kniberg clearfix">
-            <header><img src="img/henrik_kniberg.jpg" alt="Henrik Kniberg" /><h3><span></span><br />Henrik Kniberg</h3></header>
-            <section class="talk">
-                <header><h4><span>Make Impacts,<br />Not Software</span></h4></header>
-                <p>Software is everywhere today, and countless software products and projects die a slow death without ever making any impact. Today's planning and roadmap techniques expect the world to stand still while we deliver, and set products and projects up for failure from the very start. Even when they have good strategic plans, many organisations fail to communicate them and align everyone involved in delivery. The result is a tremendous amount of time and money wasted due to wrong assumptions, lack of focus, poor communication of objectives, lack of understanding and misalignment with overall goals.</p>
-                <p>There has to be a better way to deliver! Gojko presents a possible solution, impact mapping, an innovative strategic planning method that can help you make an impact with software.</p>
-                <p class="presented">- Keynote at XP 2013, presented at the NDC 2013, BDD Exchange NYC 2012, Atlanta Scrum User Group October 2012</p>
-            </section>
-            <section class="about">
-                <p>Gojko Adzic is a strategic software delivery consultant who works with ambitious teams to improve the quality of their software products and processes. He specialises in agile and lean quality improvement, in particular agile testing, specification by example and behaviour driven development.</p>
-                <p>Gojko's book Specification by Example was awarded the #2 spot on the top 100 agile books for 2012 and won the Jolt Award for the best book of 2012. In 2011, he was voted by peers as the most influential agile testing professional, and his blog won the UK agile award for the best online publication in 2010.</p>
-                <p>Gojko is the author of Impact Mapping, Specification by Example, Bridging the Communication Gap, Test Driven .NET Development with FitNesse and The Secret Ninja Cucumber Scrolls.</p>
-                <p>Over the last thirteen years, he has worked as a developer, architect, technical director and consultant on projects delivering financial and energy trading platforms, mobile positioning and e-commerce applications, online gaming and complex configuration management systems.</p>
-            </section>
-        </article>
-
-        <article id="henrik_kniberg4" class="speaker kniberg clearfix">
-            <header><img src="img/henrik_kniberg.jpg" alt="Henrik Kniberg" /><h3><span></span><br />Henrik Kniberg</h3></header>
             <section class="talk">
                 <header><h4><span>Make Impacts,<br />Not Software</span></h4></header>
                 <p>Software is everywhere today, and countless software products and projects die a slow death without ever making any impact. Today's planning and roadmap techniques expect the world to stand still while we deliver, and set products and projects up for failure from the very start. Even when they have good strategic plans, many organisations fail to communicate them and align everyone involved in delivery. The result is a tremendous amount of time and money wasted due to wrong assumptions, lack of focus, poor communication of objectives, lack of understanding and misalignment with overall goals.</p>
@@ -195,7 +179,14 @@
     </section>
 
     <section id="timeplan">
-        <article id="layout">
+
+        <header>
+            <h2>Timeplan</h2>
+        </header>
+
+        <p>The conference will be on the 28th - 29th of November with roughly the same schedule as last year. We'll add more details later.</p>
+
+        <!--article id="layout">
             <header><h3>~ Layout ~</h3></header>
             <div id="workshop" class="first fridayMorning">
                 <header>
@@ -283,7 +274,7 @@
                     <dd>Go home!</dd>
                 </dl>
             </div>
-        </article>
+        </article-->
         <div style="clear:both"></div>
     </section>
 

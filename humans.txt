@@ -3,7 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Jeff Campbell       --
+    Henrik Johansson    --
+    Anders Mårtensson   --
+    Viktor Nyblom       --
+    Thomas Varga        -- @wolfa127
 
 # THANKS
 

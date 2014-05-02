@@ -102,7 +102,7 @@ body, html {
 }
 
 body {
-    background: #888888 url(../img/brewing_agile_blue.png) fixed no-repeat center center;
+    background: #888888 url(../img/brewing_agile_2x.png) fixed no-repeat center center;
     background-size: 30% auto;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
     color: #ddd;
@@ -123,32 +123,40 @@ h1 {
 h2 {
     border-bottom: 5px solid #212722;
     font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-    font-size: 5em;
+    font-size: 5vw;
     letter-spacing: -4px;
     line-height: 1em;
     padding-top: 7%;
 }
 
-/*
-    '#4572A7',
-    '#AA4643',
-    '#89A54E',
-    '#80699B',
-    '#3D96AE',
-    '#DB843D',
-    '#92A8CD',
-    '#A47D7C',
-    '#B5CA92'
+#menuButton {
+    background: rgba(136,136,136,0.6);
+    color: #ffffff;
+    display: none;
+    height: 60px;
+    position: fixed;
+    right: 0;
+    text-indent: -9999px;
+    top: 0;
+    width: 60px;
+    z-index: 9999;
+}
 
-*/
+body.openMenu #menuButton {
+    background-color: #444444;
+}
 
 body > nav {
     background-color: #212722;
     left: 0;
-    position: fixed;
-    top: 0;
+    position: static;
     width: 100%;
-    z-index: 9999;
+    top: 0;
+    z-index: 9998;
+}
+
+body > nav.sticky {
+    position: fixed;
 }
 
 body > nav ul {
@@ -198,8 +206,7 @@ body > form > *:first-child {
 }
 
 #head {
-    background: rgba(220,220,220,0.8) url() no-repeat fixed center center;
-    background-size: cover;
+    background: rgba(220,220,220,0.9) url() no-repeat fixed right center;
     color: #212722;
     min-height: 100%;
     padding-top: 0;
@@ -216,7 +223,9 @@ body > form > *:first-child {
 }
 
 #head .slogan {
-    border-bottom: 5px solid #fff;
+    background: transparent url(../img/brewing_agile_2x.png) no-repeat scroll right bottom;
+    background-size: auto 1.4em;
+    border-bottom: 5px solid #212722;
     font-family: 'Raleway', sans-serif;
     font-size: 10em;
     letter-spacing: -10px;
@@ -226,7 +235,7 @@ body > form > *:first-child {
 }
 
 #quickInfo {
-    background: rgba(17,87,149,0.8) url() no-repeat fixed center center;
+    background: rgba(17,87,149,0.9) url() no-repeat fixed center center;
     background-size: cover;
 }
 
@@ -249,7 +258,7 @@ body > form > *:first-child {
 }
 
 #bread {
-    background: rgba(170,70,67,0.8) url() no-repeat fixed center center;
+    background: rgba(170,70,67,0.9) url() no-repeat fixed center center;
     background-size: cover;
 }
 
@@ -274,7 +283,7 @@ body > form > *:first-child {
 }
 
 #signUp {
-    background-color: rgba(137,165,78, 0.8);
+    background-color: rgba(137,165,78, 0.9);
 }
 
 #signUp.open {
@@ -304,12 +313,134 @@ body > form > *:first-child {
 }
 
 #signUpForm {
-    background-color: rgba(137,165,78, 0.8);
+    background-color: rgba(137,165,78, 0.9);
     display: none;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+#signUpForm .bulk {
+}
+
+#signUpForm .bulk span {
+    border-top: 5px solid #212722;
+    display: block;
+    margin-top: 1em;
+    padding-top: 1em;
+    text-align: right;
+}
+
+#signUpForm > div {
+    font-size: 2em;
+    padding: 1em 0;
+    width: 100%;
+}
+
+#signUpForm > div:nth-child(even) {
+    background-color: rgba(255,255,255,0.1);
+    clear: both;
+}
+
+#signUpForm .label {
+    float: left;
+    padding-right: 2%;
+    width: 46%;
+}
+
+#signUpForm .input,
+#signUpForm .radio.first,
+#signUpForm .textarea {
+    float: right;
+    width: 50%;
+}
+
+#signUpForm .radio {
+    padding: 0 3% 3% 3%;
+    position: relative;
+}
+
+#signUpForm .radio.first {
+    margin-right: 5%;
+    width: 39%;
+}
+
+#signUpForm .radio.checked {
+    background-color: #dddddd;
+    color: #212722;
+}
+
+#signUpForm .radio .timeInfo {
+    position: absolute;
+    left: 100%;
+    top: auto;
+}
+
+#signUpForm .radio span {
+    font-size: 0.5em;
+}
+
+#signUpForm .radio .radio {
+    margin-top: 8%;
+    padding-top: 3%;
+}
+
+#signUpForm .label label {
+    display: block;
+    text-align: right;
+    padding: 2%;
+    width: 96%;
+}
+
+#signUpForm .input input,
+#signUpForm pre,
+#signUpForm .textarea textarea {
+    display: block;
+    padding: 2%;
+    text-align: left;
+    width: 85%;
+}
+
+#signUpForm .input label {
+    float: left;
+    margin-left: 4%;
+}
+
+#signUpForm .input label:first-child {
+    margin-left: 0;
+}
+
+#signUpForm pre {
+    background-color: #dddddd;
+    clear: both;
+    color: #212722;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    line-height: 1em;
+}
+
+#signUpForm pre span:first-child {
+    color: rgb(137,165,78);
+    font-size: 0.5em;
+}
+
+#signUpForm .submit {
+    text-align: right;
+}
+
+#signUpForm .submit input {
+    background-color: #212722;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 1em;
+}
+
+#signUpForm .submit input:hover {
+    background-color: #ffffff;
+    color: #212722;
 }
 
 #speaking {
-    background-color: rgba(128, 105, 155, 0.8);
+    background-color: rgba(128, 105, 155, 0.9);
     min-height: 100%;
 }
 
@@ -336,7 +467,8 @@ body > form > *:first-child {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 2.4em;
     margin: 0;
-    padding: 5% 10% 5%;
+    line-height: 0.8em;
+    padding: 0 10% 5%;
     width: 80%;
 }
 
@@ -350,12 +482,16 @@ body > form > *:first-child {
     width: 80%;
 }
 
+#speaking article section p::first-letter {
+    font-size: 180%;
+}
+
 #speaking article section.about {
     padding-bottom: 14%;
 }
 
 #whoItIsFor {
-    background-color: rgba(61, 150, 174, 0.8);
+    background-color: rgba(61, 150, 174, 0.9);
 }
 
 #whoItIsFor p {
@@ -382,7 +518,14 @@ body > form > *:first-child {
 }
 
 #timeplan {
-    background-color: rgba(219, 132, 61, 0.8);
+    background-color: rgba(219, 132, 61, 0.9);
+}
+
+#timeplan p {
+    font-size: 1.8em;
+    letter-spacing: -0.5px;
+    margin: 0;
+    padding-bottom: 7%;
 }
 
 #layout {
@@ -543,7 +686,7 @@ article .saturdayAfternoon {
 }
 
 #otherInfo {
-    background-color: rgba(130, 130, 130, 0.9);
+    background-color: rgba(130, 130, 130, 0.92);
 }
 
 #otherInfo p {
@@ -709,8 +852,148 @@ body > footer p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 1290px) {
+    #head .slogan {
+        font-size: 10vw;
+        letter-spacing: -1vw;
+    }
+}
+
+@media only screen and (max-width: 1034px) {
+
+    body > nav ul li {
+        padding: 0.4em 1em 0.6em;
+    }
+
+    body > nav ul li a {
+        font-size: 0.8em;
+    }
+
+    #head .slogan {
+        letter-spacing: -5px;
+    }
+
+    #quickInfo .info, #quickInfo .locale {
+        font-size: 6vw;
+        letter-spacing: -0.6vw;
+    }
+
+    #bread p {
+        font-size: 3vw;
+    }
+
+    #signUp h2 {
+        font-size: 18vw;
+    }
+
+    #speaking article {
+        width: 50%;
+    }
+
+    #speaking article section {
+        display: none;
+    }
+
+    #whoItIsFor p {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+
+    h2 {
+        font-size: 10vw;
+    }
+
+    #menuButton {
+        display: block;
+    }
+
+    body > nav {
+        display: none;
+        left: auto;
+        position: fixed;
+        right: 0;
+        top: 60px;
+        width: 60%;
+    }
+
+    body.openMenu > nav {
+        background-color: transparent;
+    }
+
+    body.openMenu > nav {
+        display: block;
+    }
+
+    body > nav ul,
+    body > nav ul li {
+        background-color: rgba(136,136,136,0.6);
+        display: block;
+    }
+
+    body > nav ul li a {
+        font-size: 5vw;
+    }
+
+    body.openMenu #head,
+    body.openMenu > section,
+    body.openMenu > form {
+        left: -60%;
+    }
+
+    #head .slogan {
+        letter-spacing: -3px;
+    }
+
+    #sponsors div a {
+        width: 42%;
+    }
+
+    #sponsors div a:nth-child(2n+1) {
+        clear: left;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    h2 {
+        font-size: 15vw;
+    }
+
+    #head .slogan {
+        background-position: center 20%;
+        background-size: auto 49%;
+        font-size: 10vw;
+        padding-top: 50%;
+    }
+
+    #bread p {
+        float: none;
+        font-size: 1.4em;
+        margin: 0 0 7% 0;
+        width: 100%;
+    }
+
+    #signUp h2 {
+        letter-spacing: -1.8vw;
+    }
+
+    #whoItIsFor p {
+        float: none;
+        font-size: 1.2em;
+        margin: 0;
+        padding: 0 0 7% 0;
+        width: 100%;
+    }
+
+    #otherInfo p {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    #head .slogan {
+    }
 }
 
 @media print,
