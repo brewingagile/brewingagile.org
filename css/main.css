@@ -130,7 +130,8 @@ h2 {
 }
 
 #menuButton {
-    background: rgba(136,136,136,0.6);
+    background: rgba(136,136,136,0.6) url(../img/icon_menu_128.png) no-repeat scroll center center;
+    background-size: 100% auto;
     color: #ffffff;
     display: none;
     height: 60px;
@@ -222,6 +223,14 @@ body > form > *:first-child {
     width: 100%;
 }
 
+#head h1 a {
+    color: #212722;
+}
+
+#head h1 em {
+    font-style: italic;
+}
+
 #head .slogan {
     background: transparent url(../img/brewing_agile_2x.png) no-repeat scroll right bottom;
     background-size: auto 1.4em;
@@ -255,6 +264,10 @@ body > form > *:first-child {
 #quickInfo .locale {
     padding-bottom: 1em;
     text-align: right;
+}
+
+#quickInfo .price {
+    font-family: Georgia, serif;
 }
 
 #bread {
@@ -445,8 +458,7 @@ body > form > *:first-child {
 }
 
 #speaking article {
-    float: left;
-    width: 25%;
+
 }
 
 #speaking article:nth-child(odd) {
@@ -456,6 +468,13 @@ body > form > *:first-child {
 
 #speaking #henrik_kniberg {
     margin-left: 0;
+}
+
+#speaking article > header {
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 25%;
 }
 
 #speaking article header img {
@@ -472,10 +491,16 @@ body > form > *:first-child {
     width: 80%;
 }
 
+#speaking #moreSpeakers header {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
 #speaking #moreSpeakers header h3 {
     display: block;
-    padding: 10%;
-    height: 3em;
+    padding: 5%;
+    width: 90%;
 }
 
 #speaking article header h3 span {
@@ -484,8 +509,14 @@ body > form > *:first-child {
 }
 
 #speaking article section {
-    padding: 5% 10%;
-    width: 80%;
+    clear: none;
+    float: right;
+    padding: 0 0 5% 10%;
+    width: 60%;
+}
+
+#speaking article section h4 {
+    text-transform: uppercase;
 }
 
 #speaking article section p::first-letter {
@@ -741,6 +772,16 @@ article .saturdayAfternoon {
     color: #000000;
 }
 
+#oldSites {
+    background-color: #212722;
+    box-shadow: none;
+}
+
+#oldSites header h2 {
+    margin: 0;
+    padding: 7% 0;
+}
+
 body > footer {
     background-color: #212722;
     text-align: center;
@@ -758,6 +799,7 @@ body > footer p {
 #fourOhFour ul {
     padding-bottom: 7%;
 }
+
 
 /* ==========================================================================
    Helper classes
@@ -898,14 +940,6 @@ body > footer p {
 
     #signUp h2 {
         font-size: 18vw;
-    }
-
-    #speaking article {
-        width: 50%;
-    }
-
-    #speaking article section {
-        display: none;
     }
 
     #whoItIsFor p {
