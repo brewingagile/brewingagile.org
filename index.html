@@ -51,7 +51,10 @@
             $('#menuButton').on('click', function(event){
                 event.preventDefault();
                 $('body').toggleClass('openMenu');
-            });
+            }).on('touchstart', function(event){
+                event.preventDefault();
+                $('body').toggleClass('openMenu');
+            });;
 
         });
     </script>
