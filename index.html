@@ -61,8 +61,8 @@
 <body>
 
     <header id="head">
-        <p class="slogan">Undefined</p>
-        <h1>We will decide a theme soon &mdash; Brewing Agile 2014</h1>
+        <p class="slogan">Flow</p>
+        <h1>a psychological state where a person is fully immersed and focused on an activity or task</h1>
     </header>
 
     <a id="menuButton" href="">Menu</a>
@@ -85,11 +85,11 @@
         <p class="locale">at <a target="blank" href="http://www.skansenkronan.se/" title="Check out their site">Skansen Kronan</a>, <a target="blank" href="http://goo.gl/maps/G9maO" title="Look at the map">Gothenburg</a></p>
     </section>
 
-    <section id="bread">
+    <!--section id="bread">
         <p>The theme for 2013 year's conference was &ldquo;Building Great Things&rdquo; where we worked to help you make sure that the products and services you deliver make a real difference in the lives of those who use them.</p>
         <p>In addition to our usual conference we offered an optional add on of a intimate and interactive workshop about <a href="http://impactmapping.org/book">&ldquo;Impact Mapping&rdquo;</a> with our keynote speaker.</p>
         <nav class="contactUs"><a class="facebook" href="https://www.facebook.com/BrewingAgile" title="Facebook">Facebook</a> <a class="linkedin" href="http://www.linkedin.com/groups?gid=4653911" title="LinkedIn">LinkedIn</a> <a class="twitter" href="https://twitter.com/BrewingAgile" title="Twitter">Twitter</a></nav>
-    </section>
+    </section-->
 
     <section id="signUp" ng-controller="RegistrationController">
         <header>
@@ -133,10 +133,10 @@
             <div class="label"><label>Package</label></div>
 
             <div class="radio first" ng-class="{'checked': (r.ticket == 'conference+workshop')}">
-                <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference+workshop" required disabled>1800 SEK : Workshop + Conference<br /><span>As below, but you also go to Henrik Kniberg's workshop on Friday morning. Starts at 8:30.</span></label>
+                <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference+workshop" required disabled>1900 SEK : Workshop + Conference<br /><span>As below, but you also go to Henrik Kniberg's workshop on Friday morning. Starts at 8:30.</span></label>
 
                 <div class="radio last" ng-class="{'checked': (r.ticket == 'conference')}">
-                    <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required>1000 SEK : Conference<br /><span>You go to the conference on Friday afternoon and the discussion groups on Saturday. Starts at 13:00.</span></label>
+                    <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required>1100 SEK : Conference<br /><span>You go to the conference on Friday afternoon and the discussion groups on Saturday. Starts at 13:00.</span></label>
                 </div>
             </div>
         </div>
@@ -170,7 +170,7 @@
             <h2>Who is this conference for?</h2>
         </header>
         <section>
-            <p>We hope that everyone, regardless background, will be able to take something with them from the conference. Thus, this years theme &ldquo;Building Great Things&rdquo; is to pave the road for ideas about starting, building and optimizing a product or service.</p>
+            <p>We hope that everyone, regardless background, will be able to take something with them from the conference. This years theme &ldquo;Flow&rdquo; will focus not only on your personal flow, but your team, product, release, and organisational flow.</p>
             <p>This will of course most easily relate to the digital industry, but we hope to broadened the focus to other areas. We want our speakers and attendees to share tools across our fields, both for improving your own flow but also for understanding other area of expertise in the product process.</p>
             <p>We want to invite people not only developers but, project managers, marketing professionals, sales people, and many others. Anyone with passion about thier products!</p>
         </section>
@@ -183,7 +183,7 @@
             <h2>Timeplan</h2>
         </header>
 
-        <p>The conference will be on the 28th - 29th of November with roughly the same schedule as last year. We'll add more details later.</p>
+        <p>The conference will be on the 28th - 29th of November with roughly the same schedule as last year. The workshop will be held in the morning and the talks will start after lunch. We'll add more details later.</p>
 
         <!--article id="layout">
             <header><h3>~ Layout ~</h3></header>
@@ -285,17 +285,13 @@
     <section id="sponsors">
         <header><h2>Sponsors &hearts;</h2></header>
         <div class="clearfix">
-            <a target="blank" href="http://www.meetup.com/got-js/" style="margin-top:3.5%;"><img src="img/logo_gotjs.png" alt="Got.js" /></a>
             <a target="blank" href="http://www.hencjo.se" style="margin-top:5%;"><img src="img/logo_hencjo.png" alt="Hencjo" /></a>
-            <a target="blank" href="http://www.hiq.se" style="margin-top:3%;"><img src="img/logo_hiq.png" alt="HiQ" /></a>
-            <a target="blank" href="http://www.nethouse.se" style="margin-top:2%;"><img src="img/logo_nethouse.png" alt="Nethouse" /></a>
-            <a target="blank" href="http://www.stendahls.se/" style="margin-top:5%;"><img src="img/logo_stendahls.png" alt="Stendahls" /></a>
         </div>
         <p>If you are interested in being a sponsor, mail: <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a></p>
     </section>
 
     <footer>
-        <p>Brewing Agile is proudly presented by <a href="http://www.scrumbeers.com/">Scrum Beers of Gothenburg</a></p>
+        <p>Brewing Agile is proudly presented by <a target="_blank" href="http://www.scrumbeers.com/">Scrum Beers of Gothenburg</a></p>
     </footer>
 
 
