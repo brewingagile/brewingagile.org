@@ -1,6 +1,7 @@
-function RegistrationController($scope, $resource, $window, $timeout) {
+function RegistrationController($scope, $resource, $window, $timeout, IE) {
 	var RegistrationResource = $resource("https://backoffice.brewingagile.org/api/registration/1/", {});
-	// var RegistrationResource = $resource("http://localhost\\:9080/ba-backoffice/api/registration/1/", {});
+//	var RegistrationResource = $resource("http://localhost\\:9080/ba-backoffice/api/registration/1/", {});
+  $scope.badIE = (IE.isIE && IE.version < 10);
 
 	$scope.lastRegisteredName = "";
 
