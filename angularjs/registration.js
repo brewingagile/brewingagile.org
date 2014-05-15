@@ -11,7 +11,7 @@ function RegistrationController($scope, $resource, $window, $timeout) {
 		billingAddress: "",
 		billingMethod: "", //EMAIL or SNAILMAIL
 		dietaryRequirements: false,
-		ticket: 'conference', 
+		ticket: '',
 		workshop: false
 	};
 

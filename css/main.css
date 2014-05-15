@@ -455,6 +455,10 @@ body > form > *:first-child {
     color: #212722;
 }
 
+#signUpForm form .submit input[disabled=disabled] {
+  background-color: red;
+}
+
 #speaking {
     background-color: rgba(128, 105, 155, 0.9);
     min-height: 100%;
@@ -1129,4 +1133,8 @@ body > footer p {
     h3 {
         page-break-after: avoid;
     }
+}
+
+input.ng-invalid, textarea.ng-invalid {
+  border: 3px solid red;
 }
