@@ -34,4 +34,4 @@ function RegistrationController($scope, $resource, $window, $timeout) {
 	};
 }
 
-RegistrationController.$inject = ['$scope', '$resource', '$window', '$timeout'];
+RegistrationController.$inject = ['$scope', '$resource', '$window', '$timeout', 'IEDetector'];
