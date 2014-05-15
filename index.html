@@ -13,7 +13,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js"></script>
-    <script src="angularjs/registration.js?version=3"></script>
+    <script src="angularjs/registration.js?version=4"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet' type='text/css'>
@@ -94,13 +94,14 @@
         <nav class="contactUs"><a class="facebook" href="https://www.facebook.com/BrewingAgile" title="Facebook">Facebook</a> <a class="twitter" href="https://twitter.com/BrewingAgile" title="Twitter">Twitter</a></nav>
     </section>
 
-    <section id="signUp" ng-controller="RegistrationController">
+    <section id="signUp">
         <header>
             <h2><a href="">Sign up <span> >> </span></a></h2>
         </header>
     </section>
 
-    <form id="signUpForm" name="myForm" ng-submit="submit()">
+    <div ng-controller="RegistrationController"> 
+      <form id="signUpForm" name="myForm" ng-submit="submit()">
         <p class="bulk">For bulk buys, please contact us at <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a><br />
             <span>Last day to register is November 21st!</span>
         </p>
@@ -121,35 +122,43 @@
             <div class="textarea"><textarea type="text" ng-model="r.billingAddress" required></textarea></div>
         </div>
         <div class="clearfix">
-            <div class="label"><label>Send Invoice As</label></div>
-            <div class="input invoice">
-                <label><input name="billingMethod" type="radio" ng-model="r.billingMethod" value="EMAIL" required> Email</label>
-                <label><input name="billingMethod" type="radio" ng-model="r.billingMethod" value="SNAILMAIL" required> Snailmail</label>
-                <pre ng-show="r.billingMethod == 'EMAIL'"><span>Invoice will be sent to:</span><br />{{r.participantEmail}}</pre>
-                <pre ng-show="r.billingMethod == 'SNAILMAIL'"><span>Invoice will be sent to:</span><br /><span ng-show="r.billingCompany != ''">{{r.billingCompany}}<br/></span>{{r.billingAddress}}</pre>
+          <div class="label"><label>Send Invoice As</label></div>
+          <div class="input invoice">
+            <label><input name="billingMethod" type="radio" ng-model="r.billingMethod" value="EMAIL" required> Email</label>
+            <label><input name="billingMethod" type="radio" ng-model="r.billingMethod" value="SNAILMAIL" required> Snailmail</label>
+            <pre ng-show="r.billingMethod == 'EMAIL'"><span>Invoice will be sent to:</span><br />{{r.participantEmail}}</pre>
+            <pre ng-show="r.billingMethod == 'SNAILMAIL'"><span>Invoice will be sent to:</span><br /><span ng-show="r.billingCompany != ''">{{r.billingCompany}}<br/></span>{{r.billingAddress}}</pre>
+          </div>
+        </div>
+        <div class="clearfix">
+          <div class="label"><label>Allergies? / Veg?</label></div>
+          <div class="checkbox"><label><input type="checkbox" ng-model="r.dietaryRequirements"> Yes, please contact me about it.</label></div>
+        </div>
+        <div class="clearfix">
+          <div class="label"><label>Package</label></div>
+          <div class="radio first" ng-class="{'checked': (r.ticket == 'conference+workshop')}">
+            <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference+workshop" required>1900 SEK : Workshop + Conference<br /><span>As below, but you also go to Henrik Kniberg's workshop on Friday morning. Starts at 8:30.</span></label>
+
+            <div class="radio last" ng-class="{'checked': (r.ticket == 'conference')}">
+              <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required>1100 SEK : Conference<br /><span>You go to the conference on Friday afternoon and the discussion groups on Saturday. Starts at 13:00.</span></label>
             </div>
+          </div>
         </div>
         <div class="clearfix">
-            <div class="label"><label>Allergies? / Veg?</label></div><div class="checkbox"><label><input type="checkbox" ng-model="r.dietaryRequirements"> Yes, please contact me about it.</label></div>
-        </div>
-        <div class="clearfix">
-            <div class="label"><label>Package</label></div>
-
-            <div class="radio first" ng-class="{'checked': (r.ticket == 'conference+workshop')}">
-                <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference+workshop" required disabled>1900 SEK : Workshop + Conference<br /><span>As below, but you also go to Henrik Kniberg's workshop on Friday morning. Starts at 8:30.</span></label>
-
-                <div class="radio last" ng-class="{'checked': (r.ticket == 'conference')}">
-                    <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required>1100 SEK : Conference<br /><span>You go to the conference on Friday afternoon and the discussion groups on Saturday. Starts at 13:00.</span></label>
-                </div>
-            </div>
-        </div>
-        <div class="clearfix">
-            <div class="submit"><input class="signupButton" type="submit" value="Register!" ng-disabled="!myForm.$valid || lastRegisteredName == r.participantName"></div>
+          <div class="submit">
+            <input class="signupButton" type="submit" value="Register!" ng-disabled="!myForm.$valid || lastRegisteredName == r.participantName">
+          </div>
         </div>
 
-        <div class="success" ng-show="showSuccess"><p>Thank you!<br /><span>We will send an invoice to you asap.</span><br/><a href="" ng-click="reset()">Make another reservation?</a></p></div>
-        <div class="error" ng-show="showError"><p>Sorry!<br /><span>Something went wrong, can you please try again?<br />If it still does not work, write in caps to <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a></span></p></div>
-    </form>
+        <div class="success" ng-show="showSuccess">
+          <p>Thank you!<br /><span>We will send an invoice to you asap.</span><br/>
+          <a href="" ng-click="reset()">Make another reservation?</a></p>
+        </div>
+        <div class="error" ng-show="showError">
+          <p>Sorry!<br /><span>Something went wrong, can you please try again?<br />If it still does not work, write in caps to <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a></span></p>
+        </div>
+      </form>
+    </div>
 
     <section id="speaking" class="clearfix">
         <header><h2>Speakers</h2></header>
