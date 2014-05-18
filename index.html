@@ -102,7 +102,7 @@
     </section>
 
     <div ng-controller="RegistrationController" id="signUpForm"> 
-      <form name="myForm" ng-submit="submit()">
+      <form name="myForm" ng-submit="submit()" ng-show="showForm()">
         <p class="bulk">For bulk buys, please contact us at <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a><br />
             <span>Last day to register is November 21st!</span>
         </p>
@@ -145,15 +145,14 @@
             <input class="signupButton" type="submit" value="Register!" ng-disabled="!myForm.$valid || lastRegisteredName == r.participantName">
           </div>
         </div>
-
-        <div class="success" ng-show="showSuccess">
-          <p>Thank you!<br /><span>We will send an invoice to you asap.</span><br/>
-          <a href="" ng-click="reset()">Make another reservation?</a></p>
-        </div>
-        <div class="error" ng-show="showError">
-          <p>Sorry!<br /><span>Something went wrong, can you please try again?<br />If it still does not work, write in caps to <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a></span></p>
-        </div>
       </form>
+      <div class="success" ng-show="showSuccess">
+        <p>Thank you!<br /><span>We will send an invoice to you asap.</span><br/>
+        <a href="" ng-click="reset()">Make another reservation?</a></p>
+      </div>
+      <div class="error" ng-show="showError">
+        <p>Sorry!<br /><span>Something went wrong, can you please try again?<br />If it still does not work, write in caps to <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a></span></p>
+      </div>
     </div>
 
     <section id="speaking" class="clearfix">

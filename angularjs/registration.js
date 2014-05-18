@@ -3,6 +3,8 @@ function RegistrationController($scope, $resource, $window, $timeout) {
 //	var RegistrationResource = $resource("http://localhost\\:9080/ba-backoffice/api/registration/1/", {});
 
 	$scope.lastRegisteredName = "";
+  $scope.showSuccess = false;
+  $scope.showError = false;
 
 	$scope.r = {
 		participantName: "",
@@ -32,6 +34,11 @@ function RegistrationController($scope, $resource, $window, $timeout) {
 			$scope.showError = true;
 		});
 	};
+
+  $scope.showForm = function() {
+    if ($scope.showSuccess) return false;
+    return true;
+  }
 }
 
 RegistrationController.$inject = ['$scope', '$resource', '$window', '$timeout'];
