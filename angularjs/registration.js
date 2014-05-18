@@ -1,6 +1,6 @@
 function RegistrationController($scope, $resource, $window, $timeout) {
-	var RegistrationResource = $resource("https://backoffice.brewingagile.org/api/registration/1/", {});
-//	var RegistrationResource = $resource("http://localhost\\:9080/ba-backoffice/api/registration/1/", {});
+//	var RegistrationResource = $resource("https://backoffice.brewingagile.org/api/registration/1/", {});
+	var RegistrationResource = $resource("http://localhost\\:9080/ba-backoffice/api/registration/1/", {});
 
 	$scope.lastRegisteredName = "";
 
@@ -9,7 +9,7 @@ function RegistrationController($scope, $resource, $window, $timeout) {
 		participantEmail: "",
 		billingCompany: "",
 		billingAddress: "",
-		billingMethod: "", //EMAIL or SNAILMAIL
+		billingMethod: "EMAIL", //EMAIL or SNAILMAIL
 		dietaryRequirements: false,
 		ticket: '',
 		workshop: false

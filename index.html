@@ -116,20 +116,11 @@
         </div>
         <div class="clearfix">
             <div class="label"><label>Company</label></div>
-            <div class="input"><input type="text" ng-model="r.billingCompany" size="40" required></div>
+            <div class="input"><input type="text" ng-model="r.billingCompany" size="40"></div>
         </div>
         <div class="clearfix">
-            <div class="label"><label>Billing Address</label></div>
-            <div class="textarea"><textarea type="text" ng-model="r.billingAddress" required></textarea></div>
-        </div>
-        <div class="clearfix">
-          <div class="label"><label>Send Invoice As</label></div>
-          <div class="input invoice">
-            <label><input name="billingMethod" type="radio" ng-model="r.billingMethod" value="EMAIL" required> Email</label>
-            <label><input name="billingMethod" type="radio" ng-model="r.billingMethod" value="SNAILMAIL" required> Snailmail</label>
-            <pre ng-show="r.billingMethod == 'EMAIL'"><span>Invoice will be sent to:</span><br />{{r.participantEmail}}</pre>
-            <pre ng-show="r.billingMethod == 'SNAILMAIL'"><span>Invoice will be sent to:</span><br /><span ng-show="r.billingCompany != ''">{{r.billingCompany}}<br/></span>{{r.billingAddress}}</pre>
-          </div>
+            <div class="label"><label>Billing Name &amp; Address</label></div>
+            <div class="textarea"><textarea type="text" ng-model="r.billingAddress"></textarea></div>
         </div>
         <div class="clearfix">
           <div class="label"><label>Allergies? / Veg?</label></div>
