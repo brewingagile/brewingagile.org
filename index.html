@@ -108,15 +108,19 @@
         </p>
         <div class="clearfix">
             <div class="label"><label>Participant Name</label></div>
-            <div class="input"><input id="inputParticipantName" type="text" ng-model="r.participantName" size="40" required></div>
+            <div class="input"><input id="inputParticipantName" type="text" ng-model="r.participantName" size="40" placeholder="participant name" required></div>
         </div>
         <div class="clearfix">
             <div class="label"><label>Participant Email</label></div>
-            <div class="input"><input type="email" ng-model="r.participantEmail" size="40" required></div>
+            <div class="input"><input type="email" ng-model="r.participantEmail" size="40" placeholder="email address" required></div>
+        </div>
+        <div class="clearfix">
+            <div class="label"><label>Twitter Handle</label></div>
+            <div class="input"><input type="text" ng-model="r.twitter" ng-pattern="/^@[a-zA-Z0-9_]{1,15}$/" placeholder="@twitter"></div>
         </div>
         <div class="clearfix">
             <div class="label"><label>Company</label></div>
-            <div class="input"><input type="text" ng-model="r.billingCompany" size="40"></div>
+            <div class="input"><input type="text" ng-model="r.billingCompany" size="40" placeholder="company name"></div>
         </div>
         <div class="clearfix">
             <div class="label"><label>Billing Name &amp; Address</label></div>
