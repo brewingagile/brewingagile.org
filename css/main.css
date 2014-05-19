@@ -290,9 +290,29 @@ body > form > *:first-child {
 
 #bread nav {
     clear: both;
+    margin: 0 auto;
     padding-bottom: 7%;
     text-align: center;
-    width: 100%;
+    width: 9em;
+}
+
+#bread .contactUs a {
+    background: transparent url(../img/icon_facebook.png) no-repeat scroll left top;
+    background-size: 100% auto;
+    display: block;
+    float: left;
+    height: 4em;
+    margin-left: 1em;
+    text-indent: -9999px;
+    width: 4em;
+}
+
+#bread .contactUs a:first-child {
+    margin-left: 0;
+}
+
+#bread .contactUs .twitter {
+    background-image: url(../img/icon_twitter.png);
 }
 
 #signUp {
@@ -327,12 +347,12 @@ body > form > *:first-child {
 
 #signUpForm {
     display: none;
-}
-
-#signUpForm form {
     background-color: rgba(137,165,78, 0.9);
     padding-top: 7%;
     padding-bottom: 7%;
+}
+
+#signUpForm form {
 }
 
 #signUpForm form .bulk {
@@ -347,8 +367,7 @@ body > form > *:first-child {
 }
 
 #signUpForm form > div {
-    font-size: 2em;
-    padding: 1em 0;
+    padding: 0.5em 0;
     width: 100%;
 }
 
@@ -365,24 +384,39 @@ body > form > *:first-child {
 
 #signUpForm form .input,
 #signUpForm form .radio.first,
+#signUpForm form .checkbox,
 #signUpForm form .textarea {
     float: right;
     width: 50%;
 }
 
 #signUpForm form .radio {
-    padding: 0 3% 3% 3%;
+    padding: 1% 3% 3% 3%;
     position: relative;
 }
 
 #signUpForm form .radio.first {
     margin-right: 5%;
-    width: 39%;
+    padding-left: 0;
+    width: 42%;
+}
+
+#signUpForm form .radio.last {
+    margin-left: 1em;
 }
 
 #signUpForm form .radio.checked {
     background-color: #dddddd;
     color: #212722;
+}
+
+#signUpForm form .radio label {
+    font-size: 1.6em;
+}
+
+#signUpForm form .radio input {
+    margin-right: 0.5em;
+
 }
 
 #signUpForm form .radio .timeInfo {
@@ -392,7 +426,9 @@ body > form > *:first-child {
 }
 
 #signUpForm form .radio span {
-    font-size: 0.5em;
+    display: block;
+    font-size: 0.6em;
+    padding-left: 2em;
 }
 
 #signUpForm form .radio .radio {
@@ -405,6 +441,10 @@ body > form > *:first-child {
     text-align: right;
     padding: 2%;
     width: 96%;
+}
+
+#signUpForm form .checkbox {
+    padding: 1% 0;
 }
 
 #signUpForm form .input input,
@@ -456,7 +496,22 @@ body > form > *:first-child {
 }
 
 #signUpForm form .submit input[disabled=disabled] {
-  background-color: red;
+    background-color: rgba(137, 165, 78, 1);
+    border: 3px dashed #dddddd;
+    color: #dddddd;
+    cursor: default;
+}
+
+#signUpForm .success p,
+#signUpForm .error p {
+    font-size: 2.4em;
+    letter-spacing: -1px;
+    margin-top: 0;
+}
+
+#signUpForm .success p:first-child,
+#signUpForm .error p:first-child {
+    padding-top: 7%;
 }
 
 #speaking {
@@ -941,7 +996,9 @@ body > footer p {
         letter-spacing: -0.6vw;
     }
 
-    #bread p {
+    #bread p,
+    #signUpForm .success p,
+    #signUpForm .error p {
         font-size: 3vw;
     }
 
@@ -1022,7 +1079,9 @@ body > footer p {
         padding-top: 50%;
     }
 
-    #bread p {
+    #bread p,
+    #signUpForm .success p,
+    #signUpForm .error p {
         float: none;
         font-size: 1.4em;
         margin: 0 0 7% 0;
