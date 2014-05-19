@@ -865,6 +865,7 @@ body > footer p {
 .chromeframe {
     background-color: red;
     color: white;
+    margin: 0;
     padding: 1em 0;
     position: fixed;
     left: 0;
