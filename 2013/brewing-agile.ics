@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:1.0
+BEGIN:VEVENT
+DTSTART:20121207T120000
+DTEND:20121208T160000
+SUMMARY:Brewing Agile
+LOCATION:Elite Hotel Park Avenue, Gothenburg, SE
+DESCRIPTION:This is THE agile unconference of the year. We are counting on all of you to make it a success!  The theme of this year's conference will be "Change in your organization: Tools, tips, and tricks".
+PRIORITY:3
+END:VEVENT
+END:VCALENDAR
