@@ -862,6 +862,18 @@ body > footer p {
     padding-bottom: 7%;
 }
 
+.chromeframe {
+    background-color: red;
+    color: white;
+    position: fixed;
+    left: 0;
+    text-align: center;
+    top: 0;
+}
+
+.chromeframe a {
+    color: white;
+}
 
 /* ==========================================================================
    Helper classes
