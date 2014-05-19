@@ -1108,9 +1108,34 @@ body > footer p {
         letter-spacing: -1.8vw;
     }
 
+    #signUpForm form .label {
+        float: none;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    #signUpForm form .label label {
+        text-align: left;
+    }
+
+    #signUpForm form .input, #signUpForm form .radio.first, #signUpForm form .checkbox, #signUpForm form .textarea {
+        float: none;
+        margin-left: 5%;
+        width: 100%;
+    }
+
+    #signUpForm form .radio.first {
+        margin-right: 5%;
+        width: 80%;
+    }
+
     #speaking article {
         float: none;
         width: 100%;
+    }
+
+    #speaking article header h3 {
+        font-size: 2em;
     }
 
     #whoItIsFor p {
