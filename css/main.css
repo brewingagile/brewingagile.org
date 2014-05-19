@@ -865,10 +865,12 @@ body > footer p {
 .chromeframe {
     background-color: red;
     color: white;
+    padding: 1em 0;
     position: fixed;
     left: 0;
     text-align: center;
     top: 0;
+    width: 100%;
 }
 
 .chromeframe a {
