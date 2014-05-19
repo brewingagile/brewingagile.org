@@ -391,13 +391,13 @@ body > form > *:first-child {
 }
 
 #signUpForm form .radio {
-    padding: 1% 3% 3% 3%;
+    border: 3px dashed #dddddd;
+    padding: 1% 1% 3% 1%;
     position: relative;
 }
 
 #signUpForm form .radio.first {
     margin-right: 5%;
-    padding-left: 0;
     width: 42%;
 }
 
@@ -407,6 +407,7 @@ body > form > *:first-child {
 
 #signUpForm form .radio.checked {
     background-color: #dddddd;
+    border-style: solid;
     color: #212722;
 }
 
