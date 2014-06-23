@@ -809,19 +809,25 @@ article .saturdayAfternoon {
 }
 
 #sponsors div {
-    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
 }
 
 #sponsors div a {
-    float: left;
-    margin: 4%;
-    width: 25%;
+    display: table-cell;
+    margin: 0;
+    padding: 3%;
+    text-align: center;
+    vertical-align: middle;
+    width: 27.33%;
 }
 
 #sponsors img {
     display: block;
+    margin: 0 auto;
+    max-height: 10em;
     max-width: 100%;
-    max-height: 100%;
 }
 
 #sponsors p {
@@ -1074,13 +1080,6 @@ body > footer p {
         letter-spacing: -3px;
     }
 
-    #sponsors div a {
-        width: 42%;
-    }
-
-    #sponsors div a:nth-child(2n+1) {
-        clear: left;
-    }
 }
 
 @media only screen and (max-width: 450px) {
