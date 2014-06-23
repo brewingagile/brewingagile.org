@@ -101,9 +101,16 @@ body, html {
     height: 100%;
 }
 
+html {
+    background: transparent url(../img/background.jpg) fixed no-repeat center center;
+    background-image: url(../img/inset.png), url(../img/background.jpg);
+    background-size: 100% 100%, cover;
+
+}
+
 body {
-    background: #888888 url(../img/brewing_agile_2x.png) fixed no-repeat center center;
-    background-size: 30% auto;
+    background-color: #eee;
+    box-shadow: inset 0 0 50px #ccc;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
     color: #ddd;
 }
@@ -191,7 +198,7 @@ body > nav ul li a:hover {
 body > section,
 body > form {
     background-color: rgba(255,255,255,0.7);
-    box-shadow: inset 0 0 5em rgba(0,0,0,0.2);
+    box-shadow: inset 0 0 5em rgba(0,0,0,0.15);
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 10%;
@@ -207,8 +214,9 @@ body > form > *:first-child {
 }
 
 #head {
-    background: rgba(220,220,220,0.9) url() no-repeat fixed right center;
-    color: #212722;
+    background: transparent url() no-repeat scroll center bottom;
+    box-shadow: none;
+    color: #000;
     min-height: 100%;
     padding-top: 0;
     padding-bottom: 0;
@@ -216,6 +224,7 @@ body > form > *:first-child {
 }
 
 #head h1 {
+    color: #000;
     margin: 0 auto;
     padding-bottom: 7%;
     text-align: right;
@@ -224,7 +233,7 @@ body > form > *:first-child {
 }
 
 #head h1 a {
-    color: #212722;
+    color: #000;
 }
 
 #head h1 em {
@@ -232,13 +241,14 @@ body > form > *:first-child {
 }
 
 #head .slogan {
-    background: transparent url(../img/brewing_agile_2x.png) no-repeat scroll right bottom;
-    background-size: auto 1.4em;
-    border-bottom: 5px solid #212722;
+    background: transparent url(../img/brewing_agile_ground.png) no-repeat scroll right bottom;
+    background-size: auto 1.5em;
+    border-bottom: 0.4vw solid #000;
     font-family: 'Raleway', sans-serif;
     font-size: 10em;
     letter-spacing: -10px;
-    margin: 0 0 0.2em;
+    line-height: 1em;
+    margin: 0 0 0.1em;
     padding: 20% 0 0;
     text-align: left;
 }
@@ -800,7 +810,6 @@ article .saturdayAfternoon {
     background: #ffffff url() repeat-x fixed center center;
     background-size: cover;
     color: #212722;
-    min-height: 100%;
     text-align: center;
 }
 
@@ -1066,6 +1075,10 @@ body > footer p {
         display: block;
     }
 
+    body > nav ul li {
+        padding: 0.4vw 1em 0.6vw;
+    }
+
     body > nav ul li a {
         font-size: 4vw;
     }
@@ -1078,16 +1091,30 @@ body > footer p {
 
     #head .slogan {
         letter-spacing: -3px;
+        border-bottom-width: 2px;
     }
 
+    #head h1 {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (max-width: 450px) {
+
+    body > nav ul li {
+        padding: 0.4em 1em 0.6em;
+    }
+
+    body > nav ul li a {
+        font-size: 1em;
+    }
+
     h2 {
         font-size: 15vw;
     }
 
     #head .slogan {
+        background-image: url(../img/brewing_agile_2x.png);
         background-position: center 20%;
         background-size: auto 49%;
         font-size: 10vw;
