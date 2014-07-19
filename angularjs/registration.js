@@ -27,9 +27,10 @@ function RegistrationController($scope, $resource, $window, $timeout) {
 	$scope.submit = function() {
 		$scope.showSuccess = false;
 		$scope.showError = false;
-		RegistrationResource.save($scope.r, function(result) {
-			$scope.lastRegisteredName = $scope.r.participantName;
-			$scope.showSuccess = true;
+		RegistrationResource.save($scope.r, function(p) {
+			if (p.success) $scope.lastRegisteredName = $scope.r.participantName;
+			$scope.showSuccess = p.success;
+			$scope.showError = !p.success;
 		}, function(response) { 
 			$scope.showError = true;
 		});
