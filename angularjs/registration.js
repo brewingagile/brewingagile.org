@@ -1,4 +1,4 @@
-function RegistrationController($scope, $resource, $window, $timeout) {
+function RegistrationController($scope, $resource, $window, $timeout, $window) {
 	var RegistrationResource = $resource("https://backoffice.brewingagile.org/api/registration/1/", {});
 //	var RegistrationResource = $resource("http://localhost\\:9080/ba-backoffice/api/registration/1/", {});
 
@@ -31,8 +31,10 @@ function RegistrationController($scope, $resource, $window, $timeout) {
 			if (p.success) $scope.lastRegisteredName = $scope.r.participantName;
 			$scope.showSuccess = p.success;
 			$scope.showError = !p.success;
+			$window.location.href = "#signUpForm";
 		}, function(response) { 
 			$scope.showError = true;
+			$window.location.href = "#signUpForm";
 		});
 	};
 
@@ -42,4 +44,4 @@ function RegistrationController($scope, $resource, $window, $timeout) {
   }
 }
 
-RegistrationController.$inject = ['$scope', '$resource', '$window', '$timeout'];
+RegistrationController.$inject = ['$scope', '$resource', '$window', '$timeout', '$window'];
