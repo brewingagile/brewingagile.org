@@ -629,6 +629,7 @@ body > form > *:first-child {
 
 #timeplan {
     background-color: rgba(219, 132, 61, 0.9);
+    padding-bottom: 7%;
 }
 
 #timeplan p {
@@ -640,12 +641,17 @@ body > form > *:first-child {
 
 #layout {
     clear: both;
-    color: #fbb040;
     float: right;
     width: 60%
 }
 
 #layout > header {
+}
+#layout h3, #schedule h3 {
+    border-bottom: 2px solid #212722;
+}
+#schedule h3 {
+    width: 95%;
 }
 
 #layout div {
@@ -669,8 +675,11 @@ body > form > *:first-child {
 #layout #unconference header { background-image: url(../img/unconference.jpg); }
 
 #layout div header h4 {
+    color: #212722;
+    background-color: rgba(255,255,255,0.5);
     margin-bottom: 0;
     margin-top: 105px;
+    text-align: center;
 }
 
 #layout #scrumBeers h4 {
@@ -680,10 +689,9 @@ body > form > *:first-child {
 }
 
 #layout div p {
-    background: #232427 url(../img/bg_shine_640x480.png) no-repeat fixed center center;
-    background-size: cover;
     display: block;
     float: right;
+    font-size: 1.1em;
     padding-bottom: 1em;
     padding: 0 2% 2% 4%;
     width: 56%;
@@ -694,11 +702,10 @@ body > form > *:first-child {
     font-size: 1.1em;
     font-style: italic;
     margin-top: 0;
-    padding-top: 1em;
+    padding-top: 0;
 }
 
 #schedule {
-    color: #fbb040;
     float: right;
     width: 40%;
 }
@@ -710,45 +717,49 @@ body > form > *:first-child {
 }
 
 #schedule h4 {
-    background-color: transparent;
+    background: rgba(255,255,255,0.5);
+    color: #212722;
     clear: none;
-    color: #fbb040;
     float: left;
     font-family: Helvetica, Arial, sans-serif;
-    padding-bottom: 10px;
-    text-shadow: 0 2px 0 #BD8504;
-    width: 22%;
+    letter-spacing: -1px;
+    margin-top: 0;
+    padding: 1% 2% 0;
+    width: 20%;
 }
 
 #schedule h4 span {
-    color: #fbb040;
-    font-size: 5em;
+    font-size: 3em;
+    letter-spacing: -3px;
     line-height: 1em;
 }
 
 #schedule h4 span span {
     font-size: 0.3em;
+    letter-spacing: -1px;
 }
 
 #schedule dl {
     display: block;
     float: right;
     margin: 0;
-    padding-left: 5%;
-    width: 70%;
+    padding-left: 0;
+    width: 75%;
 }
 
 #schedule dl dt,
 #schedule dl dd {
-    background-color: #362e30;
+    font-size: 1.1em;
+    line-height: 1.4em;
     padding: 0.25em 0;
 }
 
 #schedule dl .even {
-    background-color: #232427;
+    background-color: rgba(0,0,0,0.1);
 }
 
 #schedule dl dt {
+    border-bottom: 1px solid #212722;
     clear: left;
     display: block;
     float: left;
@@ -756,7 +767,7 @@ body > form > *:first-child {
     font-style: italic;
     padding-right: 3%;
     padding-left: 3%;
-    width: 25%;
+    width: 15%;
 }
 
 #schedule dl dd {
@@ -765,7 +776,7 @@ body > form > *:first-child {
     margin-left: 0;
     padding-left: 3%;
     padding-right: 1%;
-    width: 65%;
+    width: 75%;
 }
 
 #schedule dl dd.wrapUp {
@@ -781,12 +792,12 @@ article .fridayMorning {
 }
 
 article .fridayAfternoon {
-    height: 27em;
+    height: 25em;
     padding-top: 20px;
 }
 
 article .fridayEvening {
-    height: 18em;
+    height: 15em;
     padding-top: 20px;
 }
 
@@ -1006,6 +1017,10 @@ body > footer p {
         font-size: 10vw;
         letter-spacing: -1vw;
     }
+
+    article .fridayAfternoon {
+        height: 34em;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1039,6 +1054,10 @@ body > footer p {
 
     #whoItIsFor p {
         font-size: 3vw;
+    }
+
+    article .fridayAfternoon {
+        height: 24em;
     }
 }
 
@@ -1096,6 +1115,26 @@ body > footer p {
 
     #head h1 {
         font-size: 1em;
+    }
+
+    #layout, #schedule {
+        float: none;
+        width: 100%;
+    }
+
+    #schedule h3 {
+        width: 100%;
+    }
+
+    article .fridayMorning,
+    article .fridayAfternoon,
+    article .fridayEvening,
+    article .saturdayAfternoon {
+        height: auto;
+    }
+
+    #sponsors div a {
+        width: 44%;
     }
 }
 
