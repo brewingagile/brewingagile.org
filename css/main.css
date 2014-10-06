@@ -394,6 +394,7 @@ body > form > *:first-child {
 
 #signUpForm form .input,
 #signUpForm form .radio.first,
+#signUpForm form .radio.second,
 #signUpForm form .checkbox,
 #signUpForm form .textarea {
     float: right;
@@ -407,7 +408,17 @@ body > form > *:first-child {
 }
 
 #signUpForm form .radio.first {
+    border: none;
     margin-right: 5%;
+    padding: 1%;
+    width: 42%;
+}
+
+#signUpForm form .radio.second {
+    clear: right;
+    margin-top: 1%;
+    margin-right: 5%;
+    padding: 1%;
     width: 42%;
 }
 
@@ -1183,13 +1194,13 @@ body > footer p {
         text-align: left;
     }
 
-    #signUpForm form .input, #signUpForm form .radio.first, #signUpForm form .checkbox, #signUpForm form .textarea {
+    #signUpForm form .input, #signUpForm form .radio.first, #signUpForm form .radio.second, #signUpForm form .checkbox, #signUpForm form .textarea {
         float: none;
         margin-left: 5%;
         width: 100%;
     }
 
-    #signUpForm form .radio.first {
+    #signUpForm form .radio.first, #signUpForm form .radio.second {
         margin-right: 5%;
         width: 80%;
     }

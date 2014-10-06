@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
-<!--[if IE 9]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" ng-app="app"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>
+<html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" ng-app="app"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -32,24 +37,27 @@
         _gaq.push(['_setAccount', 'UA-35480677-1']);
         _gaq.push(['_trackPageview']);
 
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
         })();
 
 
-        $(document).ready(function(event){
+        $(document).ready(function (event) {
 
-            $(window).on('scroll', function(event){
-                if($(document).scrollTop() > $('#head').height() && !$('body > nav').hasClass('sticky')){
+            $(window).on('scroll', function (event) {
+                if ($(document).scrollTop() > $('#head').height() && !$('body > nav').hasClass('sticky')) {
                     $('body > nav').addClass('sticky');
-                } else if($(document).scrollTop() <= $('#head').height() && $('body > nav').hasClass('sticky')) {
+                } else if ($(document).scrollTop() <= $('#head').height() && $('body > nav').hasClass('sticky')) {
                     $('body > nav').removeClass('sticky');
                 }
             });
 
-            $('#signUp h2 a').on('click', function(event){
+            $('#signUp h2 a').on('click', function (event) {
                 event.preventDefault;
                 event.stopImmediatePropagation;
                 $('#signUp').slideUp();
@@ -57,13 +65,14 @@
                 $('body > nav a[href="#signUp"]').attr('href', '#signUpForm');
             });
 
-            $('#menuButton').on('click', function(event){
+            $('#menuButton').on('click', function (event) {
                 event.preventDefault();
                 $('body').toggleClass('openMenu');
-            }).on('touchstart', function(event){
+            }).on('touchstart', function (event) {
                 event.preventDefault();
                 $('body').toggleClass('openMenu');
-            });;
+            });
+            ;
 
         });
     </script>
@@ -72,251 +81,337 @@
 
 <body>
 
-    <header id="head">
-        <p class="slogan">Flow</p>
-        <h1><em>&ldquo;a psychological state where a person is fully immersed and focused on an activity or task&rdquo;</em> &mdash; <a href="http://en.wikipedia.org/wiki/Flow_(psychology)">Wikipedia.org</a></h1>
+<header id="head">
+    <p class="slogan">Flow</p>
+
+    <h1><em>&ldquo;a psychological state where a person is fully immersed and focused on an activity or
+        task&rdquo;</em> &mdash; <a href="http://en.wikipedia.org/wiki/Flow_(psychology)">Wikipedia.org</a></h1>
+</header>
+
+<a id="menuButton" href="">Menu</a>
+
+<nav>
+    <ul>
+        <li><a href="#quickInfo">Quick Info</a></li>
+        <!--[if !IE]> -->
+        <li><a href="#signUp">Sign Up</a></li>
+        <!-- <![endif]-->
+        <li><a href="#speaking">Speakers</a></li>
+        <li><a href="#whoItIsFor">Who Is This For?</a></li>
+        <li><a href="#timeplan">Timeplan</a></li>
+        <li><a href="#otherInfo">Other Info</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#oldSites">Old Sites</a></li>
+    </ul>
+</nav>
+
+<section id="quickInfo">
+    <p class="info"><span class="date">28 - 29 November:</span> <span class="price">1100</span> SEK</p>
+
+    <p class="locale">at <a href="http://www.skansenkronan.se/" title="Check out their site">Skansen Kronan</a>, <a
+            target="blank" href="http://goo.gl/maps/G9maO" title="Look at the map">Gothenburg</a></p>
+</section>
+
+<section id="bread">
+    <p>The theme for 2014 will be &ldquo;Flow&rdquo; not simply your own personal flow, but the flow of your team,
+        product, releases, and organisation. What is flow? Where does it come from? How do we acheive it? </p>
+
+    <p>In addition to our usual conference we offer optional add-ons of intimate and interactive workshops with our
+        keynote speaker <a href="http://www.crisp.se/konsulter/henrik-kniberg">Henrik Kniberg</a> or Fredrik Wendt.<br /><br />Only available
+        to a limited number of participants, so <a href="#signUp">Sign Up Soon!</a></p>
+    <nav class="contactUs clearfix"><a class="facebook" href="https://www.facebook.com/BrewingAgile" title="Facebook">Facebook</a>
+        <a class="twitter" href="https://twitter.com/BrewingAgile" title="Twitter">Twitter</a></nav>
+</section>
+
+<!--[if !IE]> -->
+<section id="signUp">
+    <header>
+        <h2><a href="">Sign up <span> >> </span></a></h2>
     </header>
+</section>
 
-    <a id="menuButton" href="">Menu</a>
-
-    <nav>
-        <ul>
-            <li><a href="#quickInfo">Quick Info</a></li>
-            <!--[if !IE]> --><li><a href="#signUp">Sign Up</a></li><!-- <![endif]-->
-            <li><a href="#speaking">Speakers</a></li>
-            <li><a href="#whoItIsFor">Who Is This For?</a></li>
-            <li><a href="#timeplan">Timeplan</a></li>
-            <li><a href="#otherInfo">Other Info</a></li>
-            <li><a href="#sponsors">Sponsors</a></li>
-            <li><a href="#oldSites">Old Sites</a></li>
-        </ul>
-    </nav>
-
-    <section id="quickInfo">
-        <p class="info"><span class="date">28 - 29 November:</span> <span class="price">1100</span> SEK</p>
-        <p class="locale">at <a href="http://www.skansenkronan.se/" title="Check out their site">Skansen Kronan</a>, <a target="blank" href="http://goo.gl/maps/G9maO" title="Look at the map">Gothenburg</a></p>
-    </section>
-
-    <section id="bread">
-        <p>The theme for 2014 will be &ldquo;Flow&rdquo; not simply your own personal flow, but the flow of your team, product, releases, and organisation. What is flow? Where does it come from? How do we acheive it? </p>
-        <p>In addition to our usual conference we offered an optional add-on of a intimate and interactive workshop with our keynote speaker <a href="http://www.crisp.se/konsulter/henrik-kniberg">Henrik Kniberg</a>.<br><br>Only available to a limited number of participants, so <a href="#signUp">Sign Up Soon!</a></p>
-        <nav class="contactUs clearfix"><a class="facebook" href="https://www.facebook.com/BrewingAgile" title="Facebook">Facebook</a> <a class="twitter" href="https://twitter.com/BrewingAgile" title="Twitter">Twitter</a></nav>
-    </section>
-
-    <!--[if !IE]> -->
-    <section id="signUp">
-        <header>
-            <h2><a href="">Sign up <span> >> </span></a></h2>
-        </header>
-    </section>
-
-    <section id="signUpForm" class="clearfix">
-        <div ng-controller="RegistrationController">
-          <form name="myForm" ng-submit="submit()" ng-show="showForm()">
-            <p class="bulk">For bulk buys, please contact us at <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a><br />
+<section id="signUpForm" class="clearfix">
+    <div ng-controller="RegistrationController">
+        <form name="myForm" ng-submit="submit()" ng-show="showForm()">
+            <p class="bulk">For bulk buys, please contact us at <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a><br/>
                 <span>Last day to register is November 21st!</span>
             </p>
+
             <div class="clearfix">
                 <div class="label"><label>Participant Name</label></div>
-                <div class="input"><input id="inputParticipantName" type="text" ng-model="r.participantName" size="40" placeholder="participant name" required></div>
+                <div class="input"><input id="inputParticipantName" type="text" ng-model="r.participantName" size="40"
+                                          placeholder="participant name" required></div>
             </div>
             <div class="clearfix">
                 <div class="label"><label>Participant Email</label></div>
-                <div class="input"><input type="email" ng-model="r.participantEmail" size="40" placeholder="email address" required></div>
+                <div class="input"><input type="email" ng-model="r.participantEmail" size="40"
+                                          placeholder="email address" required></div>
             </div>
             <div class="clearfix">
                 <div class="label"><label>Twitter Handle</label></div>
-                <div class="input"><input type="text" ng-model="r.twitter" ng-pattern="/^@[a-zA-Z0-9_]{1,15}$/" placeholder="@twitter"></div>
+                <div class="input"><input type="text" ng-model="r.twitter" ng-pattern="/^@[a-zA-Z0-9_]{1,15}$/"
+                                          placeholder="@twitter"></div>
             </div>
             <div class="clearfix">
                 <div class="label"><label>Company</label></div>
-                <div class="input"><input type="text" ng-model="r.billingCompany" size="40" placeholder="company name"></div>
+                <div class="input"><input type="text" ng-model="r.billingCompany" size="40" placeholder="company name">
+                </div>
             </div>
             <div class="clearfix">
                 <div class="label"><label>Billing Name &amp; Address</label></div>
                 <div class="textarea"><textarea type="text" ng-model="r.billingAddress"></textarea></div>
             </div>
             <div class="clearfix">
-              <div class="label"><label>Allergies? / Veg?</label></div>
-              <div class="checkbox"><label><input type="checkbox" ng-model="r.dietaryRequirements"> Yes, please contact me about it.</label></div>
+                <div class="label"><label>Allergies? / Veg?</label></div>
+                <div class="checkbox"><label><input type="checkbox" ng-model="r.dietaryRequirements"> Yes, please
+                    contact me about it.</label></div>
             </div>
             <div class="clearfix">
-              <div class="label"><label>Package</label></div>
-                <!-- <div class="radio first" ng-class="{'checked': (r.ticket == 'conference+workshop')}"> -->
-                  <!-- <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference+workshop" required>1900 SEK : Workshop + Conference<br /><span>As below, but you also go to Henrik Kniberg's workshop on Friday morning. Starts at 8:30.</span></label> -->
+                <div class="label"><label>Package</label></div>
 
-                <div class="radio first" ng-class="{'checked': (r.ticket == 'conference')}">
-                  <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required>1100 SEK : Conference<br /><span>You go to the conference on Friday afternoon and the discussion groups on Saturday. Starts at 13:00.</span></label>
+                <div class="radio first">
+                <label><input name="ticket" type="radio" disabled="disabled">1900
+                    SEK : Workshop with Henrik Kniberg + Conference <strong>Sold out!</strong><br /><span>Go to Henrik Kniberg's workshop on Friday morning and then the conference. Starts at 8:30.</span></label>
                 </div>
-                <!-- </div> -->
-              </div>
-              <div class="clearfix">
+
+                <div class="radio second" ng-class="{'checked': (r.ticket == 'conference+workshop2')}">
+
+                    <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference+workshop2" required>1900
+                        SEK : Workshop with Fredrik Wendt + Conference<br/><span>Go to Fredrik Wendt's workshop on Friday morning and the conference. Starts at 8:30.</span></label>
+
+                    <div class="radio" ng-class="{'checked': (r.ticket == 'conference')}">
+                        <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required>1100
+                            SEK : Conference<br/><span>You go to the conference on Friday afternoon and the discussion groups on Saturday. Starts at 13:00.</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix">
                 <span>After submitting the registration, you should receive a confirmation email within 24 hours.<br> If you do not receive it, please contact brewingagile@scrumbeers.com.</span>
+
                 <div class="submit">
-                  <input class="signupButton" type="submit" value="Register!" ng-disabled="!myForm.$valid || lastRegisteredName == r.participantName">
+                    <input class="signupButton" type="submit" value="Register!"
+                           ng-disabled="!myForm.$valid || lastRegisteredName == r.participantName">
                 </div>
-              </div>
-            </form>
-            <div class="success" ng-show="showSuccess">
-              <p>Thank you!</p>
-              <p>We will send an invoice to you ASAP. If you do not receive it, please contact <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a>.</p>
-              <p><a href="" ng-click="reset()">Make another reservation?</a></p>
             </div>
-            <div class="error" ng-show="showError">
-              <p>Sorry!</p>
-                <p>Something went wrong, can you please try again?</p>
-                <p>If it still does not work, write in caps to <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a></p>
-            </div>
-          </div>
-      </section>
-      <!-- <![endif]-->
+        </form>
+        <div class="success" ng-show="showSuccess">
+            <p>Thank you!</p>
 
-    <section id="speaking" class="clearfix">
-        <header><h2>Speakers</h2></header>
-        <article id="henrik_kniberg" class="speaker kniberg clearfix">
-            <header><img src="img/henrik_kniberg.jpg" alt="Henrik Kniberg" /><h3><span>Keynote</span><br />Henrik Kniberg</h3></header>
-            <section class="talk">
-                <header><h4><span>I help companies improve.</span></h4></header>
-                <p>I am fascinated by the art of software development. How do you write great code? How do yo­u create & lead great teams? How do you create great workplaces? How do you evolve great architectures? How do you design great products? How do you build scalable & robust systems? How do you build interfaces that users love?</p>
-                <p>I’ve found that this mostly boils down to leadership, motivation, and organizational structure. The most effective approaches I’ve found so far to improve companies is Systems Thinking, Theory of Constraints, Lean thinking, and concrete implementations of this such as Scrum, XP, and Kanban.</p>
-                <p>This is what I am continuously striving to learn & apply & teach.</p>
-                <p>I’m currently working with Spotify.</p>
-                <header><h4><span>Focus</span></h4></header>
-                <p>We'll take a look at how agile principles can be used to get focused and improve your life, both at home and at work.</p>
-                <p> And how to eradicate the phrase "I don't have time".</p>
-            </section>
-        </article>
-        <article id="moreSpeakers" class="speaker clearfix">
-            <header><h3>More speakers will be announced soon...</h3></header>
-        </article>
-    </section>
+            <p>We will send an invoice to you ASAP. If you do not receive it, please contact <a
+                    href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a>.</p>
 
-    <section id="whoItIsFor" class="clearfix">
-        <header>
-            <h2>Who is this conference for?</h2>
-        </header>
-        <section>
-            <p>We hope that everyone, regardless background, will be able to take something with them from the conference. This years theme &ldquo;Flow&rdquo; will focus not only on your personal flow, but your team, product, release, and organisational flow.</p>
-            <p>This will of course most easily relate to the digital industry, but we hope to broadened the focus to other areas. We want our speakers and attendees to share tools across our fields, both for improving your own flow but also for understanding other area of expertise in the product process.</p>
-            <p>We want to invite people not only developers but, project managers, marketing professionals, sales people, and many others. Anyone with passion about thier products!</p>
+            <p><a href="" ng-click="reset()">Make another reservation?</a></p>
+        </div>
+        <div class="error" ng-show="showError">
+            <p>Sorry!</p>
+
+            <p>Something went wrong, can you please try again?</p>
+
+            <p>If it still does not work, write in caps to <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a>
+            </p>
+        </div>
+    </div>
+</section>
+<!-- <![endif]-->
+
+<section id="speaking" class="clearfix">
+    <header><h2>Speakers</h2></header>
+    <article id="henrik_kniberg" class="speaker kniberg clearfix">
+        <header><img src="img/henrik_kniberg.jpg" alt="Henrik Kniberg"/>
+
+            <h3><span>Keynote</span><br/>Henrik Kniberg</h3></header>
+        <section class="talk">
+            <header><h4><span>I help companies improve.</span></h4></header>
+            <p>I am fascinated by the art of software development. How do you write great code? How do yo­u create &
+                lead great teams? How do you create great workplaces? How do you evolve great architectures? How do you
+                design great products? How do you build scalable & robust systems? How do you build interfaces that
+                users love?</p>
+
+            <p>I’ve found that this mostly boils down to leadership, motivation, and organizational structure. The most
+                effective approaches I’ve found so far to improve companies is Systems Thinking, Theory of Constraints,
+                Lean thinking, and concrete implementations of this such as Scrum, XP, and Kanban.</p>
+
+            <p>This is what I am continuously striving to learn & apply & teach.</p>
+
+            <p>I’m currently working with Spotify.</p>
+            <header><h4><span>Focus</span></h4></header>
+            <p>We'll take a look at how agile principles can be used to get focused and improve your life, both at home
+                and at work.</p>
+
+            <p> And how to eradicate the phrase "I don't have time".</p>
         </section>
-        <h4>Brewing Agile focuses on agile thinking and process, rather than the technical.</h4>
+    </article>
+    <article id="moreSpeakers" class="speaker clearfix">
+        <header><h3>More speakers will be announced soon...</h3></header>
+    </article>
+</section>
+
+<section id="whoItIsFor" class="clearfix">
+    <header>
+        <h2>Who is this conference for?</h2>
+    </header>
+    <section>
+        <p>We hope that everyone, regardless background, will be able to take something with them from the conference.
+            This years theme &ldquo;Flow&rdquo; will focus not only on your personal flow, but your team, product,
+            release, and organisational flow.</p>
+
+        <p>This will of course most easily relate to the digital industry, but we hope to broadened the focus to other
+            areas. We want our speakers and attendees to share tools across our fields, both for improving your own flow
+            but also for understanding other area of expertise in the product process.</p>
+
+        <p>We want to invite people not only developers but, project managers, marketing professionals, sales people,
+            and many others. Anyone with passion about thier products!</p>
     </section>
+    <h4>Brewing Agile focuses on agile thinking and process, rather than the technical.</h4>
+</section>
 
-    <section id="timeplan" class="clearfix">
+<section id="timeplan" class="clearfix">
 
-        <header>
-            <h2>Timeplan</h2>
-        </header>
+    <header>
+        <h2>Timeplan</h2>
+    </header>
 
-        <p>The conference will be on the 28th - 29th of November.</p>
+    <p>The conference will be on the 28th - 29th of November.</p>
 
-        <article id="layout" class="clearfix">
-            <header><h3>Layout</h3></header>
-            <div id="workshop" class="first fridayMorning">
-                <header>
-                    <h4>Workshop</h4>
-                </header>
-                <p class="date"><strong>Friday</strong> Morning</p>
-                <p>A hands on workshop with Henrik Kniberg. Special ticket required (see above).</p>
-            </div>
-            <div id="conference" class="fridayAfternoon">
-                <header>
-                    <h4>Conference</h4>
-                </header>
-                <p class="date"><strong>Friday</strong> Afternoon</p>
-                <p>This day will consist of traditional talks by people in the agile community. Including our keynote address and 3 other talks.</p>
-            </div>
-            <div id="scrumBeers" class="fridayEvening">
-                <header>
-                    <h4>Socializing</h4>
-                </header>
-                <p class="date"><strong>Friday</strong> Evening</p>
-                <p>Come and hang out, learn, share experiences, and network!</p>
-            </div>
-            <div id="unconference" class="saturdayAfternoon">
-                <header>
-                    <h4>Discussion Groups</h4>
-                </header>
-                <p class="date"><strong>Saturday</strong> Afternoon</p>
-                <p>On this day we break in to self organizing teams for a series of discussions chosen by you! Anyone can propose a workshop, and the participants will chose which ones we run.</p>
-            </div>
-        </article>
+    <article id="layout" class="clearfix">
+        <header><h3>Layout</h3></header>
+        <div id="workshop" class="first fridayMorning">
+            <header>
+                <h4>Workshops</h4>
+            </header>
+            <p class="date"><strong>Friday</strong> Morning</p>
 
-        <article id="schedule" class="clearfix">
-            <header><h3>Schedule</h3></header>
-            <div id="day1">
-                <h4>Nov<br /><span>28<span>th</span></span></h4>
-                <dl class="fridayMorning">
-                    <dt class="first">8:30</dt><dd class="first">Workshop Registration</dd>
-                    <dt class="even">9:00</dt><dd class="even">Workshop</dd>
-
-                </dl>
-                <dl class="fridayAfternoon">
-                    <dt class="first even">13:00</dt><dd class="first even">Conference Registration</dd>
-                    <dt>13:30</dt><dd>Introduction</dd>
-                    <dt class="even">13:45</dt><dd class="even">First talk</dd>
-                    <dt>14:25</dt><dd>Break</dd>
-                    <dt class="even">14:45</dt><dd class="even">Second talk</dd>
-                    <dt>15:15</dt><dd>Third talk</dd>
-                    <dt class="even">15:45</dt><dd class="even">Break</dd>
-                    <dt>16:05</dt><dd>Fourth talk</dd>
-                    <dt class="even">16:35</dt><dd class="even">Fifth talk</dd>
-                    <dt>17:05</dt><dd>Break</dd>
-                    <dt class="even">17:25</dt><dd class="even">Keynote: Henrik Kniberg</dd>
-                    <dt>18:10</dt><dd class="wrapUp">Wrap up</dd>
-                </dl>
-                <dl class="fridayEvening">
-                    <dt class="first even">18:15</dt><dd class="first even">Evening Event</dd>
-                    <dt>24:00</dt><dd>Go home?</dd>
-                </dl>
-            </div>
-            <div id="day2" class="saturdayAfternoon">
-                <h4>Nov<br /><span>29<span>th</span></span></h4>
-                <dl>
-                    <dt class="first">11:00</dt><dd class="first">Discussion groups</dd>
-                    <dt class="even">14:00</dt><dd class="even">Break</dd>
-                    <dt class="">14:30</dt><dd class="">Discussion groups</dd>
-                    <dt class="even">16:00</dt><dd class="even">Go home!</dd>
-                </dl>
-            </div>
-        </article>
-    </section>
-
-    <section id="otherInfo">
-        <header><h2>Other Information</h2></header>
-        <p>Because we are a small, non-profit, organization we must enforce a strict no cancellation policy. No return on tickets to the event. Program subject to change at any time.</p>
-    </section>
-
-    <section id="sponsors">
-        <header><h2>Sponsors &hearts;</h2></header>
-        <div class="">
-          <a href="http://www.jeeves.se"><img src="img/logo_jeeves.png" alt="Jeeves" /></a>
-          <a href="http://www.cedur.se"><img src="img/logo_cedur.png" alt="Cedur" /></a>
-          <a href="http://www.hencjo.se"><img src="img/logo_hencjo.png" alt="Hencjo" /></a>
+            <p>Workshops with Henrik Kniberg or Fredrik Wendt. Special tickets are required (see above).</p>
         </div>
-        <div class="">
-          <a href="http://www.informator.se"><img src="img/logo_informator.jpg" alt="Informator" /></a>
-            <a href="http://www.nethouse.se/"><img src="img/logo_nethouse.png" alt="Nethouse" /></a>
-            <a href="http://retrospektivet.wordpress.com//"><img src="img/logo_jeffcampbell.png" alt="Jeff Campbell AB" /></a>
+        <div id="conference" class="fridayAfternoon">
+            <header>
+                <h4>Conference</h4>
+            </header>
+            <p class="date"><strong>Friday</strong> Afternoon</p>
+
+            <p>This day will consist of traditional talks by people in the agile community. Including our keynote
+                address and 3 other talks.</p>
         </div>
-        <p>If you are interested in being a sponsor, mail: <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a></p>
-    </section>
+        <div id="scrumBeers" class="fridayEvening">
+            <header>
+                <h4>Socializing</h4>
+            </header>
+            <p class="date"><strong>Friday</strong> Evening</p>
 
-    <footer id="oldSites">
-        <p>Old sites: <a href="2013/index.html">2013</a> , <a href="2012/index.html">2012</a> | Brewing Agile is proudly presented by <a href="http://www.scrumbeers.com/">Scrum Beers of Gothenburg</a></p>
-    </footer>
+            <p>Come and hang out, learn, share experiences, and network!</p>
+        </div>
+        <div id="unconference" class="saturdayAfternoon">
+            <header>
+                <h4>Discussion Groups</h4>
+            </header>
+            <p class="date"><strong>Saturday</strong> Afternoon</p>
 
-    <!--[if lte IE 9]>
-    <p class="chromeframe">You are using an outdated browser and we are unable to register sign ups from it.<br /><a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-    <![endif]-->
+            <p>On this day we break in to self organizing teams for a series of discussions chosen by you! Anyone can
+                propose a workshop, and the participants will chose which ones we run.</p>
+        </div>
+    </article>
 
-    <script type="text/javascript">
-        $('#speaking .readMoreButton').click(function(event){
-            event.preventDefault();
-            $(this).hide();
-            $(this).parent().addClass("open");
-        });
-    </script>
+    <article id="schedule" class="clearfix">
+        <header><h3>Schedule</h3></header>
+        <div id="day1">
+            <h4>Nov<br/><span>28<span>th</span></span></h4>
+            <dl class="fridayMorning">
+                <dt class="first">8:30</dt>
+                <dd class="first">Workshop Registration</dd>
+                <dt class="even">9:00</dt>
+                <dd class="even">Workshops</dd>
+
+            </dl>
+            <dl class="fridayAfternoon">
+                <dt class="first even">13:00</dt>
+                <dd class="first even">Conference Registration</dd>
+                <dt>13:30</dt>
+                <dd>Introduction</dd>
+                <dt class="even">13:45</dt>
+                <dd class="even">First talk</dd>
+                <dt>14:25</dt>
+                <dd>Break</dd>
+                <dt class="even">14:45</dt>
+                <dd class="even">Second talk</dd>
+                <dt>15:15</dt>
+                <dd>Third talk</dd>
+                <dt class="even">15:45</dt>
+                <dd class="even">Break</dd>
+                <dt>16:05</dt>
+                <dd>Fourth talk</dd>
+                <dt class="even">16:35</dt>
+                <dd class="even">Fifth talk</dd>
+                <dt>17:05</dt>
+                <dd>Break</dd>
+                <dt class="even">17:25</dt>
+                <dd class="even">Keynote: Henrik Kniberg</dd>
+                <dt>18:10</dt>
+                <dd class="wrapUp">Wrap up</dd>
+            </dl>
+            <dl class="fridayEvening">
+                <dt class="first even">18:15</dt>
+                <dd class="first even">Evening Event</dd>
+                <dt>24:00</dt>
+                <dd>Go home?</dd>
+            </dl>
+        </div>
+        <div id="day2" class="saturdayAfternoon">
+            <h4>Nov<br/><span>29<span>th</span></span></h4>
+            <dl>
+                <dt class="first">11:00</dt>
+                <dd class="first">Discussion groups</dd>
+                <dt class="even">14:00</dt>
+                <dd class="even">Break</dd>
+                <dt class="">14:30</dt>
+                <dd class="">Discussion groups</dd>
+                <dt class="even">16:00</dt>
+                <dd class="even">Go home!</dd>
+            </dl>
+        </div>
+    </article>
+</section>
+
+<section id="otherInfo">
+    <header><h2>Other Information</h2></header>
+    <p>Because we are a small, non-profit, organization we must enforce a strict no cancellation policy. No return on
+        tickets to the event. Program subject to change at any time.</p>
+</section>
+
+<section id="sponsors">
+    <header><h2>Sponsors &hearts;</h2></header>
+    <div class="">
+        <a href="http://www.jeeves.se"><img src="img/logo_jeeves.png" alt="Jeeves"/></a>
+        <a href="http://www.cedur.se"><img src="img/logo_cedur.png" alt="Cedur"/></a>
+        <a href="http://www.hencjo.se"><img src="img/logo_hencjo.png" alt="Hencjo"/></a>
+    </div>
+    <div class="">
+        <a href="http://www.informator.se"><img src="img/logo_informator.jpg" alt="Informator"/></a>
+        <a href="http://www.nethouse.se/"><img src="img/logo_nethouse.png" alt="Nethouse"/></a>
+        <a href="http://retrospektivet.wordpress.com//"><img src="img/logo_jeffcampbell.png"
+                                                             alt="Jeff Campbell AB"/></a>
+    </div>
+    <p>If you are interested in being a sponsor, mail: <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a>
+    </p>
+</section>
+
+<footer id="oldSites">
+    <p>Old sites: <a href="2013/index.html">2013</a> , <a href="2012/index.html">2012</a> | Brewing Agile is proudly
+        presented by <a href="http://www.scrumbeers.com/">Scrum Beers of Gothenburg</a></p>
+</footer>
+
+<!--[if lte IE 9]>
+<p class="chromeframe">You are using an outdated browser and we are unable to register sign ups from it.<br/><a
+        href="http://browsehappy.com/">Upgrade your browser today</a> or <a
+        href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience
+    this site.</p>
+<![endif]-->
+
+<script type="text/javascript">
+    $('#speaking .readMoreButton').click(function (event) {
+        event.preventDefault();
+        $(this).hide();
+        $(this).parent().addClass("open");
+    });
+</script>
 </body>
 </html>
