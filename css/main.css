@@ -453,6 +453,10 @@ body > form > *:first-child {
     padding-left: 2em;
 }
 
+#signUpForm form .radio strong {
+    color: #212722;
+}
+
 #signUpForm form .radio .radio {
     margin-top: 8%;
     padding-top: 3%;
@@ -541,13 +545,9 @@ body > form > *:first-child {
     min-height: 100%;
 }
 
-#speaking article {
-
-}
-
-#speaking article:nth-child(odd) {
-    background-color: rgba(255,255,255,0.5);
-    color: #212722;
+#speaking article.wendt {
+    border-top: 5px solid #212722;
+    padding-top: 5%;
 }
 
 #speaking #henrik_kniberg {

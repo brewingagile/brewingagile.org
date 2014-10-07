@@ -170,14 +170,13 @@
                 <div class="label"><label>Package</label></div>
 
                 <div class="radio first">
-                <label><input name="ticket" type="radio" disabled="disabled">1900
-                    SEK : Workshop with Henrik Kniberg + Conference <strong>Sold out!</strong><br /><span>Go to Henrik Kniberg's workshop on Friday morning and then the conference. Starts at 8:30.</span></label>
+                    <label><strong>Sold out!</strong> Workshop with Henrik Kniberg</label>
                 </div>
 
                 <div class="radio second" ng-class="{'checked': (r.ticket == 'conference+workshop2')}">
 
                     <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference+workshop2" required>1900
-                        SEK : Workshop with Fredrik Wendt + Conference<br/><span>Go to Fredrik Wendt's workshop on Friday morning and the conference. Starts at 8:30.</span></label>
+                        SEK : Continuous Delivery Workshop + Conference<br /><span>Go to Fredrik Wendt's workshop on Friday morning and the conference. Starts at 8:30.</span></label>
 
                     <div class="radio" ng-class="{'checked': (r.ticket == 'conference')}">
                         <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required>1100
@@ -245,7 +244,7 @@
         <header><img src="img/fredrik_wendt.jpg" alt="Fredrik Wendt"/>
             <h3><br />Fredrik Wendt</h3></header>
         <section class="talk">
-            <header><h4><span>Practicle Continuous Delivery Workshop</span></h4></header>
+            <header><h4><span>Practical Continuous Delivery Workshop</span></h4></header>
             <p>These days most people have heard about Continuous Delivery and Continuous Deployment, many have read "the book" as well. Less than many have actually tried it out and still struggle to produce an increment that is actually potentially releasable. Even fewer have tried out cloudish deployment patterns, and that is what this workshop is all about.</p>
             <p>We will, starting from scratch, set up a Continuous Delivery Pipeline in the cloud where we achieve Blue/Green deployment with zero downtime upgrades and rollbacks. We'll have clients hammering our service as we roll out new and alternative versions of our backend and frontend software. And yes, we will work in pairs to accelerate learning and quality in what we do.</p>
             <p>You'll bring: a laptop, some basic Linux sysadmin skills/understanding, an open mind, and a will to work with a friend or peer during the intense three hours. Appart from learning, you may also have fun!</p>
