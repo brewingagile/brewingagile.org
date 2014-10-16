@@ -849,6 +849,7 @@ article .saturdayAfternoon {
     width: 100%;
 }
 
+
 #sponsors div a {
     display: table-cell;
     margin: 0;
@@ -869,11 +870,19 @@ article .saturdayAfternoon {
     clear: both;
     font-size: 0.8em;
     margin: 0;
-    padding: 2em 0 7%;
+    padding: 2em 0;
 }
 
 #sponsors p a {
     color: #000000;
+}
+
+#sponsors .organizers {
+    padding-bottom: 7%;
+}
+
+#sponsors .organizers a {
+    color: #212722;
 }
 
 #oldSites {
