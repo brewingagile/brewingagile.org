@@ -883,6 +883,11 @@ article .saturdayAfternoon {
 
 #sponsors .organizers a {
     color: #212722;
+    text-decoration: none;
+}
+
+#sponsors .organizers a:hover, #sponsors .organizers a:active {
+    text-decoration: underline;
 }
 
 #oldSites {
