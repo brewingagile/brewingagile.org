@@ -413,6 +413,7 @@ body > form > *:first-child {
 
 #signUpForm form .radio.first {
     border: none;
+    clear: right;
     margin-right: 5%;
     padding: 1%;
     width: 42%;

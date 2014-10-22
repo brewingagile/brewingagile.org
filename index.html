@@ -175,16 +175,15 @@
                     <label><strong>Sold out!</strong> Workshop with Henrik Kniberg</label>
                 </div>
 
-                <div class="radio second" ng-class="{'checked': (r.ticket == 'conference+workshop2')}">
-
-                    <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference+workshop2" required>1900
-                        SEK : Continuous Delivery Workshop + Conference<br /><span>Go to Fredrik Wendt's workshop on Friday morning and the conference. Starts at 8:30.</span></label>
-
-                    <div class="radio" ng-class="{'checked': (r.ticket == 'conference')}">
-                        <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required>1100
-                            SEK : Conference<br/><span>You go to the conference on Friday afternoon and the discussion groups on Saturday. Starts at 13:00.</span></label>
-                    </div>
+                <div class="radio first">
+                    <label><strong>Sold out!</strong> Continuous Delivery Workshop</label>
                 </div>
+
+                <div class="radio second" ng-class="{'checked': (r.ticket == 'conference')}">
+                    <label><input name="ticket" type="radio" ng-model="r.ticket" value="conference" required>1100
+                        SEK : Conference<br/><span>You go to the conference on Friday afternoon and the discussion groups on Saturday. Starts at 13:00.</span></label>
+                </div>
+
             </div>
             <div class="clearfix">
                 <span>After submitting the registration, you should receive a confirmation email within 24 hours.<br> If you do not receive it, please contact brewingagile@scrumbeers.com.</span>
