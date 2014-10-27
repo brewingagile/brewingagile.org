@@ -355,6 +355,7 @@ body > form > *:first-child {
     text-decoration: underline;
 }
 
+#signUp h2 span,
 #signUp h2 a span {
     color: #212722;
 }
