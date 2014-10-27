@@ -119,99 +119,16 @@
         product, releases, and organisation. What is flow? Where does it come from? How do we acheive it? </p>
 
     <p>In addition to our usual conference we offer optional add-ons of intimate and interactive workshops with our
-        keynote speaker <a href="http://www.crisp.se/konsulter/henrik-kniberg">Henrik Kniberg</a> or Fredrik Wendt.<br /><br />Only available
-        to a limited number of participants, so <a href="#signUp">Sign Up Soon!</a></p>
+        keynote speaker <a href="http://www.crisp.se/konsulter/henrik-kniberg">Henrik Kniberg</a> or Fredrik Wendt.</p>
     <nav class="contactUs clearfix"><a class="facebook" href="https://www.facebook.com/BrewingAgile" title="Facebook">Facebook</a>
         <a class="twitter" href="https://twitter.com/BrewingAgile" title="Twitter">Twitter</a></nav>
 </section>
 
-<!--[if !IE]> -->
 <section id="signUp">
     <header>
-        <h2><a href="">Sign up <span> >> </span></a></h2>
+        <h2>We're sold out.</h2>
     </header>
 </section>
-
-<section id="signUpForm" class="clearfix">
-    <div ng-controller="RegistrationController">
-        <form name="myForm" ng-submit="submit()" ng-show="showForm()">
-            <p class="bulk">For bulk buys, please contact us at <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a><br/>
-                <span>Last day to register is November 21st!</span>
-            </p>
-
-            <div class="clearfix">
-                <div class="label"><label>Participant Name</label></div>
-                <div class="input"><input id="inputParticipantName" type="text" ng-model="r.participantName" size="40"
-                                          placeholder="participant name" required></div>
-            </div>
-            <div class="clearfix">
-                <div class="label"><label>Participant Email</label></div>
-                <div class="input"><input type="email" ng-model="r.participantEmail" size="40"
-                                          placeholder="email address" required></div>
-            </div>
-            <div class="clearfix">
-                <div class="label"><label>Twitter Handle</label></div>
-                <div class="input"><input type="text" ng-model="r.twitter" ng-pattern="/^@[a-zA-Z0-9_]{1,15}$/"
-                                          placeholder="@twitter"></div>
-            </div>
-            <div class="clearfix">
-                <div class="label"><label>Company</label></div>
-                <div class="input"><input type="text" ng-model="r.billingCompany" size="40" placeholder="company name">
-                </div>
-            </div>
-            <div class="clearfix">
-                <div class="label"><label>Billing Name &amp; Address</label></div>
-                <div class="textarea"><textarea type="text" ng-model="r.billingAddress"></textarea></div>
-            </div>
-            <div class="clearfix">
-                <div class="label"><label>Allergies? / Veg?</label></div>
-                <div class="checkbox"><label><input type="checkbox" ng-model="r.dietaryRequirements"> Yes, please
-                    contact me about it.</label></div>
-            </div>
-            <div class="clearfix">
-                <div class="label"><label>Package</label></div>
-
-                <div class="radio first">
-                    <label><strong>Sold out!</strong> Workshop with Henrik Kniberg</label>
-                </div>
-
-                <div class="radio first">
-                    <label><strong>Sold out!</strong> Continuous Delivery Workshop</label>
-                </div>
-
-                <div class="radio second" ng-class="{'checked': (r.ticket == 'conference')}">
-									<label><strong>Sold out!</strong> Conference<br/><span>You go to the conference on Friday afternoon and the discussion groups on Saturday. Starts at 13:00.</span></label>
-                </div>
-
-            </div>
-            <div class="clearfix">
-                <span>After submitting the registration, you should receive a confirmation email within 24 hours.<br> If you do not receive it, please contact brewingagile@scrumbeers.com.</span>
-
-                <div class="submit">
-                    <input class="signupButton" type="submit" value="Register!"
-                           ng-disabled="!myForm.$valid || lastRegisteredName == r.participantName || true">
-                </div>
-            </div>
-        </form>
-        <div class="success" ng-show="showSuccess">
-            <p>Thank you!</p>
-
-            <p>We will send an invoice to you ASAP. If you do not receive it, please contact <a
-                    href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a>.</p>
-
-            <p><a href="" ng-click="reset()">Make another reservation?</a></p>
-        </div>
-        <div class="error" ng-show="showError">
-            <p>Sorry!</p>
-
-            <p>Something went wrong, can you please try again?</p>
-
-            <p>If it still does not work, write in caps to <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a>
-            </p>
-        </div>
-    </div>
-</section>
-<!-- <![endif]-->
 
 <section id="speaking" class="clearfix">
     <header><h2>Speakers</h2></header>
