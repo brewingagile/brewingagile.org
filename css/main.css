@@ -551,9 +551,13 @@ body > form > *:first-child {
     min-height: 100%;
 }
 
-#speaking article.wendt {
+#speaking article {
     border-top: 5px solid #212722;
     padding-top: 5%;
+}
+
+#speaking article:first-of-type {
+    border-top: none;
 }
 
 #speaking #henrik_kniberg {
