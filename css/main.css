@@ -855,7 +855,6 @@ article .saturdayAfternoon {
     width: 100%;
 }
 
-
 #sponsors div a {
     display: table-cell;
     margin: 0;
@@ -863,6 +862,10 @@ article .saturdayAfternoon {
     text-align: center;
     vertical-align: middle;
     width: 27.33%;
+}
+
+#sponsors .smallLogos a {
+    padding: 7%;
 }
 
 #sponsors img {
