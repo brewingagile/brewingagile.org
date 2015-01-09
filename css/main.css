@@ -585,6 +585,11 @@ body > form > *:first-child {
     width: 80%;
 }
 
+#speaking article iframe {
+    width: 100%;
+    min-height: 315px;
+}
+
 #speaking #moreSpeakers header {
     margin: 0;
     text-align: center;
