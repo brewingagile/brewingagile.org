@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>
+<html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" ng-app="app"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Brewing Agile 2014</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular-resource.min.js"></script>
+    <script src="angularjs/app.js?version=4"></script>
+    <script src="angularjs/registration.js?version=6"></script>
+
+    <link href='//fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/normalize.css?version=2">
+    <link rel="stylesheet" href="css/main.css?version=2">
+
+    <script src="vendor/modernizr-2.6.2.min.js"></script>
+    <script src="vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/browserDetect.js"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-35480677-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+
+        $(document).ready(function (event) {
+
+            $(window).on('scroll', function (event) {
+                if ($(document).scrollTop() > $('#head').height() && !$('body > nav').hasClass('sticky')) {
+                    $('body > nav').addClass('sticky');
+                } else if ($(document).scrollTop() <= $('#head').height() && $('body > nav').hasClass('sticky')) {
+                    $('body > nav').removeClass('sticky');
+                }
+            });
+
+            $('#signUp h2 a').on('click', function (event) {
+                event.preventDefault;
+                event.stopImmediatePropagation;
+                $('#signUp').slideUp();
+                $('#signUpForm').slideDown();
+                $('body > nav a[href="#signUp"]').attr('href', '#signUpForm');
+            });
+
+            $('#menuButton').on('click', function (event) {
+                event.preventDefault();
+                $('body').toggleClass('openMenu');
+            }).on('touchstart', function (event) {
+                event.preventDefault();
+                $('body').toggleClass('openMenu');
+            });
+            ;
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+<header id="head">
+    <p class="slogan">Flow</p>
+
+    <h1><em>&ldquo;a psychological state where a person is fully immersed and focused on an activity or
+        task&rdquo;</em> &mdash; <a href="http://en.wikipedia.org/wiki/Flow_(psychology)">Wikipedia.org</a></h1>
+        
+    <p>Brewing Agile will discuss the subject of flow in a variety of ways, from how to achieve immersion in the task at hand, to making sure that items flow from request to delivery in a smooth and timely manner. Flow is one of the keys to success in agility, let's see how we can achieve it!</p>
+</header>
+
+<a id="menuButton" href="">Menu</a>
+
+<nav>
+    <ul>
+        <li><a href="#quickInfo">Quick Info</a></li>
+        <li><a href="#speaking">Videos</a></li>
+        <li><a href="https://drive.google.com/a/scrumbeers.com/folderview?id=0B6SkGlKMQrunSjJpWG1zcUExYXM&usp=sharing">Presentations</a></li>
+        <li><a href="#timeplan">Timeplan</a></li>
+        <li><a href="#otherInfo">Other Info</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#oldSites">Old Sites</a></li>
+    </ul>
+</nav>
+
+<section id="quickInfo">
+    <p class="info"><span class="date">28 - 29 November:</span> <span class="price">1100</span> SEK</p>
+
+    <p class="locale">at <a href="http://www.skansenkronan.se/" title="Check out their site">Skansen Kronan</a>, <a
+            target="blank" href="http://goo.gl/maps/G9maO" title="Look at the map">Gothenburg</a></p>
+</section>
+
+<section id="bread">
+    <p>The theme for 2014 will be &ldquo;Flow&rdquo; not simply your own personal flow, but the flow of your team,
+        product, releases, and organisation. What is flow? Where does it come from? How do we acheive it? </p>
+
+    <p>In addition to our usual conference we offer optional add-ons of intimate and interactive workshops with our
+        keynote speaker <a href="http://www.crisp.se/konsulter/henrik-kniberg">Henrik Kniberg</a> or Fredrik Wendt.</p>
+    <nav class="contactUs clearfix"><a class="facebook" href="https://www.facebook.com/BrewingAgile" title="Facebook">Facebook</a>
+        <a class="twitter" href="https://twitter.com/BrewingAgile" title="Twitter">Twitter</a></nav>
+</section>
+
+<section id="speaking" class="clearfix">
+
+    <header><h2>Speakers</h2></header>
+
+    <article id="carl_vikman" class="speaker vikman clearfix">
+        <header><img src="img/carl_vikman.jpg" alt="Carl Vikman"/>
+            <h3><br/>Carl Vikman</h3></header>
+        <section class="talk">
+
+            <iframe src="//www.youtube.com/embed/Mcr85Y2z5e0?rel=0" frameborder="0" allowfullscreen></iframe>
+
+            <p>Carl has an extensive background from many years of leading expert- and knowledge teams in multiple industries.</p>
+            <p>Having led the development of multiple award-winning records and high-profile video games, Carl has also been invited as a speaker to several large companies and conferences around the world, where he has shared his expertise on leadership and Agile transformations in large organizations.</p>
+            <p>Most recently, Carl comes from a position as COO at the Swedigh agile project managment team Hansoft, before that he worked as a Senior Development Director for the Battlefield 4 team at DICE, Electronic Arts, in Sweden.</p>
+
+            <header><h4><span>About the talk</span></h4></header>
+            <p>What are the basic neurological and psychological principles of flow? How does these manifest themselves when we work together? I will talk about how neuroscience is linked to a successful recording session in a studio and how these same principles also apply to developing video-games.</p>
+        </section>
+    </article>
+
+    <article id="johan_karlsson" class="speaker karlsson clearfix">
+        <header><img src="img/johan_karlsson.jpg" alt="Johan Karlsson"/>
+            <h3><br/>Johan Karlsson</h3></header>
+        <section class="talk">
+
+            <iframe src="//www.youtube.com/embed/3xavU9QytKs?rel=0" frameborder="0" allowfullscreen></iframe>
+
+            <p>As a Hansoft Coach, Johan Karlsson discusses agile and lean with customers around the world, helping them to reach new levels of productivity. Johan holds a M.Sc in Sociotechnical Systems Engineering from Uppsala University. Previously a developer, who has seen the benefits agile can bring to a team's potential when compared to waterfall, he is now devoted to continuously learn more about the correlation between happy dev teams and great products.</p>
+
+            <header><h4><span>(Mis)Understanding 'Flow' with Metrics</span></h4></header>
+            <p>Metrics are scary as they often are associated with performance reviews or as an annoying disturbance stealing time from getting real work done.</p>
+
+            <p>But what if we look at this topic from a completely different perspective? What if metrics instead are used as a tool to collaborate and teach rather than report to stakeholders? What if we treat our metrics as something as fluid and changeable as everything else we talk about in retrospectives?</p>
+
+            <p>In this talk I will first cover the larger paradigm shift I see in how product development teams collaborate with metrics to deliver great products. The second part will consist of concrete examples of how to understand your flow better. Are you even looking at the problem?</p>
+
+        </section>
+    </article>
+
+    <article id="emma_westby" class="speaker westby clearfix">
+        <header><img src="img/emma_westby.jpg" alt="Emma Jane Westby"/>
+            <h3><br/>Emma Jane Westby</h3></header>
+        <section class="talk">
+
+            <iframe src="//www.youtube.com/embed/rM39tia5-d4?rel=0" frameborder="0" allowfullscreen></iframe>
+
+            <p>Emma Jane Hogbin Westby is an internationally renowned open source software advocate, technical author, and teacher. In January 2010 she was recognized by The Google Diversity Programme for her efforts in increasing female participation in software development. She is a frequent speaker at technical conferences in Canada, US, and Europe and is currently working as a Technical Project Manager in the UK.</p>
+
+            <header><h4><span>Was It Something I Said?</span></h4></header>
+            <p>Bug reports, standups, issue queues, retrospectives, pull requests, code reviews, flame-outs. We're constantly communicating and if we don't take the time to stop and think about what state of mind will be most productive, we can sometimes say things that put us further behind. Nothing disrupts flow like unproductive communication! In this session Emma Jane Hogbin Westby will show you a new way of thinking about how people behave in the workplace. She will walk you through three types of thinking strategies; and show you how to apply these strategies to create more productive interactions with your co-workers.</p>
+        </section>
+    </article>
+
+    <article id="tomas_trolltoft" class="speaker trolltoft clearfix">
+        <header><img src="img/tomas_trolltoft.jpg" alt="Tomas Trolltoft"/>
+            <h3><br/>Tomas Trolltoft</h3></header>
+        <section class="talk">
+
+            <iframe src="//www.youtube.com/embed/-zmZ4X3VNJM?rel=0" frameborder="0" allowfullscreen></iframe>
+
+            <p>Tomas has been working as a software engineer since 1995. The last 10 years he has been in various position involving team & tech lead and responsibility for employees  In the last years he had been more and more interested in the performance of a team and tried different strategies to increase it. Tomas is one of the founders of Squeed AB and he is mostly known for his involvement in running Javaforum in Gothenburg.</p>
+
+            <header><h4><span>Team Flow - how to make your team happier and perform better</span></h4></header>
+            <p>What makes a development team perform great? Of course the skills of the team has great impact but there are also other factors that make big differences. Even with a fixed team the performance will change during time. Good performance is found when the team feels a positive flow and are happy - the benefits are not only better productivity but also better life quality of the individuals. In this talk I will tell my experiences of what makes impact of this flow and how you can increase the percentage of time when your team has a positive performance flow.</p>
+        </section>
+    </article>
+
+    <article id="jeff_campbell" class="speaker campbell clearfix">
+        <header><img src="img/jeff_campbell.jpg" alt="Jeff Campbell"/>
+            <h3><br/>Jeff Campbell</h3></header>
+        <section class="talk">
+
+            <iframe src="//www.youtube.com/embed/T-atcXuSxCQ?rel=0" frameborder="0" allowfullscreen></iframe>
+
+            <p>Jeff is an Agile Coach who considers the discovery of Agile and Lean to be one of the most defining moments of his life, and considers helping others to improve their working life not to simply be a job, but a social responsibility. As an Agile Coach, he has worked with driving Agile transformations in organisations both small and large.</p>
+            <p>He is one of the founding members of <a href="http://www.scrumbeers.com">www.scrumbeers.com</a> and an organiser of this conference in his spare time.</p>
+
+            <header><h4><span>The inFlow</span></h4></header>
+            <p>Are your Sprint planning meetings excruciatingly long and hot? At the end does everyone agree simply so they can get out of the room? In that case, it is very likely you need to look at your refinement process, in other words, the flow into the Sprint.</p>
+            <p>In this talk we will try to find a starting place to improve this situation. We will look at a simple process to get you started, as well as a few tools you might find useful in the beginning, and finally the secret to all good refinement will be revealed!</p>
+
+        </section>
+    </article>
+
+    <article id="henrik_kniberg" class="speaker kniberg clearfix">
+        <header><img src="img/henrik_kniberg.jpg" alt="Henrik Kniberg"/>
+
+        <h3><span>Keynote</span><br/>Henrik Kniberg</h3></header>
+        <section class="talk">
+
+            <iframe src="//www.youtube.com/embed/k8DTUYfUOa0?rel=0" frameborder="0" allowfullscreen></iframe>
+
+            <header><h4><span>I help companies improve.</span></h4></header>
+            <p>I am fascinated by the art of software development. How do you write great code? How do you create &
+                lead great teams? How do you create great workplaces? How do you evolve great architectures? How do you
+                design great products? How do you build scalable & robust systems? How do you build interfaces that
+                users love?</p>
+
+            <p>I’ve found that this mostly boils down to leadership, motivation, and organizational structure. The most
+                effective approaches I’ve found so far to improve companies is Systems Thinking, Theory of Constraints,
+                Lean thinking, and concrete implementations of this such as Scrum, XP, and Kanban.</p>
+
+            <p>This is what I am continuously striving to learn & apply & teach.</p>
+
+            <p>I’m currently working with Spotify.</p>
+            <header><h4><span>Focus</span></h4></header>
+            <p>We'll take a look at how agile principles can be used to get focused and improve your life, both at home
+                and at work.</p>
+
+            <p>And how to eradicate the phrase "I don't have time".</p>
+        </section>
+    </article>
+
+    <article id="fredrik_wendt" class="speaker wendt clearfix">
+        <header><img src="img/fredrik_wendt.jpg" alt="Fredrik Wendt"/>
+            <h3><br />Fredrik Wendt</h3></header>
+        <section class="talk">
+            <header><h4><span>Practical Continuous Delivery Workshop</span></h4></header>
+            <p>These days most people have heard about Continuous Delivery and Continuous Deployment, many have read "the book" as well. Less than many have actually tried it out and still struggle to produce an increment that is actually potentially releasable. Even fewer have tried out cloudish deployment patterns, and that is what this workshop is all about.</p>
+            <p>We will, starting from scratch, set up a Continuous Delivery Pipeline in the cloud where we achieve Blue/Green deployment with zero downtime upgrades and rollbacks. We'll have clients hammering our service as we roll out new and alternative versions of our backend and frontend software. And yes, we will work in pairs to accelerate learning and quality in what we do.</p>
+            <p>You'll bring: a laptop, some basic Linux sysadmin skills/understanding, an open mind, and a will to work with a friend or peer during the intense three hours. Appart from learning, you may also have fun!</p>
+        </section>
+    </article>
+</section>
+
+<section id="whoItIsFor" class="clearfix">
+    <header>
+        <h2>Who is this conference for?</h2>
+    </header>
+    <section>
+        <p>We hope that everyone, regardless background, will be able to take something with them from the conference.
+            This years theme &ldquo;Flow&rdquo; will focus not only on your personal flow, but your team, product,
+            release, and organisational flow.</p>
+
+        <p>This will of course most easily relate to the digital industry, but we hope to broadened the focus to other
+            areas. We want our speakers and attendees to share tools across our fields, both for improving your own flow
+            but also for understanding other area of expertise in the product process.</p>
+
+        <p>We want to invite people not only developers but, project managers, marketing professionals, sales people,
+            and many others. Anyone with passion about their products!</p>
+    </section>
+    <h4>Brewing Agile focuses on agile thinking and process, rather than the technical.</h4>
+</section>
+
+<section id="timeplan" class="clearfix">
+
+    <header>
+        <h2>Timeplan</h2>
+    </header>
+
+    <p>The conference will be on the 28th - 29th of November.</p>
+
+    <article id="layout" class="clearfix">
+        <header><h3>Layout</h3></header>
+        <div id="workshop" class="first fridayMorning">
+            <header>
+                <h4>Workshops</h4>
+            </header>
+            <p class="date"><strong>Friday</strong> Morning</p>
+
+            <p>Workshops with Henrik Kniberg or Fredrik Wendt. Special tickets are required (see above).</p>
+        </div>
+        <div id="conference" class="fridayAfternoon">
+            <header>
+                <h4>Conference</h4>
+            </header>
+            <p class="date"><strong>Friday</strong> Afternoon</p>
+
+            <p>This day will consist of traditional talks by people in the agile community. Including our keynote
+                address and 3 other talks.</p>
+        </div>
+        <div id="scrumBeers" class="fridayEvening">
+            <header>
+                <h4>Socializing</h4>
+            </header>
+            <p class="date"><strong>Friday</strong> Evening</p>
+
+            <p>Come and hang out, learn, share experiences, and network!</p>
+        </div>
+        <div id="unconference" class="saturdayAfternoon">
+            <header>
+                <h4>Discussion Groups</h4>
+            </header>
+            <p class="date"><strong>Saturday</strong> Afternoon</p>
+
+            <p>On this day we break in to self organizing teams for a series of discussions chosen by you! Anyone can
+                propose a workshop, and the participants will chose which ones we run.</p>
+        </div>
+    </article>
+
+    <article id="schedule" class="clearfix">
+        <header><h3>Schedule</h3></header>
+        <div id="day1">
+            <h4>Nov<br/><span>28<span>th</span></span></h4>
+            <dl class="fridayMorning">
+                <dt class="first">8:30</dt>
+                <dd class="first">Workshop Registration</dd>
+                <dt class="even">9:00</dt>
+                <dd class="even">Workshops</dd>
+
+            </dl>
+            <dl class="fridayAfternoon">
+                <dt class="first even">13:00</dt>
+                <dd class="first even">Conference Registration</dd>
+                <dt>13:30</dt>
+                <dd>Introduction</dd>
+                <dt class="even">13:45</dt>
+                <dd class="even">Carl Vikman</dd>
+                <dt>14:25</dt>
+                <dd>Break</dd>
+                <dt class="even">14:45</dt>
+                <dd class="even">Johan Karlsson</dd>
+                <dt>15:15</dt>
+                <dd>Emma Jane Westby</dd>
+                <dt class="even">15:45</dt>
+                <dd class="even">Break</dd>
+                <dt>16:05</dt>
+                <dd>Tomas Trolltoft</dd>
+                <dt class="even">16:35</dt>
+                <dd class="even">Jeff Campbell</dd>
+                <dt>17:05</dt>
+                <dd>Break</dd>
+                <dt class="even">17:25</dt>
+                <dd class="even">Keynote: Henrik Kniberg</dd>
+                <dt>18:10</dt>
+                <dd>Sponsors</dd>
+                <dt class="even">18:25</dt>
+                <dd class="even">Wrap up</dd>
+             </dl>
+            <dl class="fridayEvening">
+                <dt class="first even">18:30</dt>
+                <dd class="first even">Evening Event</dd>
+                <dt>24:00</dt>
+                <dd>Go home?</dd>
+            </dl>
+        </div>
+        <div id="day2" class="saturdayAfternoon">
+            <h4>Nov<br/><span>29<span>th</span></span></h4>
+            <dl>
+                <dt class="first">11:00</dt>
+                <dd class="first">Brunch</dd>
+								<dt class="even">12:00</dt>
+                <dd class="even">Discussion groups</dd>
+                <dt>14:00</dt>
+                <dd>Break with fika</dd>
+                <dt class="even">14:30</dt>
+                <dd class="even">Discussion groups</dd>
+                <dt>16:00</dt>
+                <dd>Go home!</dd>
+            </dl>
+        </div>
+    </article>
+</section>
+
+<section id="otherInfo">
+    <header><h2>Other Information</h2></header>
+    <p>Because we are a small, non-profit, organization we must enforce a strict no cancellation policy. No return on
+        tickets to the event. Program subject to change at any time.</p>
+</section>
+
+<section id="sponsors">
+    <header><h2>Sponsors &hearts;</h2></header>
+    <div class="">
+        <a href="http://www.hansoft.com/"><img src="img/logo_hansoft.png" alt="Hansoft"/></a>
+        <a href="http://www.informator.se"><img src="img/logo_informator.jpg" alt="Informator"/></a>
+    </div>
+    <div class="">
+        <a href="http://www.squeed.se"><img src="img/logo_squeed.png" alt="Squeed"/></a>
+        <a href="http://www.stendahls.se/"><img src="img/logo_stendahls.png" alt="Stendahls"/></a>
+    </div>
+    <div class="">
+        <a href="http://www.cedur.se"><img src="img/logo_cedur.png" alt="Cedur"/></a>
+        <a href="http://www.jeeves.se"><img src="img/logo_jeeves.png" alt="Jeeves"/></a>
+        <a href="http://www.jeppesen.com/sweden"><img src="img/logo_jeppesen.jpg" alt="Jeppesen"/></a>
+        <a href="http://www.nethouse.se/"><img src="img/logo_nethouse.png" alt="Nethouse"/></a>
+    </div>
+    <div class="smallLogos">
+        <a href="http://www.softhouse.se/"><img src="img/logo_softhouse.jpg" alt="Softhouse"/></a>
+        <a href="http://www.af.se/"><img src="img/logo_af.png" alt="ÅF"/></a>
+        <a href="http://www.alten.se/"><img src="img/logo_alten.png" alt="Alten"/></a>
+
+    </div>
+
+    <p>If you are interested in being a sponsor, mail: <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a>
+    </p>
+    <header><h2>Organizers</h2></header>
+    <div class="organizers">
+        <a href="http://rebelalliance.se"><img src="img/logo_rebelalliance.png" alt="Rebel Alliance AB"/></a>
+        <a href="http://se.linkedin.com/in/viktornyblom">Viktor<br />Nyblom</a>
+        <a><img src="img/logo_tv.png" alt="TV"/></a>
+        <a href="http://fredrik.wendt.se/">Fredrik<br />Wendt</a>
+    </div>
+</section>
+
+<footer id="oldSites">
+    <p>Old sites: <a href="2013/index.html">2013</a> , <a href="2012/index.html">2012</a> | Brewing Agile is proudly
+        presented by <a href="http://www.scrumbeers.com/">Scrum Beers of Gothenburg</a></p>
+</footer>
+
+<!--
+[if lte IE 9]>
+<p class="chromeframe">You are using an outdated browser and we are unable to register sign ups from it.<br/><a
+        href="http://browsehappy.com/">Upgrade your browser today</a> or <a
+        href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience
+    this site.</p>
+<![endif]
+-->
+
+<script type="text/javascript">
+    $('#speaking .readMoreButton').click(function (event) {
+        event.preventDefault();
+        $(this).hide();
+        $(this).parent().addClass("open");
+    });
+</script>
+</body>
+</html>
