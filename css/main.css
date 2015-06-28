@@ -338,7 +338,7 @@ body > footer a, body > footer a:hover, body > footer a:active, body > footer a:
 #bread nav {
     clear: both;
     margin: 0 auto;
-    padding-bottom: 7%;
+    padding-bottom: 1em;
     text-align: center;
     width: 9em;
 }
