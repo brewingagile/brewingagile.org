@@ -10,6 +10,4 @@ $('#menuButton').on('click',function(event){
 
 $('#menu section a').on('click',function(event){
     $('body').toggleClass('menuOpen');
-}).on('touchstart',function(event){
-    $('body').toggleClass('menuOpen');
 });
