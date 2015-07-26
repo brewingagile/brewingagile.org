@@ -428,6 +428,27 @@ body > footer a, body > footer a:hover, body > footer a:active, body > footer a:
     font-size: 0.8em;
 }
 
+#workshop .speaker {
+    margin-top: 1.5em;
+}
+
+#workshop .speaker img {
+    border-radius: 9999px;
+    display: block;
+    float: left;
+    margin-right: 5%;
+    max-width: 20%;
+}
+
+#workshop .speaker h5 {
+    display: block;
+    float: left;
+    font-family: "Gochi Hand",cursive;
+    font-size: 1.2em;
+    margin-top: 0.7em;
+    max-width: 75%;
+}
+
 #sponsors > section {
     padding: 0 10%;
     width: 80%;
