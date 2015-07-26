@@ -206,11 +206,16 @@ strong, strong a {
 }
 
 body > header {
-    background: transparent url(../img/logo_header.svg) no-repeat fixed center 5em;
-    background-size: auto 20em;
+    background: transparent url(../img/logo_header.svg) no-repeat fixed center 40%;
+    background-size: auto 40%;
     margin: 0;
     min-height: 100%;
     padding: 0;
+}
+
+.touch body > header {
+    background-position: center 5em;
+    background-size: auto 20em;
 }
 
 body > header h1 {
@@ -346,7 +351,11 @@ body > footer a, body > footer a:hover, body > footer a:active, body > footer a:
     margin-top: -50px;
 }
 
-#bread nav {
+#quickInfo .bread {
+    margin-top: 2em;
+}
+
+#quickInfo nav {
     clear: both;
     margin: 0 auto;
     padding-bottom: 1em;
@@ -354,7 +363,7 @@ body > footer a, body > footer a:hover, body > footer a:active, body > footer a:
     width: 9em;
 }
 
-#bread .contactUs a {
+#quickInfo .contactUs a {
     background: transparent url(../img/icon_facebook.png) no-repeat scroll left top;
     background-size: 100% auto;
     display: block;
@@ -365,11 +374,11 @@ body > footer a, body > footer a:hover, body > footer a:active, body > footer a:
     width: 3em;
 }
 
-#bread .contactUs a:first-child {
+#quickInfo .contactUs a:first-child {
     margin-left: 0;
 }
 
-#bread .contactUs .twitter {
+#quickInfo .contactUs .twitter {
     background-image: url(../img/icon_twitter.png);
 }
 
@@ -538,21 +547,21 @@ body.menuOpen #menuButton {
     color: #30cb29;
 }
 
-#bread, #bread header h2:after {
+#talks, #talks header h2:after {
     background-color: #c5cb29;
 }
 
-#bread header h2 {
+#talks header h2 {
     background-color: #30cb29;
     border-bottom-color: #c5cb29;
     color: #c5cb29;
 }
 
-#talks, #talks header h2:after {
+#workshop, #workshop header h2:after {
     background-color: #cb8c29;
 }
 
-#talks header h2 {
+#workshop header h2 {
     background-color: #c5cb29;
     border-bottom-color: #cb8c29;
     color: #cb8c29;
@@ -760,7 +769,9 @@ body.menuOpen #menuButton {
         letter-spacing: -1px;
     }
 
-    body > section > section {
+    body > section > section, #quickInfo > section {
+        margin-right: auto;
+        margin-left: auto;
         padding-right: 10%;
         padding-left: 10%;
         width: 80%;
