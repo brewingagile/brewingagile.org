@@ -570,6 +570,10 @@ body.menuOpen #menuButton {
     color: #8c29cb;
 }
 
+#timeplan section p {
+    text-align: center;
+}
+
 #otherInfo, #otherInfo header h2:after {
     background-color: #2988cb;
 }
