@@ -206,7 +206,7 @@ strong, strong a {
 }
 
 body > header {
-    background: transparent url(../img/logo_header.svg) no-repeat fixed center 40%;
+    background: transparent url(../img/logo_header.svg) no-repeat fixed center 30%;
     background-size: auto 40%;
     margin: 0;
     min-height: 100%;
@@ -426,6 +426,14 @@ body > footer a, body > footer a:hover, body > footer a:active, body > footer a:
 
 #talks .speaker p {
     font-size: 0.8em;
+}
+
+#workshop .intro {
+    font-size: 0.8em;
+}
+
+#workshop article h4 {
+    text-align: left;
 }
 
 #workshop .speaker {
@@ -890,7 +898,7 @@ body.menuOpen #menuButton {
         line-height: 1.8em;
     }
 
-    body > section > section {
+    body > section > section, #quickInfo > section {
         padding-right: 5%;
         padding-left: 5%;
         width: 90%;
@@ -925,6 +933,10 @@ body.menuOpen #menuButton {
         margin-bottom: 5%;
         margin-left: 10%;
         max-width: 45%;
+    }
+
+    #workshop .speaker h5 {
+        font-size: 1.8em;
     }
 
     #oldSites > section p {
