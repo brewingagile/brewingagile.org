@@ -224,9 +224,11 @@ body > section {
 }
 
 body > section > section {
-    padding: 0 25%;
+    margin: 0 auto;
+    padding: 0;
     text-align: center;
-    width: 50%
+    max-width: 850px;
+    width: 64%;
 }
 
 body > section > section > * {
@@ -264,7 +266,13 @@ body > footer a, body > footer a:hover, body > footer a:active, body > footer a:
 }
 
 #quickInfo > section {
+    margin-right: 0;
+    margin-left: 0;
+    max-width: none;
+    padding-right: 18%;
     padding-bottom: 4em;
+    padding-left: 18%;
+    width: 64%;
 }
 
 #quickInfo > section > * {
@@ -730,6 +738,13 @@ body.menuOpen #menuButton {
 }
 
 @media only screen and (max-width: 1024px) {
+
+    h3 {
+        border-top-width: 6px;
+        font-size: 1.8em;
+        letter-spacing: -1px;
+    }
+
     body > section > section {
         padding-right: 15%;
         padding-left: 15%;
