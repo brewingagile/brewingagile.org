@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -10,21 +10,16 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
-
 html {
+    color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
 
 /*
- * Remove text-shadow in selection highlight: h5bp.com/i
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
@@ -53,13 +48,16 @@ hr {
 }
 
 /*
- * Remove the gap between images, videos, audio and canvas and the bottom of
- * their containers: h5bp.com/i/440
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
 audio,
 canvas,
+iframe,
 img,
+svg,
 video {
     vertical-align: middle;
 }
@@ -83,872 +81,573 @@ textarea {
 }
 
 /* ==========================================================================
-   Browse Happy prompt
+   Browser Upgrade Prompt
    ========================================================================== */
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
+.browserupgrade {
+    background: lightgoldenrodyellow;
     color: #000;
-    padding: 0.2em 0;
+    display: block;
+    left: 0;
+    margin: 0;
+    padding: 0.5em 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-html, body {
-    height: 95%;
+html, html body {
+    background: #2988cb url(../img/background.jpg) no-repeat fixed center center;
+    background-size: cover;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+    min-height: 100%;
 }
 
-html {
-    background: transparent url(../img/background.jpg) fixed no-repeat center center;
-    background-image: url(../img/inset.png), url(../img/background.jpg);
-    background-size: 100% 100%, cover;
+html body {
+    background: none;
 }
 
-body {
-    background-color: transparent;
-    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-    color: #ddd;
-}
-
-a, a:hover, a:active, a:after, a:visited {
-    color: #ffffff;
+a, a:hover, a:active, a:visited {
+    color: #000000;
 }
 
 h1, h2, h3, h4, h5 {
-    font-weight: normal;
+    font-family: 'Biryani', sans-serif;
+    line-height: 1em;
+    text-align: center;
 }
 
-h1 {
-    font-family: 'Archivo Narrow', sans-serif;
+h1, h2 {
+    font-size: 5em;
+    letter-spacing: -6px;
+    line-height: 0.8em;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    width: 100%;
+    word-spacing: 0.2em;
 }
 
 h2 {
-    border-bottom: 5px solid #212722;
-    font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-    font-size: 5vw;
-    letter-spacing: -4px;
-    line-height: 1em;
-    padding-top: 7%;
+    border-bottom: 10px dashed red;
 }
 
-#menuButton {
-    background: rgba(136,136,136,0.6) url(../img/icon_menu_128.png) no-repeat scroll center center;
-    background-size: 100% auto;
-    color: #ffffff;
-    display: none;
-    height: 60px;
-    position: fixed;
-    right: 0;
-    text-indent: -9999px;
-    top: 0;
-    width: 60px;
-    z-index: 9999;
-}
-
-body.openMenu #menuButton {
-    background-color: #444444;
-}
-
-body > nav {
-    background-color: #212722;
-    left: 0;
-    position: static;
-    width: 100%;
-    top: 0;
-    z-index: 9998;
-}
-
-body > nav.sticky {
-    position: fixed;
-}
-
-body > nav ul {
-    display: table;
-    margin: 0;
+h2:after {
+    background-color: red;
+    content: '';
+    display: block;
+    height: 0.2em;
+    margin: -0.2em 0 0;
     padding: 0;
     width: 100%;
 }
 
-body > nav ul li {
-    display: table-cell;
-    margin: 0;
-    padding: 0.6em 1em;
-    text-align: center;
-    text-transform: uppercase;
+h3, h5 {
+    font-family: 'Martel', serif;
 }
 
-body > nav ul li:nth-child(even) {
-    background-color: #444444;
-}
-
-body > nav ul li a {
-    text-decoration: none;
-}
-
-body > nav ul li a:hover {
-    text-decoration: underline;
-}
-
-#head,
-body > section,
-body > form {
-    background-color: rgba(255,255,255,0.7);
-    box-shadow: inset 0 0 5em rgba(0,0,0,0.15);
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 10%;
-    position: relative;
-    width: 80%;
-}
-
-#head > *:first-child,
-body > section > *:first-child,
-body > section > *:first-child > *:first-child,
-body > form > *:first-child {
-    margin-top: 0;
-}
-
-#head {
-    background: #eee url() no-repeat scroll center bottom;
-    box-shadow: inset 0 0 50px #ccc;
-    color: #000;
-    min-height: 100%;
-    overflow: hidden;
-    padding-top: 0;
-    padding-bottom: 0;
-    text-align: center;
-}
-
-#head h1 {
-    color: #000;
-    margin: 0 auto;
-    padding-bottom: 3%;
-    text-align: right;
-    text-transform: uppercase;
-    width: 100%;
-}
-
-#head h1 a {
-    color: #000;
-}
-
-#head h1 em {
-    font-style: italic;
-}
-
-#head .slogan {
-    background: transparent url(../img/brewing_agile_ground.png) no-repeat scroll right bottom;
-    background-size: auto 1.5em;
-    border-bottom: 0.4vw solid #000;
-    font-family: 'Raleway', sans-serif;
-    font-size: 10em;
-    letter-spacing: -10px;
-    line-height: 1em;
-    margin: 0 0 0.1em;
-    padding: 15% 0 0;
-    text-align: left;
-}
-
-#head p {
-    margin: 0;
-    padding-bottom: 4%;
-}
-
-#quickInfo {
-    background: rgba(17,87,149,0.9) url() no-repeat fixed center center;
-    background-size: cover;
-}
-
-#quickInfo .info,
-#quickInfo .locale {
-    font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-    font-size: 5em;
-    letter-spacing: -4px;
-    margin: 0;
-}
-
-#quickInfo .info {
-    border-bottom: 5px solid #212722;
-    padding-top: 1em;
-}
-
-#quickInfo .locale {
-    padding-bottom: 1em;
-    text-align: right;
-}
-
-#quickInfo .price {
-    font-family: Georgia, serif;
-}
-
-#bread {
-    background: rgba(170,70,67,0.9) url() no-repeat fixed center center;
-    background-size: cover;
-}
-
-#bread p {
-    float: right;
-    font-size: 2.4em;
+h3 {
+    border-top: 10px dotted #222;
+    font-size: 2em;
     letter-spacing: -1px;
-    margin-top: 0;
-    padding-top: 7%;
-    width: 44%;
-}
-
-#bread p:first-child {
-    float: left;
-}
-
-#bread nav {
-    clear: both;
-    margin: 0 auto;
-    padding-bottom: 7%;
-    text-align: center;
-    width: 9em;
-}
-
-#bread .contactUs a {
-    background: transparent url(../img/icon_facebook.png) no-repeat scroll left top;
-    background-size: 100% auto;
-    display: block;
-    float: left;
-    height: 4em;
-    margin-left: 1em;
-    text-indent: -9999px;
-    width: 4em;
-}
-
-#bread .contactUs a:first-child {
-    margin-left: 0;
-}
-
-#bread .contactUs .twitter {
-    background-image: url(../img/icon_twitter.png);
-}
-
-#signUp {
-    background-color: rgba(137,165,78, 0.9);
-}
-
-#signUp.open {
-    min-height: 100%;
-}
-
-#signUp h2 {
-    border-bottom: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 10em;
-    letter-spacing: -10px;
-    margin: 0;
-    padding: 0.4em 0;
-    text-align: center;
-}
-
-#signUp h2 a {
-    text-decoration: none;
-}
-
-#signUp h2 a:hover {
-    text-decoration: underline;
-}
-
-#signUp h2 span,
-#signUp h2 a span {
-    color: #212722;
-}
-
-#signUpForm {
-    display: none;
-    background-color: rgba(137,165,78, 0.9);
-    padding-top: 7%;
-    padding-bottom: 7%;
-}
-
-#signUpForm form {
-}
-
-#signUpForm form .bulk {
-}
-
-#signUpForm form .bulk span {
-    border-top: 5px solid #212722;
-    display: block;
-    margin-top: 1em;
-    padding-top: 1em;
-    text-align: right;
-}
-
-#signUpForm form > div {
-    padding: 0.5em 0;
-    width: 100%;
-}
-
-#signUpForm form > div:nth-child(even) {
-    background-color: rgba(255,255,255,0.1);
-    clear: both;
-}
-
-#signUpForm form .label {
-    float: left;
-    padding-right: 2%;
-    width: 46%;
-}
-
-#signUpForm form .input,
-#signUpForm form .radio.first,
-#signUpForm form .radio.second,
-#signUpForm form .checkbox,
-#signUpForm form .textarea {
-    float: right;
-    width: 50%;
-}
-
-#signUpForm form .radio {
-    border: 3px dashed #dddddd;
-    padding: 1% 1% 3% 1%;
-    position: relative;
-}
-
-#signUpForm form .radio.first {
-    border: none;
-    clear: right;
-    margin-right: 5%;
-    padding: 1%;
-    width: 42%;
-}
-
-#signUpForm form .radio.second {
-    clear: right;
-    margin-top: 1%;
-    margin-right: 5%;
-    padding: 1%;
-    width: 42%;
-}
-
-#signUpForm form .radio.last {
-    margin-left: 1em;
-}
-
-#signUpForm form .radio.checked {
-    background-color: #dddddd;
-    border-style: solid;
-    color: #212722;
-}
-
-#signUpForm form .radio label {
-    font-size: 1.6em;
-}
-
-#signUpForm form .radio input {
-    margin-right: 0.5em;
-
-}
-
-#signUpForm form .radio .timeInfo {
-    position: absolute;
-    left: 100%;
-    top: auto;
-}
-
-#signUpForm form .radio span {
-    display: block;
-    font-size: 0.6em;
-    padding-left: 2em;
-}
-
-#signUpForm form .radio strong {
-    color: #212722;
-}
-
-#signUpForm form .radio .radio {
-    margin-top: 8%;
-    padding-top: 3%;
-}
-
-#signUpForm form .label label {
-    display: block;
-    text-align: right;
-    padding: 2%;
-    width: 96%;
-}
-
-#signUpForm form .checkbox {
-    padding: 1% 0;
-}
-
-#signUpForm form .input input,
-#signUpForm form pre,
-#signUpForm form .textarea textarea {
-    display: block;
-    padding: 2%;
-    text-align: left;
-    width: 85%;
-}
-
-#signUpForm form .input label {
-    float: left;
-    margin-left: 4%;
-}
-
-#signUpForm form .input label:first-child {
-    margin-left: 0;
-}
-
-#signUpForm form pre {
-    background-color: #dddddd;
-    clear: both;
-    color: #212722;
-    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-    line-height: 1em;
-}
-
-#signUpForm form pre span:first-child {
-    color: rgb(137,165,78);
-    font-size: 0.5em;
-}
-
-#signUpForm form .submit {
-    text-align: right;
-}
-
-#signUpForm form .submit input {
-    background-color: #212722;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-    padding: 1em;
-}
-
-#signUpForm form .submit input:hover {
-    background-color: #ffffff;
-    color: #212722;
-}
-
-#signUpForm form .submit input[disabled=disabled] {
-    background-color: rgba(137, 165, 78, 1);
-    border: 3px dashed #dddddd;
-    color: #dddddd;
-    cursor: default;
-}
-
-#signUpForm .success p,
-#signUpForm .error p {
-    font-size: 2.4em;
-    letter-spacing: -1px;
-    margin-top: 0;
-}
-
-#signUpForm .success p:first-child,
-#signUpForm .error p:first-child {
-    padding-top: 7%;
-}
-
-#speaking {
-    background-color: rgba(128, 105, 155, 0.9);
-    min-height: 100%;
-}
-
-#speaking article {
-    border-top: 5px solid #212722;
     padding-top: 5%;
-}
-
-#speaking article:first-of-type {
-    border-top: none;
-}
-
-#speaking #henrik_kniberg {
-    margin-left: 0;
-}
-
-#speaking article > header {
-    float: left;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    width: 25%;
-}
-
-#speaking article header img {
-    display: block;
-    width: 100%;
-}
-
-#speaking article header h3 {
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 2.4em;
-    margin: 0;
-    line-height: 0.8em;
-    padding: 0 10% 5%;
-    width: 80%;
-}
-
-#speaking article iframe {
-    display: block;
-    margin: 0 auto;
-    max-width: 560px;
-    min-height: 315px;
-    width: 100%;
-}
-
-#speaking #moreSpeakers header {
-    margin: 0;
-    text-align: center;
-    width: 100%;
-}
-
-#speaking #moreSpeakers header h3 {
-    display: block;
-    padding: 5%;
-    width: 90%;
-}
-
-#speaking article header h3 span {
-    font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-    font-size: 0.5em;
-}
-
-#speaking article section {
-    clear: none;
-    float: right;
-    padding: 0 0 5% 10%;
-    width: 60%;
-}
-
-#speaking article section h4 {
     text-transform: uppercase;
 }
 
-#speaking article section p::first-letter {
-    font-size: 180%;
+strong, strong a {
+    background-color: #222;
+    color: #fff !important;
 }
 
-#speaking article section.about {
-    padding-bottom: 14%;
-}
-
-#whoItIsFor {
-    background-color: rgba(61, 150, 174, 0.9);
-}
-
-#whoItIsFor p {
-    float: left;
-    font-size: 1.8em;
-    letter-spacing: -0.5px;
-    margin-top: 0;
-    margin-left: 6.33%;
-    padding-bottom: 3%;
-    width: 29%;
-}
-
-#whoItIsFor p:first-child {
-    margin-left: 0;
-}
-
-#whoItIsFor h4 {
-    border-top: 5px solid #212722;
-    clear: both;
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 2.4em;
-    padding: 1em 0 7%;
-    text-align: right;
-}
-
-#timeplan {
-    background-color: rgba(219, 132, 61, 0.9);
-    padding-bottom: 7%;
-}
-
-#timeplan p {
-    font-size: 1.8em;
-    letter-spacing: -0.5px;
-    margin: 0;
-    padding-bottom: 7%;
-}
-
-#layout {
-    clear: both;
+.twoCols > * {
+    display: block;
     float: right;
-    width: 60%
+    width: 47.5%;
 }
 
-#layout > header {
-}
-#layout h3, #schedule h3 {
-    border-bottom: 2px solid #212722;
-}
-#schedule h3 {
-    width: 95%;
-}
-
-#layout div {
+.twoCols > *:nth-child(odd) {
     float: left;
-    width: 100%;
 }
 
-#layout div.first {
-    padding-left: 0;
-}
-
-#layout div header {
-    background: transparent url(../img/workshop.jpg) no-repeat scroll center center;
-    background-size: cover;
+.threeCols > * {
+    display: block;
     float: left;
-    width: 38%;
+    margin-right: 5%;
+    width: 30%;
 }
 
-#layout #conference header { background-image: url(../img/conference.jpg); }
-#layout #scrumBeers header { background-image: url(../img/scrumbeers.jpg); }
-#layout #unconference header { background-image: url(../img/unconference.jpg); }
+.threeCols > *:nth-child(3n) {
+    margin-right: 0;
+}
 
-#layout div header h4 {
-    color: #212722;
-    background-color: rgba(255,255,255,0.5);
-    margin-bottom: 0;
-    margin-top: 105px;
+.threeCols > *:nth-child(3n+1) {
+    clear:left;
+}
+
+.fourCols > * {
+    display: block;
+    float: left;
+    margin-right: 5%;
+    width: 21.25%;
+}
+
+.fourCols > *:nth-child(4n) {
+    margin-right: 0;
+}
+
+.fourCols > *:nth-child(4n+1) {
+    clear:left;
+}
+
+body > header {
+    background: transparent url(../img/logo_header.svg) no-repeat fixed center 30%;
+    background-size: auto 40%;
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+}
+
+.touch body > header {
+    background-position: center 5em;
+    background-size: auto 20em;
+}
+
+body > header h1 {
+    margin: 0;
+    display: block;
+    text-indent: -9999px;
+}
+
+body > section {
+    padding-bottom: 2em;
+}
+
+body > section > section {
+    margin: 0 auto;
+    padding: 0;
     text-align: center;
+    max-width: 850px;
+    width: 64%;
 }
 
-#layout #scrumBeers h4 {
-}
-
-#layout #unconference h4 {
-}
-
-#layout div p {
-    display: block;
-    float: right;
-    font-size: 1.1em;
-    padding-bottom: 1em;
-    padding: 0 2% 2% 4%;
-    width: 56%;
-}
-
-#layout .date {
-    font-family: 'Palatino Linotype','Book Antiqua',Palatino,serif;
-    font-size: 1.1em;
-    font-style: italic;
-    margin-top: 0;
-    padding-top: 0;
-}
-
-#schedule {
-    float: right;
-    width: 40%;
-}
-
-#schedule div {
-    display: block;
-    float: left;
-    width: 100%;
-}
-
-#schedule h4 {
-    background: rgba(255,255,255,0.5);
-    color: #212722;
-    clear: none;
-    float: left;
-    font-family: Helvetica, Arial, sans-serif;
-    letter-spacing: -1px;
-    margin-top: 0;
-    padding: 1% 2% 0;
-    width: 20%;
-}
-
-#schedule h4 span {
-    font-size: 3em;
-    letter-spacing: -3px;
-    line-height: 1em;
-}
-
-#schedule h4 span span {
-    font-size: 0.3em;
-    letter-spacing: -1px;
-}
-
-#schedule dl {
-    display: block;
-    float: right;
-    margin: 0;
-    padding-left: 0;
-    width: 75%;
-}
-
-#schedule dl dt,
-#schedule dl dd {
-    font-size: 1.1em;
-    line-height: 1.4em;
-    padding: 0.25em 0;
-}
-
-#schedule dl .even {
-    background-color: rgba(0,0,0,0.1);
-}
-
-#schedule dl dt {
-    border-bottom: 1px solid #212722;
-    clear: left;
-    display: block;
-    float: left;
-    font-family: 'Palatino Linotype','Book Antiqua',Palatino,serif;
-    font-style: italic;
-    padding-right: 3%;
-    padding-left: 3%;
-    width: 15%;
-}
-
-#schedule dl dd {
-    display: block;
-    float: left;
-    margin-left: 0;
-    padding-left: 3%;
-    padding-right: 1%;
-    width: 75%;
-}
-
-#schedule dl dd.wrapUp {
-}
-
-#schedule dl dt.first,
-#schedule dl dd.first {
-    border-top: 0 none transparent;
-}
-
-article .fridayMorning {
-    height: 10em;
-}
-
-article .fridayAfternoon {
-    height: 28em;
-    padding-top: 20px;
-}
-
-article .fridayEvening {
-    height: 15em;
-    padding-top: 20px;
-}
-
-article .saturdayAfternoon {
-    height: auto;
-    padding-top: 20px;
-}
-
-#otherInfo {
-    background-color: rgba(130, 130, 130, 0.92);
-}
-
-#otherInfo p {
-    font-size: 1.8em;
-    letter-spacing: -0.5px;
-    margin: 0;
-    padding-bottom: 7%;
-}
-
-#sponsors {
-    background: #ffffff url() repeat-x fixed center center;
-    background-size: cover;
-    color: #212722;
-    text-align: center;
-}
-
-#sponsors h2 {
+body > section > section > * {
     text-align: left;
 }
 
-#sponsors div {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
+body > section > header {
+    padding: 0;
+    max-width: none;
 }
 
-#sponsors div a {
-    display: table-cell;
-    margin: 0;
-    padding: 3%;
-    text-align: center;
-    vertical-align: middle;
-    width: 27.33%;
-}
-
-#sponsors .smallLogos a {
-    padding: 7%;
-}
-
-#sponsors img {
-    display: block;
-    margin: 0 auto;
-    max-height: 10em;
-    max-width: 100%;
-}
-
-#sponsors p {
-    clear: both;
-    font-size: 0.8em;
-    margin: 0;
-    padding: 2em 0;
-}
-
-#sponsors p a {
-    color: #000000;
-}
-
-#sponsors .organizers {
-    padding-bottom: 7%;
-}
-
-#sponsors .organizers a {
-    color: #212722;
-    text-decoration: none;
-}
-
-#sponsors .organizers a:hover, #sponsors .organizers a:active {
-    text-decoration: underline;
-}
-
-#oldSites {
-    background-color: #212722;
-    box-shadow: none;
-}
-
-#oldSites header h2 {
-    margin: 0;
-    padding: 7% 0;
+body > section > *:last-child {
+    margin-bottom: 0;
 }
 
 body > footer {
-    background-color: #212722;
+    background-color: #000000;
+    border-top: 10px dashed #888;
+    color: #ffffff;
+    padding: 2.5% 0;
     text-align: center;
 }
 
 body > footer p {
     margin: 0;
-    padding: 1em 0;
 }
 
-#fourOhFour {
-    color: #212722;
+body > footer a, body > footer a:hover, body > footer a:active, body > footer a:visited {
+    color: #ffffff;
 }
 
-#fourOhFour ul {
-    padding-bottom: 7%;
+#quickInfo {
+    margin-top: -12.5%;
+    padding-bottom: 0;
 }
 
-.chromeframe {
-    background-color: red;
-    color: white;
-    margin: 0;
-    padding: 4em 0;
-    position: fixed;
-    left: 0;
+#quickInfo > section {
+    margin-right: 0;
+    margin-left: 0;
+    max-width: none;
+    padding-right: 18%;
+    padding-bottom: 4em;
+    padding-left: 18%;
+    width: 64%;
+}
+
+#quickInfo > section > * {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#quickInfo > section > *:last-child {
+    padding-bottom: 3em;
+}
+
+#quickInfo > section > p:first-child {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 3em;
+    letter-spacing: -3px;
+    line-height: 1em;
     text-align: center;
-    top: 0;
+    transform: rotate(-5deg);
+}
+
+#quickInfo .signUp {
+    margin-left: -50px;
+    text-align: center;
+}
+
+#quickInfo .signUp a {
+    background-color: #2988cb;
+    color: #ffffff;
+    display: block;
+    font-family: 'Martel', serif;
+    font-size: 3em;
+    height: 100px;
+    letter-spacing: -3px;
+    line-height: 100px;
+    margin: 0 auto;
+    padding: 0 0.2em 0 60px;
+    position: relative;
+    text-decoration: none;
+    width: 4em;
+}
+
+#quickInfo .signUp a:hover, #quickInfo .signUp a:active {
+    text-decoration: underline;
+}
+
+#quickInfo .signUp a:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-left-color: #2988cb;
+    border-width: 50px;
+    margin-top: -50px;
+}
+
+#quickInfo .signUp a:before {
+    left: 0;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-left-color: #30cb29;
+    border-width: 50px;
+    margin-top: -50px;
+}
+
+#quickInfo .bread {
+    margin-top: 2em;
+}
+
+#quickInfo nav {
+    clear: both;
+    margin: 0 auto;
+    padding-bottom: 1em;
+    text-align: center;
+    width: 9em;
+}
+
+#quickInfo .contactUs a {
+    background: transparent url(../img/icon_facebook.png) no-repeat scroll left top;
+    background-size: 100% auto;
+    display: block;
+    float: left;
+    height: 3em;
+    margin-left: 1em;
+    text-indent: -9999px;
+    width: 3em;
+}
+
+#quickInfo .contactUs a:first-child {
+    margin-left: 0;
+}
+
+#quickInfo .contactUs .twitter {
+    background-image: url(../img/icon_twitter.png);
+}
+
+#talks article {
+    border-top: 10px dotted #222;
+    margin-top: 1em;
+    padding-top: 5%;
+}
+
+#talks article:first-child {
+    border-top: 0 none transparent;
+
+}
+
+#talks article img {
+    border-radius: 9999px;
+    display: block;
+    max-width: 100%;
+}
+
+#talks article header h3,
+#talks article header h4 {
+    border: none;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    text-align: right;
+}
+
+#talks article header h4 {
+    border-top: 1px solid #222;
+    padding-top: 2.5%;
+    line-height: 1.6em;
+}
+
+#talks article > section p {
+    margin-top: 0;
+}
+
+#talks .speaker header h3 {
+    border: none;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.4em;
+    text-align: left;
+}
+
+#talks .speaker p {
+    font-size: 0.8em;
+}
+
+#workshop .intro {
+    font-size: 0.8em;
+}
+
+#workshop article h4 {
+    text-align: left;
+}
+
+#workshop .speaker {
+    margin-top: 1.5em;
+}
+
+#workshop .speaker img {
+    border-radius: 9999px;
+    display: block;
+    float: left;
+    margin-right: 5%;
+    max-width: 20%;
+}
+
+#workshop .speaker h5 {
+    display: block;
+    float: left;
+    font-family: "Gochi Hand",cursive;
+    font-size: 1.2em;
+    margin-top: 0.7em;
+    max-width: 75%;
+}
+
+#sponsors > section {
+    padding: 0 10%;
+    width: 80%;
+}
+
+body #sponsors section p {
+    text-align: center;
+}
+
+#sponsors table {
     width: 100%;
 }
 
-.chromeframe a {
-    color: white;
+#sponsors table td {
+    padding: 5%;
+    text-align: center;
+    vertical-align: middle;
+    width: 33.33%
+}
+
+#sponsors table.smallLogos td {
+    padding: 5% 7%;
+    width: 25%
+}
+
+#sponsors table a {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.2em;
+    line-height: 0.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#sponsors table img {
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+#oldSites > section p {
+    font-family: 'Martel', serif;
+    font-size: 3em;
+    letter-spacing: -3px;
+    text-align: center;
+}
+
+#menu {
+    position: fixed;
+    left: 100%;
+    top: 0;
+    width: 280px;
+}
+
+#menu section {
+    background: rgba(255,255,255,0.5);
+}
+
+#menu section a {
+    display: block;
+    font-family: 'Biryani', sans-serif;
+    letter-spacing: -1px;
+    line-height: 1em;
+    padding: 0 2.5% 10%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 95%;
+}
+
+#menu section a:hover, #menu section a:active {
+    text-decoration: underline;
+}
+
+#menu section a:first-child {
+    padding-top: 10%;
+}
+
+body > * {
+    -webkit-transition: -webkit-transform 200ms ease;
+    transition: transform 200ms ease;
+}
+
+body.menuOpen > * {
+    -ms-transform: translate3d(-280px,0,0);
+    -webkit-transform: translate3d(-280px,0,0);
+    transform: translate3d(-280px,0,0);
+}
+
+#menuButton {
+    background: rgba(255,255,255,0.5) url(../img/icons/ic_menu_48px.svg) no-repeat scroll center center;
+    background-size: 75% auto;
+    display: block;
+    height: 50px;
+    position: fixed;
+    right: 0px;
+    text-indent: -9999px;
+    top: 5px;
+    transform: skew(-3deg, 2deg);
+    width: 50px;
+}
+
+body.menuOpen #menuButton {
+    -ms-transform: translate3d(-280px,0,0);
+    -webkit-transform: translate3d(-280px,0,0);
+    transform: translate3d(-280px,0,0);
+}
+
+/* === COLOR STYLES FOR SECTIONS ============================================ */
+
+#quickInfo section, #quickInfo header h2:after {
+    background-color: #30cb29;
+}
+
+#quickInfo > header, #quickInfo header h2 {
+    background-color: transparent;
+    border-bottom-color: #30cb29;
+    color: #30cb29;
+}
+
+#talks, #talks header h2:after {
+    background-color: #c5cb29;
+}
+
+#talks header h2 {
+    background-color: #30cb29;
+    border-bottom-color: #c5cb29;
+    color: #c5cb29;
+}
+
+#workshop, #workshop header h2:after {
+    background-color: #cb8c29;
+}
+
+#workshop header h2 {
+    background-color: #c5cb29;
+    border-bottom-color: #cb8c29;
+    color: #cb8c29;
+}
+
+#whoItIsFor, #whoItIsFor header h2:after {
+    background-color: #cb4b29;
+}
+
+#whoItIsFor header h2 {
+    background-color: #cb8c29;
+    border-bottom-color: #cb4b29;
+    color: #cb4b29;
+}
+
+#timeplan, #timeplan header h2:after {
+    background-color: #8c29cb;
+}
+
+#timeplan header h2 {
+    background-color: #cb4b29;
+    border-bottom-color: #8c29cb;
+    color: #8c29cb;
+}
+
+#timeplan section p {
+    text-align: center;
+}
+
+#otherInfo, #otherInfo header h2:after {
+    background-color: #2988cb;
+}
+
+#otherInfo header h2 {
+    background-color: #8c29cb;
+    border-bottom-color: #2988cb;
+    color: #2988cb;
+}
+
+#sponsors, #sponsors header h2:after {
+    background-color: #ffffff;
+}
+
+#sponsors header h2 {
+    background-color: #2988cb;
+    border-bottom-color: #ffffff;
+    color: #ffffff;
+}
+
+#oldSites, #oldSites header h2:after {
+    background-color: #888888;
+}
+
+#oldSites header h2 {
+    background-color: #ffffff;
+    border-bottom-color: #888888;
+    color: #888888;
 }
 
 /* ==========================================================================
@@ -956,35 +655,16 @@ body > footer p {
    ========================================================================== */
 
 /*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
+ * Hide visually and from screen readers:
  */
 
 .hidden {
     display: none !important;
-    visibility: hidden;
 }
 
 /*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
 
 .visuallyhidden {
@@ -999,8 +679,9 @@ body > footer p {
 }
 
 /*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
  */
 
 .visuallyhidden.focusable:active,
@@ -1014,7 +695,7 @@ body > footer p {
 }
 
 /*
- * Hide visually and from screenreaders, but maintain layout
+ * Hide visually and from screen readers, but maintain layout
  */
 
 .invisible {
@@ -1043,256 +724,251 @@ body > footer p {
     clear: both;
 }
 
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
-}
-
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 1280px) {
-    #head .slogan {
-        font-size: 10vw;
-        letter-spacing: -1vw;
-    }
+/*
+.twoCols > * {
+    display: block;
+    float: right;
+    width: 47.5%;
+}
 
-    article .fridayAfternoon {
-        height: 37em;
-    }
+.twoCols > *:first-child {
+    float: left;
+}
+
+.threeCols > * {
+    display: block;
+    float: left;
+    margin-right: 5%;
+    width: 30%;
+}
+
+.threeCols > *:nth-child(3n) {
+    margin-right: 0;
+}
+
+.threeCols > *:nth-child(3n+1) {
+    clear:left;
+}
+
+.fourCols > * {
+    display: block;
+    float: left;
+    margin-right: 5%;
+    width: 21.25%;
+}
+
+.fourCols > *:nth-child(4n) {
+    margin-right: 0;
+}
+
+.fourCols > *:nth-child(4n+1) {
+    clear:left;
+}
+*/
+
+@media only screen and (max-width: 1280px) {
 }
 
 @media only screen and (max-width: 1024px) {
 
-    body > nav ul li {
-        padding: 0.4em 1em 0.6em;
+    h3 {
+        border-top-width: 6px;
+        font-size: 1.8em;
+        letter-spacing: -1px;
     }
 
-    body > nav ul li a {
-        font-size: 0.8em;
-    }
-
-    #head .slogan {
-        letter-spacing: -5px;
-    }
-
-    #quickInfo .info, #quickInfo .locale {
-        font-size: 6vw;
-        letter-spacing: -0.6vw;
-    }
-
-    #bread p,
-    #signUpForm .success p,
-    #signUpForm .error p {
-        font-size: 3vw;
-    }
-
-    #signUp h2 {
-        font-size: 18vw;
-    }
-
-    #whoItIsFor p {
-        font-size: 3vw;
-    }
-
-    article .fridayAfternoon {
-        height: 33em;
+    body > section > section {
+        padding-right: 15%;
+        padding-left: 15%;
+        width: 70%;
     }
 }
 
 @media only screen and (max-width: 800px) {
 
+    h3 {
+        border-top-width: 6px;
+        font-size: 1.6em;
+        letter-spacing: -1px;
+    }
+
+    body > section > section, #quickInfo > section {
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 10%;
+        padding-left: 10%;
+        width: 80%;
+    }
+
+    .fourCols > * {
+        width: 30%;
+    }
+
+    .fourCols > *:nth-child(4n) {
+        margin-right: 5%;
+    }
+
+    .fourCols > *:nth-child(4n+1) {
+        clear: none;
+    }
+
+    .fourCols > *:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .fourCols > *:nth-child(3n+1) {
+        clear:left;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     h2 {
-        font-size: 10vw;
+        border-bottom-width: 6px;
+        font-size: 4em;
+        letter-spacing: -5px;
     }
 
-    #menuButton {
-        display: block;
+    h3 {
+        border-top-width: 6px;
+        font-size: 1.4em;
+        letter-spacing: -1px;
     }
 
-    body > nav {
-        display: none;
-        left: auto;
-        position: fixed;
-        right: 0;
-        top: 60px;
-        width: 60%;
+    .threeCols > *,
+    .fourCols > * {
+        float: right;
+        margin-right: 0;
+        width: 47.5%;
     }
 
-    body.openMenu > nav {
-        background-color: transparent;
+    .threeCols > *:nth-child(3n+1) {
+        clear: none;
     }
 
-    body.openMenu > nav {
-        display: block;
+    .fourCols > *:nth-child(4n) {
+        margin-right: 0;
     }
 
-    body > nav ul,
-    body > nav ul li {
-        background-color: rgba(136,136,136,0.6);
-        display: block;
+    .fourCols > *:nth-child(3n+1) {
+        clear: none;
     }
 
-    body > nav ul li {
-        padding: 0.4vw 1em 0.6vw;
+    .threeCols > *:nth-child(odd),
+    .fourCols > *:nth-child(odd) {
+        clear: left;
+        float: left;
     }
 
-    body > nav ul li a {
-        font-size: 4vw;
+    #quickInfo .signUp {
+        margin-left: -35px;
     }
 
-    body.openMenu #head,
-    body.openMenu > section,
-    body.openMenu > form {
-        left: -60%;
+    #quickInfo .signUp a {
+        font-size: 2em;
+        height: 70px;
+        letter-spacing: -2.5px;
+        line-height: 70px;
+        padding-left: 40px;
     }
 
-    #head .slogan {
-        letter-spacing: -3px;
-        border-bottom-width: 2px;
+    #quickInfo .signUp a:after {
+        border-width: 35px;
+        margin-top: -35px;
     }
 
-    #head h1 {
-        font-size: 1em;
-    }
-
-    #layout, #schedule {
-        float: none;
-        width: 100%;
-    }
-
-    #schedule h3 {
-        width: 100%;
-    }
-
-    article .fridayMorning,
-    article .fridayAfternoon,
-    article .fridayEvening,
-    article .saturdayAfternoon {
-        height: auto;
-    }
-
-    #sponsors div a {
-        width: 44%;
+    #quickInfo .signUp a:before {
+        border-width: 35px;
+        margin-top: -35px;
     }
 }
 
 @media only screen and (max-width: 450px) {
-
-    #head, body > section, body > form {
-        padding: 0 4%;
-        width: 92%;
-    }
-
-    body > nav ul li {
-        padding: 0.4em 1em 0.6em;
-    }
-
-    body > nav ul li a {
-        font-size: 1em;
-    }
-
     h2 {
-        font-size: 15vw;
+        font-size: 2.4em;
+        letter-spacing: -3px;
     }
 
-    #head .slogan {
-        background-image: url(../img/brewing_agile_2x.png);
-        background-position: center 20%;
-        background-size: auto 49%;
-        font-size: 10vw;
-        padding-top: 50%;
+    p {
+        line-height: 1.8em;
     }
 
-    #bread p,
-    #signUpForm .success p,
-    #signUpForm .error p {
-        float: none;
-        font-size: 1.4em;
-        margin: 0 0 7% 0;
-        width: 100%;
-    }
-
-    #signUp h2 {
-        letter-spacing: -1.8vw;
-    }
-
-    #signUpForm form .label {
-        float: none;
-        margin-left: 5%;
+    body > section > section, #quickInfo > section {
+        padding-right: 5%;
+        padding-left: 5%;
         width: 90%;
     }
 
-    #signUpForm form .label label {
+    .twoCols > *,
+    .threeCols > *,
+    .fourCols > * {
+        float: none;
+        width: 100%;
+    }
+
+    .twoCols > *:nth-child(odd),
+    .threeCols > *:nth-child(odd),
+    .fourCols > *:nth-child(odd) {
+        clear: none;
+        float: none;
+    }
+
+    #quickInfo > section > p:first-child {
+        font-size: 2em;
+        letter-spacing: -2px;
+        line-height: 0.8em;
+    }
+
+    #talks article header h3 {
         text-align: left;
     }
 
-    #signUpForm form .input, #signUpForm form .radio.first, #signUpForm form .radio.second, #signUpForm form .checkbox, #signUpForm form .textarea {
-        float: none;
-        margin-left: 5%;
-        width: 100%;
+    #talks article img {
+        float: right;
+        margin-bottom: 5%;
+        margin-left: 10%;
+        max-width: 45%;
     }
 
-    #signUpForm form .radio.first, #signUpForm form .radio.second {
-        margin-right: 5%;
-        width: 80%;
+    #workshop .speaker h5 {
+        font-size: 1.8em;
     }
 
-    #speaking article {
-        float: none;
-        width: 100%;
+    #oldSites > section p {
+        font-size: 2em;
+        letter-spacing: -2px;
     }
 
-    #speaking article header h3 {
-        font-size: 1.2em;
+    body > footer p {
         line-height: 1em;
-    }
-
-    #speaking article iframe {
-        min-height: 100px;
-    }
-
-    #whoItIsFor p {
-        float: none;
-        font-size: 1.2em;
-        margin: 0;
-        padding: 0 0 7% 0;
-        width: 100%;
-    }
-
-    #otherInfo p {
-        font-size: 1.2em;
-    }
-}
-
-@media only screen and (max-width: 330px) {
-    #head .slogan {
     }
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
    Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
 @media print {
-    * {
+    *,
+    *:before,
+    *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -1311,12 +987,12 @@ body > footer p {
     }
 
     /*
-     * Don't show links for images, or javascript/internal links
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
      */
 
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
         content: "";
     }
 
@@ -1326,8 +1002,13 @@ body > footer p {
         page-break-inside: avoid;
     }
 
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
     thead {
-        display: table-header-group; /* h5bp.com/t */
+        display: table-header-group;
     }
 
     tr,
@@ -1337,10 +1018,6 @@ body > footer p {
 
     img {
         max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
     }
 
     p,
@@ -1354,8 +1031,4 @@ body > footer p {
     h3 {
         page-break-after: avoid;
     }
-}
-
-input.ng-invalid, textarea.ng-invalid {
-  border: 3px solid red;
 }

@@ -1,0 +1,1361 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, body {
+    height: 95%;
+}
+
+html {
+    background: transparent url(../img/background.jpg) fixed no-repeat center center;
+    background-image: url(../img/inset.png), url(../img/background.jpg);
+    background-size: 100% 100%, cover;
+}
+
+body {
+    background-color: transparent;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    color: #ddd;
+}
+
+a, a:hover, a:active, a:after, a:visited {
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+
+h1 {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+h2 {
+    border-bottom: 5px solid #212722;
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 5vw;
+    letter-spacing: -4px;
+    line-height: 1em;
+    padding-top: 7%;
+}
+
+#menuButton {
+    background: rgba(136,136,136,0.6) url(../img/icon_menu_128.png) no-repeat scroll center center;
+    background-size: 100% auto;
+    color: #ffffff;
+    display: none;
+    height: 60px;
+    position: fixed;
+    right: 0;
+    text-indent: -9999px;
+    top: 0;
+    width: 60px;
+    z-index: 9999;
+}
+
+body.openMenu #menuButton {
+    background-color: #444444;
+}
+
+body > nav {
+    background-color: #212722;
+    left: 0;
+    position: static;
+    width: 100%;
+    top: 0;
+    z-index: 9998;
+}
+
+body > nav.sticky {
+    position: fixed;
+}
+
+body > nav ul {
+    display: table;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body > nav ul li {
+    display: table-cell;
+    margin: 0;
+    padding: 0.6em 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body > nav ul li:nth-child(even) {
+    background-color: #444444;
+}
+
+body > nav ul li a {
+    text-decoration: none;
+}
+
+body > nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#head,
+body > section,
+body > form {
+    background-color: rgba(255,255,255,0.7);
+    box-shadow: inset 0 0 5em rgba(0,0,0,0.15);
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 10%;
+    position: relative;
+    width: 80%;
+}
+
+#head > *:first-child,
+body > section > *:first-child,
+body > section > *:first-child > *:first-child,
+body > form > *:first-child {
+    margin-top: 0;
+}
+
+#head {
+    background: #eee url() no-repeat scroll center bottom;
+    box-shadow: inset 0 0 50px #ccc;
+    color: #000;
+    min-height: 100%;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+#head h1 {
+    color: #000;
+    margin: 0 auto;
+    padding-bottom: 3%;
+    text-align: right;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+#head h1 a {
+    color: #000;
+}
+
+#head h1 em {
+    font-style: italic;
+}
+
+#head .slogan {
+    background: transparent url(../img/brewing_agile_ground.png) no-repeat scroll right bottom;
+    background-size: auto 1.5em;
+    border-bottom: 0.4vw solid #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10em;
+    letter-spacing: -10px;
+    line-height: 1em;
+    margin: 0 0 0.1em;
+    padding: 15% 0 0;
+    text-align: left;
+}
+
+#head p {
+    margin: 0;
+    padding-bottom: 4%;
+}
+
+#quickInfo {
+    background: rgba(17,87,149,0.9) url() no-repeat fixed center center;
+    background-size: cover;
+}
+
+#quickInfo .info,
+#quickInfo .locale {
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 5em;
+    letter-spacing: -4px;
+    margin: 0;
+}
+
+#quickInfo .info {
+    border-bottom: 5px solid #212722;
+    padding-top: 1em;
+}
+
+#quickInfo .locale {
+    padding-bottom: 1em;
+    text-align: right;
+}
+
+#quickInfo .price {
+    font-family: Georgia, serif;
+}
+
+#bread {
+    background: rgba(170,70,67,0.9) url() no-repeat fixed center center;
+    background-size: cover;
+}
+
+#bread p {
+    float: right;
+    font-size: 2.4em;
+    letter-spacing: -1px;
+    margin-top: 0;
+    padding-top: 7%;
+    width: 44%;
+}
+
+#bread p:first-child {
+    float: left;
+}
+
+#bread nav {
+    clear: both;
+    margin: 0 auto;
+    padding-bottom: 7%;
+    text-align: center;
+    width: 9em;
+}
+
+#bread .contactUs a {
+    background: transparent url(../img/icon_facebook.png) no-repeat scroll left top;
+    background-size: 100% auto;
+    display: block;
+    float: left;
+    height: 4em;
+    margin-left: 1em;
+    text-indent: -9999px;
+    width: 4em;
+}
+
+#bread .contactUs a:first-child {
+    margin-left: 0;
+}
+
+#bread .contactUs .twitter {
+    background-image: url(../img/icon_twitter.png);
+}
+
+#signUp {
+    background-color: rgba(137,165,78, 0.9);
+}
+
+#signUp.open {
+    min-height: 100%;
+}
+
+#signUp h2 {
+    border-bottom: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10em;
+    letter-spacing: -10px;
+    margin: 0;
+    padding: 0.4em 0;
+    text-align: center;
+}
+
+#signUp h2 a {
+    text-decoration: none;
+}
+
+#signUp h2 a:hover {
+    text-decoration: underline;
+}
+
+#signUp h2 span,
+#signUp h2 a span {
+    color: #212722;
+}
+
+#signUpForm {
+    display: none;
+    background-color: rgba(137,165,78, 0.9);
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+#signUpForm form {
+}
+
+#signUpForm form .bulk {
+}
+
+#signUpForm form .bulk span {
+    border-top: 5px solid #212722;
+    display: block;
+    margin-top: 1em;
+    padding-top: 1em;
+    text-align: right;
+}
+
+#signUpForm form > div {
+    padding: 0.5em 0;
+    width: 100%;
+}
+
+#signUpForm form > div:nth-child(even) {
+    background-color: rgba(255,255,255,0.1);
+    clear: both;
+}
+
+#signUpForm form .label {
+    float: left;
+    padding-right: 2%;
+    width: 46%;
+}
+
+#signUpForm form .input,
+#signUpForm form .radio.first,
+#signUpForm form .radio.second,
+#signUpForm form .checkbox,
+#signUpForm form .textarea {
+    float: right;
+    width: 50%;
+}
+
+#signUpForm form .radio {
+    border: 3px dashed #dddddd;
+    padding: 1% 1% 3% 1%;
+    position: relative;
+}
+
+#signUpForm form .radio.first {
+    border: none;
+    clear: right;
+    margin-right: 5%;
+    padding: 1%;
+    width: 42%;
+}
+
+#signUpForm form .radio.second {
+    clear: right;
+    margin-top: 1%;
+    margin-right: 5%;
+    padding: 1%;
+    width: 42%;
+}
+
+#signUpForm form .radio.last {
+    margin-left: 1em;
+}
+
+#signUpForm form .radio.checked {
+    background-color: #dddddd;
+    border-style: solid;
+    color: #212722;
+}
+
+#signUpForm form .radio label {
+    font-size: 1.6em;
+}
+
+#signUpForm form .radio input {
+    margin-right: 0.5em;
+
+}
+
+#signUpForm form .radio .timeInfo {
+    position: absolute;
+    left: 100%;
+    top: auto;
+}
+
+#signUpForm form .radio span {
+    display: block;
+    font-size: 0.6em;
+    padding-left: 2em;
+}
+
+#signUpForm form .radio strong {
+    color: #212722;
+}
+
+#signUpForm form .radio .radio {
+    margin-top: 8%;
+    padding-top: 3%;
+}
+
+#signUpForm form .label label {
+    display: block;
+    text-align: right;
+    padding: 2%;
+    width: 96%;
+}
+
+#signUpForm form .checkbox {
+    padding: 1% 0;
+}
+
+#signUpForm form .input input,
+#signUpForm form pre,
+#signUpForm form .textarea textarea {
+    display: block;
+    padding: 2%;
+    text-align: left;
+    width: 85%;
+}
+
+#signUpForm form .input label {
+    float: left;
+    margin-left: 4%;
+}
+
+#signUpForm form .input label:first-child {
+    margin-left: 0;
+}
+
+#signUpForm form pre {
+    background-color: #dddddd;
+    clear: both;
+    color: #212722;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    line-height: 1em;
+}
+
+#signUpForm form pre span:first-child {
+    color: rgb(137,165,78);
+    font-size: 0.5em;
+}
+
+#signUpForm form .submit {
+    text-align: right;
+}
+
+#signUpForm form .submit input {
+    background-color: #212722;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 1em;
+}
+
+#signUpForm form .submit input:hover {
+    background-color: #ffffff;
+    color: #212722;
+}
+
+#signUpForm form .submit input[disabled=disabled] {
+    background-color: rgba(137, 165, 78, 1);
+    border: 3px dashed #dddddd;
+    color: #dddddd;
+    cursor: default;
+}
+
+#signUpForm .success p,
+#signUpForm .error p {
+    font-size: 2.4em;
+    letter-spacing: -1px;
+    margin-top: 0;
+}
+
+#signUpForm .success p:first-child,
+#signUpForm .error p:first-child {
+    padding-top: 7%;
+}
+
+#speaking {
+    background-color: rgba(128, 105, 155, 0.9);
+    min-height: 100%;
+}
+
+#speaking article {
+    border-top: 5px solid #212722;
+    padding-top: 5%;
+}
+
+#speaking article:first-of-type {
+    border-top: none;
+}
+
+#speaking #henrik_kniberg {
+    margin-left: 0;
+}
+
+#speaking article > header {
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 25%;
+}
+
+#speaking article header img {
+    display: block;
+    width: 100%;
+}
+
+#speaking article header h3 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 2.4em;
+    margin: 0;
+    line-height: 0.8em;
+    padding: 0 10% 5%;
+    width: 80%;
+}
+
+#speaking article iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 560px;
+    min-height: 315px;
+    width: 100%;
+}
+
+#speaking #moreSpeakers header {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#speaking #moreSpeakers header h3 {
+    display: block;
+    padding: 5%;
+    width: 90%;
+}
+
+#speaking article header h3 span {
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 0.5em;
+}
+
+#speaking article section {
+    clear: none;
+    float: right;
+    padding: 0 0 5% 10%;
+    width: 60%;
+}
+
+#speaking article section h4 {
+    text-transform: uppercase;
+}
+
+#speaking article section p::first-letter {
+    font-size: 180%;
+}
+
+#speaking article section.about {
+    padding-bottom: 14%;
+}
+
+#whoItIsFor {
+    background-color: rgba(61, 150, 174, 0.9);
+}
+
+#whoItIsFor p {
+    float: left;
+    font-size: 1.8em;
+    letter-spacing: -0.5px;
+    margin-top: 0;
+    margin-left: 6.33%;
+    padding-bottom: 3%;
+    width: 29%;
+}
+
+#whoItIsFor p:first-child {
+    margin-left: 0;
+}
+
+#whoItIsFor h4 {
+    border-top: 5px solid #212722;
+    clear: both;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 2.4em;
+    padding: 1em 0 7%;
+    text-align: right;
+}
+
+#timeplan {
+    background-color: rgba(219, 132, 61, 0.9);
+    padding-bottom: 7%;
+}
+
+#timeplan p {
+    font-size: 1.8em;
+    letter-spacing: -0.5px;
+    margin: 0;
+    padding-bottom: 7%;
+}
+
+#layout {
+    clear: both;
+    float: right;
+    width: 60%
+}
+
+#layout > header {
+}
+#layout h3, #schedule h3 {
+    border-bottom: 2px solid #212722;
+}
+#schedule h3 {
+    width: 95%;
+}
+
+#layout div {
+    float: left;
+    width: 100%;
+}
+
+#layout div.first {
+    padding-left: 0;
+}
+
+#layout div header {
+    background: transparent url(../img/workshop.jpg) no-repeat scroll center center;
+    background-size: cover;
+    float: left;
+    width: 38%;
+}
+
+#layout #conference header { background-image: url(../img/conference.jpg); }
+#layout #scrumBeers header { background-image: url(../img/scrumbeers.jpg); }
+#layout #unconference header { background-image: url(../img/unconference.jpg); }
+
+#layout div header h4 {
+    color: #212722;
+    background-color: rgba(255,255,255,0.5);
+    margin-bottom: 0;
+    margin-top: 105px;
+    text-align: center;
+}
+
+#layout #scrumBeers h4 {
+}
+
+#layout #unconference h4 {
+}
+
+#layout div p {
+    display: block;
+    float: right;
+    font-size: 1.1em;
+    padding-bottom: 1em;
+    padding: 0 2% 2% 4%;
+    width: 56%;
+}
+
+#layout .date {
+    font-family: 'Palatino Linotype','Book Antiqua',Palatino,serif;
+    font-size: 1.1em;
+    font-style: italic;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#schedule {
+    float: right;
+    width: 40%;
+}
+
+#schedule div {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#schedule h4 {
+    background: rgba(255,255,255,0.5);
+    color: #212722;
+    clear: none;
+    float: left;
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
+    margin-top: 0;
+    padding: 1% 2% 0;
+    width: 20%;
+}
+
+#schedule h4 span {
+    font-size: 3em;
+    letter-spacing: -3px;
+    line-height: 1em;
+}
+
+#schedule h4 span span {
+    font-size: 0.3em;
+    letter-spacing: -1px;
+}
+
+#schedule dl {
+    display: block;
+    float: right;
+    margin: 0;
+    padding-left: 0;
+    width: 75%;
+}
+
+#schedule dl dt,
+#schedule dl dd {
+    font-size: 1.1em;
+    line-height: 1.4em;
+    padding: 0.25em 0;
+}
+
+#schedule dl .even {
+    background-color: rgba(0,0,0,0.1);
+}
+
+#schedule dl dt {
+    border-bottom: 1px solid #212722;
+    clear: left;
+    display: block;
+    float: left;
+    font-family: 'Palatino Linotype','Book Antiqua',Palatino,serif;
+    font-style: italic;
+    padding-right: 3%;
+    padding-left: 3%;
+    width: 15%;
+}
+
+#schedule dl dd {
+    display: block;
+    float: left;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 1%;
+    width: 75%;
+}
+
+#schedule dl dd.wrapUp {
+}
+
+#schedule dl dt.first,
+#schedule dl dd.first {
+    border-top: 0 none transparent;
+}
+
+article .fridayMorning {
+    height: 10em;
+}
+
+article .fridayAfternoon {
+    height: 28em;
+    padding-top: 20px;
+}
+
+article .fridayEvening {
+    height: 15em;
+    padding-top: 20px;
+}
+
+article .saturdayAfternoon {
+    height: auto;
+    padding-top: 20px;
+}
+
+#otherInfo {
+    background-color: rgba(130, 130, 130, 0.92);
+}
+
+#otherInfo p {
+    font-size: 1.8em;
+    letter-spacing: -0.5px;
+    margin: 0;
+    padding-bottom: 7%;
+}
+
+#sponsors {
+    background: #ffffff url() repeat-x fixed center center;
+    background-size: cover;
+    color: #212722;
+    text-align: center;
+}
+
+#sponsors h2 {
+    text-align: left;
+}
+
+#sponsors div {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#sponsors div a {
+    display: table-cell;
+    margin: 0;
+    padding: 3%;
+    text-align: center;
+    vertical-align: middle;
+    width: 27.33%;
+}
+
+#sponsors .smallLogos a {
+    padding: 7%;
+}
+
+#sponsors img {
+    display: block;
+    margin: 0 auto;
+    max-height: 10em;
+    max-width: 100%;
+}
+
+#sponsors p {
+    clear: both;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 2em 0;
+}
+
+#sponsors p a {
+    color: #000000;
+}
+
+#sponsors .organizers {
+    padding-bottom: 7%;
+}
+
+#sponsors .organizers a {
+    color: #212722;
+    text-decoration: none;
+}
+
+#sponsors .organizers a:hover, #sponsors .organizers a:active {
+    text-decoration: underline;
+}
+
+#oldSites {
+    background-color: #212722;
+    box-shadow: none;
+}
+
+#oldSites header h2 {
+    margin: 0;
+    padding: 7% 0;
+}
+
+body > footer {
+    background-color: #212722;
+    text-align: center;
+}
+
+body > footer p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+#fourOhFour {
+    color: #212722;
+}
+
+#fourOhFour ul {
+    padding-bottom: 7%;
+}
+
+.chromeframe {
+    background-color: red;
+    color: white;
+    margin: 0;
+    padding: 4em 0;
+    position: fixed;
+    left: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+.chromeframe a {
+    color: white;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+    #head .slogan {
+        font-size: 10vw;
+        letter-spacing: -1vw;
+    }
+
+    article .fridayAfternoon {
+        height: 37em;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    body > nav ul li {
+        padding: 0.4em 1em 0.6em;
+    }
+
+    body > nav ul li a {
+        font-size: 0.8em;
+    }
+
+    #head .slogan {
+        letter-spacing: -5px;
+    }
+
+    #quickInfo .info, #quickInfo .locale {
+        font-size: 6vw;
+        letter-spacing: -0.6vw;
+    }
+
+    #bread p,
+    #signUpForm .success p,
+    #signUpForm .error p {
+        font-size: 3vw;
+    }
+
+    #signUp h2 {
+        font-size: 18vw;
+    }
+
+    #whoItIsFor p {
+        font-size: 3vw;
+    }
+
+    article .fridayAfternoon {
+        height: 33em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    h2 {
+        font-size: 10vw;
+    }
+
+    #menuButton {
+        display: block;
+    }
+
+    body > nav {
+        display: none;
+        left: auto;
+        position: fixed;
+        right: 0;
+        top: 60px;
+        width: 60%;
+    }
+
+    body.openMenu > nav {
+        background-color: transparent;
+    }
+
+    body.openMenu > nav {
+        display: block;
+    }
+
+    body > nav ul,
+    body > nav ul li {
+        background-color: rgba(136,136,136,0.6);
+        display: block;
+    }
+
+    body > nav ul li {
+        padding: 0.4vw 1em 0.6vw;
+    }
+
+    body > nav ul li a {
+        font-size: 4vw;
+    }
+
+    body.openMenu #head,
+    body.openMenu > section,
+    body.openMenu > form {
+        left: -60%;
+    }
+
+    #head .slogan {
+        letter-spacing: -3px;
+        border-bottom-width: 2px;
+    }
+
+    #head h1 {
+        font-size: 1em;
+    }
+
+    #layout, #schedule {
+        float: none;
+        width: 100%;
+    }
+
+    #schedule h3 {
+        width: 100%;
+    }
+
+    article .fridayMorning,
+    article .fridayAfternoon,
+    article .fridayEvening,
+    article .saturdayAfternoon {
+        height: auto;
+    }
+
+    #sponsors div a {
+        width: 44%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    #head, body > section, body > form {
+        padding: 0 4%;
+        width: 92%;
+    }
+
+    body > nav ul li {
+        padding: 0.4em 1em 0.6em;
+    }
+
+    body > nav ul li a {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 15vw;
+    }
+
+    #head .slogan {
+        background-image: url(../img/brewing_agile_2x.png);
+        background-position: center 20%;
+        background-size: auto 49%;
+        font-size: 10vw;
+        padding-top: 50%;
+    }
+
+    #bread p,
+    #signUpForm .success p,
+    #signUpForm .error p {
+        float: none;
+        font-size: 1.4em;
+        margin: 0 0 7% 0;
+        width: 100%;
+    }
+
+    #signUp h2 {
+        letter-spacing: -1.8vw;
+    }
+
+    #signUpForm form .label {
+        float: none;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    #signUpForm form .label label {
+        text-align: left;
+    }
+
+    #signUpForm form .input, #signUpForm form .radio.first, #signUpForm form .radio.second, #signUpForm form .checkbox, #signUpForm form .textarea {
+        float: none;
+        margin-left: 5%;
+        width: 100%;
+    }
+
+    #signUpForm form .radio.first, #signUpForm form .radio.second {
+        margin-right: 5%;
+        width: 80%;
+    }
+
+    #speaking article {
+        float: none;
+        width: 100%;
+    }
+
+    #speaking article header h3 {
+        font-size: 1.2em;
+        line-height: 1em;
+    }
+
+    #speaking article iframe {
+        min-height: 100px;
+    }
+
+    #whoItIsFor p {
+        float: none;
+        font-size: 1.2em;
+        margin: 0;
+        padding: 0 0 7% 0;
+        width: 100%;
+    }
+
+    #otherInfo p {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    #head .slogan {
+    }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+input.ng-invalid, textarea.ng-invalid {
+  border: 3px solid red;
+}
