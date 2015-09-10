@@ -457,6 +457,44 @@ body > footer a, body > footer a:hover, body > footer a:active, body > footer a:
     max-width: 75%;
 }
 
+#timeplan section {
+    padding-bottom: 1em;
+}
+
+#timeplan header h3 {
+    clear: both;
+}
+
+#timeplan header:first-child h3 {
+    border-top: none;
+}
+
+#timeplan header h4 {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+#timeplan table tr {
+}
+
+#timeplan table tr td {
+    line-height: 0.95em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    vertical-align: top;
+}
+
+#timeplan table td:first-child {
+    font-size: 0.8em;
+    padding-top: 0.1em;
+    padding-left: 0;
+}
+
+#timeplan .intro {
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
 #sponsors > section {
     padding: 0 10%;
     width: 80%;
@@ -614,10 +652,6 @@ body.menuOpen #menuButton {
     background-color: #cb4b29;
     border-bottom-color: #8c29cb;
     color: #8c29cb;
-}
-
-#timeplan section p {
-    text-align: center;
 }
 
 #otherInfo, #otherInfo header h2:after {
@@ -788,6 +822,11 @@ body.menuOpen #menuButton {
         padding-left: 15%;
         width: 70%;
     }
+
+    #sponsors table td,
+    #sponsors table.smallLogos td {
+        padding: 2em;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -824,6 +863,11 @@ body.menuOpen #menuButton {
 
     .fourCols > *:nth-child(3n+1) {
         clear:left;
+    }
+
+    #sponsors table td,
+    #sponsors table.smallLogos td {
+        padding: 1em;
     }
 }
 
@@ -886,6 +930,11 @@ body.menuOpen #menuButton {
         border-width: 35px;
         margin-top: -35px;
     }
+
+    #sponsors table td,
+    #sponsors table.smallLogos td {
+        padding: 1em;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -937,6 +986,11 @@ body.menuOpen #menuButton {
 
     #workshop .speaker h5 {
         font-size: 1.8em;
+    }
+
+    #sponsors table td,
+    #sponsors table.smallLogos td {
+        padding: 0.4em;
     }
 
     #oldSites > section p {
