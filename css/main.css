@@ -505,35 +505,31 @@ body #sponsors section p {
     text-align: center;
 }
 
-#sponsors table {
-    width: 100%;
-}
-
-#sponsors table td {
-    padding: 5%;
-    text-align: center;
-    vertical-align: middle;
-    width: 33.33%
-}
-
-#sponsors table.smallLogos td {
-    padding: 5% 7%;
-    width: 25%
-}
-
-#sponsors table a {
-    font-family: 'Gochi Hand', cursive;
-    font-size: 1.2em;
-    line-height: 0.8em;
+#sponsors .organizers a {
+    color: #212722;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
-#sponsors table img {
-    display: block;
-    width: 100%;
-    vertical-align: middle;
+#sponsors .organizers a:hover, #sponsors .organizers a:active {
+    text-decoration: underline;
 }
+
+#sponsors .logos {
+    padding-top: 3%;
+}
+
+#sponsors .logos article a img {
+    display: block;
+    margin: 0 auto;
+    padding: 15%;
+    max-height: 10em;
+    max-width: 70%;
+}
+
+#sponsors .logos article.organizers a img {
+    max-height: 6em;
+}
+
 
 #oldSites > section p {
     font-family: 'Martel', serif;
@@ -866,9 +862,8 @@ body.menuOpen #menuButton {
         clear:left;
     }
 
-    #sponsors table td,
-    #sponsors table.smallLogos td {
-        padding: 1em;
+    #sponsors div a {
+        width: 44%;
     }
 }
 
