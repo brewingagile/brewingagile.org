@@ -413,6 +413,14 @@ body > footer a, body > footer a:hover, body > footer a:active, body > footer a:
     line-height: 1.6em;
 }
 
+#talks article .video {
+    border-bottom: 1px solid #222;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    max-width: 100%;
+    width: 100%;
+}
+
 #talks article > section p {
     margin-top: 0;
 }
