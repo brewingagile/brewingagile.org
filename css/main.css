@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -85,608 +85,485 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-    background: lightgoldenrodyellow;
+    margin: 0.2em 0;
+    background: #ccc;
     color: #000;
-    display: block;
-    left: 0;
-    margin: 0;
-    padding: 0.5em 0;
-    position: fixed;
-    text-align: center;
-    top: 0;
-    width: 100%;
+    padding: 0.2em 0;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-html, html body {
-    background: #2988cb url(../img/background.jpg) no-repeat fixed center center;
-    background-size: cover;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+html, body {
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
     height: 100%;
     min-height: 100%;
 }
 
-html body {
-    background: none;
+body {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
-a, a:hover, a:active, a:visited {
+a, a:hover, a:active, a:focus, a:visited {
+    border-bottom: 1px solid #000;
     color: #000000;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    border-bottom-width: 3px;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Biryani', sans-serif;
-    line-height: 1em;
-    text-align: center;
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+    margin-top: 0;
 }
 
-h1, h2 {
-    font-size: 5em;
-    letter-spacing: -6px;
-    line-height: 0.8em;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-    width: 100%;
-    word-spacing: 0.2em;
+h1 {
+    font-size: 8rem;
+    font-weight: 100;
+    letter-spacing: 2rem;
+    word-spacing: 4rem;
 }
 
 h2 {
-    border-bottom: 10px dashed red;
-}
-
-h2:after {
-    background-color: red;
-    content: '';
-    display: block;
-    height: 0.2em;
-    margin: -0.2em 0 0;
-    padding: 0;
-    width: 100%;
-}
-
-h3, h5 {
-    font-family: 'Martel', serif;
+    font-size: 4rem;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 
 h3 {
-    border-top: 10px dotted #222;
-    font-size: 2em;
-    letter-spacing: -1px;
-    padding-top: 5%;
+    font-size: 2.4rem;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    letter-spacing: 0.3rem;
     text-transform: uppercase;
 }
 
-strong, strong a {
-    background-color: #222;
-    color: #fff !important;
+p {
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+    font-weight: 900;
 }
 
-.twoCols > * {
-    display: block;
-    float: right;
-    width: 47.5%;
-}
-
-.twoCols > *:nth-child(odd) {
-    float: left;
-}
-
-.threeCols > * {
-    display: block;
-    float: left;
-    margin-right: 5%;
-    width: 30%;
-}
-
-.threeCols > *:nth-child(3n) {
-    margin-right: 0;
-}
-
-.threeCols > *:nth-child(3n+1) {
-    clear:left;
-}
-
-.fourCols > * {
-    display: block;
-    float: left;
-    margin-right: 5%;
-    width: 21.25%;
-}
-
-.fourCols > *:nth-child(4n) {
-    margin-right: 0;
-}
-
-.fourCols > *:nth-child(4n+1) {
-    clear:left;
-}
-
-body > header {
-    background: transparent url(../img/logo_header.svg) no-repeat fixed center 30%;
-    background-size: auto 40%;
+body > header,
+body > section,
+body > footer {
+    display: table;
     margin: 0;
     min-height: 100%;
     padding: 0;
-}
-
-.touch body > header {
-    background-position: center 5em;
-    background-size: auto 20em;
-}
-
-body > header h1 {
-    margin: 0;
-    display: block;
-    text-indent: -9999px;
-}
-
-body > section {
-    padding-bottom: 2em;
-}
-
-body > section > section {
-    margin: 0 auto;
-    padding: 0;
     text-align: center;
-    max-width: 850px;
-    width: 64%;
-}
-
-body > section > section > * {
-    text-align: left;
-}
-
-body > section > header {
-    padding: 0;
-    max-width: none;
-}
-
-body > section > *:last-child {
-    margin-bottom: 0;
-}
-
-body > footer {
-    background-color: #000000;
-    border-top: 10px dashed #888;
-    color: #ffffff;
-    padding: 2.5% 0;
-    text-align: center;
-}
-
-body > footer p {
-    margin: 0;
-}
-
-body > footer a, body > footer a:hover, body > footer a:active, body > footer a:visited {
-    color: #ffffff;
-}
-
-#quickInfo {
-    margin-top: -12.5%;
-    padding-bottom: 0;
-}
-
-#quickInfo > section {
-    margin-right: 0;
-    margin-left: 0;
-    max-width: none;
-    padding-right: 18%;
-    padding-bottom: 4em;
-    padding-left: 18%;
-    width: 64%;
-}
-
-#quickInfo > section > * {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-#quickInfo > section > *:last-child {
-    padding-bottom: 3em;
-}
-
-#quickInfo > section > p:first-child {
-    font-family: 'Gochi Hand', cursive;
-    font-size: 3em;
-    letter-spacing: -3px;
-    line-height: 1em;
-    text-align: center;
-    transform: rotate(-5deg);
-}
-
-#quickInfo .signUp {
-    margin-left: -50px;
-    text-align: center;
-}
-
-#quickInfo .signUp a {
-    background-color: #2988cb;
-    color: #ffffff;
-    display: block;
-    font-family: 'Martel', serif;
-    font-size: 3em;
-    height: 100px;
-    letter-spacing: -3px;
-    line-height: 100px;
-    margin: 0 auto;
-    padding: 0 0.2em 0 60px;
-    position: relative;
-    text-decoration: none;
-    width: 4em;
-}
-
-#quickInfo .signUp a:hover, #quickInfo .signUp a:active {
-    text-decoration: underline;
-}
-
-#quickInfo .signUp a:after {
-    left: 100%;
-    top: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    border-left-color: #2988cb;
-    border-width: 50px;
-    margin-top: -50px;
-}
-
-#quickInfo .signUp a:before {
-    left: 0;
-    top: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    border-left-color: #30cb29;
-    border-width: 50px;
-    margin-top: -50px;
-}
-
-#quickInfo .bread {
-    margin-top: 2em;
-}
-
-#quickInfo nav {
-    clear: both;
-    margin: 0 auto;
-    padding-bottom: 1em;
-    text-align: center;
-    width: 9em;
-}
-
-#quickInfo .contactUs a {
-    background: transparent url(../img/icon_facebook.png) no-repeat scroll left top;
-    background-size: 100% auto;
-    display: block;
-    float: left;
-    height: 3em;
-    margin-left: 1em;
-    text-indent: -9999px;
-    width: 3em;
-}
-
-#quickInfo .contactUs a:first-child {
-    margin-left: 0;
-}
-
-#quickInfo .contactUs .twitter {
-    background-image: url(../img/icon_twitter.png);
-}
-
-#talks article {
-    border-top: 10px dotted #222;
-    margin-top: 1em;
-    padding-top: 5%;
-}
-
-#talks article:first-child {
-    border-top: 0 none transparent;
-
-}
-
-#talks article img {
-    border-radius: 9999px;
-    display: block;
-    max-width: 100%;
-}
-
-#talks article header h3,
-#talks article header h4 {
-    border: none;
-    margin-top: 0;
-    margin-bottom: 0.25em;
-    text-align: right;
-}
-
-#talks article header h4 {
-    border-top: 1px solid #222;
-    padding-top: 2.5%;
-    line-height: 1.6em;
-}
-
-#talks article .video {
-    border-bottom: 1px solid #222;
-    margin-bottom: 5%;
-    padding-bottom: 5%;
-    max-width: 100%;
     width: 100%;
 }
 
-#talks article > section p {
-    margin-top: 0;
+body > header > article,
+body > section > article,
+body > footer > article {
+    display: table-cell;
+    padding: 5%;
+    vertical-align: middle;
+    width: 90%;
 }
 
-#talks .speaker header h3 {
-    border: none;
-    font-family: 'Gochi Hand', cursive;
-    font-size: 1.4em;
-    text-align: left;
+body > section {
+    padding: 5% 25%;
+    width: 50%;
 }
 
-#talks .speaker p {
-    font-size: 0.8em;
+body > header {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcf900+0,e0a700+50,af7d13+100 */
+    background: rgb(252,249,0); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(252,249,0,1) 0%, rgba(224,167,0,1) 50%, rgba(175,125,19,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(252,249,0,1) 0%,rgba(224,167,0,1) 50%,rgba(175,125,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(252,249,0,1) 0%,rgba(224,167,0,1) 50%,rgba(175,125,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf900', endColorstr='#af7d13',GradientType=0 ); /* IE6-9 */
+
 }
 
-#workshop .intro {
-    font-size: 0.8em;
-}
-
-#workshop article h4 {
-    text-align: left;
-}
-
-#workshop .speaker {
-    margin-top: 1.5em;
-}
-
-#workshop .speaker img {
-    border-radius: 9999px;
-    display: block;
-    float: left;
-    margin-right: 5%;
-    max-width: 20%;
-}
-
-#workshop .speaker h5 {
-    display: block;
-    float: left;
-    font-family: "Gochi Hand",cursive;
-    font-size: 1.2em;
-    margin-top: 0.7em;
-    max-width: 75%;
-}
-
-#timeplan section {
+body #intro {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70e6ea+0,4e11db+70,211684+100 */
+    background: rgb(112,230,234); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(112,230,234,1) 0%, rgba(78,17,219,1) 70%, rgba(33,22,132,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(112,230,234,1) 0%,rgba(78,17,219,1) 70%,rgba(33,22,132,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(112,230,234,1) 0%,rgba(78,17,219,1) 70%,rgba(33,22,132,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70e6ea', endColorstr='#211684',GradientType=0 ); /* IE6-9 */
     color: #ffffff;
-    padding-bottom: 1em;
 }
 
-#timeplan header h3 {
-    clear: both;
+body #intro a {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
 }
 
-#timeplan header:first-child h3 {
-    border-top: none;
+body #signUp {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eef21f+0,e56ba8+70,ef5356+100 */
+    background: rgb(238,242,31); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(238,242,31,1) 0%, rgba(229,107,168,1) 70%, rgba(239,83,86,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(238,242,31,1) 0%,rgba(229,107,168,1) 70%,rgba(239,83,86,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(238,242,31,1) 0%,rgba(229,107,168,1) 70%,rgba(239,83,86,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef21f', endColorstr='#ef5356',GradientType=0 ); /* IE6-9 */
+
 }
 
-#timeplan header h4 {
-    margin-bottom: 0;
-    text-align: left;
+body #whoIsThisFor,
+body #schedule {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,dddddd+100 */
+    background: rgb(238,238,238); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(221,221,221,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(221,221,221,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(221,221,221,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+
+    box-shadow: inset 0 5px 10px rgba(0,0,0,0.2);
 }
 
-#timeplan table tr {
+body #speakers {
+    background-color: red;
 }
 
-#timeplan table tr td {
-    line-height: 0.95em;
-    padding-left: 0.5em;
-    padding-bottom: 0.5em;
-    vertical-align: top;
+#head {
+    overflow: hidden;
+    position: relative;
 }
 
-#timeplan table td:first-child {
-    font-size: 0.8em;
-    padding-top: 0.1em;
-    padding-left: 0;
+#head > article {
+    background: transparent none no-repeat scroll center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
 }
 
-#timeplan .intro {
-    font-size: 0.8em;
-    margin-top: 0;
+#head > article {
+    background: transparent url(../img/shapes.svg) no-repeat scroll center center;
+    background-size: cover;
 }
 
-#sponsors > section {
-    padding: 0 10%;
-    width: 80%;
+#head > article h1,
+#head > article h4 {
+    color: #fff;
 }
 
-body #sponsors section p {
-    text-align: center;
-}
-
-#sponsors .organizers a {
-    color: #212722;
-    text-decoration: none;
-}
-
-#sponsors .organizers a:hover, #sponsors .organizers a:active {
-    text-decoration: underline;
-}
-
-#sponsors .logos {
-    padding-top: 3%;
-}
-
-#sponsors .logos article a img {
+#head footer {
+    background: transparent url(../img/triangle.svg) repeat-x scroll center bottom;
+    background-size: auto 100%;
+    bottom: -1px;
     display: block;
-    margin: 0 auto;
-    padding: 15%;
-    max-height: 10em;
-    max-width: 70%;
+    left: 0;
+    height: 10vh;
+    position: absolute;
+    width: 100%;
 }
 
-#sponsors .logos article.organizers a img {
-    max-height: 6em;
+#intro {
+    min-height: 50%;
+    padding: 0;
+    width: 100%;
 }
 
-
-#oldSites > section p {
-    font-family: 'Martel', serif;
-    font-size: 3em;
-    letter-spacing: -3px;
-    text-align: center;
+#intro article {
+    background: transparent url(../img/clouds.png) no-repeat scroll center top;
+    background-size: cover;
+    width: 100%;
 }
 
-#menu {
-    position: fixed;
-    left: 100%;
-    top: 0;
-    width: 280px;
+#intro nav {
+    margin-top: 5%;
 }
 
-#menu section {
-    background: rgba(255,255,255,0.5);
-}
-
-#menu section a {
-    display: block;
-    font-family: 'Biryani', sans-serif;
-    letter-spacing: -1px;
-    line-height: 1em;
-    padding: 0 2.5% 10%;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: 95%;
-}
-
-#menu section a:hover, #menu section a:active {
-    text-decoration: underline;
-}
-
-#menu section a:first-child {
-    padding-top: 10%;
-}
-
-body > * {
-    -webkit-transition: -webkit-transform 200ms ease;
-    transition: transform 200ms ease;
-}
-
-body.menuOpen > * {
-    -ms-transform: translate3d(-280px,0,0);
-    -webkit-transform: translate3d(-280px,0,0);
-    transform: translate3d(-280px,0,0);
-}
-
-#menuButton {
-    background: rgba(255,255,255,0.5) url(../img/icons/ic_menu_48px.svg) no-repeat scroll center center;
-    background-size: 75% auto;
-    display: block;
+#intro nav a {
+    background: #ffffff;
+    border: none;
+    border-radius: 9999px;
+    color: #ffffff;
+    display: inline-block;
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
     height: 50px;
-    position: fixed;
-    right: 0px;
-    text-indent: -9999px;
-    top: 5px;
-    transform: skew(-3deg, 2deg);
+    line-height: 50px;
+    margin: 0 2.5%;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    text-indent: 15px;
     width: 50px;
 }
 
-body.menuOpen #menuButton {
-    -ms-transform: translate3d(-280px,0,0);
-    -webkit-transform: translate3d(-280px,0,0);
-    transform: translate3d(-280px,0,0);
+#intro nav a:first-letter {
+    color: #000000;
 }
 
-/* === COLOR STYLES FOR SECTIONS ============================================ */
-
-#quickInfo section, #quickInfo header h2:after {
-    background-color: #30cb29;
+#intro nav a:hover, #intro nav a:active {
+    box-shadow: 0 6px 0 #000;
 }
 
-#quickInfo > header, #quickInfo header h2 {
-    background-color: transparent;
-    border-bottom-color: #30cb29;
-    color: #30cb29;
-}
-
-#talks, #talks header h2:after {
-    background-color: #c5cb29;
-}
-
-#talks header h2 {
-    background-color: #30cb29;
-    border-bottom-color: #c5cb29;
-    color: #c5cb29;
-}
-
-#workshop, #workshop header h2:after {
-    background-color: #cb8c29;
-}
-
-#workshop header h2 {
-    background-color: #c5cb29;
-    border-bottom-color: #cb8c29;
-    color: #cb8c29;
-}
-
-#whoItIsFor, #whoItIsFor header h2:after {
-    background-color: #cb4b29;
-}
-
-#whoItIsFor header h2 {
-    background-color: #cb8c29;
-    border-bottom-color: #cb4b29;
-    color: #cb4b29;
-}
-
-#timeplan, #timeplan header h2:after {
-    background-color: #8c29cb;
-}
-
-#timeplan header h2 {
-    background-color: #cb4b29;
-    border-bottom-color: #8c29cb;
-    color: #8c29cb;
-}
-
-#otherInfo, #otherInfo header h2:after {
-    background-color: #2988cb;
-}
-
-#otherInfo header h2 {
-    background-color: #8c29cb;
-    border-bottom-color: #2988cb;
-    color: #2988cb;
-}
-
-#sponsors, #sponsors header h2:after {
-    background-color: #ffffff;
-}
-
-#sponsors header h2 {
-    background-color: #2988cb;
-    border-bottom-color: #ffffff;
+#intro nav a:first-letter:hover {
     color: #ffffff;
 }
 
-#oldSites, #oldSites header h2:after {
-    background-color: #888888;
+#signUp {
+    min-height: 50%;
+    padding: 0;
+    width: 100%;
 }
 
-#oldSites header h2 {
-    background-color: #ffffff;
-    border-bottom-color: #888888;
-    color: #888888;
+#signUp a {
+    background: #111;
+    border: none;
+    border-radius: 9999px;
+    color: #ffffff;
+    display: inline-block;
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    height: 200px;
+    line-height: 200px;
+    margin: 0 2.5%;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 200px;
+    transition: background 100ms ease, color 100ms ease;
+}
+
+#signUp a:hover, #signUp a:active {
+    background: #ffffff;
+    color: #000000;
+}
+
+#signUp article {
+    background: transparent url(../img/tiger.svg) no-repeat scroll center center;
+    background-size: cover;
+}
+
+#speakers, #workshops {
+    padding: 5%;
+    width: 90%;
+}
+
+#speakers img, #workshops img {
+    border-radius: 9999px;
+    max-width: 200px;
+    width: 100%;
+}
+
+#speakers article section article section, #workshops article section article section {
+    float: left;
+    width: 70%;
+}
+
+#speakers article section article section:last-child, #workshops article section article section:last-child {
+    margin-left: 10%;
+    width: 20%;
+}
+
+#speakers article section article section h3 {
+    text-align: right;
+}
+
+#speakers article section article section h5, #workshops article section article section h5 {
+    margin-top: 1rem;
+}
+
+#speakers article section article section p, #workshops article section article section p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: left;
+}
+
+#speakers article section article section:first-child p, #workshops article section article section:first-child p, #workshops article section article section:first-child h4 {
+    margin-left: 33.3%;
+    width: 66.6%;
+}
+
+#speakers article section article section:last-child p {
+    font-size: 1rem;
+}
+
+#workshops article > p {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5%;
+    max-width: 600px;
+}
+
+#schedule {
+    padding: 5%;
+    width: 90%;
+}
+
+#schedule h3 {
+    margin-bottom: 0;
+}
+
+#schedule h5 {
+    font-size: 0.9rem;
+}
+
+#schedule p {
+    min-height: 11rem;
+}
+
+#schedule > article > section {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 5%;
+    width: 25%;
+}
+
+#schedule > article > section:first-of-type {
+    border-right: 1px solid #000;
+    padding-left: 0;
+    padding-right: 5%;
+    width: 75%;
+}
+
+#schedule section section {
+    float: left;
+    margin-left: 7.5%;
+    width: 28%;
+}
+
+#schedule section section:first-of-type {
+    margin-left: 0;
+}
+
+#schedule section.single {
+}
+
+#schedule section.single section {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+#schedule table {
+    width: 100%;
+}
+
+#schedule table tr td {
+    line-height: 1.6rem;
+    padding: 0.2rem 5%;
+}
+
+#schedule table tr:first-child td {
+    border-top: 1px solid #000;
+}
+
+#schedule table tr:last-child td {
+    border-bottom: 1px solid #000;
+}
+
+#schedule table tr td:first-child {
+    border-top: 1px solid rgba(0,0,0,0.075);
+    color: transparent;
+    font-family: 'Cutive Mono', monospace, serif;
+    font-size: 1.2rem;
+    letter-spacing: -0.1rem;
+    width: 4rem;
+}
+
+#schedule table tr.title td:first-child {
+    border-top: 1px solid #000;
+    color: #000;
+}
+
+#schedule table tr td:nth-child(2) {
+    border-bottom: 1px solid #000;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#oldSites {
+    min-height: 0;
+}
+
+#oldSites a {
+    background: #000;
+    border: none;
+    border-radius: 9999px;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 5px;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 50px;
+}
+
+#oldSites a:hover, #oldSites a:active {
+    box-shadow: 0 6px 0 #999;
+}
+
+body > footer {
+    min-height: 0;
+}
+
+#videobg, #videobgShiw {
+    box-sizing: content-box;
+    bottom: 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+#videobg {
+    transform: scale(2);
+}
+
+#videobgShiw {
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 0;
+}
+
+.parallax {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.parallax > * {
+    position: relative;
+    z-index: 1;
+}
+
+.parallax .background {
+    background: transparent url() no-repeat scroll center center;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
 }
 
 /* ==========================================================================
@@ -694,7 +571,7 @@ body.menuOpen #menuButton {
    ========================================================================== */
 
 /*
- * Hide visually and from screen readers:
+ * Hide visually and from screen readers
  */
 
 .hidden {
@@ -769,242 +646,8 @@ body.menuOpen #menuButton {
    Modify as content requires.
    ========================================================================== */
 
-/*
-.twoCols > * {
-    display: block;
-    float: right;
-    width: 47.5%;
-}
-
-.twoCols > *:first-child {
-    float: left;
-}
-
-.threeCols > * {
-    display: block;
-    float: left;
-    margin-right: 5%;
-    width: 30%;
-}
-
-.threeCols > *:nth-child(3n) {
-    margin-right: 0;
-}
-
-.threeCols > *:nth-child(3n+1) {
-    clear:left;
-}
-
-.fourCols > * {
-    display: block;
-    float: left;
-    margin-right: 5%;
-    width: 21.25%;
-}
-
-.fourCols > *:nth-child(4n) {
-    margin-right: 0;
-}
-
-.fourCols > *:nth-child(4n+1) {
-    clear:left;
-}
-*/
-
-@media only screen and (max-width: 1280px) {
-}
-
-@media only screen and (max-width: 1024px) {
-
-    h3 {
-        border-top-width: 6px;
-        font-size: 1.8em;
-        letter-spacing: -1px;
-    }
-
-    body > section > section {
-        padding-right: 15%;
-        padding-left: 15%;
-        width: 70%;
-    }
-
-    #sponsors table td,
-    #sponsors table.smallLogos td {
-        padding: 2em;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-
-    h3 {
-        border-top-width: 6px;
-        font-size: 1.6em;
-        letter-spacing: -1px;
-    }
-
-    body > section > section, #quickInfo > section {
-        margin-right: auto;
-        margin-left: auto;
-        padding-right: 10%;
-        padding-left: 10%;
-        width: 80%;
-    }
-
-    .fourCols > * {
-        width: 30%;
-    }
-
-    .fourCols > *:nth-child(4n) {
-        margin-right: 5%;
-    }
-
-    .fourCols > *:nth-child(4n+1) {
-        clear: none;
-    }
-
-    .fourCols > *:nth-child(3n) {
-        margin-right: 0;
-    }
-
-    .fourCols > *:nth-child(3n+1) {
-        clear:left;
-    }
-
-    #sponsors div a {
-        width: 44%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    h2 {
-        border-bottom-width: 6px;
-        font-size: 4em;
-        letter-spacing: -5px;
-    }
-
-    h3 {
-        border-top-width: 6px;
-        font-size: 1.4em;
-        letter-spacing: -1px;
-    }
-
-    .threeCols > *,
-    .fourCols > * {
-        float: right;
-        margin-right: 0;
-        width: 47.5%;
-    }
-
-    .threeCols > *:nth-child(3n+1) {
-        clear: none;
-    }
-
-    .fourCols > *:nth-child(4n) {
-        margin-right: 0;
-    }
-
-    .fourCols > *:nth-child(3n+1) {
-        clear: none;
-    }
-
-    .threeCols > *:nth-child(odd),
-    .fourCols > *:nth-child(odd) {
-        clear: left;
-        float: left;
-    }
-
-    #quickInfo .signUp {
-        margin-left: -35px;
-    }
-
-    #quickInfo .signUp a {
-        font-size: 2em;
-        height: 70px;
-        letter-spacing: -2.5px;
-        line-height: 70px;
-        padding-left: 40px;
-    }
-
-    #quickInfo .signUp a:after {
-        border-width: 35px;
-        margin-top: -35px;
-    }
-
-    #quickInfo .signUp a:before {
-        border-width: 35px;
-        margin-top: -35px;
-    }
-
-    #sponsors table td,
-    #sponsors table.smallLogos td {
-        padding: 1em;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    h2 {
-        font-size: 2.4em;
-        letter-spacing: -3px;
-    }
-
-    p {
-        line-height: 1.8em;
-    }
-
-    body > section > section, #quickInfo > section {
-        padding-right: 5%;
-        padding-left: 5%;
-        width: 90%;
-    }
-
-    .twoCols > *,
-    .threeCols > *,
-    .fourCols > * {
-        float: none;
-        width: 100%;
-    }
-
-    .twoCols > *:nth-child(odd),
-    .threeCols > *:nth-child(odd),
-    .fourCols > *:nth-child(odd) {
-        clear: none;
-        float: none;
-    }
-
-    #quickInfo > section > p:first-child {
-        font-size: 2em;
-        letter-spacing: -2px;
-        line-height: 0.8em;
-    }
-
-    #talks article header h3 {
-        text-align: left;
-    }
-
-    #talks article img {
-        float: right;
-        margin-bottom: 5%;
-        margin-left: 10%;
-        max-width: 45%;
-    }
-
-    #workshop .speaker h5 {
-        font-size: 1.8em;
-    }
-
-    #sponsors table td,
-    #sponsors table.smallLogos td {
-        padding: 0.4em;
-    }
-
-    #oldSites > section p {
-        font-size: 2em;
-        letter-spacing: -2px;
-    }
-
-    body > footer p {
-        line-height: 1em;
-    }
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
@@ -1023,7 +666,9 @@ body.menuOpen #menuButton {
 @media print {
     *,
     *:before,
-    *:after {
+    *:after,
+    *:first-letter,
+    *:first-line {
         background: transparent !important;
         color: #000 !important; /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
