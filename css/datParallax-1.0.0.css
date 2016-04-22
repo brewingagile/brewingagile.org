@@ -1,0 +1,22 @@
+.datParallax {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.datParallax > * {
+    position: relative;
+    z-index: 1;
+}
+
+.datParallax .datParallaxBackground {
+    background: transparent url() no-repeat scroll center center;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}

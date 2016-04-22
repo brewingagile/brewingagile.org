@@ -66,67 +66,10 @@ function pauseAndHideVideo(videoPlayer, intervalToClear) {
     }
 }
 
-function initParallax() {
-    var $parallax = $('.parallax'), background, $bgElement, $this;
-
-    $parallax.each(function () {
-        $this = $(this);
-        background = $this.css('background');
-        $bgContainerElement = $('<div class="backgroundContainer"></div>');
-        $bgElement = $('<div class="background"></div>');
-        $bgElement.css('background', background);
-        $this.prepend($bgElement);
-        $this.css('background-image','none');
-    });
-
-    setupParallax();
-}
-
-function setupParallax() {
-    var $parallax = $('.parallax'), background, $bgElement, $this;
-
-    $parallax.each(function () {
-        $this = $(this);
-        $bgElement = $this.find('.background');
-        $bgElement.height($this.outerHeight() / 0.5);
-        $bgElement.css('top', Math.max(0, -$this.outerHeight() * 0.25 ));
-    });
-
-    rollParallax();
-}
-
-function rollParallax() {
-    var scrollTop = $(document).scrollTop(), $parallax = $('.parallax'), $this, $parallaxBg, offset, topOfWindow, bottomOfWindow, topOfElement, bottomOfElement;
-
-    topOfWindow = scrollTop;
-    bottomOfWindow = scrollTop + $(window).innerHeight();
-    $parallax.each(function () {
-        $this = $(this);
-        $parallaxBg = $this.find('.background');
-        topOfElement = $this.offset().top;
-        bottomOfElement = $this.offset().top + $this.outerHeight();
-
-        if ((topOfWindow <= topOfElement && topOfElement <= bottomOfWindow) || (topOfWindow <= bottomOfElement && bottomOfElement <= bottomOfWindow)) {
-            offset = (scrollTop - ($parallaxBg.offset().top))* 0.5;
-            $parallaxBg.css('transform', 'translate3d(0,' + offset + 'px,0)');
-            if(!$parallaxBg.is(":visible")) {
-                $parallaxBg.fadeIn();
-            }
-        }
-    });
-}
-
 $(document).ready(function () {
     if (!Modernizr.touch) {
         var supports3dtransforms = has3d();
         //setupBackgroundVideo();
-    }
-
-    if(!$('html').hasClass('touch') && $('html').hasClass('csstransforms3d')) {
-        initParallax();
-        $(window).on('scroll', function () {
-            rollParallax();
-        });
     }
 });
 

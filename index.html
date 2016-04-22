@@ -32,12 +32,13 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/datParallax-1.0.0.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
 
         <header id="head">
-            <article class="parallax">
+            <article data-dat-parallax="">
                 <header><h1>BA16</h1></header>
                 <h4>A conference to spread and debate the practice of agile.</h4>
                 <footer></footer>
@@ -61,7 +62,7 @@
         </section>
 
         <section id="signUp">
-            <article class="parallax">
+            <article data-dat-parallax="">
                 <p><a href="">Sign up</a></p>
             </article>
         </section>
@@ -90,22 +91,58 @@
         </section>
 
         <section id="speakers">
-            <article>
+            <article class="clearfix">
                 <header><h2>Speakers</h2></header>
-                <section>
+
+                <section class="luis">
                     <article class="clearfix">
                         <section>
-                            <header><h3>Continues discovery: the power of pure agile</h3></header>
-                            <p>The strength of Agile lies in the simplicity and clarity of the Values and Principles expressed in the Agile Manifesto. It can empower the people doing software development in any organization, and enable us to make rapid strides to the “land of better”.</p>
-                            <p>Software development is an activity of discovery. We must take action to reveal the reality of the problem at hand, the elements of the solution, and to reveal the work that is needed to design and create the software required. This is the process of discovery.</p>
-                            <p>As leaders, activators, and influencers of change in the companies we work with, it's up to us to understand the philosophy of Agile and how it embraces and empowers the process of discovery.</p>
-                            <p>I'll share my thinking about “Pure Agile”, and how I use it in my daily work to enhance Continuous Discovery, Learning, and Growth in the teams and companies I work with. Let's explore together and discover the path to the future we want to create.</p>
+                            <header><h3>How to enable agility in the whole organisation creating high performing companies</h3></header>
+                            <p>Our highest priority is to satisfy a customer through early and continuous delivery of valuable software. Continuous attention to technical excellence and good design enhances agility. Agile processes harness change for the customer and deliver the competitive advantage. Agile processes promote sustainable development.</p>
+                            <p>One of several reasons why agile techniques are so effective is that they reduce the feedback cycle between the generation of an idea and the realisation of that idea. This not only minimises the risk of misunderstanding, it also reduces the cost of addressing any mistakes.</p>
+                            <p>But most of the times we fail to take Agile further than team level. Based on my experience it is very hard to actually transform the companies and adopt Agile mindset and create high performing organisations.</p>
+                            <p>In this talk I will present a bunch of ideas that you can apply directly in your daily work that will allow you to bring your company to the next level of agility creating high performing organisation.</p>
                         </section>
                         <section>
-                            <img src="2015/img/speakers/woody_zuill.jpg" alt="Woody Zuill"/>
-                            <header><h5>Woody Zuill</h5></header>
-                            <p>Woody Zuill, a Senior Consultant, Trainer, and Agile Coach, has been programming computers for 30+ years. Over the last 15+ years he has worked as an Extreme Programmer, Agile Coach, Application Development Manager, and Trainer. He believes that code must be simple, clean, and maintainable so that we can realize the Agile promise of Responding to Change, and that we must constantly “Reflect, tune, and adjust”.</p>
-                            <p>His passion is for tackling code that is hard to maintain and cleaning, refactoring, and bringing it back into a manageable state. He is a pioneer of the Mob Programming approach to teamwork in software development, and is considered one of the founders of the “#NoEstimates” discussion on Twitter.</p>
+                            <img src="img/speakers/luis_goncalves.jpg" alt="Luis Goncalves"/>
+                            <header><h5>Luis Goncalves</h5></header>
+                            <p>My name is Luis Gonçalves and I am a co-founder at Oikosofy, Agile Coach at HolidayCheck, author, speaker and blogger.</p>
+                            <p>I have been working in the software industry since 2003, as an agile practitioner since 2007. I have a lot of experience in integrating sequential projects phases like localization into an Agile Framework and pioneering Agile adoption at different companies and different contexts.</p>
+                            <p>I am a co-author of a book “Getting Value out of Agile Retrospectives”. At the beginning of 2016 I will publish my new book “How to get rid of Performance Appraisals”. I am a co-founder of a MeetUp group in Munich, Germany called High Performing Teams.</p>
+                            <p>I like to write and share ideas with the world and this has made me a passionate blogger. I get my inspiration from my professional life and from all the books that I read every week. Please follow my blog here http://lmsgoncalves.com/ or join me on Twitter @lgoncalves1979.</p>
+                        </section>
+                    </article>
+                </section>
+
+                <section class="marc">
+                    <article class="clearfix">
+                        <section>
+                            <header><h3>The systemic Scrum Master</h3></header>
+                            <p>Most Scrum Masters are quite fluent in "Scrum", but they lack experience in System and Complexity Thinking. Most projects don't fail because of the wrong tools, but because of people and a missing understanding about the system that we are all part of. I'll share stories about real world teams and their struggels with the system around them and talk about how a more systemic approach helped them. At the end of the talk you'll have a better understanding of system and complexity thinking and the needed mindset, as well as some tools that will help you on your systemic journey.</p>
+                            <p>IMHO the talk will be valuable for Scrum Masters, Product Owners and Agile Managers, who have a feeling that they got stuck and are in need for something different, the Scrum framework cannot provide.</p>
+                        </section>
+                        <section>
+                            <img src="img/speakers/marc_loeffler.jpg" alt="Marc Loeffler"/>
+                            <header><h5>Marc Loeffler</h5></header>
+                            <p>Marc Loeffler is an agile coach, author and trainer. Before getting in touch with agile methods and principles in 2006, he was working as a traditional project manager for companies like the Volkswagen AG or the Siemens AG. His passion is to help teams implementing agile frameworks like Scrum and XP and to transform our world of work.</p>
+                            <p>Marc has a passion for helping teams that are struggling with agile transitions and overcoming dysfunctional behaviour. He loves to generate new insights by approaching common problems from the other side and trying to make deliberately havoc of the process.</p>
+                        </section>
+                    </article>
+                </section>
+
+                <section class="vasco">
+                    <article class="clearfix">
+                        <section>
+                            <header><h3>NoEstimates: How you can predict the release date of your project without estimating</h3></header>
+                            <p>Often we hear that estimating a project is a must. "We can't make decisions without them" we hear often. In this session I'll present examples of how we can predict a release date of a project without any estimates, only relying on easily available data.</p>
+                            <p>I'll show how we can follow progress on a project at all times without having to rely on guesswork, and we will review how large, very large and small projects have already benefited from this in the past. At the end of the session you will be ready to start your own #NoEstimates journey.</p>
+                        </section>
+                        <section>
+                            <img src="img/speakers/vasco_duarte.jpg" alt="Vasco Duarte"/>
+                            <header><h5>Vasco Duarte</h5></header>
+                            <p>I want to transform product development organizations into product business organizations. I do that by focusing the work of the product development teams on the end-to-end life-cycle of their products. From Concept to Cash and Back!</p>
+                            <p>Currently a Managing Partner at Oikosofy. Product Manager, Scrum Master, Project Manager, Director, Agile Coach are only some of the roles that I've taken in software development organizations. Having worked in the software industry since 1997, and Agile practitioner since 2004. I've worked in small, medium and large software organizations as an Agile Coach or leader in agile adoption at those organizations. I was one of the leaders and catalysts of Agile methods and Agile culture adoption at Avira, Nokia and F-Secure.</p>
+                            <p>You can read more from me at my blog:http://SoftwareDevelopmentToday.com You can join me on twitter: @duarte_vasco</p>
                         </section>
                     </article>
                 </section>
@@ -115,17 +152,26 @@
         <section id="workshops">
             <article>
                 <header><h2>Workshops</h2></header>
-                <p>In addition to our usual conference we offer optional add-ons of an intimate and interactive workshop with our keynote speaker Woody Zuill.</p>
+                <p>In addition to our usual conference we offer optional add-ons of an intimate and interactive workshop with our keynote speaker Vasco Duarte.</p>
                 <section>
                     <article class="clearfix">
                         <section>
-                            <header><h4>About the workshop</h4></header>
-                            <p>The default use of an “estimate-driven” approach is pervasive in software development efforts. While estimates can be useful, it is worthwhile to scrutinize our use of estimates, and to seek better ways to manage the development of software when estimates are not appropriate. [NOTE: For this session, I am referring to the use of estimates of cost, time, or effort for software projects, features, or tasks.]</p>
-                            <p>There are a number of things to explore. For example, do we really need estimates for everything we currently use them for? Are we getting a reasonable benefit from them? Is it possible to manage software development without them?</p>
-                            <p>In this session we will start with an information gathering exercise to help us gain a shared idea of our current understanding of the purpose and use of estimates. From here we'll move on to examine the nature of software development projects and a few possible other ways to approach our work.</p>
+                            <header><h4>#NoEstimates - How to improve software development predictability and profitability by focusing on what matters</h4></header>
+                            <p>#NoEstimates is an approach to software development that arose from the observation that large amounts of time were spent over the years in estimating and improving those estimates, but we see no value from that investment. Indeed, according to scholars Conte, Dunmore and Shens [1] a good estimate is one that is within 25% of the actual cost, 75% of the time.</p>
+                            <p>This is the same as saying: give us your money, we promise not lose more than 25% of it (with a 25% probability that we will lose a lot more). We don’t find that acceptable or productive for our industry. There must be better ways to manage software and product development.</p>
+                            <p>In this workshop we will review and analyze why we do estimates and how we can improve software and product development while reducing the time and money invested in estimating.</p>
+                            <p><strong>Workshop learning goals:</strong></p>
+                            <ul>
+                                <li>Decision making frameworks for projects that do not require estimates</li>
+                                <li>Investment models for software projects that do not require estimates</li>
+                                <li>Project management (risk management, scope management, progress reporting, etc.) approaches that do not require estimates</li>
+                                <li>The tools and arguments you need to prove the value of #NoEstimates to your boss</li>
+                                <li>How to get started applying #NoEstimates right away</li>
+                                <li>Where is #NoEstimates going and what are the likely changes to software development that will come next</li>
+                            </ul>
                         </section>
                         <section>
-                            <img src="2015/img/speakers/woody_zuill.jpg" alt="Woody Zuill"/>
+                            <img src="img/speakers/vasco_duarte.jpg" alt="Vasco Duarte"/>
                             <header><h5>Woody Zuill</h5></header>
                         </section>
                     </article>
@@ -287,6 +333,7 @@
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/datParallax-1.0.0.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 

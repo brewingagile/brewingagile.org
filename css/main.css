@@ -232,7 +232,33 @@ body #schedule {
 }
 
 body #speakers {
-    background-color: red;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0c743+0,f5d477+100 */
+    background: rgb(240,199,67); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(240,199,67,1) 0%, rgba(245,212,119,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(240,199,67,1) 0%,rgba(245,212,119,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(240,199,67,1) 0%,rgba(245,212,119,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0c743', endColorstr='#f5d477',GradientType=0 ); /* IE6-9 */
+
+}
+
+body #speakers > article > section > article > section:last-child {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6f383b+0,8c6d76+100 */
+    background: rgb(111,56,59); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(111,56,59,1) 0%, rgba(140,109,118,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(111,56,59,1) 0%,rgba(140,109,118,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(111,56,59,1) 0%,rgba(140,109,118,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f383b', endColorstr='#8c6d76',GradientType=0 ); /* IE6-9 */
+    color: #ffffff;
+}
+
+body #workshops {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ba1f6d+0,980026+100 */
+    background: rgb(186,31,109); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(186,31,109,1) 0%, rgba(152,0,38,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(186,31,109,1) 0%,rgba(152,0,38,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(186,31,109,1) 0%,rgba(152,0,38,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba1f6d', endColorstr='#980026',GradientType=0 ); /* IE6-9 */
+    color: #ffffff;
 }
 
 #head {
@@ -351,8 +377,8 @@ body #speakers {
 }
 
 #speakers, #workshops {
-    padding: 5%;
-    width: 90%;
+    padding: 0;
+    width: 100%;
 }
 
 #speakers img, #workshops img {
@@ -361,13 +387,27 @@ body #speakers {
     width: 100%;
 }
 
+#speakers > article > section {
+    padding-top: 5%;
+}
+
+#speakers > article > section:first-of-type {
+    padding-top: 0;
+}
+
 #speakers article section article section, #workshops article section article section {
     float: left;
     width: 70%;
 }
 
+#speakers article {
+    position: relative;
+}
+
 #speakers article section article section:last-child, #workshops article section article section:last-child {
+    box-sizing: border-box;
     margin-left: 10%;
+    padding: 1%;
     width: 20%;
 }
 
@@ -392,6 +432,15 @@ body #speakers {
 
 #speakers article section article section:last-child p {
     font-size: 1rem;
+}
+
+#speakers article section article section:last-child p:last-child, #workshops article section article section:last-child p:last-child {
+    margin-bottom: 0;
+}
+
+#workshops > article {
+    background: transparent url(../img/stripes.svg) repeat-x scroll center bottom;
+    background-size: 25rem auto;
 }
 
 #workshops article > p {
@@ -540,29 +589,6 @@ body > footer {
 #videobgShiw {
     background-color: rgba(0,0,0,0.5);
     position: absolute;
-    z-index: 0;
-}
-
-.parallax {
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-}
-
-.parallax > * {
-    position: relative;
-    z-index: 1;
-}
-
-.parallax .background {
-    background: transparent url() no-repeat scroll center center;
-    background-size: cover;
-    display: block;
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 100%;
     z-index: 0;
 }
 
