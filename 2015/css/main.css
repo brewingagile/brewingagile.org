@@ -1,0 +1,1092 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    background: lightgoldenrodyellow;
+    color: #000;
+    display: block;
+    left: 0;
+    margin: 0;
+    padding: 0.5em 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, html body {
+    background: #2988cb url(../img/background.jpg) no-repeat fixed center center;
+    background-size: cover;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+    min-height: 100%;
+}
+
+html body {
+    background: none;
+}
+
+a, a:hover, a:active, a:visited {
+    color: #000000;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Biryani', sans-serif;
+    line-height: 1em;
+    text-align: center;
+}
+
+h1, h2 {
+    font-size: 5em;
+    letter-spacing: -6px;
+    line-height: 0.8em;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    width: 100%;
+    word-spacing: 0.2em;
+}
+
+h2 {
+    border-bottom: 10px dashed red;
+}
+
+h2:after {
+    background-color: red;
+    content: '';
+    display: block;
+    height: 0.2em;
+    margin: -0.2em 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+h3, h5 {
+    font-family: 'Martel', serif;
+}
+
+h3 {
+    border-top: 10px dotted #222;
+    font-size: 2em;
+    letter-spacing: -1px;
+    padding-top: 5%;
+    text-transform: uppercase;
+}
+
+strong, strong a {
+    background-color: #222;
+    color: #fff !important;
+}
+
+.twoCols > * {
+    display: block;
+    float: right;
+    width: 47.5%;
+}
+
+.twoCols > *:nth-child(odd) {
+    float: left;
+}
+
+.threeCols > * {
+    display: block;
+    float: left;
+    margin-right: 5%;
+    width: 30%;
+}
+
+.threeCols > *:nth-child(3n) {
+    margin-right: 0;
+}
+
+.threeCols > *:nth-child(3n+1) {
+    clear:left;
+}
+
+.fourCols > * {
+    display: block;
+    float: left;
+    margin-right: 5%;
+    width: 21.25%;
+}
+
+.fourCols > *:nth-child(4n) {
+    margin-right: 0;
+}
+
+.fourCols > *:nth-child(4n+1) {
+    clear:left;
+}
+
+body > header {
+    background: transparent url(../img/logo_header.svg) no-repeat fixed center 30%;
+    background-size: auto 40%;
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+}
+
+.touch body > header {
+    background-position: center 5em;
+    background-size: auto 20em;
+}
+
+body > header h1 {
+    margin: 0;
+    display: block;
+    text-indent: -9999px;
+}
+
+body > section {
+    padding-bottom: 2em;
+}
+
+body > section > section {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    max-width: 850px;
+    width: 64%;
+}
+
+body > section > section > * {
+    text-align: left;
+}
+
+body > section > header {
+    padding: 0;
+    max-width: none;
+}
+
+body > section > *:last-child {
+    margin-bottom: 0;
+}
+
+body > footer {
+    background-color: #000000;
+    border-top: 10px dashed #888;
+    color: #ffffff;
+    padding: 2.5% 0;
+    text-align: center;
+}
+
+body > footer p {
+    margin: 0;
+}
+
+body > footer a, body > footer a:hover, body > footer a:active, body > footer a:visited {
+    color: #ffffff;
+}
+
+#quickInfo {
+    margin-top: -12.5%;
+    padding-bottom: 0;
+}
+
+#quickInfo > section {
+    margin-right: 0;
+    margin-left: 0;
+    max-width: none;
+    padding-right: 18%;
+    padding-bottom: 4em;
+    padding-left: 18%;
+    width: 64%;
+}
+
+#quickInfo > section > * {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#quickInfo > section > *:last-child {
+    padding-bottom: 3em;
+}
+
+#quickInfo > section > p:first-child {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 3em;
+    letter-spacing: -3px;
+    line-height: 1em;
+    text-align: center;
+    transform: rotate(-5deg);
+}
+
+#quickInfo .signUp {
+    margin-left: -50px;
+    text-align: center;
+}
+
+#quickInfo .signUp a {
+    background-color: #2988cb;
+    color: #ffffff;
+    display: block;
+    font-family: 'Martel', serif;
+    font-size: 3em;
+    height: 100px;
+    letter-spacing: -3px;
+    line-height: 100px;
+    margin: 0 auto;
+    padding: 0 0.2em 0 60px;
+    position: relative;
+    text-decoration: none;
+    width: 4em;
+}
+
+#quickInfo .signUp a:hover, #quickInfo .signUp a:active {
+    text-decoration: underline;
+}
+
+#quickInfo .signUp a:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-left-color: #2988cb;
+    border-width: 50px;
+    margin-top: -50px;
+}
+
+#quickInfo .signUp a:before {
+    left: 0;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-left-color: #30cb29;
+    border-width: 50px;
+    margin-top: -50px;
+}
+
+#quickInfo .bread {
+    margin-top: 2em;
+}
+
+#quickInfo nav {
+    clear: both;
+    margin: 0 auto;
+    padding-bottom: 1em;
+    text-align: center;
+    width: 9em;
+}
+
+#quickInfo .contactUs a {
+    background: transparent url(../img/icon_facebook.png) no-repeat scroll left top;
+    background-size: 100% auto;
+    display: block;
+    float: left;
+    height: 3em;
+    margin-left: 1em;
+    text-indent: -9999px;
+    width: 3em;
+}
+
+#quickInfo .contactUs a:first-child {
+    margin-left: 0;
+}
+
+#quickInfo .contactUs .twitter {
+    background-image: url(../img/icon_twitter.png);
+}
+
+#talks article {
+    border-top: 10px dotted #222;
+    margin-top: 1em;
+    padding-top: 5%;
+}
+
+#talks article:first-child {
+    border-top: 0 none transparent;
+
+}
+
+#talks article img {
+    border-radius: 9999px;
+    display: block;
+    max-width: 100%;
+}
+
+#talks article header h3,
+#talks article header h4 {
+    border: none;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    text-align: right;
+}
+
+#talks article header h4 {
+    border-top: 1px solid #222;
+    padding-top: 2.5%;
+    line-height: 1.6em;
+}
+
+#talks article .video {
+    border-bottom: 1px solid #222;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    max-width: 100%;
+    width: 100%;
+}
+
+#talks article > section p {
+    margin-top: 0;
+}
+
+#talks .speaker header h3 {
+    border: none;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.4em;
+    text-align: left;
+}
+
+#talks .speaker p {
+    font-size: 0.8em;
+}
+
+#workshop .intro {
+    font-size: 0.8em;
+}
+
+#workshop article h4 {
+    text-align: left;
+}
+
+#workshop .speaker {
+    margin-top: 1.5em;
+}
+
+#workshop .speaker img {
+    border-radius: 9999px;
+    display: block;
+    float: left;
+    margin-right: 5%;
+    max-width: 20%;
+}
+
+#workshop .speaker h5 {
+    display: block;
+    float: left;
+    font-family: "Gochi Hand",cursive;
+    font-size: 1.2em;
+    margin-top: 0.7em;
+    max-width: 75%;
+}
+
+#timeplan section {
+    color: #ffffff;
+    padding-bottom: 1em;
+}
+
+#timeplan header h3 {
+    clear: both;
+}
+
+#timeplan header:first-child h3 {
+    border-top: none;
+}
+
+#timeplan header h4 {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+#timeplan table tr {
+}
+
+#timeplan table tr td {
+    line-height: 0.95em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    vertical-align: top;
+}
+
+#timeplan table td:first-child {
+    font-size: 0.8em;
+    padding-top: 0.1em;
+    padding-left: 0;
+}
+
+#timeplan .intro {
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+#sponsors > section {
+    padding: 0 10%;
+    width: 80%;
+}
+
+body #sponsors section p {
+    text-align: center;
+}
+
+#sponsors .organizers a {
+    color: #212722;
+    text-decoration: none;
+}
+
+#sponsors .organizers a:hover, #sponsors .organizers a:active {
+    text-decoration: underline;
+}
+
+#sponsors .logos {
+    padding-top: 3%;
+}
+
+#sponsors .logos article a img {
+    display: block;
+    margin: 0 auto;
+    padding: 15%;
+    max-height: 10em;
+    max-width: 70%;
+}
+
+#sponsors .logos article.organizers a img {
+    max-height: 6em;
+}
+
+
+#oldSites > section p {
+    font-family: 'Martel', serif;
+    font-size: 3em;
+    letter-spacing: -3px;
+    text-align: center;
+}
+
+#menu {
+    position: fixed;
+    left: 100%;
+    top: 0;
+    width: 280px;
+}
+
+#menu section {
+    background: rgba(255,255,255,0.5);
+}
+
+#menu section a {
+    display: block;
+    font-family: 'Biryani', sans-serif;
+    letter-spacing: -1px;
+    line-height: 1em;
+    padding: 0 2.5% 10%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 95%;
+}
+
+#menu section a:hover, #menu section a:active {
+    text-decoration: underline;
+}
+
+#menu section a:first-child {
+    padding-top: 10%;
+}
+
+body > * {
+    -webkit-transition: -webkit-transform 200ms ease;
+    transition: transform 200ms ease;
+}
+
+body.menuOpen > * {
+    -ms-transform: translate3d(-280px,0,0);
+    -webkit-transform: translate3d(-280px,0,0);
+    transform: translate3d(-280px,0,0);
+}
+
+#menuButton {
+    background: rgba(255,255,255,0.5) url(../img/icons/ic_menu_48px.svg) no-repeat scroll center center;
+    background-size: 75% auto;
+    display: block;
+    height: 50px;
+    position: fixed;
+    right: 0px;
+    text-indent: -9999px;
+    top: 5px;
+    transform: skew(-3deg, 2deg);
+    width: 50px;
+}
+
+body.menuOpen #menuButton {
+    -ms-transform: translate3d(-280px,0,0);
+    -webkit-transform: translate3d(-280px,0,0);
+    transform: translate3d(-280px,0,0);
+}
+
+/* === COLOR STYLES FOR SECTIONS ============================================ */
+
+#quickInfo section, #quickInfo header h2:after {
+    background-color: #30cb29;
+}
+
+#quickInfo > header, #quickInfo header h2 {
+    background-color: transparent;
+    border-bottom-color: #30cb29;
+    color: #30cb29;
+}
+
+#talks, #talks header h2:after {
+    background-color: #c5cb29;
+}
+
+#talks header h2 {
+    background-color: #30cb29;
+    border-bottom-color: #c5cb29;
+    color: #c5cb29;
+}
+
+#workshop, #workshop header h2:after {
+    background-color: #cb8c29;
+}
+
+#workshop header h2 {
+    background-color: #c5cb29;
+    border-bottom-color: #cb8c29;
+    color: #cb8c29;
+}
+
+#whoItIsFor, #whoItIsFor header h2:after {
+    background-color: #cb4b29;
+}
+
+#whoItIsFor header h2 {
+    background-color: #cb8c29;
+    border-bottom-color: #cb4b29;
+    color: #cb4b29;
+}
+
+#timeplan, #timeplan header h2:after {
+    background-color: #8c29cb;
+}
+
+#timeplan header h2 {
+    background-color: #cb4b29;
+    border-bottom-color: #8c29cb;
+    color: #8c29cb;
+}
+
+#otherInfo, #otherInfo header h2:after {
+    background-color: #2988cb;
+}
+
+#otherInfo header h2 {
+    background-color: #8c29cb;
+    border-bottom-color: #2988cb;
+    color: #2988cb;
+}
+
+#sponsors, #sponsors header h2:after {
+    background-color: #ffffff;
+}
+
+#sponsors header h2 {
+    background-color: #2988cb;
+    border-bottom-color: #ffffff;
+    color: #ffffff;
+}
+
+#oldSites, #oldSites header h2:after {
+    background-color: #888888;
+}
+
+#oldSites header h2 {
+    background-color: #ffffff;
+    border-bottom-color: #888888;
+    color: #888888;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+/*
+.twoCols > * {
+    display: block;
+    float: right;
+    width: 47.5%;
+}
+
+.twoCols > *:first-child {
+    float: left;
+}
+
+.threeCols > * {
+    display: block;
+    float: left;
+    margin-right: 5%;
+    width: 30%;
+}
+
+.threeCols > *:nth-child(3n) {
+    margin-right: 0;
+}
+
+.threeCols > *:nth-child(3n+1) {
+    clear:left;
+}
+
+.fourCols > * {
+    display: block;
+    float: left;
+    margin-right: 5%;
+    width: 21.25%;
+}
+
+.fourCols > *:nth-child(4n) {
+    margin-right: 0;
+}
+
+.fourCols > *:nth-child(4n+1) {
+    clear:left;
+}
+*/
+
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1024px) {
+
+    h3 {
+        border-top-width: 6px;
+        font-size: 1.8em;
+        letter-spacing: -1px;
+    }
+
+    body > section > section {
+        padding-right: 15%;
+        padding-left: 15%;
+        width: 70%;
+    }
+
+    #sponsors table td,
+    #sponsors table.smallLogos td {
+        padding: 2em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    h3 {
+        border-top-width: 6px;
+        font-size: 1.6em;
+        letter-spacing: -1px;
+    }
+
+    body > section > section, #quickInfo > section {
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 10%;
+        padding-left: 10%;
+        width: 80%;
+    }
+
+    .fourCols > * {
+        width: 30%;
+    }
+
+    .fourCols > *:nth-child(4n) {
+        margin-right: 5%;
+    }
+
+    .fourCols > *:nth-child(4n+1) {
+        clear: none;
+    }
+
+    .fourCols > *:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .fourCols > *:nth-child(3n+1) {
+        clear:left;
+    }
+
+    #sponsors div a {
+        width: 44%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h2 {
+        border-bottom-width: 6px;
+        font-size: 4em;
+        letter-spacing: -5px;
+    }
+
+    h3 {
+        border-top-width: 6px;
+        font-size: 1.4em;
+        letter-spacing: -1px;
+    }
+
+    .threeCols > *,
+    .fourCols > * {
+        float: right;
+        margin-right: 0;
+        width: 47.5%;
+    }
+
+    .threeCols > *:nth-child(3n+1) {
+        clear: none;
+    }
+
+    .fourCols > *:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .fourCols > *:nth-child(3n+1) {
+        clear: none;
+    }
+
+    .threeCols > *:nth-child(odd),
+    .fourCols > *:nth-child(odd) {
+        clear: left;
+        float: left;
+    }
+
+    #quickInfo .signUp {
+        margin-left: -35px;
+    }
+
+    #quickInfo .signUp a {
+        font-size: 2em;
+        height: 70px;
+        letter-spacing: -2.5px;
+        line-height: 70px;
+        padding-left: 40px;
+    }
+
+    #quickInfo .signUp a:after {
+        border-width: 35px;
+        margin-top: -35px;
+    }
+
+    #quickInfo .signUp a:before {
+        border-width: 35px;
+        margin-top: -35px;
+    }
+
+    #sponsors table td,
+    #sponsors table.smallLogos td {
+        padding: 1em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    h2 {
+        font-size: 2.4em;
+        letter-spacing: -3px;
+    }
+
+    p {
+        line-height: 1.8em;
+    }
+
+    body > section > section, #quickInfo > section {
+        padding-right: 5%;
+        padding-left: 5%;
+        width: 90%;
+    }
+
+    .twoCols > *,
+    .threeCols > *,
+    .fourCols > * {
+        float: none;
+        width: 100%;
+    }
+
+    .twoCols > *:nth-child(odd),
+    .threeCols > *:nth-child(odd),
+    .fourCols > *:nth-child(odd) {
+        clear: none;
+        float: none;
+    }
+
+    #quickInfo > section > p:first-child {
+        font-size: 2em;
+        letter-spacing: -2px;
+        line-height: 0.8em;
+    }
+
+    #talks article header h3 {
+        text-align: left;
+    }
+
+    #talks article img {
+        float: right;
+        margin-bottom: 5%;
+        margin-left: 10%;
+        max-width: 45%;
+    }
+
+    #workshop .speaker h5 {
+        font-size: 1.8em;
+    }
+
+    #sponsors table td,
+    #sponsors table.smallLogos td {
+        padding: 0.4em;
+    }
+
+    #oldSites > section p {
+        font-size: 2em;
+        letter-spacing: -2px;
+    }
+
+    body > footer p {
+        line-height: 1em;
+    }
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
