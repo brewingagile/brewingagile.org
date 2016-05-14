@@ -445,6 +445,11 @@ body #workshops {
     width: 66.6%;
 }
 
+#speakers article section article section:last-child a {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
 #speakers article section article section:last-child p {
     font-size: 1rem;
 }
@@ -801,6 +806,10 @@ body > footer {
 }
 
 @media only screen and (max-width: 600px) {
+
+    h2 {
+        font-size: 3rem;
+    }
 
     h3 {
         font-size: 2rem;
