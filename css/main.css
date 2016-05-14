@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5 {
 h1 {
     font-size: 8rem;
     font-weight: 100;
-    letter-spacing: 2rem;
+    letter-spacing: 1;
     word-spacing: 4rem;
 }
 
@@ -283,6 +283,14 @@ body #workshops {
     color: #fff;
 }
 
+#head > article h1:before {
+    background: transparent url(../img/logo.svg) no-repeat scroll center top;
+    background-size: contain;
+    content: '';
+    display: block;
+    padding-top: 25vh;
+}
+
 #head footer {
     background: transparent url(../img/triangle.svg) repeat-x scroll center bottom;
     background-size: auto 100%;
@@ -391,6 +399,10 @@ body #workshops {
     padding-top: 5%;
 }
 
+#speakers > article > section section p {
+
+}
+
 #speakers > article > section:first-of-type {
     padding-top: 0;
 }
@@ -425,7 +437,10 @@ body #workshops {
     text-align: left;
 }
 
-#speakers article section article section:first-child p, #workshops article section article section:first-child p, #workshops article section article section:first-child h4 {
+#speakers article section article section:first-child p,
+#workshops article section article section:first-child p,
+#workshops article section article section:first-child h4,
+#workshops article section article section:first-child ul {
     margin-left: 33.3%;
     width: 66.6%;
 }
@@ -436,6 +451,16 @@ body #workshops {
 
 #speakers article section article section:last-child p:last-child, #workshops article section article section:last-child p:last-child {
     margin-bottom: 0;
+}
+
+#workshops article section article section:first-child ul {
+    padding-left: 0;
+}
+
+#workshops article section article section:first-child ul li {
+    list-style-position: inside;
+    margin-top: 1rem;
+    text-align: left;
 }
 
 #workshops > article {
@@ -672,8 +697,199 @@ body > footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #speakers article section article section, #workshops article section article section {
+        width: 50%;
+    }
+
+    #speakers article section article section:last-child, #workshops article section article section:last-child {
+        width: 40%;
+    }
+
+    #speakers article section article section:first-child p,
+    #workshops article section article section:first-child p,
+    #workshops article section article section:first-child h4,
+    #workshops article section article section:first-child ul {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    body > section {
+        padding: 5% 12.5%;
+        width: 75%;
+    }
+
+    #schedule {
+        padding: 5% 0;
+        width: 100%;
+    }
+
+    #schedule > article > section:first-of-type,
+    #schedule section.single {
+        border-right: none;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    #schedule section section,
+    #schedule section section:first-of-type {
+        border-top: 1px solid #222222;
+        float: none;
+        clear: both;
+        margin: 5% auto 0;
+        padding-top: 5%;
+        width: 66%
+    }
+
+    #schedule > article > section {
+        box-sizing: border-box;
+        float: left;
+        padding-left: 5%;
+        width: 25%;
+    }
+
+    #schedule p {
+        min-height: 0;
+    }
+
+    #schedule section.single {
+        border-top: 1px solid #222222;
+        margin-top: 5%;
+        padding-top: 5%;
+    }
+
+    #schedule table tr.title td:first-child,
+    #schedule table tr td:first-child,
+    #schedule table tr:first-child td,
+    #schedule table tr td:nth-child(2) {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    #schedule table tbody tr {
+        display: none;
+    }
+
+    #schedule table tbody tr td {
+        display: block;
+    }
+
+    #schedule table tbody tr.title {
+        clear: both;
+        display: block;
+    }
+
+    #schedule table tr.title td:first-child {
+        float: left;
+        padding: 0 0 5%;
+        width: 33.33%
+    }
+
+    #schedule table tr.title td:last-child {
+        float: right;
+        padding: 0 0 5%;
+        width: 66.66%
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    body > section,
+    body > header > article, body > section > article, body > footer > article {
+        width: 98%;
+        padding: 5% 1%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    h5 {
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem;
+    }
+
+    #speakers > article > section {
+        padding-top: 10%;
+    }
+
+    #speakers article section article section, #workshops article section article section {
+        float: none;
+        width: 100%;
+    }
+
+    #speakers article section article section header, #workshops article section article section header {
+        min-height: 9rem;
+        width: 65%;
+    }
+
+    #speakers article section article section:last-child, #workshops article section article section:last-child {
+        background: none !important;
+        float: none;
+        margin-left: 0;
+        width: 30%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+
+    #speakers img, #workshops img {
+        margin-top: 0;
+    }
+
+    #speakers article section article section:last-child header, #workshops article section article section:last-child header {
+        width: 100%;
+        text-align: center;
+    }
+
+    #speakers article section article section h5, #workshops article section article section h5 {
+        color: #222222;
+        margin-bottom: 0;
+    }
+
+    body #speakers > article > section > article > section:last-child p {
+        display: none;
+    }
+
+    #workshops article {
+        position: relative;
+    }
+
+    #workshops article section article section h5 {
+        color: #ffffff;
+    }
+
+    #schedule section section,
+    #schedule section section:first-of-type {
+        width: 90%
+    }
 }
 
 @media print,
