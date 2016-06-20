@@ -515,26 +515,29 @@ body #workshops {
 }
 
 #schedule > article > section {
+    border-left: 1px solid #000;
     box-sizing: border-box;
     float: left;
-    padding-left: 5%;
-    width: 25%;
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 20%;
 }
 
 #schedule > article > section:first-of-type {
-    border-right: 1px solid #000;
-    padding-left: 0;
-    padding-right: 5%;
-    width: 75%;
+    border-left: none;
 }
 
-#schedule section section {
+#schedule > article > section.wide {
+    width: 60%;
+}
+
+#schedule > article > section.wide section {
     float: left;
     margin-left: 7.5%;
     width: 28%;
 }
 
-#schedule section section:first-of-type {
+#schedule > article > section.wide section:first-of-type {
     margin-left: 0;
 }
 
@@ -719,7 +722,85 @@ body > footer {
    Modify as content requires.
    ========================================================================== */
 
+@media only screen and (max-width: 1400px) {
+
+    #schedule, #schedule > article {
+        padding-right: 1%;
+        padding-left: 1%;
+        width: 98%;
+    }
+}
+
 @media only screen and (max-width: 1280px) {
+
+    #schedule > article > section {
+        border-left: none;
+        clear: left;
+        float: none;
+        margin-top: 5%;
+        padding-top: 5%;
+        width: 50%;
+    }
+
+    #schedule > article > section:first-of-type {
+        border-top: none;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    #schedule > article > section:last-of-type {
+        margin-top: 0;
+    }
+
+    #schedule > article > section.single {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #schedule > article > section.wide {
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+
+    #schedule p {
+        min-height: 3rem;
+    }
+
+    #schedule .workshop table tr.title td:first-child,
+    #schedule .workshop table tr td:first-child,
+    #schedule .workshop table tr:first-child td,
+    #schedule .workshop table tr td:nth-child(2) {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    #schedule .workshop table tbody tr {
+        display: none;
+    }
+
+    #schedule .workshop table tbody tr td {
+        display: block;
+    }
+
+    #schedule .workshop table tbody tr.title {
+        clear: both;
+        display: block;
+    }
+
+    #schedule .workshop table tr.title td:first-child {
+        float: left;
+        padding: 0 0 2%;
+        width: 33.33%
+    }
+
+    #schedule .workshop table tr.title td:last-child {
+        float: right;
+        padding: 0 0 2%;
+        width: 66.66%
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -739,11 +820,6 @@ body > footer {
         margin-left: 0;
         width: 100%;
     }
-
-    #workshops article section article section:first-child header {
-        width: 60%;
-    }
-
 }
 
 @media only screen and (max-width: 800px) {
@@ -766,8 +842,9 @@ body > footer {
         width: 100%;
     }
 
-    #schedule section section,
-    #schedule section section:first-of-type {
+    #schedule > article > section.wide section,
+    #schedule section section:first-of-type,
+    #schedule > article > section.wide section:first-of-type {
         border-top: 1px solid #222222;
         float: none;
         clear: both;
@@ -911,6 +988,10 @@ body > footer {
 
     #workshops article {
         position: relative;
+    }
+
+    #workshops article section article section:first-child header {
+        width: 60%;
     }
 
     #workshops article section article section h5 {
