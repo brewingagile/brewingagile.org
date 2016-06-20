@@ -439,7 +439,7 @@ body #workshops {
 
 #speakers article section article section:first-child p,
 #workshops article section article section:first-child p,
-#workshops article section article section:first-child h4,
+#workshops article section article section:first-child header,
 #workshops article section article section:first-child ul {
     margin-left: 33.3%;
     width: 66.6%;
@@ -458,12 +458,29 @@ body #workshops {
     margin-bottom: 0;
 }
 
+#workshops article section article section:first-child {
+    padding-top: 2rem;
+}
+
+#workshops article section article {
+    border-top: 1px solid #ffffff;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+#workshops article section article section:first-child h4 {
+    display: inline;
+    background-color: #000000;
+}
+
 #workshops article section article section:first-child ul {
-    padding-left: 0;
+    display: block;
+    box-sizing: border-box;
+    padding-left: 2rem;
 }
 
 #workshops article section article section:first-child ul li {
-    list-style-position: inside;
+    list-style-position: outside;
     margin-top: 1rem;
     text-align: left;
 }
@@ -717,11 +734,16 @@ body > footer {
 
     #speakers article section article section:first-child p,
     #workshops article section article section:first-child p,
-    #workshops article section article section:first-child h4,
+    #workshops article section article section:first-child header,
     #workshops article section article section:first-child ul {
         margin-left: 0;
         width: 100%;
     }
+
+    #workshops article section article section:first-child header {
+        width: 60%;
+    }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -864,7 +886,7 @@ body > footer {
         margin-left: 0;
         width: 30%;
         position: absolute;
-        top: 0;
+        top: 2rem;
         right: 0;
     }
 
