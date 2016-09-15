@@ -621,8 +621,9 @@ body #workshops {
     width: 90%;
 }
 
-#sponsors > section,
-#organisers > section {
+#sponsors header h2,
+#organisers header h2 {
+    margin-bottom: 0;
 }
 
 body #sponsors section p,
@@ -635,13 +636,19 @@ body #organisers section p {
     padding-top: 3%;
 }
 
+#sponsors .logos article,
+#organisers .logos article {
+    vertical-align: middle;
+}
+
 #sponsors .logos article a,
 #organisers .logos article a {
     border-bottom: none !important;
-    display: block;
-    position: relative;
-    top: 50%;
-    transform: translate(0,-50%);
+    display: inline-block;
+    width: 20%;
+    margin: 0 1.5%;
+    min-width: 125px;
+    vertical-align: middle;
 }
 
 #sponsors .logos article a img,
@@ -651,6 +658,8 @@ body #organisers section p {
     padding: 15%;
     max-height: 10em;
     max-width: 70%;
+    position: relative;
+    top: 50%;
 }
 
 #oldSites {
@@ -708,13 +717,13 @@ body > footer {
 }
 
 .twoCols > * {
-    display: block;
-    float: right;
+    display: inline-block;
     width: 47.5%;
 }
 
-.twoCols > *:nth-child(odd) {
-    float: left;
+.twoCols > *:nth-child(odd):before {
+    display: block;
+    content: '';
 }
 
 .threeCols > * {
