@@ -1,405 +1,678 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="Brewing Agile">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="Brewing Agile">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-        <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=NmYvnjrWEn">
-        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=NmYvnjrWEn">
-        <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=NmYvnjrWEn">
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=NmYvnjrWEn">
-        <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=NmYvnjrWEn">
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=NmYvnjrWEn">
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=NmYvnjrWEn">
-        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=NmYvnjrWEn">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=NmYvnjrWEn">
-        <link rel="icon" type="image/png" href="/favicon-32x32.png?v=NmYvnjrWEn" sizes="32x32">
-        <link rel="icon" type="image/png" href="/favicon-194x194.png?v=NmYvnjrWEn" sizes="194x194">
-        <link rel="icon" type="image/png" href="/favicon-96x96.png?v=NmYvnjrWEn" sizes="96x96">
-        <link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=NmYvnjrWEn" sizes="192x192">
-        <link rel="icon" type="image/png" href="/favicon-16x16.png?v=NmYvnjrWEn" sizes="16x16">
-        <link rel="manifest" href="/manifest.json?v=NmYvnjrWEn">
-        <link rel="shortcut icon" href="/favicon.ico?v=NmYvnjrWEn">
-        <meta name="msapplication-TileColor" content="#2d89ef">
-        <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=NmYvnjrWEn">
-        <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=NmYvnjrWEn">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=NmYvnjrWEn">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=NmYvnjrWEn">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=NmYvnjrWEn">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=NmYvnjrWEn">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=NmYvnjrWEn">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=NmYvnjrWEn">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=NmYvnjrWEn">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=NmYvnjrWEn">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png?v=NmYvnjrWEn" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-194x194.png?v=NmYvnjrWEn" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png?v=NmYvnjrWEn" sizes="96x96">
+  <link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=NmYvnjrWEn" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png?v=NmYvnjrWEn" sizes="16x16">
+  <link rel="manifest" href="/manifest.json?v=NmYvnjrWEn">
+  <link rel="shortcut icon" href="/favicon.ico?v=NmYvnjrWEn">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=NmYvnjrWEn">
+  <meta name="theme-color" content="#ffffff">
 
-        <link href='https://fonts.googleapis.com/css?family=Quicksand:400,300' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/datParallax-1.0.0.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/datParallax-1.0.0.css">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
 
-        <header id="head">
-            <article data-dat-parallax="">
-                <header><h1>BA16</h1></header>
-                <h4>A conference to spread and debate the practice of agile.</h4>
-                <footer></footer>
-            </article>
-        </header>
+<header id="head">
+  <article data-dat-parallax="">
+    <header><h1>BA16</h1></header>
+    <h4>A conference to spread and debate the practice of agile.</h4>
+    <footer></footer>
+  </article>
+</header>
 
-        <section id="intro">
-            <article>
-                <header><h2>4-5 Nov: 1200 SEK</h2></header>
-                <section>
-                    <header><h3>at <a href="http://www.skansenkronan.se/" title="Check out their site">Skansen Kronan</a> in <a href="https://www.google.se/maps/place/Skansen+Kronan/@57.6959404,11.9532752,17z/data=!3m1!4b1!4m2!3m1!1s0x464ff36a573ea7f3:0x3b62003cf65696fd?hl=en">Gothenburg</a></h3></header>
+<section id="intro">
+  <article>
+    <header><h2>4-5 Nov: 1200 SEK</h2></header>
+    <section>
+      <header><h3>at <a href="http://www.skansenkronan.se/" title="Check out their site">Skansen Kronan</a> in <a
+        href="https://www.google.se/maps/place/Skansen+Kronan/@57.6959404,11.9532752,17z/data=!3m1!4b1!4m2!3m1!1s0x464ff36a573ea7f3:0x3b62003cf65696fd?hl=en">Gothenburg</a></h3></header>
 
-                    <nav class="contactUs clearfix"><a class="facebook" href="https://www.facebook.com/BrewingAgile" title="Facebook">Facebook</a>
-                        <a class="twitter" href="https://twitter.com/BrewingAgile" title="Twitter">Twitter</a></nav>
-                </section>
-            </article>
+      <nav class="contactUs clearfix"><a class="facebook" href="https://www.facebook.com/BrewingAgile" title="Facebook">Facebook</a>
+        <a class="twitter" href="https://twitter.com/BrewingAgile" title="Twitter">Twitter</a></nav>
+    </section>
+  </article>
+</section>
+
+<section id="signUp">
+  <article data-dat-parallax="">
+    <p><a href="https://backoffice.brewingagile.org/form.html">Sign up</a></p>
+  </article>
+</section>
+
+<section id="whoIsThisFor">
+  <article>
+    <header>
+      <h3>Who is this conference for?</h3>
+    </header>
+    <section class="clearfix">
+      <header>
+        <h4>We hope that everyone, regardless of background, will be able to take something with them from the conference.</h4>
+      </header>
+      <p></p>
+
+      <p>This will of course most easily relate to the digital industry, but we hope to broadened the focus to other
+        areas. We want our speakers and attendees to share tools across our fields, both for improving your own flow
+        but also for understanding other area of expertise in the product process.</p>
+
+      <p>We want to invite not only developers but, project managers, marketing professionals, sales people,
+        and many others. Anyone with passion about their products!</p>
+
+      <h5>Brewing Agile focuses on agile thinking and process, rather than the technical.</h5>
+    </section>
+  </article>
+</section>
+
+<section id="speakers">
+  <article class="clearfix">
+    <header><h2>Speakers</h2></header>
+
+    <section class="vasco">
+      <article class="clearfix">
+        <section>
+          <header><h3>NoEstimates: How you can predict the release date of your project without estimating</h3></header>
+          <p>Often we hear that estimating a project is a must. "We can't make decisions without them" we hear often. In this session I'll present examples of how we can predict a release date of a project without any estimates, only
+            relying on easily available data.</p>
+          <p>I'll show how we can follow progress on a project at all times without having to rely on guesswork, and we will review how large, very large and small projects have already benefited from this in the past. At the end of the
+            session you will be ready to start your own #NoEstimates journey.</p>
         </section>
-
-        <section id="signUp">
-            <article data-dat-parallax="">
-                <p><a href="https://backoffice.brewingagile.org/form.html">Sign up</a></p>
-            </article>
+        <section>
+          <img src="img/speakers/vasco_duarte.jpg" alt="Vasco Duarte"/>
+          <header><h5>Vasco Duarte</h5></header>
+          <p>I want to transform product development organizations into product business organizations. I do that by focusing the work of the product development teams on the end-to-end life-cycle of their products. From Concept to Cash and
+            Back!</p>
+          <p>Currently a Managing Partner at Oikosofy. Product Manager, Scrum Master, Project Manager, Director, Agile Coach are only some of the roles that I've taken in software development organizations. Having worked in the software
+            industry since 1997, and Agile practitioner since 2004. I've worked in small, medium and large software organizations as an Agile Coach or leader in agile adoption at those organizations. I was one of the leaders and catalysts
+            of Agile methods and Agile culture adoption at Avira, Nokia and F-Secure.</p>
+          <p>You can read more from me at <a href="http://SoftwareDevelopmentToday.com">my blog</a>. You can join me on <a href="https://twitter.com/duarte_vasco">Twitter</a></p>
         </section>
+      </article>
+    </section>
 
-        <section id="whoIsThisFor">
-            <article>
-                <header>
-                    <h3>Who is this conference for?</h3>
-                </header>
-                <section class="clearfix fourCols">
-                    <header>
-                        <h4>We hope that everyone, regardless of background, will be able to take something with them from the conference.</h4>
-                    </header>
-                    <p></p>
-
-                    <p>This will of course most easily relate to the digital industry, but we hope to broadened the focus to other
-                        areas. We want our speakers and attendees to share tools across our fields, both for improving your own flow
-                        but also for understanding other area of expertise in the product process.</p>
-
-                    <p>We want to invite not only developers but, project managers, marketing professionals, sales people,
-                        and many others. Anyone with passion about their products!</p>
-
-                    <h5>Brewing Agile focuses on agile thinking and process, rather than the technical.</h5>
-                </section>
-            </article>
+    <section class="luis">
+      <article class="clearfix">
+        <section>
+          <header><h3>How to enable agility in the whole organisation creating high performing companies</h3></header>
+          <p>Our highest priority is to satisfy a customer through early and continuous delivery of valuable software. Continuous attention to technical excellence and good design enhances agility. Agile processes harness change for the
+            customer and deliver the competitive advantage. Agile processes promote sustainable development.</p>
+          <p>One of several reasons why agile techniques are so effective is that they reduce the feedback cycle between the generation of an idea and the realisation of that idea. This not only minimises the risk of misunderstanding, it
+            also reduces the cost of addressing any mistakes.</p>
+          <p>But most of the times we fail to take Agile further than team level. Based on my experience it is very hard to actually transform the companies and adopt Agile mindset and create high performing organisations.</p>
+          <p>In this talk I will present a bunch of ideas that you can apply directly in your daily work that will allow you to bring your company to the next level of agility creating high performing organisation.</p>
         </section>
-
-        <section id="speakers">
-            <article class="clearfix">
-                <header><h2>Speakers</h2></header>
-
-                <section class="vasco">
-                    <article class="clearfix">
-                        <section>
-                            <header><h3>NoEstimates: How you can predict the release date of your project without estimating</h3></header>
-                            <p>Often we hear that estimating a project is a must. "We can't make decisions without them" we hear often. In this session I'll present examples of how we can predict a release date of a project without any estimates, only relying on easily available data.</p>
-                            <p>I'll show how we can follow progress on a project at all times without having to rely on guesswork, and we will review how large, very large and small projects have already benefited from this in the past. At the end of the session you will be ready to start your own #NoEstimates journey.</p>
-                        </section>
-                        <section>
-                            <img src="img/speakers/vasco_duarte.jpg" alt="Vasco Duarte"/>
-                            <header><h5>Vasco Duarte</h5></header>
-                            <p>I want to transform product development organizations into product business organizations. I do that by focusing the work of the product development teams on the end-to-end life-cycle of their products. From Concept to Cash and Back!</p>
-                            <p>Currently a Managing Partner at Oikosofy. Product Manager, Scrum Master, Project Manager, Director, Agile Coach are only some of the roles that I've taken in software development organizations. Having worked in the software industry since 1997, and Agile practitioner since 2004. I've worked in small, medium and large software organizations as an Agile Coach or leader in agile adoption at those organizations. I was one of the leaders and catalysts of Agile methods and Agile culture adoption at Avira, Nokia and F-Secure.</p>
-                            <p>You can read more from me at <a href="http://SoftwareDevelopmentToday.com">my blog</a>. You can join me on <a href="https://twitter.com/duarte_vasco">Twitter</a></p>
-                        </section>
-                    </article>
-                </section>
-
-                <section class="luis">
-                    <article class="clearfix">
-                        <section>
-                            <header><h3>How to enable agility in the whole organisation creating high performing companies</h3></header>
-                            <p>Our highest priority is to satisfy a customer through early and continuous delivery of valuable software. Continuous attention to technical excellence and good design enhances agility. Agile processes harness change for the customer and deliver the competitive advantage. Agile processes promote sustainable development.</p>
-                            <p>One of several reasons why agile techniques are so effective is that they reduce the feedback cycle between the generation of an idea and the realisation of that idea. This not only minimises the risk of misunderstanding, it also reduces the cost of addressing any mistakes.</p>
-                            <p>But most of the times we fail to take Agile further than team level. Based on my experience it is very hard to actually transform the companies and adopt Agile mindset and create high performing organisations.</p>
-                            <p>In this talk I will present a bunch of ideas that you can apply directly in your daily work that will allow you to bring your company to the next level of agility creating high performing organisation.</p>
-                        </section>
-                        <section>
-                            <img src="img/speakers/luis_goncalves.jpg" alt="Luis Goncalves"/>
-                            <header><h5>Luis Goncalves</h5></header>
-                            <p>My name is Luis Gonçalves and I am a co-founder at Oikosofy, Agile Coach at HolidayCheck, author, speaker and blogger.</p>
-                            <p>I have been working in the software industry since 2003, as an agile practitioner since 2007. I have a lot of experience in integrating sequential projects phases like localization into an Agile Framework and pioneering Agile adoption at different companies and different contexts.</p>
-                            <p>I am a co-author of a book “Getting Value out of Agile Retrospectives”. At the beginning of 2016 I will publish my new book “How to get rid of Performance Appraisals”. I am a co-founder of a MeetUp group in Munich, Germany called High Performing Teams.</p>
-                            <p>I like to write and share ideas with the world and this has made me a passionate blogger. I get my inspiration from my professional life and from all the books that I read every week. Please follow <a href="http://lmsgoncalves.com/">my blog</a> or join me on <a href="https://twitter.com/lgoncalves1979">Twitter</a>.</p>
-                        </section>
-                    </article>
-                </section>
-
-                <section class="marc">
-                    <article class="clearfix">
-                        <section>
-                            <header><h3>The systemic Scrum Master</h3></header>
-                            <p>Most Scrum Masters are quite fluent in "Scrum", but they lack experience in System and Complexity Thinking. Most projects don't fail because of the wrong tools, but because of people and a missing understanding about the system that we are all part of. I'll share stories about real world teams and their struggels with the system around them and talk about how a more systemic approach helped them. At the end of the talk you'll have a better understanding of system and complexity thinking and the needed mindset, as well as some tools that will help you on your systemic journey.</p>
-                            <p>IMHO the talk will be valuable for Scrum Masters, Product Owners and Agile Managers, who have a feeling that they got stuck and are in need for something different, the Scrum framework cannot provide.</p>
-                        </section>
-                        <section>
-                            <img src="img/speakers/marc_loeffler.jpg" alt="Marc Loeffler"/>
-                            <header><h5>Marc Loeffler</h5></header>
-                            <p>Marc Loeffler is an agile coach, author and trainer. Before getting in touch with agile methods and principles in 2006, he was working as a traditional project manager for companies like the Volkswagen AG or the Siemens AG. His passion is to help teams implementing agile frameworks like Scrum and XP and to transform our world of work.</p>
-                            <p>Marc has a passion for helping teams that are struggling with agile transitions and overcoming dysfunctional behaviour. He loves to generate new insights by approaching common problems from the other side and trying to make deliberately havoc of the process.</p>
-                        </section>
-                    </article>
-                </section>
-
-            </article>
+        <section>
+          <img src="img/speakers/luis_goncalves.jpg" alt="Luis Goncalves"/>
+          <header><h5>Luis Goncalves</h5></header>
+          <p>My name is Luis Gonçalves and I am a co-founder at Oikosofy, Agile Coach at HolidayCheck, author, speaker and blogger.</p>
+          <p>I have been working in the software industry since 2003, as an agile practitioner since 2007. I have a lot of experience in integrating sequential projects phases like localization into an Agile Framework and pioneering Agile
+            adoption at different companies and different contexts.</p>
+          <p>I am a co-author of a book “Getting Value out of Agile Retrospectives”. At the beginning of 2016 I will publish my new book “How to get rid of Performance Appraisals”. I am a co-founder of a MeetUp group in Munich, Germany
+            called High Performing Teams.</p>
+          <p>I like to write and share ideas with the world and this has made me a passionate blogger. I get my inspiration from my professional life and from all the books that I read every week. Please follow <a
+            href="http://lmsgoncalves.com/">my blog</a> or join me on <a href="https://twitter.com/lgoncalves1979">Twitter</a>.</p>
         </section>
+      </article>
+    </section>
 
-        <section id="workshops">
-            <article>
-                <header><h2>Workshops</h2></header>
-                <p>In addition to our usual conference we offer optional add-ons of intimate and interactive workshops with our speakers Vasco Duarte and Luis Goncalves.</p>
-                <section>
-                    <article class="clearfix">
-                        <section>
-                            <header>
-                                <h3>Thursday 3rd November, All day</h3>
-                                <h4>#NoEstimates - How to improve software development predictability and profitability by focusing on what matters</h4>
-                            </header>
-                            <p>#NoEstimates is an approach to software development that arose from the observation that large amounts of time were spent over the years in estimating and improving those estimates, but we see no value from that investment. Indeed, according to scholars Conte, Dunmore and Shens a good estimate is one that is within 25% of the actual cost, 75% of the time.</p>
-                            <p>This is the same as saying: give us your money, we promise not lose more than 25% of it (with a 25% probability that we will lose a lot more). We don’t find that acceptable or productive for our industry. There must be better ways to manage software and product development.</p>
-                            <p>In this workshop we will review and analyze why we do estimates and how we can improve software and product development while reducing the time and money invested in estimating.</p>
-                            <p><strong>Workshop learning goals:</strong></p>
-                            <ul>
-                                <li>Decision making frameworks for projects that do not require estimates</li>
-                                <li>Investment models for software projects that do not require estimates</li>
-                                <li>Project management (risk management, scope management, progress reporting, etc.) approaches that do not require estimates</li>
-                                <li>The tools and arguments you need to prove the value of #NoEstimates to your boss</li>
-                                <li>How to get started applying #NoEstimates right away</li>
-                                <li>Where is #NoEstimates going and what are the likely changes to software development that will come next</li>
-                            </ul>
-                        </section>
-                        <section>
-                            <img src="img/speakers/vasco_duarte.jpg" alt="Vasco Duarte"/>
-                            <header><h5>Vasco Duarte</h5></header>
-                        </section>
-                    </article>
-
-                    <article class="clearfix">
-                        <section>
-                            <header>
-                                <h3>Friday 4th November, Morning</h3>
-                                <h4>Agile Retrospectives – Much more than “What went well, what went wrong, what should be improved”</h4>
-                            </header>
-                            <p>The definition of Scrum Guide is: The Sprint Retrospective occurs after the Sprint Review and prior to the next Sprint Planning. The purpose of the Sprint Retrospective is to: Inspect how the last Sprint went with regards to people, relationships, process, and tools; Identify and order the major items that went well and potential improvements; and, Create a plan for implementing improvements to the way the Scrum Team does its work.</p>
-                            <p>A Retrospective is much more than that. For me a retrospective is a place to raise empathy, social and emotional intelligence within the team. In this talk I will explain how Agile Retrospectives can be used as a team building activity and to create long lasting relationships between team members.</p>
-                            <p>I see most of the people running agile retrospectives in a way that does not allow learning. They run it with a bunch of activities and games but not really as a tool to enable sustainable learning. During my talk I will provide tools and tips that will foster sustainable learning in order for the team to continuously improve.</p>
-                            <p>Scrum guide definition is very focused on team level, but why not to spread the great benefits of Agile Retrospectives to the rest of the organization. If you attend my talk you will get access to a simple framework that will allow you to implement Agile Retrospectives into the organization level.</p>
-                        </section>
-                        <section>
-                            <img src="img/speakers/luis_goncalves.jpg" alt="Luis Goncalves"/>
-                            <header><h5>Luis Goncalves</h5></header>
-                        </section>
-                    </article>
-                </section>
-            </article>
+    <section class="marc">
+      <article class="clearfix">
+        <section>
+          <header><h3>The systemic Scrum Master</h3></header>
+          <p>Most Scrum Masters are quite fluent in "Scrum", but they lack experience in System and Complexity Thinking. Most projects don't fail because of the wrong tools, but because of people and a missing understanding about the system
+            that we are all part of. I'll share stories about real world teams and their struggels with the system around them and talk about how a more systemic approach helped them. At the end of the talk you'll have a better
+            understanding of system and complexity thinking and the needed mindset, as well as some tools that will help you on your systemic journey.</p>
+          <p>IMHO the talk will be valuable for Scrum Masters, Product Owners and Agile Managers, who have a feeling that they got stuck and are in need for something different, the Scrum framework cannot provide.</p>
         </section>
-
-        <section id="schedule">
-            <article>
-                <header><h2>Schedule</h2></header>
-
-                <section class="single clearfix">
-                    <header><h3>Thursday</h3><h4>November 3rd</h4></header>
-                    <section class="workshop">
-                        <header><h5>~All day~</h5></header>
-                        <p>Workshop with Vasco Duarte. Special tickets are required (see above).</p>
-                        <table>
-                            <tbody>
-                            <tr class="title"><td>09:00</td><td rowspan="7">Workshop: "#No&shy;Estimates" with Vasco Duarte</td></tr>
-                            <tr><td>09:30</td></tr>
-                            <tr><td>10:00</td></tr>
-                            <tr><td>10:30</td></tr>
-                            <tr><td>11:00</td></tr>
-                            <tr><td>11:30</td></tr>
-                            <tr><td>12:00</td></tr>
-                            <tr class="title"><td>12:30</td><td rowspan="2">Lunch</td></tr>
-                            <tr><td>13:00</td></tr>
-                            <tr class="title"><td>13:30</td><td rowspan="7">Workshop: "#No&shy;Estimates" with Vasco Duarte</td></tr>
-                            <tr><td>14:00</td></tr>
-                            <tr><td>14:30</td></tr>
-                            <tr><td>15:00</td></tr>
-                            <tr><td>15:30</td></tr>
-                            <tr><td>16:00</td></tr>
-                            <tr><td>16:30</td></tr>
-                            <tr class="title"><td>17:00</td><td>Finished</td></tr>
-                            </tbody>
-                        </table>
-                    </section>
-                </section>
-
-                <section class="wide clearfix">
-                    <header><h3>Friday</h3><h4>November 4th</h4></header>
-
-                    <section class="workshop">
-                        <header><h5>~Morning~</h5></header>
-                        <p>Workshop with Luis Goncalves. Special tickets are required (see above).</p>
-                        <table>
-                            <tbody>
-                                <tr class="title"><td>08:30</td><td rowspan="2">Workshop registration</td></tr>
-                                <tr><td>08:15</td></tr>
-                                <tr class="title"><td>09:00</td><td rowspan="12">Workshop: "Agile Retro&shy;spectives" with Luiz Goncalves</td></tr>
-                                <tr><td>09:15</td></tr>
-                                <tr><td>09:30</td></tr>
-                                <tr><td>09:45</td></tr>
-                                <tr><td>10:00</td></tr>
-                                <tr><td>10:15</td></tr>
-                                <tr><td>10:30</td></tr>
-                                <tr><td>10:45</td></tr>
-                                <tr><td>11:00</td></tr>
-                                <tr><td>11:15</td></tr>
-                                <tr><td>11:30</td></tr>
-                                <tr><td>11:45</td></tr>
-                                <tr class="title"><td>12:00</td><td rowspan="4">Lunch</td></tr>
-                                <tr><td>12:15</td></tr>
-                                <tr><td>12:30</td></tr>
-                                <tr><td>12:45</td></tr>
-                            </tbody>
-                        </table>
-                    </section>
-
-                    <section>
-                        <header><h5>~Afternoon~</h5></header>
-                        <p>Traditional talks by people in the agile community.</p>
-                        <table>
-                            <tbody>
-                                <tr class="title"><td>13:00</td><td rowspan="2">Conference registration</td></tr>
-                                <tr><td>13:15</td></tr>
-                                <tr class="title"><td>13:30</td><td>Welcome</td></tr>
-                                <tr class="title"><td>13:45</td><td rowspan="4">Speaker 1</td></tr>
-                                <tr><td>14:00</td></tr>
-                                <tr><td>14:15</td></tr>
-                                <tr><td>14:30</td></tr>
-                                <tr class="title"><td>14:45</td><td>Break</td></tr>
-                                <tr class="title"><td>15:00</td><td rowspan="3">Speaker 2</td></tr>
-                                <tr><td>15:15</td></tr>
-                                <tr><td>15:30</td></tr>
-                                <tr class="title"><td>15:45</td><td rowspan="2">Break with fika</td></tr>
-                                <tr><td>16:00</td></tr>
-                                <tr class="title"><td>16:15</td><td rowspan="3">Speaker 3</td></tr>
-                                <tr><td>16:30</td></tr>
-                                <tr><td>16:45</td></tr>
-                                <tr class="title"><td>17:00</td><td>Sponsors</td></tr>
-                                <tr class="title"><td>17:15</td><td>Break</td></tr>
-                                <tr class="title"><td>17:30</td><td rowspan="2">Speaker 4</td></tr>
-                                <tr><td>17:45</td></tr>
-                                <tr class="title"><td>18:00</td><td rowspan="2">Speaker 5</td></tr>
-                                <tr><td>18:15</td></tr>
-                                <tr class="title"><td>18:30</td><td>Closing</td></tr>
-                            </tbody>
-                        </table>
-                    </section>
-
-                    <section>
-                        <header><h5>~Evening~</h5></header>
-                        <p>Dinner and networking.</p>
-                        <table>
-                            <tbody>
-                                <tr class="title"><td>18:30</td><td rowspan="22">Evening event</td></tr>
-                                <tr><td>18:45</td></tr>
-                                <tr><td>19:00</td></tr>
-                                <tr><td>19:15</td></tr>
-                                <tr><td>19:30</td></tr>
-                                <tr><td>19:45</td></tr>
-                                <tr><td>20:00</td></tr>
-                                <tr><td>20:15</td></tr>
-                                <tr><td>20:30</td></tr>
-                                <tr><td>20:45</td></tr>
-                                <tr><td>21:00</td></tr>
-                                <tr><td>21:15</td></tr>
-                                <tr><td>21:30</td></tr>
-                                <tr><td>21:45</td></tr>
-                                <tr><td>22:00</td></tr>
-                                <tr><td>22:15</td></tr>
-                                <tr><td>22:30</td></tr>
-                                <tr><td>22:45</td></tr>
-                                <tr><td>23:00</td></tr>
-                                <tr><td>23:15</td></tr>
-                                <tr><td>23:30</td></tr>
-                                <tr><td>23:45</td></tr>
-                                <tr class="title"><td>24:00</td><td>Venue closes</td></tr>
-                            </tbody>
-                        </table>
-                    </section>
-                </section>
-
-                <section class="single clearfix">
-                    <header><h3>Saturday</h3><h4>November 5th</h4></header>
-
-                    <section>
-                        <header><h5>~Afternoon~</h5></header>
-                        <p>Organizing teams with series of discussions. Anyone can propose a workshop, and the participants will chose which ones we run.</p>
-                        <table>
-                            <tbody>
-                                <tr class="title"><td>11:00</td><td rowspan="4">Brunch</td></tr>
-                                <tr><td>11:15</td></tr>
-                                <tr><td>11:30</td></tr>
-                                <tr><td>11:45</td></tr>
-                                <tr class="title"><td>12:00</td><td rowspan="16">Discussion groups</td></tr>
-                                <tr><td>12:15</td></tr>
-                                <tr><td>12:30</td></tr>
-                                <tr><td>12:45</td></tr>
-                                <tr><td>13:00</td></tr>
-                                <tr><td>13:15</td></tr>
-                                <tr><td>13:30</td></tr>
-                                <tr><td>13:45</td></tr>
-                                <tr><td>14:00</td></tr>
-                                <tr><td>14:15</td></tr>
-                                <tr><td>14:30</td></tr>
-                                <tr><td>14:45</td></tr>
-                                <tr><td>15:00</td></tr>
-                                <tr><td>15:15</td></tr>
-                                <tr><td>15:30</td></tr>
-                                <tr><td>15:45</td></tr>
-                                <tr class="title"><td>16:00</td><td>Le fin</td></tr>
-                            </tbody>
-                        </table>
-                    </section>
-                </section>
-
-            </article>
+        <section>
+          <img src="img/speakers/marc_loeffler.jpg" alt="Marc Loeffler"/>
+          <header><h5>Marc Loeffler</h5></header>
+          <p>Marc Loeffler is an agile coach, author and trainer. Before getting in touch with agile methods and principles in 2006, he was working as a traditional project manager for companies like the Volkswagen AG or the Siemens AG. His
+            passion is to help teams implementing agile frameworks like Scrum and XP and to transform our world of work.</p>
+          <p>Marc has a passion for helping teams that are struggling with agile transitions and overcoming dysfunctional behaviour. He loves to generate new insights by approaching common problems from the other side and trying to make
+            deliberately havoc of the process.</p>
         </section>
+      </article>
+    </section>
 
-        <section id="signUp">
-            <article data-dat-parallax="">
-                <p><a href="https://backoffice.brewingagile.org/form.html">Sign up</a></p>
-            </article>
+  </article>
+</section>
+
+<section id="workshops">
+  <article>
+    <header><h2>Workshops</h2></header>
+    <p>In addition to our usual conference we offer optional add-ons of intimate and interactive workshops with our speakers Vasco Duarte and Luis Goncalves.</p>
+    <section>
+      <article class="clearfix">
+        <section>
+          <header>
+            <h3>Thursday 3rd November, All day</h3>
+            <h4>#NoEstimates - How to improve software development predictability and profitability by focusing on what matters</h4>
+          </header>
+          <p>#NoEstimates is an approach to software development that arose from the observation that large amounts of time were spent over the years in estimating and improving those estimates, but we see no value from that investment.
+            Indeed, according to scholars Conte, Dunmore and Shens a good estimate is one that is within 25% of the actual cost, 75% of the time.</p>
+          <p>This is the same as saying: give us your money, we promise not lose more than 25% of it (with a 25% probability that we will lose a lot more). We don’t find that acceptable or productive for our industry. There must be better
+            ways to manage software and product development.</p>
+          <p>In this workshop we will review and analyze why we do estimates and how we can improve software and product development while reducing the time and money invested in estimating.</p>
+          <p><strong>Workshop learning goals:</strong></p>
+          <ul>
+            <li>Decision making frameworks for projects that do not require estimates</li>
+            <li>Investment models for software projects that do not require estimates</li>
+            <li>Project management (risk management, scope management, progress reporting, etc.) approaches that do not require estimates</li>
+            <li>The tools and arguments you need to prove the value of #NoEstimates to your boss</li>
+            <li>How to get started applying #NoEstimates right away</li>
+            <li>Where is #NoEstimates going and what are the likely changes to software development that will come next</li>
+          </ul>
         </section>
-
-        <section id="oldSites">
-            <article>
-                <header><h2>Previous years</h2></header>
-                    <p><a href="2015/index.html">2015</a> <a href="2014/index.html">2014</a> <a href="2013/index.html">2013</a> <a href="2012/index.html">2012</a></p>
-            </article>
+        <section>
+          <img src="img/speakers/vasco_duarte.jpg" alt="Vasco Duarte"/>
+          <header><h5>Vasco Duarte</h5></header>
         </section>
+      </article>
 
-        <footer>
-            <article>
-                <header>
-                    <h5>Brewing Agile is proudly presented by <a href="http://www.scrumbeers.com/">Scrum Beers of Gothenburg</a>.</h5>
-                </header>
-            </article>
-        </footer>
+      <article class="clearfix">
+        <section>
+          <header>
+            <h3>Friday 4th November, Morning</h3>
+            <h4>Agile Retrospectives – Much more than “What went well, what went wrong, what should be improved”</h4>
+          </header>
+          <p>The definition of Scrum Guide is: The Sprint Retrospective occurs after the Sprint Review and prior to the next Sprint Planning. The purpose of the Sprint Retrospective is to: Inspect how the last Sprint went with regards to
+            people, relationships, process, and tools; Identify and order the major items that went well and potential improvements; and, Create a plan for implementing improvements to the way the Scrum Team does its work.</p>
+          <p>A Retrospective is much more than that. For me a retrospective is a place to raise empathy, social and emotional intelligence within the team. In this talk I will explain how Agile Retrospectives can be used as a team building
+            activity and to create long lasting relationships between team members.</p>
+          <p>I see most of the people running agile retrospectives in a way that does not allow learning. They run it with a bunch of activities and games but not really as a tool to enable sustainable learning. During my talk I will
+            provide tools and tips that will foster sustainable learning in order for the team to continuously improve.</p>
+          <p>Scrum guide definition is very focused on team level, but why not to spread the great benefits of Agile Retrospectives to the rest of the organization. If you attend my talk you will get access to a simple framework that will
+            allow you to implement Agile Retrospectives into the organization level.</p>
+        </section>
+        <section>
+          <img src="img/speakers/luis_goncalves.jpg" alt="Luis Goncalves"/>
+          <header><h5>Luis Goncalves</h5></header>
+        </section>
+      </article>
+    </section>
+  </article>
+</section>
+
+<section id="schedule">
+  <article>
+    <header><h2>Schedule</h2></header>
+
+    <section class="single clearfix">
+      <header><h3>Thursday</h3><h4>November 3rd</h4></header>
+      <section class="workshop">
+        <header><h5>~All day~</h5></header>
+        <p>Workshop with Vasco Duarte. Special tickets are required (see above).</p>
+        <table>
+          <tbody>
+          <tr class="title">
+            <td>09:00</td>
+            <td rowspan="7">Workshop: "#No&shy;Estimates" with Vasco Duarte</td>
+          </tr>
+          <tr>
+            <td>09:30</td>
+          </tr>
+          <tr>
+            <td>10:00</td>
+          </tr>
+          <tr>
+            <td>10:30</td>
+          </tr>
+          <tr>
+            <td>11:00</td>
+          </tr>
+          <tr>
+            <td>11:30</td>
+          </tr>
+          <tr>
+            <td>12:00</td>
+          </tr>
+          <tr class="title">
+            <td>12:30</td>
+            <td rowspan="2">Lunch</td>
+          </tr>
+          <tr>
+            <td>13:00</td>
+          </tr>
+          <tr class="title">
+            <td>13:30</td>
+            <td rowspan="7">Workshop: "#No&shy;Estimates" with Vasco Duarte</td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+          </tr>
+          <tr>
+            <td>14:30</td>
+          </tr>
+          <tr>
+            <td>15:00</td>
+          </tr>
+          <tr>
+            <td>15:30</td>
+          </tr>
+          <tr>
+            <td>16:00</td>
+          </tr>
+          <tr>
+            <td>16:30</td>
+          </tr>
+          <tr class="title">
+            <td>17:00</td>
+            <td>Finished</td>
+          </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+    <section class="wide clearfix">
+      <header><h3>Friday</h3><h4>November 4th</h4></header>
+
+      <section class="workshop">
+        <header><h5>~Morning~</h5></header>
+        <p>Workshop with Luis Goncalves. Special tickets are required (see above).</p>
+        <table>
+          <tbody>
+          <tr class="title">
+            <td>08:30</td>
+            <td rowspan="2">Workshop registration</td>
+          </tr>
+          <tr>
+            <td>08:15</td>
+          </tr>
+          <tr class="title">
+            <td>09:00</td>
+            <td rowspan="12">Workshop: "Agile Retro&shy;spectives" with Luiz Goncalves</td>
+          </tr>
+          <tr>
+            <td>09:15</td>
+          </tr>
+          <tr>
+            <td>09:30</td>
+          </tr>
+          <tr>
+            <td>09:45</td>
+          </tr>
+          <tr>
+            <td>10:00</td>
+          </tr>
+          <tr>
+            <td>10:15</td>
+          </tr>
+          <tr>
+            <td>10:30</td>
+          </tr>
+          <tr>
+            <td>10:45</td>
+          </tr>
+          <tr>
+            <td>11:00</td>
+          </tr>
+          <tr>
+            <td>11:15</td>
+          </tr>
+          <tr>
+            <td>11:30</td>
+          </tr>
+          <tr>
+            <td>11:45</td>
+          </tr>
+          <tr class="title">
+            <td>12:00</td>
+            <td rowspan="4">Lunch</td>
+          </tr>
+          <tr>
+            <td>12:15</td>
+          </tr>
+          <tr>
+            <td>12:30</td>
+          </tr>
+          <tr>
+            <td>12:45</td>
+          </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <header><h5>~Afternoon~</h5></header>
+        <p>Traditional talks by people in the agile community.</p>
+        <table>
+          <tbody>
+          <tr class="title">
+            <td>13:00</td>
+            <td rowspan="2">Conference registration</td>
+          </tr>
+          <tr>
+            <td>13:15</td>
+          </tr>
+          <tr class="title">
+            <td>13:30</td>
+            <td>Welcome</td>
+          </tr>
+          <tr class="title">
+            <td>13:45</td>
+            <td rowspan="4">Speaker 1</td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+          </tr>
+          <tr>
+            <td>14:15</td>
+          </tr>
+          <tr>
+            <td>14:30</td>
+          </tr>
+          <tr class="title">
+            <td>14:45</td>
+            <td>Break</td>
+          </tr>
+          <tr class="title">
+            <td>15:00</td>
+            <td rowspan="3">Speaker 2</td>
+          </tr>
+          <tr>
+            <td>15:15</td>
+          </tr>
+          <tr>
+            <td>15:30</td>
+          </tr>
+          <tr class="title">
+            <td>15:45</td>
+            <td rowspan="2">Break with fika</td>
+          </tr>
+          <tr>
+            <td>16:00</td>
+          </tr>
+          <tr class="title">
+            <td>16:15</td>
+            <td rowspan="3">Speaker 3</td>
+          </tr>
+          <tr>
+            <td>16:30</td>
+          </tr>
+          <tr>
+            <td>16:45</td>
+          </tr>
+          <tr class="title">
+            <td>17:00</td>
+            <td>Sponsors</td>
+          </tr>
+          <tr class="title">
+            <td>17:15</td>
+            <td>Break</td>
+          </tr>
+          <tr class="title">
+            <td>17:30</td>
+            <td rowspan="2">Speaker 4</td>
+          </tr>
+          <tr>
+            <td>17:45</td>
+          </tr>
+          <tr class="title">
+            <td>18:00</td>
+            <td rowspan="2">Speaker 5</td>
+          </tr>
+          <tr>
+            <td>18:15</td>
+          </tr>
+          <tr class="title">
+            <td>18:30</td>
+            <td>Closing</td>
+          </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <header><h5>~Evening~</h5></header>
+        <p>Dinner and networking.</p>
+        <table>
+          <tbody>
+          <tr class="title">
+            <td>18:30</td>
+            <td rowspan="22">Evening event</td>
+          </tr>
+          <tr>
+            <td>18:45</td>
+          </tr>
+          <tr>
+            <td>19:00</td>
+          </tr>
+          <tr>
+            <td>19:15</td>
+          </tr>
+          <tr>
+            <td>19:30</td>
+          </tr>
+          <tr>
+            <td>19:45</td>
+          </tr>
+          <tr>
+            <td>20:00</td>
+          </tr>
+          <tr>
+            <td>20:15</td>
+          </tr>
+          <tr>
+            <td>20:30</td>
+          </tr>
+          <tr>
+            <td>20:45</td>
+          </tr>
+          <tr>
+            <td>21:00</td>
+          </tr>
+          <tr>
+            <td>21:15</td>
+          </tr>
+          <tr>
+            <td>21:30</td>
+          </tr>
+          <tr>
+            <td>21:45</td>
+          </tr>
+          <tr>
+            <td>22:00</td>
+          </tr>
+          <tr>
+            <td>22:15</td>
+          </tr>
+          <tr>
+            <td>22:30</td>
+          </tr>
+          <tr>
+            <td>22:45</td>
+          </tr>
+          <tr>
+            <td>23:00</td>
+          </tr>
+          <tr>
+            <td>23:15</td>
+          </tr>
+          <tr>
+            <td>23:30</td>
+          </tr>
+          <tr>
+            <td>23:45</td>
+          </tr>
+          <tr class="title">
+            <td>24:00</td>
+            <td>Venue closes</td>
+          </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+    <section class="single clearfix">
+      <header><h3>Saturday</h3><h4>November 5th</h4></header>
+
+      <section>
+        <header><h5>~Afternoon~</h5></header>
+        <p>Organizing teams with series of discussions. Anyone can propose a workshop, and the participants will chose which ones we run.</p>
+        <table>
+          <tbody>
+          <tr class="title">
+            <td>11:00</td>
+            <td rowspan="4">Brunch</td>
+          </tr>
+          <tr>
+            <td>11:15</td>
+          </tr>
+          <tr>
+            <td>11:30</td>
+          </tr>
+          <tr>
+            <td>11:45</td>
+          </tr>
+          <tr class="title">
+            <td>12:00</td>
+            <td rowspan="16">Discussion groups</td>
+          </tr>
+          <tr>
+            <td>12:15</td>
+          </tr>
+          <tr>
+            <td>12:30</td>
+          </tr>
+          <tr>
+            <td>12:45</td>
+          </tr>
+          <tr>
+            <td>13:00</td>
+          </tr>
+          <tr>
+            <td>13:15</td>
+          </tr>
+          <tr>
+            <td>13:30</td>
+          </tr>
+          <tr>
+            <td>13:45</td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+          </tr>
+          <tr>
+            <td>14:15</td>
+          </tr>
+          <tr>
+            <td>14:30</td>
+          </tr>
+          <tr>
+            <td>14:45</td>
+          </tr>
+          <tr>
+            <td>15:00</td>
+          </tr>
+          <tr>
+            <td>15:15</td>
+          </tr>
+          <tr>
+            <td>15:30</td>
+          </tr>
+          <tr>
+            <td>15:45</td>
+          </tr>
+          <tr class="title">
+            <td>16:00</td>
+            <td>Le fin</td>
+          </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+  </article>
+</section>
+
+<section id="sponsors">
+  <header><h2>Sponsors</h2></header>
+  <section class="logos">
+    <article class="fourCols clearfix">
+      <a href="http://www.etraveli.com/technology/"><img src="img/logos/etraveli.png" alt="Etraveli"/></a>
+    </article>
+    <p><strong>If you are interested in being a sponsor, mail: <a href="mailto:brewingagile@scrumbeers.com">brewingagile@scrumbeers.com</a></strong></p>
+  </section>
+</section>
+
+<section id="organisers">
+  <header><h2>Organizers</h2></header>
+  <section class="logos">
+    <article class="organizersorganizers fourCols clearfix">
+      <a href="http://www.rebelalliance.se"><img src="img/logos/rebelalliance.png" alt="Rebel Alliance AB"/></a>
+      <a href="http://www.kicksortconsulting.se"><img src="img/logos/kicksort.png" alt="Kicksort Consulting"/></a>
+      <a href="http://www.varga.se"><img src="img/logos/tv.png" alt="TV"/></a>
+      <a href="http://growing-agility.com/"><img src="img/logos/growingagility.png" alt="Growing Agility"/></a>
+    </article>
+  </section>
+</section>
+
+<section id="oldSites">
+  <article>
+    <header><h2>Previous years</h2></header>
+    <p><a href="2015/index.html">2015</a> <a href="2014/index.html">2014</a> <a href="2013/index.html">2013</a> <a href="2012/index.html">2012</a></p>
+  </article>
+</section>
+
+<footer>
+  <article>
+    <header>
+      <h5>Brewing Agile is proudly presented by <a href="http://www.scrumbeers.com/">Scrum Beers of Gothenburg</a>.</h5>
+    </header>
+  </article>
+</footer>
 
 
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/datParallax-1.0.0.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="js/datParallax-1.0.0.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-                e.src='https://www.google-analytics.com/analytics.js';
-                r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-35480677-1','auto');ga('send','pageview');
-        </script>
-    </body>
+<script>
+  (function (b, o, i, l, e, r) {
+    b.GoogleAnalyticsObject = l;
+    b[l] || (b[l] =
+      function () {
+        (b[l].q = b[l].q || []).push(arguments)
+      });
+    b[l].l = +new Date;
+    e = o.createElement(i);
+    r = o.getElementsByTagName(i)[0];
+    e.src = 'https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e, r)
+  }(window, document, 'script', 'ga'));
+  ga('create', 'UA-35480677-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
 </html>

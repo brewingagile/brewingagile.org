@@ -613,6 +613,46 @@ body #workshops {
     vertical-align: middle;
 }
 
+#sponsors,
+#organisers {
+    min-height: 0;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 90%;
+}
+
+#sponsors > section,
+#organisers > section {
+}
+
+body #sponsors section p,
+body #organisers section p {
+    text-align: center;
+}
+
+#sponsors .logos,
+#organisers .logos {
+    padding-top: 3%;
+}
+
+#sponsors .logos article a,
+#organisers .logos article a {
+    border-bottom: none !important;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+#sponsors .logos article a img,
+#organisers .logos article a img {
+    display: block;
+    margin: 0 auto;
+    padding: 15%;
+    max-height: 10em;
+    max-width: 70%;
+}
+
 #oldSites {
     min-height: 0;
 }
@@ -665,6 +705,46 @@ body > footer {
     background-color: rgba(0,0,0,0.5);
     position: absolute;
     z-index: 0;
+}
+
+.twoCols > * {
+    display: block;
+    float: right;
+    width: 47.5%;
+}
+
+.twoCols > *:nth-child(odd) {
+    float: left;
+}
+
+.threeCols > * {
+    display: block;
+    float: left;
+    margin-right: 5%;
+    width: 30%;
+}
+
+.threeCols > *:nth-child(3n) {
+    margin-right: 0;
+}
+
+.threeCols > *:nth-child(3n+1) {
+    clear:left;
+}
+
+.fourCols > * {
+    display: block;
+    float: left;
+    margin-right: 5%;
+    width: 21.25%;
+}
+
+.fourCols > *:nth-child(4n) {
+    margin-right: 0;
+}
+
+.fourCols > *:nth-child(4n+1) {
+    clear:left;
 }
 
 /* ==========================================================================
@@ -945,6 +1025,30 @@ body > footer {
         padding: 0 0 2%;
         width: 66.66%
     }
+
+    .fourCols > * {
+        width: 30%;
+    }
+
+    .fourCols > *:nth-child(4n) {
+        margin-right: 5%;
+    }
+
+    .fourCols > *:nth-child(4n+1) {
+        clear: none;
+    }
+
+    .fourCols > *:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .fourCols > *:nth-child(3n+1) {
+        clear:left;
+    }
+
+    #sponsors div a, #organisers div a {
+        width: 44%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -955,6 +1059,60 @@ body > footer {
 
     h3 {
         font-size: 2rem;
+    }
+
+    .threeCols > *,
+    .fourCols > * {
+        float: right;
+        margin-right: 0;
+        width: 47.5%;
+    }
+
+    .threeCols > *:nth-child(3n+1) {
+        clear: none;
+    }
+
+    .fourCols > *:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .fourCols > *:nth-child(3n+1) {
+        clear: none;
+    }
+
+    .threeCols > *:nth-child(odd),
+    .fourCols > *:nth-child(odd) {
+        clear: left;
+        float: left;
+    }
+
+    #quickInfo .signUp {
+        margin-left: -35px;
+    }
+
+    #quickInfo .signUp a {
+        font-size: 2em;
+        height: 70px;
+        letter-spacing: -2.5px;
+        line-height: 70px;
+        padding-left: 40px;
+    }
+
+    #quickInfo .signUp a:after {
+        border-width: 35px;
+        margin-top: -35px;
+    }
+
+    #quickInfo .signUp a:before {
+        border-width: 35px;
+        margin-top: -35px;
+    }
+
+    #sponsors table td,
+    #sponsors table.smallLogos td,
+    #organisers table td,
+    #organisers table.smallLogos td{
+        padding: 1em;
     }
 }
 
@@ -1061,6 +1219,27 @@ body > footer {
     #schedule section section,
     #schedule section section:first-of-type {
         width: 90%
+    }
+
+    .twoCols > *,
+    .threeCols > *,
+    .fourCols > * {
+        float: none;
+        width: 100%;
+    }
+
+    .twoCols > *:nth-child(odd),
+    .threeCols > *:nth-child(odd),
+    .fourCols > *:nth-child(odd) {
+        clear: none;
+        float: none;
+    }
+
+    #sponsors table td,
+    #sponsors table.smallLogos td,
+    #organisers table td,
+    #organisers table.smallLogos td{
+        padding: 0.4em;
     }
 }
 
