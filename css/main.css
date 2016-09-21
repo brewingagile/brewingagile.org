@@ -85,82 +85,6 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-html, body {
-    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-    height: 100%;
-    min-height: 100%;
-}
-
-body {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-
-a, a:hover, a:active, a:focus, a:visited {
-    border-bottom: 1px solid #000;
-    color: #000000;
-    text-decoration: none;
-}
-
-a:hover, a:active {
-    border-bottom-width: 3px;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-    margin-top: 0;
-    line-height: 1.2;
-}
-
-h1 {
-    font-size: 8rem;
-    font-weight: 100;
-    letter-spacing: 1;
-    word-spacing: 4rem;
-}
-
-h2 {
-    font-size: 4rem;
-    font-weight: 200;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 2.4rem;
-    font-weight: 400;
-    letter-spacing: 0.05rem;
-}
-
-h4 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-}
-
-h5 {
-    font-size: 1.1rem;
-    font-weight: 900;
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;
-}
-
-p {
-    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-    font-weight: 900;
-}
-
-.browserupgrade {
     background: #000000;
     color: #ffffff;
     margin: 0;
@@ -178,583 +102,262 @@ p {
     color: #ffffff;
 }
 
-body > header,
-body > section,
-body > footer {
-    display: table;
-    margin: 0;
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, body {
+    height: 100%;
     min-height: 100%;
-    padding: 0;
+    width: 100%;
+}
+
+body {
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0 0 1em;
+}
+
+h1 {
+    font-size: 3em;
     text-align: center;
-    width: 100%;
 }
 
-body > header > article,
-body > section > article,
-body > footer > article {
-    display: table-cell;
-    padding: 5%;
-    vertical-align: middle;
-    width: 90%;
-}
-
-body > section {
-    padding: 5% 25%;
-    width: 50%;
-}
-
-body > header {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcf900+0,e0a700+50,af7d13+100 */
-    background: rgb(252,249,0); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(252,249,0,1) 0%, rgba(224,167,0,1) 50%, rgba(175,125,19,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(252,249,0,1) 0%,rgba(224,167,0,1) 50%,rgba(175,125,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(252,249,0,1) 0%,rgba(224,167,0,1) 50%,rgba(175,125,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf900', endColorstr='#af7d13',GradientType=0 ); /* IE6-9 */
-
-}
-
-body #intro {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70e6ea+0,4e11db+70,211684+100 */
-    background: rgb(112,230,234); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(112,230,234,1) 0%, rgba(78,17,219,1) 70%, rgba(33,22,132,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(112,230,234,1) 0%,rgba(78,17,219,1) 70%,rgba(33,22,132,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(112,230,234,1) 0%,rgba(78,17,219,1) 70%,rgba(33,22,132,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70e6ea', endColorstr='#211684',GradientType=0 ); /* IE6-9 */
-    color: #ffffff;
-}
-
-body #intro a {
-    color: #ffffff;
-    border-bottom-color: #ffffff;
-}
-
-body #signUp {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eef21f+0,e56ba8+70,ef5356+100 */
-    background: rgb(238,242,31); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(238,242,31,1) 0%, rgba(229,107,168,1) 70%, rgba(239,83,86,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(238,242,31,1) 0%,rgba(229,107,168,1) 70%,rgba(239,83,86,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(238,242,31,1) 0%,rgba(229,107,168,1) 70%,rgba(239,83,86,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef21f', endColorstr='#ef5356',GradientType=0 ); /* IE6-9 */
-
-}
-
-body #whoIsThisFor,
-body #schedule {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,dddddd+100 */
-    background: rgb(238,238,238); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(221,221,221,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(221,221,221,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(221,221,221,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
-
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
-}
-
-body #speakers {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0c743+0,f5d477+100 */
-    background: rgb(240,199,67); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(240,199,67,1) 0%, rgba(245,212,119,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(240,199,67,1) 0%,rgba(245,212,119,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(240,199,67,1) 0%,rgba(245,212,119,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0c743', endColorstr='#f5d477',GradientType=0 ); /* IE6-9 */
-
-}
-
-body #speakers > article > section > article > section:last-child {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6f383b+0,8c6d76+100 */
-    background: rgb(111,56,59); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(111,56,59,1) 0%, rgba(140,109,118,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(111,56,59,1) 0%,rgba(140,109,118,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(111,56,59,1) 0%,rgba(140,109,118,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f383b', endColorstr='#8c6d76',GradientType=0 ); /* IE6-9 */
-    color: #ffffff;
-}
-
-body #workshops {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ba1f6d+0,980026+100 */
-    background: rgb(186,31,109); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(186,31,109,1) 0%, rgba(152,0,38,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(186,31,109,1) 0%,rgba(152,0,38,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(186,31,109,1) 0%,rgba(152,0,38,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba1f6d', endColorstr='#980026',GradientType=0 ); /* IE6-9 */
-    color: #ffffff;
-}
-
-#head {
-    overflow: hidden;
-    position: relative;
-}
-
-#head > article {
-    background: transparent none no-repeat scroll center center;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-}
-
-#head > article {
-    background: transparent url(../img/shapes.svg) no-repeat scroll center center;
-    background-size: cover;
-}
-
-#head > article h1,
-#head > article h4 {
-    color: #fff;
-}
-
-#head > article h1:before {
-    background: transparent url(../img/logo.svg) no-repeat scroll center top;
-    background-size: contain;
-    content: '';
-    display: block;
-    padding-top: 25vh;
-}
-
-#head footer {
-    background: transparent url(../img/triangle.svg) repeat-x scroll center bottom;
-    background-size: auto 100%;
-    bottom: -1px;
-    display: block;
-    left: 0;
-    height: 10vh;
-    position: absolute;
-    width: 100%;
-}
-
-#intro {
-    min-height: 50%;
-    padding: 0;
-    width: 100%;
-}
-
-#intro article {
-    background: transparent url(../img/clouds.png) no-repeat scroll center top;
-    background-size: cover;
-    width: 100%;
-}
-
-#intro nav {
-    margin-top: 5%;
-}
-
-#intro nav a {
-    background: #ffffff;
-    border: none;
-    border-radius: 9999px;
-    color: #ffffff;
-    display: inline-block;
-    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-    font-size: 30px;
-    font-weight: bolder;
-    height: 50px;
-    line-height: 50px;
-    margin: 0 2.5%;
-    overflow: hidden;
-    padding: 0;
+h2 {
+    font-size: 2.4em;
     text-align: center;
-    text-indent: 15px;
-    width: 50px;
 }
 
-#intro nav a:first-letter {
-    color: #000000;
-}
-
-#intro nav a:hover, #intro nav a:active {
-    box-shadow: 0 6px 0 #000;
-}
-
-#intro nav a:first-letter:hover {
-    color: #ffffff;
-}
-
-#signUp {
-    min-height: 50%;
-    padding: 0;
-    width: 100%;
-}
-
-#signUp a {
-    background: #111;
-    border: none;
-    border-radius: 9999px;
-    color: #ffffff;
-    display: inline-block;
-    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-    font-size: 30px;
-    font-weight: bolder;
-    height: 200px;
-    line-height: 200px;
-    margin: 0 2.5%;
-    overflow: hidden;
-    padding: 0;
+h3 {
+    font-size: 1.6em;
     text-align: center;
-    width: 200px;
-    transition: background 100ms ease, color 100ms ease;
 }
 
-#signUp a:hover, #signUp a:active {
-    background: #ffffff;
-    color: #000000;
+h4 {
+    font-size: 1.2em;
 }
 
-#signUp article {
-    background: transparent url(../img/tiger.svg) no-repeat scroll center center;
-    background-size: cover;
+h5 {
+    font-size: 1em;
 }
 
-#speakers, #workshops {
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-top: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+article, section {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
+}
+
+body > *:nth-child(1) { background-color: #333; }
+body > *:nth-child(2) { background-color: #444; }
+body > *:nth-child(3) { background-color: #555; }
+body > *:nth-child(4) { background-color: #666  }
+body > *:nth-child(5) { background-color: #777; }
+body > *:nth-child(6) { background-color: #888; }
+body > *:nth-child(7) { background-color: #999; }
+body > *:nth-child(8) { background-color: #aaa; }
+body > *:nth-child(9) { background-color: #bbb; }
+body > *:nth-child(10) { background-color: #ccc; }
+body > *:nth-child(11) { background-color: #ddd; }
+
+.page__section {
+    background-color: #105cb6;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     width: 100%;
 }
 
-#speakers img, #workshops img {
-    border-radius: 9999px;
-    max-width: 200px;
-    width: 100%;
+.page__content {
+    background-color: #2988cb;
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 1024px;
 }
 
-#speakers > article > section {
-    padding-top: 5%;
+.page__content--fullWidth {
+    max-width: none;
 }
 
-#speakers > article > section section p {
-
+.page__padding {
+    padding: 2rem;
 }
 
-#speakers > article > section:first-of-type {
+.rows {
+    align-content: space-around;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.row {
+    background-color: rgba(0,255,0,0.2);
+    align-self: center;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+}
+
+.columns {
+    align-content: center;
+    align-items: flex-start;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.column {
+    background-color: rgba(255,0,0,0.2);
+    align-self: flex-start;
+    -webkit-flex: 1 1 250px;
+    -ms-flex: 1 1 250px;
+    flex: 1 1 250px;
+    max-width: 100%;
+    min-width: 250px;
+}
+
+/*---------------------------------------*/
+
+.page__padding.columns,
+.page__padding.columns > .column {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.page__padding.columns {
+    padding-bottom: 0 !important;
+}
+
+.page__padding.columns > .column > *:last-child {
+    margin-bottom: 2rem;
+}
+
+/*---------------------------------------*/
+
+.page__padding.rows,
+.page__padding.rows > .row {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/*---------------------------------------*/
+
+.page__padding.column {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.page__padding.column.rows > .row {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/*---------------------------------------*/
+
+.page__padding.row {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.page__padding.row.columns > .column {
     padding-top: 0;
+    padding-bottom: 0;
 }
 
-#speakers article section article section, #workshops article section article section {
-    float: left;
-    width: 70%;
+/*---------------------------------------*/
+
+.column--quad {
+    flex-grow: 4;
 }
 
-#speakers article {
-    position: relative;
+.column--tripple {
+    flex-grow: 4;
 }
 
-#speakers article section article section:last-child, #workshops article section article section:last-child {
-    box-sizing: border-box;
-    margin-left: 10%;
-    padding: 1%;
-    width: 20%;
+.column--double {
+    flex-grow: 2;
 }
 
-#speakers article section article section header {
-    text-align: right;
+.column--halved {
+    min-width: 250px;
+    width: 50%;
+    flex-shrink: 2;
 }
 
-#speakers article section article section h3 {
-    background: rgb(111,56,59);
-    color: #ffffff;
-    display: inline;
-    text-align: right;
+.column--fourth {
+    flex-shrink: 4;
+    min-width: 250px;
+    width: 25%;
 }
 
-#speakers article section article section h5, #workshops article section article section h5 {
-    margin-top: 1rem;
+.column--fifth {
+    flex-shrink: 5;
+    min-width: 250px;
+    max-width: 20%;
 }
 
-#speakers article section article section p, #workshops article section article section p {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    text-align: left;
+.headline, .headline.page__padding {
+    padding-bottom: 0;
 }
 
-#speakers article section article section:first-child p,
-#workshops article section article section:first-child p,
-#workshops article section article section:first-child header,
-#workshops article section article section:first-child ul {
-    margin-left: 33.3%;
-    width: 66.6%;
-}
-
-#speakers article section article section:last-child a {
-    border-color: #ffffff;
-    color: #ffffff;
-}
-
-#speakers article section article section:last-child p {
-    font-size: 1rem;
-}
-
-#speakers article section article section:last-child p:last-child, #workshops article section article section:last-child p:last-child {
+.headline h1, .headline h2, .headline h3, .headline h4 ,.headline h5 {
     margin-bottom: 0;
 }
 
-#workshops article section article section:first-child {
-    padding-top: 2rem;
-}
-
-#workshops article section article {
-    border-top: 1px solid #ffffff;
-    margin-top: 2rem;
-    padding-top: 2rem;
-}
-
-#workshops article section article section:first-child h4 {
-    display: inline;
-    background-color: #000000;
-}
-
-#workshops article section article section:first-child ul {
-    display: block;
-    box-sizing: border-box;
-    padding-left: 2rem;
-}
-
-#workshops article section article section:first-child ul li {
-    list-style-position: outside;
-    margin-top: 1rem;
-    text-align: left;
-}
-
-#workshops > article {
-    background: transparent url(../img/stripes.svg) repeat-x scroll center bottom;
-    background-size: 25rem auto;
-}
-
-#workshops article > p {
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 5%;
-    max-width: 600px;
-}
-
-#schedule {
-    padding: 5%;
-    width: 90%;
-}
-
-#schedule h3 {
-    margin-bottom: 0;
-}
-
-#schedule h5 {
-    font-size: 0.9rem;
-}
-
-#schedule p {
-    min-height: 11rem;
-}
-
-#schedule > article > section {
-    border-left: 1px solid #000;
-    box-sizing: border-box;
-    float: left;
-    padding-right: 2%;
-    padding-left: 2%;
-    width: 20%;
-}
-
-#schedule > article > section:first-of-type {
-    border-left: none;
-}
-
-#schedule > article > section.wide {
-    width: 60%;
-}
-
-#schedule > article > section.wide section {
-    float: left;
-    margin-left: 7.5%;
-    width: 28%;
-}
-
-#schedule > article > section.wide section:first-of-type {
-    margin-left: 0;
-}
-
-#schedule section.single {
-}
-
-#schedule section.single section {
-    float: none;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-}
-
-#schedule table {
-    width: 100%;
-}
-
-#schedule table tr td {
-    line-height: 1.6rem;
-    padding: 0.2rem 5%;
-}
-
-#schedule table tr:first-child td {
-    border-top: 1px solid #000;
-}
-
-#schedule table tr:last-child td {
-    border-bottom: 1px solid #000;
-}
-
-#schedule table tr td:first-child {
-    border-top: 1px solid rgba(0,0,0,0.075);
-    color: transparent;
-    font-family: 'Cutive Mono', monospace, serif;
-    font-size: 1.2rem;
-    letter-spacing: -0.1rem;
-    width: 4rem;
-}
-
-#schedule table tr.title td:first-child {
-    border-top: 1px solid #000;
-    color: #000;
-}
-
-#schedule table tr td:nth-child(2) {
-    border-bottom: 1px solid #000;
-    text-align: left;
-    vertical-align: middle;
-}
-
-#sponsors,
-#organisers {
-    min-height: 0;
-    padding-right: 5%;
-    padding-left: 5%;
-    width: 90%;
-}
-
-#sponsors header h2,
-#organisers header h2 {
-    margin-bottom: 0;
-}
-
-body #sponsors section p,
-body #organisers section p {
-    text-align: center;
-}
-
-#sponsors .logos,
-#organisers .logos {
-    padding-top: 3%;
-}
-
-#sponsors .logos article,
-#organisers .logos article {
-    vertical-align: middle;
-}
-
-#sponsors .logos article a,
-#organisers .logos article a {
-    border-bottom: none !important;
-    display: inline-block;
-    width: 20%;
-    margin: 0 1.5%;
-    min-width: 125px;
-    vertical-align: middle;
-}
-
-#sponsors .logos article a img,
-#organisers .logos article a img {
+.speaker__photo {
+    border-radius: 9999px;
     display: block;
     margin: 0 auto;
-    padding: 15%;
-    max-height: 10em;
-    max-width: 70%;
-    position: relative;
-    top: 50%;
+    max-width: 200px;
+    width: 90%;
 }
 
-#oldSites {
-    min-height: 0;
-}
-
-#oldSites a {
-    background: #000;
-    border: none;
-    border-radius: 9999px;
-    color: #fff;
-    display: inline-block;
-    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: bolder;
-    height: 50px;
-    line-height: 50px;
-    margin: 0 5px;
-    overflow: hidden;
-    padding: 0;
+.logos .column {
+    align-self: center;
     text-align: center;
-    width: 50px;
 }
 
-#oldSites a:hover, #oldSites a:active {
-    box-shadow: 0 6px 0 #999;
+.logos img {
+    max-width: 250px;
 }
 
-body > footer {
+.logos--small .column {
+    flex-basis: 200px;
+    min-width: 200px;
+}
+
+.logos--small img {
+    max-width: 200px;
+}
+
+.oldSites .column {
+    flex-basis: auto;
+    min-width: 0;
+    text-align: center;
+}
+
+.footer {
     min-height: 0;
-}
-
-#videobg, #videobgShiw {
-    box-sizing: content-box;
-    bottom: 0;
-    display: none;
-    height: 100%;
-    left: 0;
-    margin: auto;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: 0;
-}
-
-#videobg {
-    transform: scale(2);
-}
-
-#videobgShiw {
-    background-color: rgba(0,0,0,0.5);
-    position: absolute;
-    z-index: 0;
-}
-
-.twoCols > * {
-    display: inline-block;
-    width: 47.5%;
-}
-
-.twoCols > *:nth-child(odd):before {
-    display: block;
-    content: '';
-}
-
-.threeCols > * {
-    display: block;
-    float: left;
-    margin-right: 5%;
-    width: 30%;
-}
-
-.threeCols > *:nth-child(3n) {
-    margin-right: 0;
-}
-
-.threeCols > *:nth-child(3n+1) {
-    clear:left;
-}
-
-.fourCols > * {
-    display: block;
-    float: left;
-    margin-right: 5%;
-    width: 21.25%;
-}
-
-.fourCols > *:nth-child(4n) {
-    margin-right: 0;
-}
-
-.fourCols > *:nth-child(4n+1) {
-    clear:left;
 }
 
 /* ==========================================================================
@@ -838,419 +441,21 @@ body > footer {
    ========================================================================== */
 
 @media only screen and (max-width: 1400px) {
-
-    #schedule, #schedule > article {
-        padding-right: 1%;
-        padding-left: 1%;
-        width: 98%;
-    }
 }
 
 @media only screen and (max-width: 1280px) {
-
-    #schedule > article > section {
-        border-left: none;
-        clear: left;
-        float: none;
-        margin-top: 5%;
-        padding-top: 5%;
-        width: 50%;
-    }
-
-    #schedule > article > section:first-of-type {
-        border-top: none;
-        margin-top: 0;
-        padding-top: 0;
-    }
-
-    #schedule > article > section:last-of-type {
-        margin-top: 0;
-    }
-
-    #schedule > article > section.single {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    #schedule > article > section.wide {
-        border-top: 1px solid #222222;
-        border-bottom: 1px solid #222222;
-        padding-bottom: 5%;
-        width: 100%;
-    }
-
-    #schedule p {
-        min-height: 3rem;
-    }
-
-    #schedule .workshop table tr.title td:first-child,
-    #schedule .workshop table tr td:first-child,
-    #schedule .workshop table tr:first-child td,
-    #schedule .workshop table tr td:nth-child(2) {
-        border-top: none;
-        border-bottom: none;
-    }
-
-    #schedule .workshop table tbody tr {
-        display: none;
-    }
-
-    #schedule .workshop table tbody tr td {
-        display: block;
-    }
-
-    #schedule .workshop table tbody tr.title {
-        clear: both;
-        display: block;
-    }
-
-    #schedule .workshop table tr.title td:first-child {
-        box-sizing: border-box;
-        float: left;
-        padding: 0 2rem 2% 0;
-        text-align: right;
-        width: 33.33%
-    }
-
-    #schedule .workshop table tr.title td:last-child {
-        float: right;
-        padding: 0 0 2%;
-        width: 66.66%
-    }
 }
 
 @media only screen and (max-width: 1024px) {
-
-    #speakers article section article section, #workshops article section article section {
-        width: 50%;
-    }
-
-    #speakers article section article section:last-child, #workshops article section article section:last-child {
-        width: 40%;
-    }
-
-    #speakers article section article section:first-child p,
-    #workshops article section article section:first-child p,
-    #workshops article section article section:first-child header,
-    #workshops article section article section:first-child ul {
-        margin-left: 0;
-        width: 100%;
-    }
 }
 
 @media only screen and (max-width: 800px) {
-
-    body > section {
-        padding: 5% 12.5%;
-        width: 75%;
-    }
-
-    #schedule {
-        padding: 5% 0;
-        width: 100%;
-    }
-
-    #schedule > article > section:first-of-type,
-    #schedule section.single {
-        border-right: none;
-        padding-left: 0;
-        padding-right: 0;
-        width: 100%;
-    }
-
-    #schedule > article > section section,
-    #schedule > article > section.wide section,
-    #schedule section section:first-of-type,
-    #schedule > article > section.wide section:first-of-type {
-        float: none;
-        clear: both;
-        margin: 5% auto 0;
-        padding-top: 0;
-        width: 95%
-    }
-
-    #schedule > article > section {
-        box-sizing: border-box;
-        float: none;
-        padding-left: 0;
-        width: 25%;
-    }
-
-    #schedule > article > section section header {
-        border-top: 1px solid #222222;
-        margin: 0 auto;
-        padding-top: 5%;
-        width: 66.6%;
-    }
-
-    #schedule > article > section section:first-of-type header {
-
-    }
-
-    #schedule p {
-        min-height: 0;
-    }
-
-    #schedule section.single {
-        margin-top: 5%;
-        padding-top: 5%;
-    }
-
-    #schedule > article > section.wide {
-
-    }
-
-    #schedule table tr.title td:first-child,
-    #schedule table tr td:first-child,
-    #schedule table tr:first-child td,
-    #schedule table tr td:nth-child(2) {
-        border-top: none;
-        border-bottom: none;
-    }
-
-    #schedule table tbody tr {
-        display: none;
-    }
-
-    #schedule table tbody tr td {
-        display: block;
-    }
-
-    #schedule table tbody tr.title {
-        clear: both;
-        display: block;
-    }
-
-    #schedule table tr.title td:first-child {
-        box-sizing: border-box;
-        float: left;
-        padding: 0 2rem 2% 0;
-        text-align: right;
-        width: 33.33%
-    }
-
-    #schedule table tr.title td:last-child {
-        float: right;
-        padding: 0 0 2%;
-        width: 66.66%
-    }
-
-    .fourCols > * {
-        width: 30%;
-    }
-
-    .fourCols > *:nth-child(4n) {
-        margin-right: 5%;
-    }
-
-    .fourCols > *:nth-child(4n+1) {
-        clear: none;
-    }
-
-    .fourCols > *:nth-child(3n) {
-        margin-right: 0;
-    }
-
-    .fourCols > *:nth-child(3n+1) {
-        clear:left;
-    }
-
-    #sponsors div a, #organisers div a {
-        width: 44%;
-    }
 }
 
 @media only screen and (max-width: 600px) {
-
-    h2 {
-        font-size: 3rem;
-    }
-
-    h3 {
-        font-size: 2rem;
-    }
-
-    .threeCols > *,
-    .fourCols > * {
-        float: right;
-        margin-right: 0;
-        width: 47.5%;
-    }
-
-    .threeCols > *:nth-child(3n+1) {
-        clear: none;
-    }
-
-    .fourCols > *:nth-child(4n) {
-        margin-right: 0;
-    }
-
-    .fourCols > *:nth-child(3n+1) {
-        clear: none;
-    }
-
-    .threeCols > *:nth-child(odd),
-    .fourCols > *:nth-child(odd) {
-        clear: left;
-        float: left;
-    }
-
-    #quickInfo .signUp {
-        margin-left: -35px;
-    }
-
-    #quickInfo .signUp a {
-        font-size: 2em;
-        height: 70px;
-        letter-spacing: -2.5px;
-        line-height: 70px;
-        padding-left: 40px;
-    }
-
-    #quickInfo .signUp a:after {
-        border-width: 35px;
-        margin-top: -35px;
-    }
-
-    #quickInfo .signUp a:before {
-        border-width: 35px;
-        margin-top: -35px;
-    }
-
-    #sponsors table td,
-    #sponsors table.smallLogos td,
-    #organisers table td,
-    #organisers table.smallLogos td{
-        padding: 1em;
-    }
 }
 
 @media only screen and (max-width: 450px) {
-    body > section,
-    body > header > article, body > section > article, body > footer > article {
-        width: 98%;
-        padding: 5% 1%;
-    }
-
-    h1 {
-        font-size: 4rem;
-    }
-
-    h2 {
-        font-size: 2.4rem;
-    }
-
-    h3 {
-        font-size: 1.4rem;
-    }
-
-    h4 {
-        font-size: 1.2rem;
-    }
-
-    h5 {
-        font-size: 0.7rem;
-        letter-spacing: 0.1rem;
-    }
-
-    #speakers > article > section {
-        padding-top: 10%;
-    }
-
-    #speakers article section article section, #workshops article section article section {
-        float: none;
-        width: 100%;
-    }
-
-    #speakers article section article section header, #workshops article section article section header {
-        min-height: 11rem;
-        width: 65%;
-    }
-
-    #speakers article section article section:last-child, #workshops article section article section:last-child {
-        background: none !important;
-        float: none;
-        margin-left: 0;
-        width: 30%;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    #speakers > article > section {
-        border-top: 1px solid rgb(111,56,59);
-        margin-top: 5%;
-        padding-top: 5%;
-    }
-
-    #speakers > article > section:first-of-type {
-        border-top: none;
-    }
-
-    #workshops article section article section:first-child {
-        padding-top: 0;
-    }
-
-    #workshops article section article section:last-child {
-        top: 2rem;
-    }
-
-    #speakers img, #workshops img {
-        margin-top: 0;
-    }
-
-    #speakers article section article section:last-child header, #workshops article section article section:last-child header {
-        width: 100%;
-        text-align: center;
-    }
-
-    #speakers article section article section h5, #workshops article section article section h5 {
-        color: #222222;
-        margin-bottom: 0;
-    }
-
-    body #speakers > article > section > article > section:last-child p {
-        display: none;
-    }
-
-    #workshops article {
-        position: relative;
-    }
-
-    #workshops article section article section:first-child header {
-        width: 60%;
-    }
-
-    #workshops article section article section h5 {
-        color: #ffffff;
-    }
-
-    #schedule section section,
-    #schedule section section:first-of-type {
-        width: 90%
-    }
-
-    .twoCols > *,
-    .threeCols > *,
-    .fourCols > * {
-        float: none;
-        width: 100%;
-    }
-
-    .twoCols > *:nth-child(odd),
-    .threeCols > *:nth-child(odd),
-    .fourCols > *:nth-child(odd) {
-        clear: none;
-        float: none;
-    }
-
-    #sponsors table td,
-    #sponsors table.smallLogos td,
-    #organisers table td,
-    #organisers table.smallLogos td{
-        padding: 0.4em;
-    }
 }
 
 @media print,
