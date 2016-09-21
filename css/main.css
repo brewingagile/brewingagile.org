@@ -81,28 +81,6 @@ textarea {
 }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    background: #000000;
-    color: #ffffff;
-    margin: 0;
-    padding: 0.5rem 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    text-align: center;
-    width: 100%;
-    z-index: 9999;
-}
-
-.browserupgrade a {
-    border-bottom-color: #ffffff;
-    color: #ffffff;
-}
-
-/* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
@@ -236,8 +214,16 @@ body > *:nth-child(11) { background-color: #ddd; }
     min-width: 250px;
 }
 
-/*---------------------------------------*/
+.columns--auto .column {
+    flex-basis: auto;
+    min-width: 0;
+}
 
+.columns--center .column {
+    text-align: center;
+}
+
+/*- PAGE PADDING ON COLUMNS --------------*/
 .page__padding.columns,
 .page__padding.columns > .column {
     padding-left: 1rem;
@@ -252,16 +238,14 @@ body > *:nth-child(11) { background-color: #ddd; }
     margin-bottom: 2rem;
 }
 
-/*---------------------------------------*/
-
+/*- PAGE PADDING ON ROWS ----------------*/
 .page__padding.rows,
 .page__padding.rows > .row {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-/*---------------------------------------*/
-
+/*- PAGE PADDING ON COLUMN --------------*/
 .page__padding.column {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -272,8 +256,7 @@ body > *:nth-child(11) { background-color: #ddd; }
     padding-left: 0;
 }
 
-/*---------------------------------------*/
-
+/*- PAGE PADDING ON ROW -----------------*/
 .page__padding.row {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -320,8 +303,24 @@ body > *:nth-child(11) { background-color: #ddd; }
     padding-bottom: 0;
 }
 
+.headline.page__section {
+    padding-bottom: 2rem;
+}
+
 .headline h1, .headline h2, .headline h3, .headline h4 ,.headline h5 {
     margin-bottom: 0;
+}
+
+/*- PAGE PADDING ON ROW -----------------*/
+
+.menu {
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu a {
 }
 
 .speaker__photo {
@@ -348,12 +347,6 @@ body > *:nth-child(11) { background-color: #ddd; }
 
 .logos--small img {
     max-width: 200px;
-}
-
-.oldSites .column {
-    flex-basis: auto;
-    min-width: 0;
-    text-align: center;
 }
 
 .footer {
@@ -452,7 +445,11 @@ body > *:nth-child(11) { background-color: #ddd; }
 @media only screen and (max-width: 800px) {
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 530px) {
+    .column--halved, .column--fourth, .column--fifth {
+        flex-shrink: 1;
+        max-width: none;
+    }
 }
 
 @media only screen and (max-width: 450px) {
