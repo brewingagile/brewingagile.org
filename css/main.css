@@ -455,6 +455,7 @@ body #workshops {
 
 #speakers article section article section h5, #workshops article section article section h5 {
     margin-top: 1rem;
+    text-align: center;
 }
 
 #speakers article section article section p, #workshops article section article section p {
@@ -466,6 +467,7 @@ body #workshops {
 #speakers article section article section:first-child p,
 #workshops article section article section:first-child p,
 #workshops article section article section:first-child header,
+#speakers article section article section:first-child ul,
 #workshops article section article section:first-child ul {
     margin-left: 33.3%;
     width: 66.6%;
@@ -499,12 +501,14 @@ body #workshops {
     background-color: #000000;
 }
 
+#speakers article section article section:first-child ul,
 #workshops article section article section:first-child ul {
     display: block;
     box-sizing: border-box;
     padding-left: 2rem;
 }
 
+#speakers article section article section:first-child ul li,
 #workshops article section article section:first-child ul li {
     list-style-position: outside;
     margin-top: 1rem;
@@ -933,6 +937,7 @@ body > footer {
     #speakers article section article section:first-child p,
     #workshops article section article section:first-child p,
     #workshops article section article section:first-child header,
+    #speakers article section article section:first-child ul,
     #workshops article section article section:first-child ul {
         margin-left: 0;
         width: 100%;
