@@ -203,6 +203,39 @@ body > section {
     width: 50%;
 }
 
+body.subPage > section, body.subPage > footer {
+    display: block;
+}
+
+body.subPage > footer {
+    padding: 5%;
+    width: 90%;
+}
+
+body.subPage h1 {
+    word-spacing: normal;
+}
+
+body.subPage h2 {
+    margin: 7rem 0 1rem;
+    text-align: left;
+}
+
+body.subPage section p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: left;
+}
+
+body.subPage section ul, body.subPage section ul li {
+    list-style: none;
+}
+
+body.subPage section ul li {
+    font-size: 1.5rem;
+    margin-bottom: 0.25em;
+}
+
 body > header {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcf900+0,e0a700+50,af7d13+100 */
     background: rgb(252, 249, 0); /* Old browsers */
@@ -401,6 +434,14 @@ body #workshops {
 #signUp article {
     background: transparent url(../img/tiger.svg) no-repeat scroll center center;
     background-size: cover;
+}
+
+#whoIsThisFor h3 {
+    margin-top: 1.5rem;
+}
+
+#whoIsThisFor header h3 {
+    margin-top: 0;
 }
 
 #speakers, #workshops {
@@ -888,28 +929,28 @@ body > footer {
         min-height: 3rem;
     }
 
-    #schedule .workshop table tr.title td:first-child,
-    #schedule .workshop table tr td:first-child,
-    #schedule .workshop table tr:first-child td,
-    #schedule .workshop table tr td:nth-child(2) {
+    #schedule table tr.title td:first-child,
+    #schedule table tr td:first-child,
+    #schedule table tr:first-child td,
+    #schedule table tr td:nth-child(2) {
         border-top: none;
         border-bottom: none;
     }
 
-    #schedule .workshop table tbody tr {
+    #schedule table tbody tr {
         display: none;
     }
 
-    #schedule .workshop table tbody tr td {
+    #schedule table tbody tr td {
         display: block;
     }
 
-    #schedule .workshop table tbody tr.title {
+    #schedule table tbody tr.title {
         clear: both;
         display: block;
     }
 
-    #schedule .workshop table tr.title td:first-child {
+    #schedule table tr.title td:first-child {
         box-sizing: border-box;
         float: left;
         padding: 0 2rem 2% 0;
@@ -917,11 +958,12 @@ body > footer {
         width: 33.33%
     }
 
-    #schedule .workshop table tr.title td:last-child {
+    #schedule table tr.title td:last-child {
         float: right;
         padding: 0 0 2%;
         width: 66.66%
     }
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -945,6 +987,15 @@ body > footer {
 }
 
 @media only screen and (max-width: 800px) {
+
+    body.subPage h1 {
+        font-size: 4rem;
+    }
+
+    body.subPage h2 {
+        font-size: 3rem;
+    }
+
 
     body > section {
         padding: 5% 12.5%;
@@ -1157,6 +1208,14 @@ body > footer {
     h5 {
         font-size: 0.7rem;
         letter-spacing: 0.1rem;
+    }
+
+    body.subPage h1 {
+        font-size: 3rem;
+    }
+
+    body.subPage h2 {
+        font-size: 2.6rem;
     }
 
     #speakers > article > section {
