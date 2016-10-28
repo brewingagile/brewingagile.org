@@ -3,15 +3,16 @@
 
 # TEAM
 
-    Jeff Campbell       --
-    Henrik Johansson    --
-    Anders Mårtensson   -- @hencjo
+    Jeff Campbell       -- @zebra003
+    Henrik Johansson    -- @hencjo
+    Anders Mårtensson   -- 
     Viktor Nyblom       --
     Thomas Varga        -- @wolfa127
+    Fredrik Wendt       -- @wendtse
 
 # THANKS
 
-    <name>
+    ... goes out to all attendees and speakers!
 
 # TECHNOLOGY COLOPHON
 
