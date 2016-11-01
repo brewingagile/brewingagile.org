@@ -407,6 +407,16 @@ body #workshops {
     width: 100%;
 }
 
+#signUp.soldOut {
+    min-height: 10%;
+}
+
+#signUp h2 {
+    color: #ffffff;
+    margin-bottom: 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
 #signUp a {
     background: #111;
     border: none;
@@ -434,6 +444,10 @@ body #workshops {
 #signUp article {
     background: transparent url(../img/tiger.svg) no-repeat scroll center center;
     background-size: cover;
+}
+
+#signUp.soldOut article {
+    background-color: rgba(0,0,0,0.5);
 }
 
 #whoIsThisFor h3 {
