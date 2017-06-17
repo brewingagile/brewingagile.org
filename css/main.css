@@ -303,7 +303,7 @@ img {
 }
 
 .screenHeight {
-    min-height: 100vh;
+    min-height: 99vh;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -324,7 +324,6 @@ img {
 }
 
 @media only screen and (max-width: 650px) {
-
 }
 
 @media only screen and (max-width: 530px) {
@@ -368,7 +367,7 @@ body {
     font-size: 1.2em;
     left: 0;
     position: relative;
-    transition: left 200ms ease;
+    transition: left 200ms ease, height 400ms ease, background 400ms ease;
 }
 
 h1, h3, h5 {
@@ -434,6 +433,7 @@ a:hover, a:focus, a:active {
     left: 0;
     position: fixed;
     top: 0;
+    transition: background 400ms ease;
     width: 100%;
     z-index: 99;
 }
@@ -527,6 +527,7 @@ a:hover, a:focus, a:active {
     background-position: left bottom, center center;
     background-size: auto, cover;
     color: #ffffff;
+    transition: background 400ms ease;
 }
 
 #talks {
@@ -549,6 +550,7 @@ a:hover, a:focus, a:active {
     background-position: left bottom, center center;
     background-size: auto, cover;
     color: #ffffff;
+    transition: background 400ms ease;
 }
 
 #workshops > section {
@@ -634,7 +636,6 @@ a:hover, a:focus, a:active {
 }
 
 #oldSites {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
     color: #ffffff;
 }
 
@@ -647,17 +648,16 @@ a:hover, a:focus, a:active {
 }
 
 #presentedBy {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
     color: #ffffff;
 }
 
 .paperBackgroundGradient {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,dddddd+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,eeeeee+100 */
     background: rgb(255,255,255); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 50%, rgba(221,221,221,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 50%,rgba(221,221,221,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(255,255,255,1) 50%,rgba(221,221,221,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 50%, rgba(238,238,238,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 50%,rgba(238,238,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(255,255,255,1) 50%,rgba(238,238,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     background-attachment: fixed;
 }
 
@@ -812,8 +812,39 @@ a:hover, a:focus, a:active {
 }
 
 @media only screen and (max-width: 800px) {
+
+    body {
+        padding-bottom: 100px;
+    }
+
     body.js-menuOpen {
         left: -300px;
+    }
+
+    h2 {
+        font-size: 10vw;
+        margin: 0.5em 0 0;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.8em;
+        line-height: 1.1;
+    }
+
+    h4 {
+        font-size: 1.4em;
+        line-height: 1.1;
+    }
+
+    h5 {
+        font-size: 1.2em;
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    .smallPrint {
+        line-height: 1.4;
     }
 
     .topMenu {
@@ -868,6 +899,10 @@ a:hover, a:focus, a:active {
 
     #workshops .speaker header {
         margin: 0 auto;
+    }
+
+    #schedule p {
+        min-height: 0;
     }
 
     #sponsors a.article, #organisers a.article {
