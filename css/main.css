@@ -279,6 +279,10 @@ article, .article {
     overflow-x: auto;
 }
 
+header.article {
+    padding-bottom: 0;
+}
+
 section, .section {
     box-sizing: border-box;
     padding: 0;
@@ -321,6 +325,18 @@ img {
     .column--tripple {
         min-width: 500px;
     }
+
+    article, .article {
+        padding: 2em;
+    }
+
+    header.article {
+        padding-bottom: 0;
+    }
+
+    .screenHeight {
+        min-height: 55vw;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -355,15 +371,23 @@ img {
     .column--fifth {
         min-width: 20%;
     }
+
+    article, .article {
+        padding: 2em 0.5em;
+    }
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-body {
-    background: #000000 url(../img/emily_jeff.jpg) no-repeat fixed center top;
+html {
+    background: #888888 url(../img/emily_jeff.jpg) no-repeat fixed center top;
     background-size: cover;
+    transition: height 400ms ease, background 400ms ease;
+}
+
+body {
     font-size: 1.2em;
     left: 0;
     position: relative;
@@ -453,16 +477,17 @@ a:hover, a:focus, a:active {
 }
 
 .menuButton {
-    background: #000000 url(../img/ic_menu_orange_24px.svg) no-repeat scroll center center;
+    background: rgba(0,0,0,0.8) url(../img/ic_menu_orange_24px.svg) no-repeat scroll 26px center;
     background-size: auto 50%;
     border-bottom: none;
+    border-radius: 9999px 0 0 0;
     bottom: 0;
     display: none;
     font-family: Georgia, serif;
-    font-size: 10px;
+    font-size: 9px;
     height: 75px;
     right: 0;
-    padding: 60px 0 0;
+    padding: 54px 0 0 15px;
     position: fixed;
     text-align: center;
     text-transform: uppercase;
@@ -497,8 +522,10 @@ a:hover, a:focus, a:active {
     left: 50%;
     margin: 0;
     position: fixed;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.2);
     top: 50%;
     transform: translate3d(-50%,-50%,0);
+    transition: height 400ms ease;
     z-index: -1;
 }
 
@@ -513,6 +540,29 @@ a:hover, a:focus, a:active {
 
 #intro {
     width: 100%;
+}
+
+.contactUs a {
+    border: 1px solid #fbb040;
+    border-radius: 9999px;
+    box-sizing: border-box;
+    flex: 0 0 60px;
+    font-family: Georgia, serif;
+    font-size: 0.6em;
+    height: 60px;
+    margin-left: 2em;
+    min-width: 0;
+    padding-top: 21px;
+    width: 60px;
+    text-decoration: none;
+}
+
+.contactUs a:hover, .contactUs a:focus, .contactUs a:active {
+    text-decoration: underline;
+}
+
+.contactUs a:first-child {
+    margin-left: 0;
 }
 
 #signUp {
@@ -794,12 +844,19 @@ a:hover, a:focus, a:active {
         border-top: 1px solid #222222;
     }
 
-    #schedule table tr.title td:first-child,
-    #schedule table tr td:first-child,
-    #schedule table tr:first-child td,
-    #schedule table tr td:nth-child(2) {
+    #schedule table tr td,
+    #schedule table tr.title td {
         border-top: none;
         border-bottom: none;
+    }
+
+    #schedule table tr.title td,
+    #schedule table tr.title td:first-child {
+        border-top: 1px solid #dddddd;
+    }
+
+    #schedule table tr.title:first-of-type td {
+        border-top: 0;
     }
 
     #schedule table tbody tr td {
@@ -821,15 +878,19 @@ a:hover, a:focus, a:active {
         left: -300px;
     }
 
+    h1 {
+        margin-top: 0;
+    }
+
     h2 {
         font-size: 10vw;
-        margin: 0.5em 0 0;
+        margin: 0;
         text-align: center;
     }
 
     h3 {
         font-size: 1.8em;
-        line-height: 1.1;
+        line-height: 1.;
     }
 
     h4 {
@@ -839,7 +900,7 @@ a:hover, a:focus, a:active {
 
     h5 {
         font-size: 1.2em;
-        line-height: 1.1;
+        line-height: 1.3;
         text-align: center;
     }
 
@@ -862,7 +923,7 @@ a:hover, a:focus, a:active {
 
     .topMenu a {
         min-width: 300px;
-        padding: 1em 0;
+        padding: 0.75em 0;
     }
 
     .topMenu a:hover, .topMenu a:focus, .topMenu a:active {
@@ -884,6 +945,17 @@ a:hover, a:focus, a:active {
         font-size: 2vw;
     }
 
+    #title p {
+        font-size: 55vw;
+        line-height: 1;
+        top: 0;
+        transform: translate3d(-50%,0,0);
+    }
+
+    #signUp h2 {
+        font-size: 15vw;
+    }
+
     .speaker {
         max-width: none;
     }
@@ -903,6 +975,11 @@ a:hover, a:focus, a:active {
 
     #schedule p {
         min-height: 0;
+    }
+
+    #schedule > section > section {
+        border-bottom: 1px solid #000;
+        border-left: none;
     }
 
     #sponsors a.article, #organisers a.article {
