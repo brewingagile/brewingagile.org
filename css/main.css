@@ -231,6 +231,12 @@ textarea {
     width: 20%;
 }
 
+.column--maxSixth {
+    max-width: 16%;
+    min-width: 250px;
+    width: 16%;
+}
+
 .flexboxtweener .rows, .no-flexbox .rows {
     display: block;
     flex-flow: nowrap;
@@ -511,6 +517,8 @@ a:hover, a:focus, a:active {
 #title {
     background: transparent url(../img/logo.svg) no-repeat scroll center bottom;
     background-size: auto 25%;
+    padding-top: 0;
+    padding-bottom: 0;
     position: relative;
 }
 
@@ -532,6 +540,10 @@ a:hover, a:focus, a:active {
 #title h1, #title h4 {
     color: white;
     text-shadow: 0 0 10px black;
+}
+
+#title h1 {
+    margin-top: 0;
 }
 
 #title h4 {
@@ -567,6 +579,11 @@ a:hover, a:focus, a:active {
 
 #signUp {
     z-index: 1;
+}
+
+#signUp h2 {
+    font-size: 5em;
+    letter-spacing: -4px;
 }
 
 #whoIsThisFor {
@@ -683,6 +700,15 @@ a:hover, a:focus, a:active {
 
 #sponsors a.article, #organisers a.article {
     border: none;
+}
+
+#organisers a.photo {
+    color: #222222;
+    font-family: 'Cormorant SC', serif;
+}
+
+#organisers a.photo img {
+    border-radius: 9999px;
 }
 
 #oldSites {
