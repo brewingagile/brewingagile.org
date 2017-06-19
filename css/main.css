@@ -195,6 +195,12 @@ textarea {
     width: 50%;
 }
 
+.column--maxHalved {
+    max-width: 50%;
+    min-width: 250px;
+    width: 50%;
+}
+
 .column--third {
     flex-shrink: 3;
     min-width: 83px;
@@ -1014,6 +1020,7 @@ a:hover, a:focus, a:active {
     }
 
     #sponsors a.article, #organisers a.article {
+        flex: 0 1 125px;
         padding: 2em;
     }
 }
