@@ -85,82 +85,6 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-html, body {
-    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-    height: 100%;
-    min-height: 100%;
-}
-
-body {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-
-a, a:hover, a:active, a:focus, a:visited {
-    border-bottom: 1px solid #000;
-    color: #000000;
-    text-decoration: none;
-}
-
-a:hover, a:active {
-    border-bottom-width: 3px;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-    margin-top: 0;
-    line-height: 1.2;
-}
-
-h1 {
-    font-size: 8rem;
-    font-weight: 100;
-    letter-spacing: 1;
-    word-spacing: 4rem;
-}
-
-h2 {
-    font-size: 4rem;
-    font-weight: 200;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 2.4rem;
-    font-weight: 400;
-    letter-spacing: 0.05rem;
-}
-
-h4 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-}
-
-h5 {
-    font-size: 1.1rem;
-    font-weight: 900;
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;
-}
-
-p {
-    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-    font-weight: 900;
-}
-
-.browserupgrade {
     background: #000000;
     color: #ffffff;
     margin: 0;
@@ -178,462 +102,573 @@ p {
     color: #ffffff;
 }
 
-body > header,
-body > section,
-body > footer {
-    display: table;
-    margin: 0;
-    min-height: 100%;
-    padding: 0;
+/* ==========================================================================
+   Dat Layout
+   ========================================================================== */
+
+.rows {
+    align-content: space-around;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.rows > *, .row {
+    box-sizing: border-box;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+}
+
+.rows--center {
     text-align: center;
-    width: 100%;
 }
 
-body > header > article,
-body > section > article,
-body > footer > article {
-    display: table-cell;
-    padding: 5%;
-    vertical-align: middle;
-    width: 90%;
+.columns {
+    align-content: center;
+    align-items: flex-start;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
-body > section {
-    padding: 5% 25%;
+.columns > *, .column {
+    align-self: flex-start;
+    box-sizing: border-box;
+    display: block;
+    -webkit-flex: 1 1 250px;
+    flex: 1 1 250px;
+    -ms-flex: 1 1 auto;
+    max-width: 100%;
+    min-width: 250px;
+}
+
+.column.row, .columns > .row, .rows > .column {
+    min-width: 100% !important;
+}
+
+.columns--auto > *, .columns--auto .column {
+    flex-basis: auto;
+    min-width: 0;
+}
+
+.columns--center > *, .columns--center .column {
+    text-align: center;
+}
+
+.columns--middle > *, .columns--middle .column {
+    align-self: center;
+}
+
+.columns--justifyCenter {
+    justify-content: center;
+}
+
+.columns--justifySpace {
+    justify-content: space-around;
+}
+
+.column--quad {
+    flex-grow: 4;
+    min-width: 1000px;
+}
+
+.column--tripple {
+    flex-grow: 3;
+    min-width: 750px;
+}
+
+.column--double {
+    flex-grow: 2;
+    min-width: 500px;
+}
+
+.column--halved {
+    flex: 1 2 125px;
+    min-width: 125px;
     width: 50%;
 }
 
-body.subPage > section, body.subPage > footer {
-    display: block;
+.column--maxHalved {
+    max-width: 50%;
+    min-width: 250px;
+    width: 50%;
 }
 
-body.subPage > footer {
-    padding: 5%;
-    width: 90%;
+.column--third {
+    flex-shrink: 3;
+    min-width: 83px;
+    width: 33%;
 }
 
-body.subPage h1 {
-    word-spacing: normal;
+.column--maxThird {
+    max-width: 33%;
+    min-width: 250px;
+    width: 33%;
 }
 
-body.subPage h2 {
-    margin: 7rem 0 1rem;
-    text-align: left;
+.column--fourth {
+    flex-shrink: 4;
+    min-width: 62px;
+    width: 25%;
 }
 
-body.subPage section p {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    text-align: left;
+.column--maxFourth {
+    max-width: 25%;
+    min-width: 250px;
+    width: 25%;
 }
 
-body.subPage section ul, body.subPage section ul li {
-    list-style: none;
-}
-
-body.subPage section ul li {
-    font-size: 1.5rem;
-    margin-bottom: 0.25em;
-}
-
-body > header {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcf900+0,e0a700+50,af7d13+100 */
-    background: rgb(252, 249, 0); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(252, 249, 0, 1) 0%, rgba(224, 167, 0, 1) 50%, rgba(175, 125, 19, 1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(252, 249, 0, 1) 0%, rgba(224, 167, 0, 1) 50%, rgba(175, 125, 19, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(252, 249, 0, 1) 0%, rgba(224, 167, 0, 1) 50%, rgba(175, 125, 19, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcf900', endColorstr='#af7d13', GradientType=0); /* IE6-9 */
-
-}
-
-body #intro {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70e6ea+0,4e11db+70,211684+100 */
-    background: rgb(112, 230, 234); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(112, 230, 234, 1) 0%, rgba(78, 17, 219, 1) 70%, rgba(33, 22, 132, 1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(112, 230, 234, 1) 0%, rgba(78, 17, 219, 1) 70%, rgba(33, 22, 132, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(112, 230, 234, 1) 0%, rgba(78, 17, 219, 1) 70%, rgba(33, 22, 132, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70e6ea', endColorstr='#211684', GradientType=0); /* IE6-9 */
-    color: #ffffff;
-}
-
-body #intro a {
-    color: #ffffff;
-    border-bottom-color: #ffffff;
-}
-
-body #signUp {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eef21f+0,e56ba8+70,ef5356+100 */
-    background: rgb(238, 242, 31); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(238, 242, 31, 1) 0%, rgba(229, 107, 168, 1) 70%, rgba(239, 83, 86, 1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(238, 242, 31, 1) 0%, rgba(229, 107, 168, 1) 70%, rgba(239, 83, 86, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(238, 242, 31, 1) 0%, rgba(229, 107, 168, 1) 70%, rgba(239, 83, 86, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eef21f', endColorstr='#ef5356', GradientType=0); /* IE6-9 */
-
-}
-
-body #whoIsThisFor,
-body #schedule {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,dddddd+100 */
-    background: rgb(238, 238, 238); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(221, 221, 221, 1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(221, 221, 221, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(221, 221, 221, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd', GradientType=0); /* IE6-9 */
-
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
-}
-
-body #speakers {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0c743+0,f5d477+100 */
-    background: rgb(240, 199, 67); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(240, 199, 67, 1) 0%, rgba(245, 212, 119, 1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(240, 199, 67, 1) 0%, rgba(245, 212, 119, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(240, 199, 67, 1) 0%, rgba(245, 212, 119, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0c743', endColorstr='#f5d477', GradientType=0); /* IE6-9 */
-
-}
-
-body #speakers > article > section > article > section:last-child {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6f383b+0,8c6d76+100 */
-    background: rgb(111, 56, 59); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(111, 56, 59, 1) 0%, rgba(140, 109, 118, 1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(111, 56, 59, 1) 0%, rgba(140, 109, 118, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(111, 56, 59, 1) 0%, rgba(140, 109, 118, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6f383b', endColorstr='#8c6d76', GradientType=0); /* IE6-9 */
-    color: #ffffff;
-}
-
-body #workshops {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ba1f6d+0,980026+100 */
-    background: rgb(186, 31, 109); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(186, 31, 109, 1) 0%, rgba(152, 0, 38, 1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(186, 31, 109, 1) 0%, rgba(152, 0, 38, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(186, 31, 109, 1) 0%, rgba(152, 0, 38, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ba1f6d', endColorstr='#980026', GradientType=0); /* IE6-9 */
-    color: #ffffff;
-}
-
-#head {
-    overflow: hidden;
-    position: relative;
-}
-
-#head > article {
-    background: transparent none no-repeat scroll center center;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-}
-
-#head > article {
-    background: transparent url(../img/shapes.svg) no-repeat scroll center center;
-    background-size: cover;
-}
-
-#head > article h1,
-#head > article h4 {
-    color: #fff;
-}
-
-#head > article h1:before {
-    background: transparent url(../img/logo.svg) no-repeat scroll center top;
-    background-size: contain;
-    content: '';
-    display: block;
-    padding-top: 25vh;
-}
-
-#head footer {
-    background: transparent url(../img/triangle.svg) repeat-x scroll center bottom;
-    background-size: auto 100%;
-    bottom: -1px;
-    display: block;
-    left: 0;
-    height: 10vh;
-    position: absolute;
-    width: 100%;
-}
-
-#intro {
-    min-height: 50%;
-    padding: 0;
-    width: 100%;
-}
-
-#intro article {
-    background: transparent url(../img/clouds.png) no-repeat scroll center top;
-    background-size: cover;
-    width: 100%;
-}
-
-#intro nav {
-    margin-top: 5%;
-}
-
-#intro nav a {
-    background: #ffffff;
-    border: none;
-    border-radius: 9999px;
-    color: #ffffff;
-    display: inline-block;
-    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-    font-size: 30px;
-    font-weight: bolder;
-    height: 50px;
-    line-height: 50px;
-    margin: 0 2.5%;
-    overflow: hidden;
-    padding: 0;
-    text-align: center;
-    text-indent: 15px;
-    width: 50px;
-}
-
-#intro nav a:first-letter {
-    color: #000000;
-}
-
-#intro nav a:hover, #intro nav a:active {
-    box-shadow: 0 6px 0 #000;
-}
-
-#intro nav a:first-letter:hover {
-    color: #ffffff;
-}
-
-#signUp {
-    min-height: 50%;
-    padding: 0;
-    width: 100%;
-}
-
-#signUp.soldOut {
-    min-height: 10%;
-}
-
-#signUp h2 {
-    color: #ffffff;
-    margin-bottom: 0;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
-}
-
-#signUp a {
-    background: #111;
-    border: none;
-    border-radius: 9999px;
-    color: #ffffff;
-    display: inline-block;
-    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-    font-size: 30px;
-    font-weight: bolder;
-    height: 200px;
-    line-height: 200px;
-    margin: 0 2.5%;
-    overflow: hidden;
-    padding: 0;
-    text-align: center;
-    width: 200px;
-    transition: background 100ms ease, color 100ms ease;
-}
-
-#signUp a:hover, #signUp a:active {
-    background: #ffffff;
-    color: #000000;
-}
-
-#signUp article {
-    background: transparent url(../img/tiger.svg) no-repeat scroll center center;
-    background-size: cover;
-}
-
-#signUp.soldOut article {
-    background-color: rgba(0,0,0,0.5);
-}
-
-#whoIsThisFor h3 {
-    margin-top: 1.5rem;
-}
-
-#whoIsThisFor header h3 {
-    margin-top: 0;
-}
-
-#speakers, #workshops {
-    padding: 0;
-    width: 100%;
-}
-
-#speakers img, #workshops img {
-    border-radius: 9999px;
-    max-width: 200px;
-    width: 100%;
-}
-
-#speakers > article > section {
-    padding-top: 5%;
-}
-
-#speakers > article > section section p {
-
-}
-
-#speakers > article > section:first-of-type {
-    padding-top: 0;
-}
-
-#speakers article section article section, #workshops article section article section {
-    float: left;
-    width: 70%;
-}
-
-#speakers article {
-    position: relative;
-}
-
-#speakers article section article section:last-child, #workshops article section article section:last-child {
-    box-sizing: border-box;
-    margin-left: 10%;
-    padding: 1%;
+.column--fifth {
+    flex-shrink: 5;
+    min-width: 50px;
     width: 20%;
 }
 
-#speakers article section article section header {
-    text-align: right;
+.column--maxFifth {
+    max-width: 20%;
+    min-width: 250px;
+    width: 20%;
 }
 
-#speakers article section article section h3 {
-    background: rgb(111, 56, 59);
+.column--maxSixth {
+    max-width: 16%;
+    min-width: 250px;
+    width: 16%;
+}
+
+.flexboxtweener .rows, .no-flexbox .rows {
+    display: block;
+    flex-flow: nowrap;
+}
+
+.flexboxtweener .columns,
+.no-flexbox .columns {
+    display: block;
+    flex-flow: nowrap;
+}
+
+.flexboxtweener .rows > *, .no-flexbox .rows > *,
+.flexboxtweener .row, .no-flexbox .row {
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+}
+
+.flexboxtweener .rows > *:before, .flexboxtweener .rows > *:after, .no-flexbox .rows > *:before, .no-flexbox .rows > *:after,
+.flexboxtweener .row:before, .flexboxtweener .row:after, .no-flexbox .row:before, .no-flexbox .row:after {
+    content: ' ';
+    display: block;
+}
+
+.flexboxtweener .rows > *:after, .no-flexbox .rows > *:after,
+.flexboxtweener .row:after, .no-flexbox .row:after {
+    clear: both;
+}
+
+.flexboxtweener .columns > *, .no-flexbox .columns > * {
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    float: left;
+}
+
+html {
+}
+
+body {
+}
+
+article, .article {
+    box-sizing: border-box;
+    padding: 3vw;
+    overflow-x: auto;
+}
+
+header.article {
+    padding-bottom: 0;
+}
+
+section, .section {
+    box-sizing: border-box;
+    padding: 0;
+    position: relative;
+}
+
+img {
+    box-sizing: border-box;
+    display: block;
+    max-width: 100%;
+}
+
+.pageWidth {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 210mm;
+}
+
+.columns > .pageWidth {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.screenHeight {
+    min-height: 99vh;
+}
+
+@media only screen and (min-width: 1280px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .column--quad {
+        min-width: 750px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .column--quad,
+    .column--tripple {
+        min-width: 500px;
+    }
+
+    article, .article {
+        padding: 2em;
+    }
+
+    header.article {
+        padding-bottom: 0;
+    }
+
+    .screenHeight {
+        min-height: 55vw;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+}
+
+@media only screen and (max-width: 530px) {
+    .column--quad,
+    .column--tripple,
+    .column--double {
+        min-width: 100%;
+    }
+
+    .column--halved, .column--fourth, .column--fifth {
+        flex-shrink: 1;
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .column {
+        min-width: 100%;
+    }
+
+    .column--halved {
+        min-width: 50%;
+    }
+
+    .column--fourth {
+        min-width: 25%;
+    }
+
+    .column--fifth {
+        min-width: 20%;
+    }
+
+    article, .article {
+        padding: 2em 0.5em;
+    }
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html {
+    background: #888888 url(../img/emily_jeff.jpg) no-repeat fixed center top;
+    background-size: cover;
+    transition: height 400ms ease, background 400ms ease;
+}
+
+body {
+    font-size: 1.2em;
+    left: 0;
+    position: relative;
+    transition: left 200ms ease, height 400ms ease, background 400ms ease;
+}
+
+h1, h3, h5 {
+    font-family: 'Cormorant SC', serif;
+    font-weight: normal;
+}
+
+h2, h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    border-bottom: 1px solid white;
+    font-size: 6em;
+    line-height: 0.9em;
+    margin-bottom: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+h2 {
+    font-size: 2.4em;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+h4 {
+    font-size: 1.4em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+ol li, ul li {
+    margin: 1em 0;
+}
+
+p {
+    line-height: 1.8em;
+}
+
+a {
+    border-bottom: 1px solid #fbb040;
+    color: #fbb040;
+    text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+    border-bottom-width: 2px;
+}
+
+.topMenu {
+    background: #000000 url(../img/emily_jeff.jpg) no-repeat fixed center top;
+    background-size: cover;
+    font-family: Georgia, serif;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: background 400ms ease;
+    width: 100%;
+    z-index: 99;
+}
+
+.topMenu a {
+    border-bottom: 1px solid transparent;
+    color: #fbb040;
+    font-size: 0.8em;
+    padding: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.topMenu a:hover, .topMenu a:focus, .topMenu a:active {
+    border-bottom-color: #ffffff;
     color: #ffffff;
-    display: inline;
-    text-align: right;
 }
 
-#speakers article section article section h5, #workshops article section article section h5 {
-    margin-top: 1rem;
+.menuButton {
+    background: rgba(0,0,0,0.8) url(../img/ic_menu_orange_24px.svg) no-repeat scroll 26px center;
+    background-size: auto 50%;
+    border-bottom: none;
+    border-radius: 9999px 0 0 0;
+    bottom: 0;
+    display: none;
+    font-family: Georgia, serif;
+    font-size: 9px;
+    height: 75px;
+    right: 0;
+    padding: 54px 0 0 15px;
+    position: fixed;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    width: 75px;
+    z-index: 999;
+}
+
+.menuShiw {
+    display: none;
+    background: rgba(0,0,0,0.1);
+    border-bottom: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 98;
+}
+
+#title {
+    background: transparent url(../img/logo.svg) no-repeat scroll center bottom;
+    background-size: auto 25%;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+
+#title p {
+    color: #000000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 70vw;
+    font-weight: bold;
+    left: 50%;
+    margin: 0;
+    position: fixed;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.2);
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    transition: height 400ms ease;
+    z-index: -1;
+}
+
+#title h1, #title h4 {
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+#title h1 {
+    margin-top: 0;
+}
+
+#title h4 {
+    margin: 0;
+}
+
+#intro {
+    width: 100%;
+}
+
+.contactUs a {
+    border: 1px solid #fbb040;
+    border-radius: 9999px;
+    box-sizing: border-box;
+    flex: 0 0 60px;
+    font-family: Georgia, serif;
+    font-size: 0.6em;
+    height: 60px;
+    margin-left: 2em;
+    min-width: 0;
+    padding-top: 21px;
+    width: 60px;
+    text-decoration: none;
+}
+
+.contactUs a:hover, .contactUs a:focus, .contactUs a:active {
+    text-decoration: underline;
+}
+
+.contactUs a:first-child {
+    margin-left: 0;
+}
+
+#signUp {
+    z-index: 1;
+}
+
+#signUp h2 {
+    font-size: 5em;
+    letter-spacing: -4px;
+}
+
+#whoIsThisFor {
+    background: #000000;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../img/feedback.jpg);
+    background-attachment: fixed, fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, center center;
+    background-size: auto, cover;
+    color: #ffffff;
+    transition: background 400ms ease;
+}
+
+#talks {
+    background: #ffffff;
+}
+
+#talks > section {
+    border-bottom: 1px solid #000000;
+}
+
+#talks > section:last-child {
+    border-bottom: none;
+}
+
+#workshops {
+    background: #000000;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../img/crowd.jpg);
+    background-attachment: fixed, fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, center center;
+    background-size: auto, cover;
+    color: #ffffff;
+    transition: background 400ms ease;
+}
+
+#workshops > section {
+    border-bottom: 1px solid #ffffff;
+    flex-direction: row-reverse;
+}
+
+#workshops > section:last-child {
+    border-bottom: none;
+}
+
+.speaker {
+    font-size: 0.8em;
+    max-width: 500px;
+}
+
+.speaker img {
+    border-radius: 9999px;
+}
+
+.speaker h5 {
     text-align: center;
 }
 
-#speakers article section article section p, #workshops article section article section p {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    text-align: left;
-}
-
-#speakers article section article section:first-child p,
-#speakers article section article section:first-child ul,
-#workshops article section article section:first-child p,
-#workshops article section article section:first-child header,
-#workshops article section article section:first-child ul {
-    margin-left: 33.3%;
-    width: 66.6%;
-}
-
-#speakers article section article section:first-child ul,
-#workshops article section article section:first-child ul {
-    display: block;
-    box-sizing: border-box;
-    padding-left: 2rem;
-}
-
-#speakers article section article section:first-child ul li,
-#workshops article section article section:first-child ul li {
-    list-style-position: outside;
-    margin-top: 1rem;
-    text-align: left;
-}
-
-#speakers article section article section:last-child a {
-    border-color: #ffffff;
-    color: #ffffff;
-}
-
-#speakers article section article section:last-child p {
-    font-size: 1rem;
-}
-
-#speakers article section article section:last-child p:last-child, #workshops article section article section:last-child p:last-child {
-    margin-bottom: 0;
-}
-
-#workshops article section article section:first-child {
-    padding-top: 2rem;
-}
-
-#workshops article section article {
-    border-top: 1px solid #ffffff;
-    margin-top: 2rem;
-    padding-top: 2rem;
-}
-
-#workshops article section article section:first-child h4 {
-    display: inline;
-    background-color: #000000;
-}
-
-#workshops > article {
-    background: transparent url(../img/stripes.svg) repeat-x scroll center bottom;
-    background-size: 25rem auto;
-}
-
-#workshops article > p {
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 5%;
-    max-width: 600px;
-}
-
 #schedule {
-    padding: 5%;
-    width: 90%;
 }
 
 #schedule h3 {
     margin-bottom: 0;
 }
 
-#schedule h5 {
-    font-size: 0.9rem;
-}
-
 #schedule p {
-    min-height: 11rem;
+    min-height: 11em;
 }
 
-#schedule > article > section {
+#schedule > section > section {
     border-left: 1px solid #000;
-    box-sizing: border-box;
-    float: left;
-    padding-right: 2%;
-    padding-left: 2%;
-    width: 20%;
 }
 
-#schedule > article > section:first-of-type {
+#schedule > section > section:first-of-type {
     border-left: none;
 }
 
-#schedule > article > section.wide {
-    width: 60%;
-}
-
-#schedule > article > section.wide section {
-    float: left;
-    margin-left: 7.5%;
-    width: 28%;
-}
-
-#schedule > article > section.wide section:first-of-type {
-    margin-left: 0;
-}
-
-#schedule section.single {
-}
-
-#schedule section.single section {
-    float: none;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
+#schedule header.article {
+    padding-bottom: 0;
 }
 
 #schedule table {
@@ -656,164 +691,89 @@ body #workshops {
 #schedule table tr td:first-child {
     border-top: 1px solid rgba(0, 0, 0, 0.075);
     color: transparent;
-    font-family: 'Cutive Mono', monospace, serif;
-    font-size: 1.2rem;
-    letter-spacing: -0.1rem;
-    width: 4rem;
 }
 
 #schedule table tr.title td:first-child {
     border-top: 1px solid #000;
     color: #000;
+    font-family: Georgia, serif;
+    font-size: 0.8em;
+    width: 4em;
 }
 
 #schedule table tr td:nth-child(2) {
     border-bottom: 1px solid #000;
+    padding-left: 1em;
     text-align: left;
     vertical-align: middle;
+    width: 100%;
 }
 
-#sponsors,
-#organisers {
-    min-height: 0;
-    padding-right: 5%;
-    padding-left: 5%;
-    width: 90%;
+#sponsors a.article, #organisers a.article {
+    border: none;
 }
 
-#sponsors header h2,
-#organisers header h2 {
-    margin-bottom: 0;
+#organisers a.photo {
+    color: #222222;
+    font-family: 'Cormorant SC', serif;
 }
 
-body #sponsors section p,
-body #organisers section p {
-    text-align: center;
-}
-
-#sponsors .logos,
-#organisers .logos {
-    padding-top: 3%;
-}
-
-#sponsors .logos article,
-#organisers .logos article {
-    vertical-align: middle;
-}
-
-#sponsors .logos article a,
-#organisers .logos article a {
-    border-bottom: none !important;
-    display: inline-block;
-    width: 20%;
-    margin: 0 1.5%;
-    min-width: 125px;
-    vertical-align: middle;
-}
-
-#sponsors .logos article a img,
-#organisers .logos article a img {
-    display: block;
-    margin: 0 auto;
-    padding: 15%;
-    max-height: 10em;
-    max-width: 70%;
-    position: relative;
-    top: 50%;
+#organisers a.photo img {
+    border-radius: 9999px;
 }
 
 #oldSites {
-    min-height: 0;
+    color: #ffffff;
 }
 
 #oldSites a {
-    background: #000;
-    border: none;
     border-radius: 9999px;
-    color: #fff;
-    display: inline-block;
-    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: bolder;
-    height: 50px;
-    line-height: 50px;
-    margin: 0 5px;
-    overflow: hidden;
-    padding: 0;
+    flex-grow: 0;
+    height: 3em;
+    width: 3em;
     text-align: center;
-    width: 50px;
 }
 
-#oldSites a:hover, #oldSites a:active {
-    box-shadow: 0 6px 0 #999;
+#presentedBy {
+    color: #ffffff;
 }
 
-body > footer {
-    min-height: 0;
+.paperBackgroundGradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,eeeeee+100 */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 50%, rgba(238,238,238,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 50%,rgba(238,238,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(255,255,255,1) 50%,rgba(238,238,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-attachment: fixed;
 }
 
-#videobg, #videobgShiw {
-    box-sizing: content-box;
-    bottom: 0;
-    display: none;
-    height: 100%;
-    left: 0;
-    margin: auto;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: 0;
+.orangeColor {
+    color: #fbb040;
 }
 
-#videobg {
-    transform: scale(2);
+.materialBoxShadow {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25), 0 2px 2px rgba(0,0,0,0.25);
+    z-index: 1;
 }
 
-#videobgShiw {
-    background-color: rgba(0, 0, 0, 0.5);
+.smallPrint {
+    font-size: 0.8em;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.videoWrapper iframe {
     position: absolute;
-    z-index: 0;
-}
-
-.twoCols > * {
-    display: inline-block;
-    width: 47.5%;
-}
-
-.twoCols > *:nth-child(odd):before {
-    display: block;
-    content: '';
-}
-
-.threeCols > * {
-    display: block;
-    float: left;
-    margin-right: 5%;
-    width: 30%;
-}
-
-.threeCols > *:nth-child(3n) {
-    margin-right: 0;
-}
-
-.threeCols > *:nth-child(3n+1) {
-    clear: left;
-}
-
-.fourCols > * {
-    display: block;
-    float: left;
-    margin-right: 5%;
-    width: 21.25%;
-}
-
-.fourCols > *:nth-child(4n) {
-    margin-right: 0;
-}
-
-.fourCols > *:nth-child(4n+1) {
-    clear: left;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* ==========================================================================
@@ -896,445 +856,195 @@ body > footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1440px) {
 
-    #schedule, #schedule > article {
-        padding-right: 1%;
-        padding-left: 1%;
-        width: 98%;
+    .speaker {
+        max-width: 400px;
     }
 }
 
 @media only screen and (max-width: 1280px) {
 
-    #schedule > article > section {
-        border-left: none;
-        clear: left;
-        float: none;
-        margin-top: 5%;
-        padding-top: 5%;
-        width: 50%;
+    .speaker {
+        max-width: 300px;
     }
-
-    #schedule > article > section:first-of-type {
-        border-top: none;
-        margin-top: 0;
-        padding-top: 0;
-    }
-
-    #schedule > article > section:last-of-type {
-        margin-top: 0;
-    }
-
-    #schedule > article > section.single {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    #schedule > article > section.wide {
-        border-top: 1px solid #222222;
-        border-bottom: 1px solid #222222;
-        padding-bottom: 5%;
-        width: 100%;
-    }
-
-    #schedule p {
-        min-height: 3rem;
-    }
-
-    #schedule table tr.title td:first-child,
-    #schedule table tr td:first-child,
-    #schedule table tr:first-child td,
-    #schedule table tr td:nth-child(2) {
-        border-top: none;
-        border-bottom: none;
-    }
-
-    #schedule table tbody tr {
-        display: none;
-    }
-
-    #schedule table tbody tr td {
-        display: block;
-    }
-
-    #schedule table tbody tr.title {
-        clear: both;
-        display: block;
-    }
-
-    #schedule table tr.title td:first-child {
-        box-sizing: border-box;
-        float: left;
-        padding: 0 2rem 2% 0;
-        text-align: right;
-        width: 33.33%
-    }
-
-    #schedule table tr.title td:last-child {
-        float: right;
-        padding: 0 0 2%;
-        width: 66.66%
-    }
-
 }
 
 @media only screen and (max-width: 1024px) {
 
-    #speakers article section article section, #workshops article section article section {
-        width: 50%;
+    #schedule > article > section:first-of-type,
+    #schedule section.single {
+        border-right: none;
     }
 
-    #speakers article section article section:last-child, #workshops article section article section:last-child {
-        width: 40%;
+    #schedule > article > section section header {
+        border-top: 1px solid #222222;
     }
 
-    #speakers article section article section:first-child p,
-    #speakers article section article section:first-child ul,
-    #workshops article section article section:first-child p,
-    #workshops article section article section:first-child header,
-    #workshops article section article section:first-child ul {
-        margin-left: 0;
-        width: 100%;
+    #schedule table tr td,
+    #schedule table tr.title td {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    #schedule table tr.title td,
+    #schedule table tr.title td:first-child {
+        border-top: 1px solid #dddddd;
+    }
+
+    #schedule table tr.title:first-of-type td {
+        border-top: 0;
+    }
+
+    #schedule table tbody tr td {
+        vertical-align: top;
+    }
+
+    #schedule table tbody tr:not(.title) td {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 800px) {
 
-    body.subPage h1 {
-        font-size: 4rem;
+    body {
+        padding-bottom: 100px;
     }
 
-    body.subPage h2 {
-        font-size: 3rem;
+    body.js-menuOpen {
+        left: -300px;
     }
 
-
-    body > section {
-        padding: 5% 12.5%;
-        width: 75%;
+    h1 {
+        margin-top: 0;
     }
 
-    #schedule {
-        padding: 5% 0;
-        width: 100%;
+    h2 {
+        font-size: 10vw;
+        margin: 0;
+        text-align: center;
     }
 
-    #schedule > article > section:first-of-type,
-    #schedule section.single {
-        border-right: none;
-        padding-left: 0;
-        padding-right: 0;
-        width: 100%;
+    h3 {
+        font-size: 1.8em;
+        line-height: 1.;
     }
 
-    #schedule > article > section section,
-    #schedule > article > section.wide section,
-    #schedule section section:first-of-type,
-    #schedule > article > section.wide section:first-of-type {
-        float: none;
-        clear: both;
-        margin: 5% auto 0;
-        padding-top: 0;
-        width: 95%
+    h4 {
+        font-size: 1.4em;
+        line-height: 1.1;
     }
 
-    #schedule > article > section {
-        box-sizing: border-box;
-        float: none;
-        padding-left: 0;
-        width: 25%;
+    h5 {
+        font-size: 1.2em;
+        line-height: 1.3;
+        text-align: center;
     }
 
-    #schedule > article > section section header {
-        border-top: 1px solid #222222;
+    .smallPrint {
+        line-height: 1.4;
+    }
+
+    .topMenu {
+        background: rgba(0,0,0,0.8);
+        font-size: 1.2em;
+        height: 100%;
+        left: 100%;
+        transition: 200ms transform ease;
+        width: 300px;
+    }
+
+    body.js-menuOpen .topMenu {
+        transform: translate3d(-100%,0,0);
+    }
+
+    .topMenu a {
+        min-width: 300px;
+        padding: 0.75em 0;
+    }
+
+    .topMenu a:hover, .topMenu a:focus, .topMenu a:active {
+    }
+
+    .menuButton {
+        display: block;
+    }
+
+    body.js-menuOpen .menuShiw {
+        display: block;
+    }
+
+    #title h1 {
+        font-size: 12vw;
+    }
+
+    #title h4 {
+        font-size: 2vw;
+    }
+
+    #title p {
+        font-size: 55vw;
+        line-height: 1;
+        top: 0;
+        transform: translate3d(-50%,0,0);
+    }
+
+    #signUp h2 {
+        font-size: 15vw;
+    }
+
+    .speaker {
+        max-width: none;
+    }
+
+    .speaker header {
+        width: 200px;
+        margin: 0 2em 2em 0;
+    }
+
+    #talks .speaker header {
+        float: left;
+    }
+
+    #workshops .speaker header {
         margin: 0 auto;
-        padding-top: 5%;
-        width: 66.6%;
-    }
-
-    #schedule > article > section section:first-of-type header {
-
     }
 
     #schedule p {
         min-height: 0;
     }
 
-    #schedule section.single {
-        margin-top: 5%;
-        padding-top: 5%;
+    #schedule > section > section {
+        border-bottom: 1px solid #000;
+        border-left: none;
     }
 
-    #schedule > article > section.wide {
-
-    }
-
-    #schedule table tr.title td:first-child,
-    #schedule table tr td:first-child,
-    #schedule table tr:first-child td,
-    #schedule table tr td:nth-child(2) {
-        border-top: none;
-        border-bottom: none;
-    }
-
-    #schedule table tbody tr {
-        display: none;
-    }
-
-    #schedule table tbody tr td {
-        display: block;
-    }
-
-    #schedule table tbody tr.title {
-        clear: both;
-        display: block;
-    }
-
-    #schedule table tr.title td:first-child {
-        box-sizing: border-box;
-        float: left;
-        padding: 0 2rem 2% 0;
-        text-align: right;
-        width: 33.33%
-    }
-
-    #schedule table tr.title td:last-child {
-        float: right;
-        padding: 0 0 2%;
-        width: 66.66%
-    }
-
-    .fourCols > * {
-        width: 30%;
-    }
-
-    .fourCols > *:nth-child(4n) {
-        margin-right: 5%;
-    }
-
-    .fourCols > *:nth-child(4n+1) {
-        clear: none;
-    }
-
-    .fourCols > *:nth-child(3n) {
-        margin-right: 0;
-    }
-
-    .fourCols > *:nth-child(3n+1) {
-        clear: left;
-    }
-
-    #sponsors div a, #organisers div a {
-        width: 44%;
+    #sponsors a.article, #organisers a.article {
+        flex: 0 1 125px;
+        padding: 2em;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
+}
 
-    h2 {
-        font-size: 3rem;
-    }
-
-    h3 {
-        font-size: 2rem;
-    }
-
-    .threeCols > *,
-    .fourCols > * {
-        float: right;
-        margin-right: 0;
-        width: 47.5%;
-    }
-
-    .threeCols > *:nth-child(3n+1) {
-        clear: none;
-    }
-
-    .fourCols > *:nth-child(4n) {
-        margin-right: 0;
-    }
-
-    .fourCols > *:nth-child(3n+1) {
-        clear: none;
-    }
-
-    .threeCols > *:nth-child(odd),
-    .fourCols > *:nth-child(odd) {
-        clear: left;
-        float: left;
-    }
-
-    #quickInfo .signUp {
-        margin-left: -35px;
-    }
-
-    #quickInfo .signUp a {
-        font-size: 2em;
-        height: 70px;
-        letter-spacing: -2.5px;
-        line-height: 70px;
-        padding-left: 40px;
-    }
-
-    #quickInfo .signUp a:after {
-        border-width: 35px;
-        margin-top: -35px;
-    }
-
-    #quickInfo .signUp a:before {
-        border-width: 35px;
-        margin-top: -35px;
-    }
-
-    #sponsors table td,
-    #sponsors table.smallLogos td,
-    #organisers table td,
-    #organisers table.smallLogos td {
-        padding: 1em;
+@media only screen and (max-width: 530px) {
+    #title h4 {
+        font-size: 1em;
     }
 }
 
 @media only screen and (max-width: 450px) {
-    body > section,
-    body > header > article, body > section > article, body > footer > article {
-        width: 98%;
-        padding: 5% 1%;
-    }
-
-    h1 {
-        font-size: 4rem;
-    }
-
-    h2 {
-        font-size: 2.4rem;
-    }
-
-    h3 {
-        font-size: 1.4rem;
-    }
-
-    h4 {
-        font-size: 1.2rem;
-    }
-
-    h5 {
-        font-size: 0.7rem;
-        letter-spacing: 0.1rem;
-    }
-
-    body.subPage h1 {
-        font-size: 3rem;
-    }
-
-    body.subPage h2 {
-        font-size: 2.6rem;
-    }
-
-    #speakers > article > section {
-        padding-top: 10%;
-    }
-
-    #speakers article section article section, #workshops article section article section {
+    #talks .speaker header {
         float: none;
-        width: 100%;
-    }
-
-    #speakers article section article section header, #workshops article section article section header {
-        min-height: 11rem;
-        width: 65%;
-    }
-
-    #speakers article section article section:last-child, #workshops article section article section:last-child {
-        background: none !important;
-        float: none;
-        margin-left: 0;
-        width: 30%;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    #speakers > article > section {
-        border-top: 1px solid rgb(111, 56, 59);
-        margin-top: 5%;
-        padding-top: 5%;
-    }
-
-    #speakers > article > section:first-of-type {
-        border-top: none;
-    }
-
-    #workshops article section article section:first-child {
-        padding-top: 0;
-    }
-
-    #workshops article section article section:last-child {
-        top: 2rem;
-    }
-
-    #speakers img, #workshops img {
-        margin-top: 0;
-    }
-
-    #speakers article section article section:last-child header, #workshops article section article section:last-child header {
-        width: 100%;
-        text-align: center;
-    }
-
-    #speakers article section article section h5, #workshops article section article section h5 {
-        color: #222222;
-        margin-bottom: 0;
-    }
-
-    body #speakers > article > section > article > section:last-child p {
-        display: none;
-    }
-
-    #workshops article {
-        position: relative;
-    }
-
-    #workshops article section article section:first-child header {
-        width: 60%;
-    }
-
-    #workshops article section article section h5 {
-        color: #ffffff;
-    }
-
-    #schedule section section,
-    #schedule section section:first-of-type {
-        width: 90%
-    }
-
-    .twoCols > *,
-    .threeCols > *,
-    .fourCols > * {
-        float: none;
-        width: 100%;
-    }
-
-    .twoCols > *:nth-child(odd),
-    .threeCols > *:nth-child(odd),
-    .fourCols > *:nth-child(odd) {
-        clear: none;
-        float: none;
-    }
-
-    #sponsors table td,
-    #sponsors table.smallLogos td,
-    #organisers table td,
-    #organisers table.smallLogos td {
-        padding: 0.4em;
+        margin: 0 auto;
     }
 }
 
 @media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -1351,9 +1061,8 @@ body > footer {
     *:first-letter,
     *:first-line {
         background: transparent !important;
-        color: #000 !important;
-        /* Black prints faster:
-                                          http://www.sanbeiji.com/archives/953 */
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -1375,6 +1084,7 @@ body > footer {
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
+
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
@@ -1390,6 +1100,7 @@ body > footer {
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
+
     thead {
         display: table-header-group;
     }
