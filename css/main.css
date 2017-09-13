@@ -671,6 +671,10 @@ a:hover, a:focus, a:active {
     padding-bottom: 0;
 }
 
+#schedule > section > section > article {
+
+}
+
 #schedule table {
     width: 100%;
 }
@@ -863,14 +867,20 @@ a:hover, a:focus, a:active {
     }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1350px) {
 
-    .speaker {
-        max-width: 300px;
+    #schedule p {
+        min-height: 0;
     }
-}
 
-@media only screen and (max-width: 1024px) {
+    #schedule > section {
+        flex-direction: column;
+    }
+
+    #schedule > section > section {
+        align-self: center;
+        border-left: none;
+    }
 
     #schedule > article > section:first-of-type,
     #schedule section.single {
@@ -903,6 +913,18 @@ a:hover, a:focus, a:active {
     #schedule table tbody tr:not(.title) td {
         display: none;
     }
+}
+
+@media only screen and (max-width: 1280px) {
+
+    .speaker {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -1031,6 +1053,10 @@ a:hover, a:focus, a:active {
 @media only screen and (max-width: 530px) {
     #title h4 {
         font-size: 1em;
+    }
+
+    #schedule section section {
+        width: 100%;
     }
 }
 
