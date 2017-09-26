@@ -1065,8 +1065,8 @@ a:hover, a:focus, a:active {
 @media only screen and (max-width: 450px) {
 
     .columns {
-        background: yellow;
-        flex-direction: row;
+        background: orange;
+        flex-direction: row !important;
         flex-wrap: wrap;
     }
 
