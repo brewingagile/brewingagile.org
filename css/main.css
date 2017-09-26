@@ -289,6 +289,7 @@ article, .article {
     box-sizing: border-box;
     padding: 3vw;
     overflow-x: auto;
+    overflow-y: hidden;
 }
 
 header.article {
@@ -1065,6 +1066,8 @@ a:hover, a:focus, a:active {
         float: none;
         margin: 0 auto;
     }
+
+
 }
 
 @media print,
