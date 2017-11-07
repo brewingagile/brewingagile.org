@@ -1,4 +1,5 @@
 # Texten
+
 Hej kära vän/älskade partner/underbara medmänniska!
 
 I år har vi sålt ut alla biljetter vi vill sälja, och har ett fåtal över. Jag skriver därför detta brev för att fråga om du vill komma? Det är alltså helt gratis för dig. Programmet finns på https://brewingagile.org/
@@ -18,32 +19,37 @@ Observera att detta inte omfattar workshopparna med Bjarte och Marcus, utan "end
 * Camilla Westreaus, Fotball Addicts
 * Olof Bjarnasson, C-något
 * Sonny Lööf
+* Henning Klasén, Sigma
+* C A G Kaushik, Sigma
 
 
 # Tillfrågade
 
 * Sebastian Wallin, Inteleon
 * Anna Lundmark, Inteleon
-* Tomas Ekman, Forbo
 * Sofia i Skövde?
-* Ann Malmsten, Indea
 * Suzanne Åkerlind, L
 * Mikael Wendt, L
-* Henning Klasén, Sigma
-* Sofia Lindberg, Spotify
-* Calle Jershed, MP
 * Luciana Haugen
+* Johan Ström, Quality Minds
+* Henrik Lewander, Appland
+* Henrik Sandklef, GU
+* Jonas Sohtell, Essiq
+* Jonas Essiq, Essiq
+* Jonas Karles, Mina tjänster
+* Lena Persson, i3tex
+* Fredrik Gustafsson, Molflow
+* Martin Jilek, VolvoFinans
+* Peter Lindsten, Inceptive
+* Christian Fredriksson, Getability AB
+* Andreas Stierna, Star Republic
 
 
 # Kandidater
 
 * Per Hogström
 * Lina Bindelöv
-* Johan Ström
 * Anneli Widengård
-* Thami Zaitit
-* Peter Gustafsson
-* Ann Malmsten
 * Emma Bjuvefors
 * Lena Ramdahl
 * Josefin Ondrus
@@ -52,6 +58,10 @@ Observera att detta inte omfattar workshopparna med Bjarte och Marcus, utan "end
 
 # Tillfrågade & avböjande:
 
+* Sofia Lindberg, Spotify
+* Calle Jershed, MP
+* Tomas Ekman, Forbo
+* Ann Malmsten, Indea
 * Michael Öhman, Trine
 * Alexandra Dinsdale, Spotify
 * Lovisa Ehrenborg, Etui
