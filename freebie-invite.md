@@ -21,6 +21,9 @@ Observera att detta inte omfattar workshopparna med Bjarte och Marcus, utan "end
 * Sonny Lööf
 * Henning Klasén, Sigma
 * C A G Kaushik, Sigma
+* Jonas Karles, Mina tjänster
+* Christian Fredriksson, Getability AB
+* Johan Ström, Quality Minds
 
 
 # Tillfrågade
@@ -31,17 +34,14 @@ Observera att detta inte omfattar workshopparna med Bjarte och Marcus, utan "end
 * Suzanne Åkerlind, L
 * Mikael Wendt, L
 * Luciana Haugen
-* Johan Ström, Quality Minds
 * Henrik Lewander, Appland
 * Henrik Sandklef, GU
 * Jonas Sohtell, Essiq
 * Jonas Essiq, Essiq
-* Jonas Karles, Mina tjänster
 * Lena Persson, i3tex
 * Fredrik Gustafsson, Molflow
 * Martin Jilek, VolvoFinans
 * Peter Lindsten, Inceptive
-* Christian Fredriksson, Getability AB
 * Andreas Stierna, Star Republic
 
 
