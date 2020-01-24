@@ -243,6 +243,12 @@ textarea {
     width: 16%;
 }
 
+.column--maxEight {
+    max-width: 12.5%;
+    min-width: 250px;
+    width: 12.5%;
+}
+
 .flexboxtweener .rows, .no-flexbox .rows {
     display: block;
     flex-flow: nowrap;
