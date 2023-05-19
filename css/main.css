@@ -642,6 +642,11 @@ a:hover, a:focus, a:active {
     border-bottom: none;
 }
 
+.read-more {
+    color: #fbb040;
+    text-decoration: underline;
+}
+
 .speaker {
     font-size: 0.8em;
     max-width: 500px;

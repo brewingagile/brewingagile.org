@@ -153,7 +153,7 @@
                 <p>Although these values were not invented as a part of Scrum, and are not exclusive to Scrum, they do give direction to the work, behavior and actions in Scrum. In a Scrum context, our decisions, the steps we take, the way we play the game, the practices we include and the activities we undertake within Scrum should all re-enforce these values, not diminish or undermine them. That however requires understanding these values, and the associated behaviors, in a context of...Scrum, which means to understand them against the background of the combination of people+complexity+empiricism.</p>
                 <p>Gunther does not aspire preaching or even teaching values. In this interactive workshop, he collaboratively invites people to look at the Scrum framework through the lens of <b>the Scrum Values</b> in a context of Scrum. Gunther helps participants grasp how the Scrum Values can help them look beyond the rules of Scrum and enrich their view on the Scrum framework.</p>
             </span>
-            <label onClick="expandCollapse('more-gunther-workshop1')" id="more-gunther-workshop1-button"><u>Read more...</u></label>
+            <label class='read-more' onClick="expandCollapse('more-gunther-workshop1')" id="more-gunther-workshop1-button">Show more...</label>
         </article>
         <article class="speaker column--fourth column--maxFourth">
             <header>
@@ -213,7 +213,7 @@
                 <p>Gunther does not aspire teaching how to scale Scrum or introduce a new scaling framework. In this interactive workshop, he collaboratively explores with the participants the principles that apply when the need arises to maintain a product with more people than can conveniently work as one team,
                     i.e. move to a “Multi-Team Scrum” setup. Gunther helps the participants grasp how the rules of the Scrum framework don’t change and why no additions are needed when having to work with multiple teams (on the same product).</p>
             </span>
-            <label onclick="expandCollapse('more-gunther-workshop2')" id="more-gunther-workshop2-button"><u>Read more...</u></label>
+            <label class='read-more' onclick="expandCollapse('more-gunther-workshop2')" id="more-gunther-workshop2-button">Read more...</label>
         </article>
         <article class="speaker column--fourth column--maxFourth">
             <header>
@@ -325,10 +325,10 @@
         var btnText = document.getElementById(sectionId+"-button");
 
         if (moreText.style.display === "inline") {
-            btnText.innerHTML = "Read more";
+            btnText.innerHTML = "Show more...";
             moreText.style.display = "none";
         } else {
-            btnText.innerHTML = "Read less";
+            btnText.innerHTML = "Show less...";
             moreText.style.display = "inline";
         }
     }
