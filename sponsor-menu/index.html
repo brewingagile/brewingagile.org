@@ -52,6 +52,20 @@
     white-space: nowrap;
   }
   </style>
+  <script>
+    function expandCollapse(sectionId) {
+        var moreText = document.getElementById(sectionId);
+        var btnText = document.getElementById(sectionId+"-button");
+
+        if (moreText.style.display === "") {
+          btnText.innerHTML = "Show more...";
+          moreText.style.display = "none";
+        } else {
+          moreText.style.display = "";
+          btnText.innerHTML = "Show less...";
+        }
+    }
+</script>
 </head>
 <body class="subPage">
 
@@ -76,32 +90,57 @@
           <li>Logo and link on our website. www.brewingagile.org.</li>
           <li>Logo on all Brewing Agile powerpoint slides shows during the event.</li>
           <li>Logo included in all promotional material distributed.</li>
-          <li>One seat at the conference. Does not include workshop addon.</li>
+          <li>One seats at the conference (includes main conference only, workshops sold separately).</li>
           <li>Thank you from the organizers during the conference for your sponsorship.</li>
         </ul>
       </article>
   
-      <article ="ontapsponsor" class="clearfix">
+      <article id="ontapsponsor" class="clearfix">
         <header>
           <h2>On Tap Sponsor - <span class='money'>12 000 SEK</span></h2>
         </header>
         <p>The full sponsorship package includes:</p>
         <ul>
-          <li>Logo and link on our website. www.brewingagile.org</li>
-          <li>Logo on all Brewing Agile powerpoint slides shows during the event.</li>
-          <li>Logo included in all promotional material distributed.</li>
-          <li>Rollup and stand at the event for networking and software demo’s.</li>
-          <li>Two seats at the conference. Does not include workshop addon.</li>
           <li>Up to 5 minutes to speak about your organization from the main stage.</li>
+          <li>Rollup and stand at the event for networking and software demo’s.</li>
           <li>Option to distribute handouts to all event participants.
             <ul>
               <li>A great way to advertise or recruit for your organization!</li>
               <li>Handout must be provided by sponsor.</li>
             </ul>
           </li>
+          <li>Two seats at the conference (includes main conference only, workshops sold separately).</li>
+          <li>Everything included in Bottle Sponsor package. <label class='read-more' onClick="expandCollapse('more-on-tap')" id="more-on-tap-button">Show more...</label>            
+            <ul style="display: none" id="more-on-tap">
+              <li>Logo and link on our website. www.brewingagile.org.</li>
+              <li>Logo on all Brewing Agile powerpoint slides shows during the event.</li>
+              <li>Logo included in all promotional material distributed.</li>
+              <li>Thank you from the organizers during the conference for your sponsorship.</li>
+            </ul></li>
         </ul>
       </article>
-  
+      <article id="brewerysponsor" class="clearfix">
+        <header>
+          <h2>Brewery Sponsor - <span class='money'>25 000 SEK</span></h2>
+        </header>
+        <p>The premier sponsorship package includes:</p>
+        <ul>
+          <li>Dedicated email to all event attendees.</li>
+          <li>Open space area named after your organization.</li>
+          <li>Your brand featured on our conference lanyard.</li>
+          <li>Six seats at the conference (includes main conference only, workshops sold separately).</li>
+          <li>Everything included in On Tap Sponsor package. <label class='read-more' onClick="expandCollapse('more-brewery')" id="more-brewery-button">Show more...</label>            
+          <ul style="display: none" id="more-brewery">
+            <li>Logo and link on our website. www.brewingagile.org</li>
+            <li>Logo on all Brewing Agile powerpoint slides shown during the event.</li>
+            <li>Logo included in all promotional material distributed.</li>
+            <li>Rollup and stand at the event for networking and software demos.</li>
+            <li>Up to 5 minutes to speak about your organization from the main stage.</li>
+            <li>Option to distribute handouts to all event participants.</li>
+            <li>Thank you from the organizers during the conference for your sponsorship.</li>
+          </ul></li>
+        </ul>
+      </article>
       <article>
         <footer>
           <p>All prices are excluding VAT.</p>
