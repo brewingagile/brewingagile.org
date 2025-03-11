@@ -1,0 +1,1190 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    background: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0.5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+}
+
+.browserupgrade a {
+    border-bottom-color: #ffffff;
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   Dat Layout
+   ========================================================================== */
+
+.rows {
+    align-content: space-around;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.rows > *, .row {
+    box-sizing: border-box;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+}
+
+.rows--center {
+    text-align: center;
+}
+
+.columns {
+    align-content: center;
+    align-items: flex-start;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.columns > *, .column {
+    align-self: flex-start;
+    box-sizing: border-box;
+    display: block;
+    -webkit-flex: 1 1 250px;
+    flex: 1 1 250px;
+    -ms-flex: 1 1 auto;
+    max-width: 100%;
+    min-width: 250px;
+}
+
+.column.row, .columns > .row, .rows > .column {
+    min-width: 100% !important;
+}
+
+.columns--auto > *, .columns--auto .column {
+    flex-basis: auto;
+    min-width: 0;
+}
+
+.columns--center > *, .columns--center .column {
+    text-align: center;
+}
+
+.columns--middle > *, .columns--middle .column {
+    align-self: center;
+}
+
+.columns--justifyCenter {
+    justify-content: center;
+}
+
+.columns--justifySpace {
+    justify-content: space-around;
+}
+
+.column--quad {
+    flex-grow: 4;
+    min-width: 1000px;
+}
+
+.column--tripple {
+    flex-grow: 3;
+    min-width: 750px;
+}
+
+.column--double {
+    flex-grow: 2;
+    min-width: 500px;
+}
+
+.column--halved {
+    flex: 1 2 125px;
+    min-width: 125px;
+    width: 50%;
+}
+
+.column--maxHalved {
+    max-width: 50%;
+    min-width: 250px;
+    width: 50%;
+}
+
+.column--third {
+    flex-shrink: 3;
+    min-width: 83px;
+    width: 33%;
+}
+
+.column--maxThird {
+    max-width: 33%;
+    min-width: 250px;
+    width: 33%;
+}
+
+.column--fourth {
+    flex-shrink: 4;
+    min-width: 62px;
+    width: 25%;
+}
+
+.column--maxFourth {
+    max-width: 25%;
+    min-width: 250px;
+    width: 25%;
+}
+
+.column--fifth {
+    flex-shrink: 5;
+    min-width: 50px;
+    width: 20%;
+}
+
+.column--maxFifth {
+    max-width: 20%;
+    min-width: 250px;
+    width: 20%;
+}
+
+.column--maxSixth {
+    max-width: 16%;
+    min-width: 250px;
+    width: 16%;
+}
+
+.column--maxEight {
+    max-width: 12.5%;
+    min-width: 250px;
+    width: 12.5%;
+}
+
+.flexboxtweener .rows, .no-flexbox .rows {
+    display: block;
+    flex-flow: nowrap;
+}
+
+.flexboxtweener .columns,
+.no-flexbox .columns {
+    display: block;
+    flex-flow: nowrap;
+}
+
+.flexboxtweener .rows > *, .no-flexbox .rows > *,
+.flexboxtweener .row, .no-flexbox .row {
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+}
+
+.flexboxtweener .rows > *:before, .flexboxtweener .rows > *:after, .no-flexbox .rows > *:before, .no-flexbox .rows > *:after,
+.flexboxtweener .row:before, .flexboxtweener .row:after, .no-flexbox .row:before, .no-flexbox .row:after {
+    content: ' ';
+    display: block;
+}
+
+.flexboxtweener .rows > *:after, .no-flexbox .rows > *:after,
+.flexboxtweener .row:after, .no-flexbox .row:after {
+    clear: both;
+}
+
+.flexboxtweener .columns > *, .no-flexbox .columns > * {
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    float: left;
+}
+
+html {
+}
+
+body {
+}
+
+article, .article {
+    box-sizing: border-box;
+    padding: 3vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+header.article {
+    padding-bottom: 0;
+}
+
+section, .section {
+    box-sizing: border-box;
+    padding: 0;
+    position: relative;
+}
+
+img {
+    box-sizing: border-box;
+    display: block;
+    max-width: 100%;
+}
+
+.pageWidth {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 210mm;
+}
+
+.columns > .pageWidth {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.screenHeight {
+    min-height: 99vh;
+}
+
+@media only screen and (min-width: 1280px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .column--quad {
+        min-width: 750px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .column--quad,
+    .column--tripple {
+        min-width: 500px;
+    }
+
+    article, .article {
+        padding: 2em;
+    }
+
+    header.article {
+        padding-bottom: 0;
+    }
+
+    .screenHeight {
+        min-height: 55vw;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+}
+
+@media only screen and (max-width: 530px) {
+    .column--quad,
+    .column--tripple,
+    .column--double {
+        min-width: 100%;
+    }
+
+    .column--halved, .column--fourth, .column--fifth {
+        flex-shrink: 1;
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .column {
+        min-width: 100%;
+    }
+
+    .column--halved {
+        min-width: 50%;
+    }
+
+    .column--fourth {
+        min-width: 25%;
+    }
+
+    .column--fifth {
+        min-width: 20%;
+    }
+
+    article, .article {
+        padding: 2em 0.5em;
+    }
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html {
+    background: #888888 url(../img/emily_rona2mini.jpg) no-repeat fixed center top;
+    background-size: cover;
+    transition: height 400ms ease, background 400ms ease;
+}
+
+body {
+    font-size: 1.2em;
+    left: 0;
+    position: relative;
+    transition: left 200ms ease, height 400ms ease, background 400ms ease;
+}
+
+h1, h3, h5 {
+    font-family: 'Cormorant SC', serif;
+    font-weight: normal;
+}
+
+h2, h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    border-bottom: 1px solid white;
+    font-size: 6em;
+    line-height: 0.9em;
+    margin-bottom: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+h2 {
+    font-size: 2.4em;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+h4 {
+    font-size: 1.4em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+ol li, ul li {
+    margin: 1em 0;
+}
+
+p {
+    line-height: 1.8em;
+}
+
+a {
+    border-bottom: 1px solid #fbb040;
+    color: #fbb040;
+    text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+    border-bottom-width: 2px;
+}
+
+.topMenu {
+    background: #000000 url(../img/emily_jeff.jpg) no-repeat fixed center top;
+    background-size: cover;
+    font-family: Georgia, serif;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: background 400ms ease;
+    width: 100%;
+    z-index: 99;
+}
+
+.topMenu a {
+    border-bottom: 1px solid transparent;
+    color: #fbb040;
+    font-size: 0.8em;
+    padding: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.topMenu a:hover, .topMenu a:focus, .topMenu a:active {
+    border-bottom-color: #ffffff;
+    color: #ffffff;
+}
+
+.menuButton {
+    background: rgba(0,0,0,0.8) url(../img/ic_menu_orange_24px.svg) no-repeat scroll 26px center;
+    background-size: auto 50%;
+    border-bottom: none;
+    border-radius: 9999px 0 0 0;
+    bottom: 0;
+    display: none;
+    font-family: Georgia, serif;
+    font-size: 9px;
+    height: 75px;
+    right: 0;
+    padding: 54px 0 0 15px;
+    position: fixed;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    width: 75px;
+    z-index: 999;
+}
+
+.menuShiw {
+    display: none;
+    background: rgba(0,0,0,0.1);
+    border-bottom: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 98;
+}
+
+#title {
+    background: transparent url(../img/logo.svg) no-repeat scroll center bottom;
+    background-size: auto 25%;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+
+#title p {
+    color: #000000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 70vw;
+    font-weight: bold;
+    left: 50%;
+    margin: 0;
+    position: fixed;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.2);
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    transition: height 400ms ease;
+    z-index: -1;
+}
+
+#title h1, #title h4 {
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+#title h1 {
+    margin-top: 0;
+}
+
+#title h4 {
+    margin: 0;
+}
+
+#intro {
+    width: 100%;
+}
+
+.contactUs a {
+    border: 1px solid #fbb040;
+    border-radius: 9999px;
+    box-sizing: border-box;
+    flex: 0 0 60px;
+    font-family: Georgia, serif;
+    font-size: 0.6em;
+    height: 60px;
+    margin-left: 2em;
+    min-width: 0;
+    padding-top: 21px;
+    width: 60px;
+    text-decoration: none;
+}
+
+.contactUs a:hover, .contactUs a:focus, .contactUs a:active {
+    text-decoration: underline;
+}
+
+.contactUs a:first-child {
+    margin-left: 0;
+}
+
+#signUp {
+    z-index: 1;
+}
+
+#signUp h2 {
+    font-size: 5em;
+    letter-spacing: -4px;
+}
+
+#whoIsThisFor {
+    background: #000000;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../img/feedback.jpg);
+    background-attachment: fixed, fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, center center;
+    background-size: auto, cover;
+    color: #ffffff;
+    transition: background 400ms ease;
+}
+
+#talks {
+    background: #ffffff;
+}
+
+#talks > section {
+    border-bottom: 1px solid #000000;
+}
+
+#talks > section:last-child {
+    border-bottom: none;
+}
+
+#workshops {
+    background: #000000;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../img/crowd.jpg);
+    background-attachment: fixed, fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, center center;
+    background-size: auto, cover;
+    color: #ffffff;
+    transition: background 400ms ease;
+}
+
+#workshops > section {
+    border-bottom: 1px solid #ffffff;
+    flex-direction: row-reverse;
+}
+
+#workshops > section:last-child {
+    border-bottom: none;
+}
+
+.read-more {
+    color: #fbb040;
+    text-decoration: underline;
+}
+
+.speaker {
+    font-size: 0.8em;
+    max-width: 500px;
+}
+
+.speaker img {
+    border-radius: 9999px;
+}
+
+.speaker h5 {
+    text-align: center;
+}
+
+#schedule {
+    background: white;
+    padding: 0.5ex 0.5ex 5em;
+}
+
+#schedule h3 {
+    margin-bottom: 0;
+}
+
+#schedule-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#schedule > section > section {
+    border-left: 1px solid #000;
+}
+
+#schedule > section > section:first-of-type {
+    border-left: none;
+}
+
+#schedule header.article {
+    padding-bottom: 0;
+}
+
+#schedule > section > section > article {
+
+}
+
+#schedule table {
+    width: 100%;
+}
+
+#schedule table tr td {
+    line-height: 1.6rem;
+    padding: 0.2rem 5%;
+}
+
+#schedule table tr:first-child td {
+    border-top: 1px solid #000;
+}
+
+#schedule table tr:last-child td {
+    border-bottom: 1px solid #000;
+}
+
+#schedule table tr td:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.075);
+    color: transparent;
+}
+
+#schedule table tr.title td:first-child {
+    border-top: 1px solid #000;
+    color: #000;
+    font-family: Georgia, serif;
+    font-size: 0.8em;
+    width: 4em;
+}
+
+#schedule table tr td:nth-child(2) {
+    border-bottom: 1px solid #000;
+    padding-left: 1em;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#sponsors a.article, #organisers a.article {
+    border: none;
+}
+
+#organisers a.photo {
+    color: #222222;
+    font-family: 'Cormorant SC', serif;
+}
+
+#organisers a.photo img {
+    border-radius: 9999px;
+}
+
+#oldSites {
+    color: #ffffff;
+}
+
+#oldSites a {
+    border-radius: 9999px;
+    flex-grow: 0;
+    height: 3em;
+    width: 3em;
+    text-align: center;
+}
+
+#presentedBy {
+    color: #ffffff;
+}
+
+.paperBackgroundGradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,eeeeee+100 */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 50%, rgba(238,238,238,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 50%,rgba(238,238,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(255,255,255,1) 50%,rgba(238,238,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-attachment: fixed;
+}
+
+.orangeColor {
+    color: #fbb040;
+}
+
+.materialBoxShadow {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25), 0 2px 2px rgba(0,0,0,0.25);
+    z-index: 1;
+}
+
+.smallPrint {
+    font-size: 0.8em;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+
+    .speaker {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+
+    #schedule p {
+        min-height: 0;
+    }
+
+    #schedule > section {
+        flex-direction: column;
+    }
+
+    #schedule > section > section {
+        align-self: center;
+        border-left: none;
+    }
+
+    #schedule > article > section:first-of-type,
+    #schedule section.single {
+        border-right: none;
+    }
+
+    #schedule > article > section section header {
+        border-top: 1px solid #222222;
+    }
+
+    #schedule table tr td,
+    #schedule table tr.title td {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    #schedule table tr.title td,
+    #schedule table tr.title td:first-child {
+        border-top: 1px solid #dddddd;
+    }
+
+    #schedule table tr.title:first-of-type td {
+        border-top: 0;
+    }
+
+    #schedule table tbody tr td {
+        vertical-align: top;
+    }
+
+    #schedule table tbody tr:not(.title) td {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+
+    .speaker {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    body {
+        padding-bottom: 100px;
+    }
+
+    body.js-menuOpen {
+        left: -300px;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 10vw;
+        margin: 0;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.8em;
+        line-height: 1.;
+    }
+
+    h4 {
+        font-size: 1.2em;
+        line-height: 1.1;
+    }
+
+    h5 {
+        font-size: 1.15em;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .smallPrint {
+        line-height: 1.4;
+    }
+
+    .topMenu {
+        background: rgba(0,0,0,0.8);
+        font-size: 1.2em;
+        height: 100%;
+        left: 100%;
+        transition: 200ms transform ease;
+        width: 300px;
+    }
+
+    body.js-menuOpen .topMenu {
+        transform: translate3d(-100%,0,0);
+    }
+
+    .topMenu a {
+        min-width: 300px;
+        padding: 0.75em 0;
+    }
+
+    .topMenu a:hover, .topMenu a:focus, .topMenu a:active {
+    }
+
+    .menuButton {
+        display: block;
+    }
+
+    body.js-menuOpen .menuShiw {
+        display: block;
+    }
+
+    #title h1 {
+        font-size: 12vw;
+    }
+
+    #title h4 {
+        font-size: 2vw;
+    }
+
+    #title p {
+        font-size: 55vw;
+        line-height: 1;
+        top: 0;
+        transform: translate3d(-50%,0,0);
+    }
+
+    #signUp h2 {
+        font-size: 15vw;
+    }
+
+    .speaker {
+        max-width: none;
+    }
+
+    .speaker header {
+        width: 200px;
+        margin: 0 2em 2em 0;
+    }
+
+    #talks .speaker header {
+        float: left;
+    }
+
+    #workshops .speaker header {
+        margin: 0 auto;
+    }
+
+    #schedule p {
+        min-height: 0;
+    }
+
+    #schedule > section > section {
+        border-bottom: 1px solid #000;
+        border-left: none;
+    }
+
+    #sponsors a.article, #organisers a.article {
+        align-self: flex-start;
+        flex: 0 1 125px;
+        padding: 2em;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .columns {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .columns > *, .column {
+        align-self: flex-start;
+    }
+
+    #schedule > section {
+        flex-direction: row;
+    }
+
+    #schedule > section > section {
+        align-self: flex-start;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    #title h4 {
+        font-size: 1em;
+    }
+
+    #schedule section section {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    #talks .speaker header {
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
