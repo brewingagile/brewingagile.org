@@ -9,6 +9,7 @@
     Viktor Nyblom       --
     Thomas Varga        -- @wolfa127
     Fredrik Wendt       -- @wendtse
+    Patrik Gustafsson   -- @acyclic.eu
 
 # THANKS
 
